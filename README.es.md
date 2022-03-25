@@ -47,7 +47,7 @@
 <details><summary><b>🎥Video Previews🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
 <p>
 
-### 【Adguard default DNS】<i>VS</i>⭐esta configuración⭐ :
+### 【Adguard DNS predeterminado】<i>VS</i>⭐esta configuración⭐ :
 
 <https://user-images.githubusercontent.com/18756975/150230438-b767e86f-4e18-4791-b5fe-0813615a37a3.mp4>
 
@@ -434,7 +434,7 @@ Ejecutar en la terminal
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
 
--   Espere hasta que finalice la instalación y se muestre el código QR, no cierre. Pero si lo haces, para`regenerate qrcode`, enter in terminal but replacing just the name `yourclientname.conf`archivo al tuyo:
+-   Espere hasta que finalice la instalación y se muestre el código QR, no cierre. Pero si lo haces, para`regenerate qrcode`, ingrese en la terminal pero reemplazando solo el nombre`yourclientname.conf`archivo al tuyo:
 
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
@@ -477,7 +477,7 @@ WireGuard para ventanas:<https://download.wireguard.com/windows-client/wireguard
 
 ## ╸ Configurar WireGuard con`Adguard/Unbound/Cloudflare`╸
 
-_Recuerde que esto es para cuando esté conectado a WireGuard VPN en una red externa o en casa las 24 horas del día, los 7 días de la semana porque ya tiene AdGuard/Unbound/Cloudflare configurado y ejecutándose en sus dispositivos manualmente._ (no issue having both set up fro my experience).
+_Recuerde que esto es para cuando esté conectado a WireGuard VPN en una red externa o en casa las 24 horas del día, los 7 días de la semana porque ya tiene AdGuard/Unbound/Cloudflare configurado y ejecutándose en sus dispositivos manualmente._(no hay problema en tener ambos configurados para mi experiencia).
 
 -   En la aplicación wireguard, seleccione su túnel y seleccione editar (lápiz en la parte superior derecha)
 
@@ -492,7 +492,7 @@ Con WireGuard, perderá aproximadamente el 50 % de la velocidad de Internet debi
 
 Elimine en las IP permitidas la opción "0.0.0.0/0, ::/0" porque enruta todo el tráfico a su red doméstica, que será lenta. Solo necesita enviar tráfico a través de sus direcciones.
 
--   Primero debe reemplazarlo con su puerta de enlace de red, pero configurando el último número en cero y<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>longitud del prefijo</b></a>a 24. Por ejemplo:`192.168.1.1/24`para`192.168.1.0/24`o como mi enrutador isp`192.168.100.1/24`para`192.168.100.0/24`.~~**Ahora solo pierdo un 25% de velocidad**😁 (ps. usando la red 5g)~~ 
+-   Primero debe reemplazarlo con su puerta de enlace de red, pero configurando el último número en cero y<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>longitud del prefijo</b></a>a 24. Por ejemplo:`192.168.1.1/24`para`192.168.1.0/24`o como mi enrutador isp`192.168.100.1/24`para`192.168.100.0/24`.~~**Ahora solo pierdo un 25% de velocidad**😁 (ps. usando la red 5g)~~
 
 `UPDATE:`Después de una actualización de Wireguard, no obtengo una velocidad más rápida al hacer esto :( .. pero aún tiene sentido_no_usar`"0.0.0.0/0, ::/0`con wifi Si alguien sabe algún ajuste para obtener un impulso, hágamelo saber.
 
