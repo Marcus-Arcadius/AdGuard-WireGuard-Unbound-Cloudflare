@@ -248,7 +248,7 @@ __ДОЖДИТЕСЬ ЗАВЕРШЕНИЯ ОБНОВЛЕНИЯ и ПЕРЕЗАп
 
 ## ╸ Добавить/удалить несколько URL-адресов ╸
 
-You can only add one by one url in dns blocklist in adguard for now but there is a python script to add multiple urls together.
+На данный момент вы можете добавлять только один URL-адрес в черный список DNS в Adguard, но есть скрипт python для добавления нескольких URL-адресов вместе.
 
 Откройте новый py-файл (bulkurls.py):
 
