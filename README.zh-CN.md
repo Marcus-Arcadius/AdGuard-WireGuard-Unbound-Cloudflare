@@ -94,7 +94,7 @@
     -   [安装 Cloudflare (DoH)](#-install-cloudflare-on-pi-with-doh-)
     -   [在未绑定 (DoT) 上配置 Cloudflare](#-configure-cloudflare-on-unbound-with-dot-)
     -   [配置 Stubby（TLS 转发器）](#-configure-stubby-for-unbound-)
-    -   [使用 Cloudflare (DoH&DoT) 配置 AdGuard](#-configure-adguard-with-cloudflaredohdot-)
+    -   [Configure AdGuard with Cloudflare (DoH&DoT)](#-configure-adguard-with-cloudflaredohdot-)
 -   [安装 WireGuard](#wireguard-install-)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>要么<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN（较慢）</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
     -   [连接到 VPN 到 Android/IOS 手机](#-connecting-to-the-vpn-to-androidios-phone-)
     -   [从 PC 连接到 VPN (Windows)](#-connecting-to-the-vpn-from-a-pc-windows-)
@@ -133,7 +133,7 @@ Raspberry Pi OS 有桌面版和精简版（精简版仅用于无头模式）。�
 
 安装balenEtcher并下载pi镜像写入microSD卡。
 
--   download raspberry P iOS:<https://www.raspberrypi.org/software/operating-systems/>
+-   download raspberry P iOS:[HTTPS://呜呜呜.raspberry皮.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/)
 
 -   下载whaleEtcher：[HTTPS://呜呜呜.拔了那.IO/etcher/](https://www.balena.io/etcher/)
 
@@ -277,13 +277,13 @@ _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip inst
 
     sudo apt install unbound -y
 
-为了递归查询未缓存为地址的主机，解析器需要从服务器树的顶部开始并查询根服务器，以了解要查询的地址的顶级域的去向。 Unbound 带有默认的内置提示。
+For recursively querying a host that is not cached as an address, the resolver needs to start at the top of the server tree and query the root servers, to know where to go for the top level domain for the address being queried. Unbound comes with default builtin hints.
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
 `IMPORTANT:`这需要每 6 个月更新一次。到_**自动更新**_root.hints 每 6 个月你需要创建一个 cron 作业。
 
-在命令行中输入`crontab -e`，它会询问选择一个编辑器（选择 1）并将这些行粘贴到 crontab 的底部并保存（control+x 然后 y 然后输入）：
+Enter in command line `crontab -e`，它会询问选择一个编辑器（选择 1）并将这些行粘贴到 crontab 的底部并保存（control+x 然后 y 然后输入）：
 
     1 0 1 */6 * wget -O root.hints https://www.internic.net/domain/named.root
     2 0 1 */6 * sudo mv root.hints /var/lib/unbound/
