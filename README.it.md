@@ -20,23 +20,19 @@
 <p align="center">
  <img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
 
-<h1 align="center"><b>A step by step 📜 guide for these</b> 
-<h1 align="center"><b> 🅵🆁🅴🅴 network 📡 security projects to work together on a</b>
-<h1 align="center"><b>𝓡 𝓐 𝓢 𝓟 𝓑 𝓔 𝓡 𝓡 𝓨 ℙ 𝕀 🥧</b></h1>
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_: Adblocker per i tuoi dispositivi a casa (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard rispetto a Pi-Hole_</b></a>)
 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_⫸ Adblocker per i tuoi dispositivi di casa (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard rispetto a Pi-Hole_</b></a>)
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Un server VPN a casa accessibile da qualsiasi rete esterna (IPv4 e IPv6)
 
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_⫸ Un server VPN a casa accessibile da qualsiasi rete esterna (IPv4 e IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Non vincolato</b></a>con &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_stubby/about_stubby/"><b>Tozzo</b></a>_: un risolutore DNS di convalida, ricorsivo e con memorizzazione nella cache
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Non vincolato</b></a>con &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_stubby/about_stubby/"><b>Tozzo</b></a>_⫸ Un risolutore DNS di convalida, ricorsivo e con memorizzazione nella cache
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_⫸ Migliori prestazioni e sicurezza durante la navigazione nei siti Web (DoT e DoH)
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Migliori prestazioni e sicurezza durante la navigazione nei siti Web (DoT e DoH)
 
 * * *
 
 # 
 
-<h1 align="center">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
+<h2 align="left">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
 
 <b>Tempo di query (google.com) in millisecondi:</b>
 
@@ -89,7 +85,7 @@
     -   [Configura i tuoi dispositivi per funzionare con Adguard](#-set-up-your-devices-to-work-with-adguard-)
     -   [Impostazione della blocklist di AdGuard](#-setting-up-adguard-blocklist-)
         -   [Aggiungi/Rimuovi più URL alla blocklist contemporaneamente](#-addremove-multiple-urls-)
--   [Installazione Unbound](#unbound-install-)<img src="https://www.privacyguides.org/assets/img/legacy_svg/3rd-party/unbound.svg" width=20px height=20px>
+-   [Installazione Unbound](#unbound-install-)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [Installazione di Cloudflare](#cloudflare-install-)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
     -   [Installa Cloudflare (DoH)](#-install-cloudflare-on-pi-with-doh-)
     -   [Configura Cloudflare su Unbound (DoT)](#-configure-cloudflare-on-unbound-with-dot-)
@@ -131,7 +127,7 @@ Questo tutorial è basato sul sistema operativo Raspberry Pi, ma puoi usare qual
 
 Raspberry Pi OS è disponibile nelle versioni Desktop e Lite (usa lite solo per la modalità senza testa). Puoi configurare Raspberry Pi con un monitor/tastiera/mouse o configurarlo "senza testa" da un terminale.
 
-Installa balenEtcher e scarica l'immagine pi per scrivere sulla scheda microSD.
+Installa balenEtcher e scarica l'immagine pi da scrivere sulla scheda microSD.
 
 -   Scarica il sistema operativo Raspberry Pi:<https://www.raspberrypi.org/software/operating-systems/>
 
@@ -144,7 +140,7 @@ Avvia Etcher e scegli l'immagine del sistema operativo Raspberry Pi che hai scar
 <p align="center">
  <img src="https://i.imgur.com/tbB3VIK.jpg">
 
-Al termine del flashing, cerca in "Questo PC" il nome del disco "boot or usb drive" (ricollega il lettore di schede USB se non viene visualizzato). Vai su quel disco, crea un nuovo file di testo chiamato**_`ssh without 'txt' extention`_**. ATTENZIONE, non è "ssh.txt", è "ssh" senza l'estensione. Devi disabilitare l'opzione "Nascondi le estensioni per i tipi di file conosciuti" nelle Opzioni di File Exporer se non le vedi.
+Al termine del flashing, cerca in "Questo PC" il nome del disco "boot or usb drive" (ricollega il lettore di schede USB se non viene visualizzato). Vai su quel disco, crea un nuovo file di testo chiamato**_`ssh without 'txt' extention`_**. ATTENZIONE, non è "ssh.txt", è "ssh" senza l'estensione. Devi disabilitare l'opzione "Nascondi le estensioni per i tipi di file conosciuti" nelle Opzioni di Esplora file se non le vedi.
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -176,7 +172,7 @@ Esegui nel terminale:
 
     sudo apt update -y && sudo apt upgrade -y
 
-__ATTENDERE L'AGGIORNAMENTO PER FINIRE e RIAVVIA PI. POI CONTINUARE AL PASSO SUCCESSIVO__.....
+__ATTENDERE AGGIORNAMENTO PER FINE e RIAVVIA PI. POI CONTINUA AL PASSO SUCCESSIVO__.....
 
     sudo reboot
 
@@ -189,7 +185,7 @@ __ATTENDERE L'AGGIORNAMENTO PER FINIRE e RIAVVIA PI. POI CONTINUARE AL PASSO SUC
 
 <h1 align="center"><b><i>AdGuard Install</b></i> </h1>
 
-Questo script di installazione proviene da<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Casa</b></a>progetto principale. Segui per restare aggiornato.
+Questo script di installazione proviene da<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Casa</b></a>progetto principale. Segui per essere sempre aggiornato.
 
 Esegui il seguente comando nel tuo terminale:
 
@@ -210,7 +206,7 @@ Esegui il seguente comando nel tuo terminale:
 
 ## ╸ Configura i tuoi dispositivi per funzionare con Adguard ╸
 
--   Per Android/Apple, vai alle impostazioni avanzate Wi-Fi e seleziona l'opzione statica. Nel`DNS 1`campo inserire l'indirizzo "ip di pi".
+-   Per Android/Apple, vai alle impostazioni avanzate Wi-Fi e seleziona l'opzione statica. In`DNS 1`campo inserire l'indirizzo "ip di pi".
 
     <p align="center">
      <img src="https://i.imgur.com/nxpiqDw.jpg" width=450px height=580px>
@@ -260,7 +256,7 @@ _Se si utilizza**DietPi**installare`sudo apt-get install python3-pip -y && pip i
 
 Correre :`sudo python3 bulkurls.py`
 
-a**rimuovere**devi cambiare`add`in<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/62ba01ed8ed3a5bc5294b9fe7ee38c3e83ae1b86/bulkurls.py#L150"><b>penultima riga</b></a>a`remove`in bulkurls.py file.
+A**rimuovere**devi cambiare`add`in<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/62ba01ed8ed3a5bc5294b9fe7ee38c3e83ae1b86/bulkurls.py#L150"><b>penultima riga</b></a>a`remove`in bulkurls.py file.
 
 Vai a<https://d3ward.github.io/toolz/adblock.html>per verificare se gli annunci stanno bloccando<img src="https://i.imgur.com/Q5oO9EY.png" width=100px height=80px>
 
@@ -281,7 +277,7 @@ Per eseguire query ricorsive su un host che non è memorizzato nella cache come 
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
-`IMPORTANT:`Questo deve essere aggiornato ogni 6 mesi. a_**Aggiornamento automatico**_root.hints ogni 6 mesi devi creare un cron job.
+`IMPORTANT:`Questo deve essere aggiornato ogni 6 mesi. A_**auto update**_root.hints ogni 6 mesi devi creare un cron job.
 
 Entra nella riga di comando`crontab -e`, chiederà Seleziona un editor (scegli 1) e incolla queste righe nella parte inferiore di crontab e salva (control + x poi y quindi invio):
 
@@ -421,7 +417,7 @@ Impostazione della porta del mio 👇router👇. Il tuo forse è diverso ma lo c
 
 * * *
 
-👊GRANDE GRAZIE👊 per questo script di installazione da<a href="https://github.com/Nyr/wireguard-install"><b>Nyr</b></a>. Segui per restare aggiornato.
+👊GRANDE GRAZIE👊 per questo script di installazione da<a href="https://github.com/Nyr/wireguard-install"><b>Nyr</b></a>. Segui per essere sempre aggiornato.
 
 Esegui nel terminale
 
@@ -541,7 +537,7 @@ Per**androide**Puoi usare<a href="https://play.google.com/store/apps/details?id=
 
 <h1 align="center"><b><i>Auto Update Pi</b></i> </h1>
 
--   Apri il nuovo file sh chiamato update e copia e incolla il testo da<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>👉qui👈</b></a>
+-   Apri il nuovo file sh chiamato update e copia incolla il testo da<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>👉qui👈</b></a>
 
 
     sudo nano update.sh
@@ -599,7 +595,7 @@ Verde
 
     @reboot echo none | sudo tee /sys/class/leds/led0/trigger
 
-rosso
+Rosso
 
     @reboot echo none | sudo tee /sys/class/leds/led1/trigger
 
