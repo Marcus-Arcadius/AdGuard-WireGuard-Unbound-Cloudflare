@@ -20,23 +20,19 @@
 <p align="center">
  <img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
 
-<h1 align="center"><b>A step by step 📜 guide for these</b> 
-<h1 align="center"><b> 🅵🆁🅴🅴 network 📡 security projects to work together on a</b>
-<h1 align="center"><b>𝓡 𝓐 𝓢 𝓟 𝓑 𝓔 𝓡 𝓡 𝓨 ℙ 𝕀 🥧</b></h1>
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_: Adblocker para tus dispositivos en casa (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard comparado con Pi-Hole_</b></a>)
 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_⫸ Adblocker para tus dispositivos en casa (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard comparado con Pi-Hole_</b></a>)
+#### _<a href="https://www.wireguard.com/"><b>Guardia de alambre</b></a>_: Un servidor Vpn en casa accesible desde cualquier red externa (IPv4 e IPv6)
 
-#### _<a href="https://www.wireguard.com/"><b>Guardia de alambre</b></a>_⫸ Un servidor Vpn en casa accesible desde cualquier red externa (IPv4 e IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Sin consolidar</b></a>con &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_rechoncho/sobre_rechoncho/"><b>Achaparrado</b></a>_: un solucionador de DNS de validación, recursivo y almacenamiento en caché
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Sin consolidar</b></a>con &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_rechoncho/sobre_rechoncho/"><b>Achaparrado</b></a>_⫸ Un solucionador de DNS validador, recursivo y de almacenamiento en caché
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de la nube</b></a>_⫸ Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de la nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
 
 * * *
 
 # 
 
-<h1 align="center">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
+<h2 align="left">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
 
 <b>Tiempo de consulta (google.com) en milisegundos:</b>
 
@@ -89,7 +85,7 @@
     -   [Configura tus dispositivos para que funcionen con Adguard](#-set-up-your-devices-to-work-with-adguard-)
     -   [Configuración de la lista de bloqueo de AdGuard](#-setting-up-adguard-blocklist-)
         -   [Agregar/Eliminar varias URL a la lista de bloqueo a la vez](#-addremove-multiple-urls-)
--   [Instalación de Unbound](#unbound-install-)<img src="https://www.privacyguides.org/assets/img/legacy_svg/3rd-party/unbound.svg" width=20px height=20px>
+-   [Instalación de Unbound](#unbound-install-)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [Instalación de Cloudflare](#cloudflare-install-)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
     -   [Instalar Cloudflare (DoH)](#-install-cloudflare-on-pi-with-doh-)
     -   [Configurar Cloudflare en Unbound (DoT)](#-configure-cloudflare-on-unbound-with-dot-)
@@ -144,7 +140,7 @@ Inicie Etcher y elija la imagen del sistema operativo Raspberry Pi que descargó
 <p align="center">
  <img src="https://i.imgur.com/tbB3VIK.jpg">
 
-Después de flashear, busque en "Esta PC" un nombre de disco "arranque o unidad USB" (reconecte el lector de tarjetas USB si no se ve). Vaya a ese disco, cree un nuevo archivo de texto llamado**_`ssh without 'txt' extention`_**. TENGA CUIDADO, no es “ssh.txt”, es “ssh” sin la extensión. Debe deshabilitar la opción "Ocultar extensiones para tipos de archivos conocidos" en las Opciones del exportador de archivos si no las ve.
+Después de flashear, busque en "Esta PC" un nombre de disco "arranque o unidad USB" (reconecte el lector de tarjetas USB si no se ve). Vaya a ese disco, cree un nuevo archivo de texto llamado**_`ssh without 'txt' extention`_**. TENGA CUIDADO, no es “ssh.txt”, es “ssh” sin la extensión. Debe deshabilitar la opción "Ocultar extensiones para tipos de archivo conocidos" en las Opciones del Explorador de archivos si no las ve.
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -262,7 +258,7 @@ Correr :`sudo python3 bulkurls.py`
 
 Para**retirar**necesitas cambiar`add`en<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/62ba01ed8ed3a5bc5294b9fe7ee38c3e83ae1b86/bulkurls.py#L150"><b>segunda de la última línea</b></a>para`remove`en el archivo bulkurls.py.
 
-Ir<https://d3ward.github.io/toolz/adblock.html>para probar si los anuncios están bloqueando<img src="https://i.imgur.com/Q5oO9EY.png" width=100px height=80px>
+Ir a<https://d3ward.github.io/toolz/adblock.html>para probar si los anuncios están bloqueando<img src="https://i.imgur.com/Q5oO9EY.png" width=100px height=80px>
 
 **[⬆ VOLVER ARRIBA ⬆](#contents)**
 
@@ -322,7 +318,7 @@ Use Unbound para el almacenamiento en caché y stubby para el reenviador TLS. In
 
     sudo apt install stubby -y
 
-Elimine y vuelva a crear el archivo stubby.yaml y copie/pegue todo el texto de<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>👉 esta configuración rechoncha 👈</b></a>y guarda. (`cd $h`para volver a la carpeta de inicio cuando termine).
+Elimine y vuelva a crear el archivo stubby.yaml y copie/pegue todo el texto de<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>👉 esta configuración rechoncha 👈</b></a>y guardar. (`cd $h`para volver a la carpeta de inicio cuando termine).
 
     cd /etc/stubby/ && sudo rm stubby.yml && sudo nano stubby.yml
 
@@ -351,7 +347,7 @@ Elimine y vuelva a crear el archivo stubby.yaml y copie/pegue todo el texto de<a
 <p align="center">
  <img src="https://i.imgur.com/Ug4Euou.jpg" width=650px height=370px>
 
--   Luego, en la configuración de DNS, busque la sección de configuración de caché de DNS y establezca el tamaño de caché en`0`(el almacenamiento en caché ya lo maneja Unbound) y haga clic en Aplicar.
+-   Luego, en la configuración de DNS, busque la sección de configuración de caché de DNS y establezca el tamaño de caché en`0`(el almacenamiento en caché ya lo maneja Unbound) y haga clic en aplicar.
 
 <p align="center">
  <img src="https://i.imgur.com/8Q5Zb0M.jpg" width=650px height=370px>
@@ -360,9 +356,9 @@ Elimine y vuelva a crear el archivo stubby.yaml y copie/pegue todo el texto de<a
 
 ### ventanas
 
--   Instalar en pc<a href="https://mayakron.altervista.org/support/acrylic/Home.htm"><b>Proxy DNS acrílico</b></a>
+-   Instalar<a href="https://mayakron.altervista.org/support/acrylic/Home.htm"><b>Proxy DNS acrílico</b></a>
 
--   Ir`C:\Program Files (x86)\Acrylic DNS Proxy`y abierto`AcrylicConfiguration.ini`expediente. Eliminar todo y copiar estos<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/AcrylicConfiguration.ini"><b>👉AJUSTES👈</b></a>solo cambio_**PrimaryServerAddres**_a la dirección de tu pi.
+-   Ir a`C:\Program Files (x86)\Acrylic DNS Proxy`y abierto`AcrylicConfiguration.ini`expediente. Eliminar todo y copiar estos<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/AcrylicConfiguration.ini"><b>👉AJUSTES👈</b></a>solo cambio_**PrimaryServerAddres**_a la dirección de tu pi.
 
 -   En la misma carpeta ejecutar`RestartAcrylicService.bat`&`PurgeAcrylicCacheData.bat`
 
@@ -405,7 +401,7 @@ Elimine y vuelva a crear el archivo stubby.yaml y copie/pegue todo el texto de<a
 
 **Antes de instalar WireGuard**, si no tienes una ip estática necesitas obtener una gratis`Dynamic DNS Subdomain`o de lo contrario, su dirección IP externa probablemente cambie dinámicamente desde su ISP con cierta frecuencia y, por esa razón, deberá configurar un servicio de DNS dinámico. 👉👉**_▓▒░Usa esto<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>INSTRUCCIONES AQUÍ</b></a>░▒▓_**👈👈. O bien, omita el paso.
 
-También necesitamos configurar el reenvío de puertos en su enrutador para que podamos acceder a wireguard fuera de nuestra red, como en un punto de acceso de una cafetería o sus datos móviles.
+También necesitamos configurar el reenvío de puertos en su enrutador para que podamos acceder a Wireguard fuera de nuestra red, como en un punto de acceso de una cafetería o sus datos móviles.
 TIPO | VALOR  
 ------------ \| -------------
 Dispositivo | Nombre de host o IP de Raspberry Pi
@@ -455,7 +451,7 @@ Wireguard (tienda de aplicaciones):<https://apps.apple.com/us/app/wireguard/id14
 
 Debe escanear el código QR que se muestra en la terminal con la aplicación Wireguard, seleccione el`+ button`y usa la opcion`Scan from QR code`para instalar la configuración.
 
-`IMPORTANT`: Habilitar**back-end del módulo del núcleo**en la configuración de
+`IMPORTANT`: Permitir**back-end del módulo del kernel**en la configuración de
 
 <p align="left">
  <img src="https://i.imgur.com/R4qbiOQ.jpg" width=250px height=350px>
@@ -471,7 +467,7 @@ WireGuard para ventanas:<https://download.wireguard.com/windows-client/wireguard
 
     sudo cat /root/yourclientname.conf
 
--   Resalte todo el texto, cópielo y péguelo en el archivo txt en la PC y guárdelo. A continuación, cambie el nombre de la extensión de`txt`para`conf`. Ahora tiene un archivo de configuración para ese cliente de wireguard.
+-   Resalte todo el texto, cópielo y péguelo en el archivo txt en la PC y guárdelo. Luego cambie el nombre de la extensión de`txt`para`conf`. Ahora tiene un archivo de configuración para ese cliente de wireguard.
 
 -   Ahora puede importar el archivo de configuración a wireguard (opción importar desde archivo).
 
