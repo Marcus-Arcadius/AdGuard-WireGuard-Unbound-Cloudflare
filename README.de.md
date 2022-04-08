@@ -20,27 +20,23 @@
 <p align="center">
  <img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
 
-<h1 align="center"><b>A step by step 📜 guide for these</b> 
-<h1 align="center"><b> 🅵🆁🅴🅴 network 📡 security projects to work together on a</b>
-<h1 align="center"><b>𝓡 𝓐 𝓢 𝓟 𝓑 𝓔 𝓡 𝓡 𝓨 ℙ 𝕀 🥧</b></h1>
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_: Adblocker für Ihre Geräte zu Hause (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard im Vergleich zu Pi-Hole_</b></a>)
 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_⫸ Adblocker für Ihre Geräte zu Hause (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard im Vergleich zu Pi-Hole_</b></a>)
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Ein VPN-Server zu Hause, auf den von jedem externen Netzwerk zugegriffen werden kann (IPv4 & IPv6)
 
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_⫸ Ein VPN-Server zu Hause, auf den von jedem externen Netzwerk aus zugegriffen werden kann (IPv4 & IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Ungebunden</b></a>mit &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_stubby/über_stubby/"><b>Stummelig</b></a>_: Ein validierender, rekursiver, zwischenspeichernder DNS-Resolver
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Ungebunden</b></a>mit &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_stubby/über_stubby/"><b>Stummelig</b></a>_⫸ Ein validierender, rekursiver, zwischenspeichernder DNS-Resolver
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Wolkenflare</b></a>_⫸ Bessere Leistung und Sicherheit beim Surfen auf Websites (DoT & DoH)
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Wolkenflare</b></a>_: Bessere Leistung und Sicherheit beim Surfen auf Websites (DoT & DoH)
 
 * * *
 
 # 
 
-<h1 align="center">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
+<h2 align="left">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
 
 <b>Abfragezeit (google.com) in Millisekunden:</b>
 
--   Adguard-Standard-DNS-Resolver -`60-70 msec`
+-   Standard-DNS-Resolver von Adguard -`60-70 msec`
 -   Öffentliche Cloudflare/Quad9/Google DNS-Resolver -`50-70 msec`
 -   Diese Einrichtung/Konfiguration -`5-10 msec`
 
@@ -51,7 +47,7 @@
 
 <https://user-images.githubusercontent.com/18756975/150230438-b767e86f-4e18-4791-b5fe-0813615a37a3.mp4>
 
-### Öffentliche【cloudflare/quad9/google】DNS-Resolver:
+### Öffentliche \[cloudflare/quad9/google] DNS-Resolver:
 
 <https://user-images.githubusercontent.com/18756975/150319049-3d8acdc9-624f-4b60-8ee2-b80227522252.mp4>
 
@@ -89,7 +85,7 @@
     -   [Richten Sie Ihre Geräte so ein, dass sie mit Adguard funktionieren](#-set-up-your-devices-to-work-with-adguard-)
     -   [Einrichtung der AdGuard-Sperrliste](#-setting-up-adguard-blocklist-)
         -   [Mehrere URLs gleichzeitig zur Sperrliste hinzufügen/entfernen](#-addremove-multiple-urls-)
--   [Ungebunden installieren](#unbound-install-)<img src="https://www.privacyguides.org/assets/img/legacy_svg/3rd-party/unbound.svg" width=20px height=20px>
+-   [Ungebunden installieren](#unbound-install-)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [Cloudflare installieren](#cloudflare-install-)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
     -   [Installieren Sie Cloudflare (DoH)](#-install-cloudflare-on-pi-with-doh-)
     -   [Cloudflare on Unbound (DoT) konfigurieren](#-configure-cloudflare-on-unbound-with-dot-)
@@ -157,7 +153,7 @@ Stecken Sie nun die SD-Karte in den Raspberry Pi, stecken Sie Ihr Ethernet-Kabel
 
 -   Öffnen Sie den Browser und melden Sie sich auf der Panel-Seite Ihres Routers an
 
--   Finden Sie eine Liste aller Geräte, die mit Ihrem Netzwerk verbunden sind, und kopieren Sie die IP-Adresse des Raspberry Pi (es wird höchstwahrscheinlich den Hostnamen`raspberrypi`)
+-   Finden Sie eine Liste aller mit Ihrem Netzwerk verbundenen Geräte und kopieren Sie die IP-Adresse des Raspberry Pi (es wird höchstwahrscheinlich den Hostnamen`raspberrypi`)
 
 -   Öffnen Sie das Terminal auf Ihrem Hostcomputer. Sie können PowerShell unter Windows oder RaspController für Android verwenden
 
@@ -210,7 +206,7 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
 ## ╸ Richten Sie Ihre Geräte so ein, dass sie mit Adguard funktionieren ╸
 
--   Gehen Sie für Android/Apple zu den erweiterten WLAN-Einstellungen und wählen Sie die statische Option. Im`DNS 1`Geben Sie in das Feld "pi's ip" ein
+-   Gehen Sie für Android/Apple zu den erweiterten WLAN-Einstellungen und wählen Sie die statische Option. In`DNS 1`Geben Sie in das Feld "pi's ip" ein
 
     <p align="center">
      <img src="https://i.imgur.com/nxpiqDw.jpg" width=450px height=580px>
@@ -227,7 +223,7 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
 `OPTIONAL:`<i>Sie können in den alternativen Feldern eine Sicherungs-DNS hinzufügen</i>
 
-`BE AWARE:`<i>Unter Android unterbricht das Hinzufügen eines öffentlichen DNS im zweiten Feld die Adblockierung von Adguard</i>
+`BE AWARE:`<i>In Android unterbricht das Hinzufügen eines öffentlichen DNS im zweiten Feld die Adblockierung von Adguard</i>
 
 <p align="center">
  <img src="https://i.imgur.com/8gsDk3z.jpg">
@@ -256,7 +252,7 @@ Sie können vorerst nur eine URL nach der anderen in der DNS-Blocklist in Adguar
 
 Kopieren Sie dann den Text und fügen Sie ihn ein<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>bulkurls.py</b></a>Datei und speichern (Strg+x dann y dann enter)**SIE MÜSSEN IHRE ADGUARD-ANMELDEDATEN IN DER DATEI KONFIGURIEREN**.
 
-_Bei Verwendung**DiätPi**Installieren`sudo apt-get install python3-pip -y && pip install requests`weil es nicht standardmäßig installiert ist._
+_Bei Verwendung**DiätPi**Installieren`sudo apt-get install python3-pip -y && pip install requests`für seine nicht standardmäßig installieren._
 
 Laufen :`sudo python3 bulkurls.py`
 
@@ -281,7 +277,7 @@ Um einen Host rekursiv abzufragen, der nicht als Adresse zwischengespeichert ist
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
-`IMPORTANT:`Diese muss alle 6 Monate aktualisiert werden. Zu_**Auto-Update**_root.hints alle 6 Monate müssen Sie einen Cronjob erstellen.
+`IMPORTANT:`Diese muss alle 6 Monate aktualisiert werden. Zu_**auto update**_root.hints alle 6 Monate müssen Sie einen Cronjob erstellen.
 
 Geben Sie in der Befehlszeile ein`crontab -e`, es wird gefragt Wählen Sie einen Editor (wählen Sie 1) und fügen Sie diese Zeilen am unteren Rand von crontab ein und speichern Sie (Strg + x, dann y, dann Eingabe):
 
@@ -336,13 +332,13 @@ Entfernen Sie die Datei stubby.yaml, erstellen Sie sie neu und kopieren Sie den 
 
 ## ╸ Konfigurieren Sie Adguard mit`Cloudflare(DoH&DoT)`╸
 
--   Wählen Sie auf der AdGuard-Startseite unter Einstellungen "Dns-Einstellungen"
+-   Wählen Sie auf der AdGuard-Homepage unter Einstellungen "Dns-Einstellungen"
 
 -   Löschen Sie alles aus den Serveroptionen „Upstream“ und „Bootstrap DNS“ und:
 
-    -   Zum`DNS over TLS(DoT)`addieren`127.0.0.1:53`sowohl in den Serverfeldern „Upstream“ als auch „Bootstrap DNS“.
-    -   Zum`DNS over HTTPS(DoH)`addieren`127.0.0.1:5053`sowohl in den Serverfeldern „Upstream“ als auch „Bootstrap DNS“.
-    -   Zum`TLS forwarder(stubby)`addieren`127.0.0.1:8053`sowohl in den Serverfeldern „Upstream“ als auch „Bootstrap DNS“.
+    -   Für`DNS over TLS(DoT)`hinzufügen`127.0.0.1:53`sowohl in den Serverfeldern „Upstream“ als auch „Bootstrap DNS“.
+    -   Für`DNS over HTTPS(DoH)`hinzufügen`127.0.0.1:5053`sowohl in den Serverfeldern „Upstream“ als auch „Bootstrap DNS“.
+    -   Für`TLS forwarder(stubby)`hinzufügen`127.0.0.1:8053`sowohl in den Serverfeldern „Upstream“ als auch „Bootstrap DNS“.
 
 -   `IMPORTANT:`Sie müssen überprüfen "<a href="https://adguard.com/en/blog/in-depth-review-adguard-home.html#dns"><b>Parallelanfrage</b></a>"Option für DNS-Resolver, um gleichzeitig zu arbeiten.
 
@@ -356,7 +352,7 @@ Entfernen Sie die Datei stubby.yaml, erstellen Sie sie neu und kopieren Sie den 
 <p align="center">
  <img src="https://i.imgur.com/8Q5Zb0M.jpg" width=650px height=370px>
 
-### `IMPORTANT:`Windows-System- und Android-Browser müssen etwas angepasst werden`stabilize`DNS-Resolver..Linux funktioniert gut<i>(getestet auf Minze)</i>
+### `IMPORTANT:`Windows-System- und Android-Browser müssen etwas angepasst werden`stabilize`DNS-Auflöser..Linux funktioniert gut<i>(getestet auf Minze)</i>
 
 ### Windows
 
@@ -412,7 +408,7 @@ Gerät | Hostname oder IP des Raspberry Pi
 Protokoll | UDP
 Portbereich | 51820-51820
 Ausgehender Port | 51820
-Internetzugang zulassen (falls vorhanden) | Jawohl
+Internetzugang zulassen (falls vorhanden) | ja
 
 Meine 👇Router👇 Porteinstellung. Deins ist vielleicht anders, aber du wirst es verstehen. Denken Sie daran, Google 🔍Suchmaschine🔎 ist Ihr Freund. Wenn Sie keine Verbindung von einem externen Netzwerk herstellen können, was bedeutet, dass der ISP ausgehende Verbindungen blockiert hat, können Sie sie anrufen und freundlich darum bitten, dass es funktioniert.
 
@@ -427,9 +423,9 @@ Im Terminal ausführen
 
     wget https://git.io/wireguard -O wireguard-install.sh && sudo bash wireguard-install.sh
 
--   Das Skript fragt Sie nach der öffentlichen IPv4/dem Hostnamen für das VPN._Wenn_Sie haben eine statische IP-Adresse, fahren Sie fort oder geben Sie die dynamische DNS-Domäne ein, die Sie aus der erstellt haben<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>Anweisungen</b></a>. Zum Beispiel: trinibvpn.freeddns.org
+-   Das Skript fragt Sie nach der öffentlichen IPv4/dem Hostnamen für das VPN._Ob_Sie haben eine statische IP-Adresse, fahren Sie fort oder geben Sie die dynamische DNS-Domäne ein, die Sie aus der erstellt haben<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>Anweisungen</b></a>. Zum Beispiel: trinibvpn.freeddns.org
 
--   Für Port-Option`press enter`für Standard 51820. Geben Sie als Client-Namen einfach einen beliebigen Namen ein und verwenden Sie für DNS Option 3 (`1.1.1.1`) zur Zeit. Wir werden konfigurieren`adguard/unbound/cloudflare`mit dem vpn nachdem es fertig installiert ist
+-   Für Port-Option`press enter`für Standard 51820. Geben Sie für den Client-Namen einfach einen beliebigen Namen ein und verwenden Sie für DNS Option 3 (`1.1.1.1`) zur Zeit. Wir werden konfigurieren`adguard/unbound/cloudflare`mit dem vpn nachdem es fertig installiert ist
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -455,7 +451,7 @@ Wireguard (App Store):<https://apps.apple.com/us/app/wireguard/id1441195209>
 
 Sie müssen den im Terminal angezeigten QR-Code mit der Wireguard-App scannen und auswählen`+ button`und nutzen Sie die Möglichkeit`Scan from QR code`Konfiguration zu installieren.
 
-`IMPORTANT`: Aktivieren**Kernel-Modul-Backend**in den Einstellungen
+`IMPORTANT`: Ermöglichen**Kernel-Modul-Backend**in den Einstellungen
 
 <p align="left">
  <img src="https://i.imgur.com/R4qbiOQ.jpg" width=250px height=350px>
@@ -499,7 +495,7 @@ Löschen Sie die Option "0.0.0.0/0, ::/0" für zulässige IPs, da sie den gesamt
 <p align="center">
  <img src="https://i.imgur.com/x4m6Pbl.jpg" width=450px height=500px>
 
-### BITTE LESEN SIE !! , SEI VORSICHTIG !!
+### LESEN SIE BITTE !! , SEI VORSICHTIG !!
 
 `IMPORTANT`:_Wenn Ihr Netzwerk IP-Adressen für Geräte hat, die mit einer dreistelligen Zahl (mehr als 24) enden, zum Beispiel: 192.168.100.`999`, können Sie von einem externen Netzwerk nicht richtig routen, da die Anwendung von 24 nur die Nummern 1 bis 24 zulässt. Sie müssen stattdessen put`0`um aus dem 24er-Bereich zu routen, zum Beispiel:`192.168.100.0/0`_.
 
@@ -524,14 +520,14 @@ Dann geh zu<https://ipv6leak.com/>und du solltest sehen "_Ihr IPv6 ist nicht und
 
 ## Woher wissen Sie, ob Wireguard VPN wirklich funktioniert?
 
-Zum**windows**herunterladen<a href="https://www.wireshark.org/#download."><b>Wireshark</b></a>
+Für**windows**Download<a href="https://www.wireshark.org/#download."><b>Wireshark</b></a>
 
 Nach dem Herunterladen können Sie die Anwendung verwenden, um Ihre Datenpakete zu überprüfen, wobei das Protokoll auf das von Wireguard VPN verwendete eingestellt ist. Bei einem Paketverkehr handelt es sich um`encrypted`, kann zum Beispiel so gelesen werden:
 
 <p align="center">
  <img src="https://i.imgur.com/Tn4M47R.jpg">
 
-Zum**android**Sie können verwenden<a href="https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US"><b>PCAPdroid</b></a>. Sie sollten alle Verbindungen sehen`closed`und Status, der alle DNS- und keine TLS-Verbindungen in allen Apps anzeigt (öffnen und verwenden Sie Apps für PCAPdroid zum Scannen).
+Für**android**Sie können verwenden<a href="https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US"><b>PCAPdroid</b></a>. Sie sollten alle Verbindungen sehen`closed`und Status, der alle DNS- und keine TLS-Verbindungen in allen Apps anzeigt (öffnen und verwenden Sie Apps für PCAPdroid zum Scannen).
 
 **[⬆ NACH OBEN ⬆](#contents)**
 
@@ -599,7 +595,7 @@ Grün
 
     @reboot echo none | sudo tee /sys/class/leds/led0/trigger
 
-rot
+Rot
 
     @reboot echo none | sudo tee /sys/class/leds/led1/trigger
 
