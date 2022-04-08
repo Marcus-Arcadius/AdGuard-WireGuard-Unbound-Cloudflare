@@ -20,23 +20,19 @@
 <p align="center">
  <img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
 
-<h1 align="center"><b>A step by step 📜 guide for these</b> 
-<h1 align="center"><b> 🅵🆁🅴🅴 network 📡 security projects to work together on a</b>
-<h1 align="center"><b>𝓡 𝓐 𝓢 𝓟 𝓑 𝓔 𝓡 𝓡 𝓨 ℙ 𝕀 🥧</b></h1>
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_: Adblocker para seus dispositivos em casa (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard comparado ao Pi-Hole_</b></a>)
 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_⫸ Adblocker para seus dispositivos em casa (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard comparado ao Pi-Hole_</b></a>)
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Um servidor VPN em casa acessível a partir de qualquer rede externa (IPv4 e IPv6)
 
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_⫸ Um servidor VPN em casa acessível a partir de qualquer rede externa (IPv4 e IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Não vinculado</b></a>com &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_atarracado/sobre_atarracado/"><b>Atarracado</b></a>_: Um resolvedor de DNS de validação, recursivo e de cache
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Não vinculado</b></a>com &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_atarracado/sobre_atarracado/"><b>Atarracado</b></a>_⫸ Um Resolvedor DNS de Validação, Recursiva e Cache
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_⫸ Melhor desempenho e segurança ao navegar em sites (DoT e DoH)
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Melhor desempenho e segurança ao navegar em sites (DoT e DoH)
 
 * * *
 
 # 
 
-<h1 align="center">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
+<h2 align="left">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
 
 <b>Tempo de consulta (google.com) em milissegundos:</b>
 
@@ -89,7 +85,7 @@
     -   [Configure seus dispositivos para trabalhar com o Adguard](#-set-up-your-devices-to-work-with-adguard-)
     -   [Configurando a lista de bloqueio do AdGuard](#-setting-up-adguard-blocklist-)
         -   [Adicionar/remover vários URLs à lista de bloqueio de uma só vez](#-addremove-multiple-urls-)
--   [Instalando Unbound](#unbound-install-)<img src="https://www.privacyguides.org/assets/img/legacy_svg/3rd-party/unbound.svg" width=20px height=20px>
+-   [Instalando Unbound](#unbound-install-)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [Instalando o Cloudflare](#cloudflare-install-)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
     -   [Instale o Cloudflare (DoH)](#-install-cloudflare-on-pi-with-doh-)
     -   [Configurar Cloudflare em Unbound (DoT)](#-configure-cloudflare-on-unbound-with-dot-)
@@ -144,7 +140,7 @@ Inicie o Etcher e escolha a imagem do Raspberry Pi OS que você baixou, selecion
 <p align="center">
  <img src="https://i.imgur.com/tbB3VIK.jpg">
 
-Depois que o flash for concluído, procure em "Este PC" por um nome de disco "boot or usb drive" (reconecte o leitor de cartão usb se não for visto). Vá para esse disco, crie um novo arquivo de texto chamado**_`ssh without 'txt' extention`_**. CUIDADO, não é “ssh.txt”, é “ssh” sem a extensão. Você precisa desabilitar a opção “Ocultar extensões para tipos de arquivo conhecidos” nas Opções do File Exporer se não as vir.
+Depois que o flash for concluído, procure em "Este PC" por um nome de disco "boot or usb drive" (reconecte o leitor de cartão usb se não for visto). Vá para esse disco, crie um novo arquivo de texto chamado**_`ssh without 'txt' extention`_**. CUIDADO, não é “ssh.txt”, é “ssh” sem a extensão. Você precisa desabilitar a opção “Ocultar extensões para tipos de arquivos conhecidos” nas Opções do Explorador de Arquivos se não as vir.
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -239,9 +235,9 @@ Na página inicial do AdGuard, em filtros, selecione a seção de lista de bloqu
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Você pode pesquisar no Google por uma lista de bloqueio diferente.Aqui está minha customização<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>lista de bloqueio</b></a>com meus urls ou construa seu próprio a partir destes<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>fontes</b></a>.
+Você pode pesquisar no Google por uma lista de bloqueio diferente.Aqui está minha customização<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>lista de bloqueio</b></a>com meus urls ou crie o seu próprio a partir destes<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>origens</b></a>.
 
-`IMPORTANT:`Algumas listas de bloqueio podem bloquear alguns conteúdos ou sites importantes. Para desbloquear vá na seção "Query Log" e verá_desbloquear_opção quando o cursor passa sobre uma consulta, colocando sites desbloqueados no exemplo de "Regras de filtragem personalizadas":`@@||bitly.com^$important`. Procure pelo ip e horário do cliente.
+`IMPORTANT:`Algumas listas de bloqueio podem bloquear alguns conteúdos ou sites importantes. Para desbloquear vá na seção "Query Log" e verá_desbloquear_opção quando o cursor passa sobre uma consulta, colocando sites desbloqueados no exemplo de "Regras de filtragem personalizadas":`@@||bitly.com^$important`. Procure o ip e horário do cliente.
 
 <p align="center">
  <img src="https://i.imgur.com/1gZibwD.png">
@@ -326,7 +322,7 @@ Remova e recrie o arquivo stubby.yaml e copie/cole todo o texto de<a href="https
 
     cd /etc/stubby/ && sudo rm stubby.yml && sudo nano stubby.yml
 
--   Reinicie unbound & stubby e verifique o status:
+-   Reinicie o unbound & stubby e verifique o status:
 
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
@@ -340,13 +336,13 @@ Remova e recrie o arquivo stubby.yaml e copie/cole todo o texto de<a href="https
 
 -   Exclua tudo das opções de servidor "Upstream" e "Bootstrap DNS" e:
 
-    -   Para`DNS over TLS(DoT)`adicionar`127.0.0.1:53`nos campos de servidor "Upstream" e "Bootstrap DNS"
-    -   Para`DNS over HTTPS(DoH)`adicionar`127.0.0.1:5053`nos campos de servidor "Upstream" e "Bootstrap DNS"
-    -   Para`TLS forwarder(stubby)`adicionar`127.0.0.1:8053`nos campos de servidor "Upstream" e "Bootstrap DNS"
+    -   Por`DNS over TLS(DoT)`adicionar`127.0.0.1:53`nos campos de servidor "Upstream" e "Bootstrap DNS"
+    -   Por`DNS over HTTPS(DoH)`adicionar`127.0.0.1:5053`nos campos de servidor "Upstream" e "Bootstrap DNS"
+    -   Por`TLS forwarder(stubby)`adicionar`127.0.0.1:8053`nos campos de servidor "Upstream" e "Bootstrap DNS"
 
 -   `IMPORTANT:`Você precisa verificar "<a href="https://adguard.com/en/blog/in-depth-review-adguard-home.html#dns"><b>Solicitação paralela</b></a>" opção para os resolvedores de dns funcionarem simultaneamente.
 
-<b>Clique em aplicar e testar upstreams</b>(pode obter um erro apenas no primeiro teste).
+<b>Clique em aplicar e teste upstreams</b>(pode obter um erro apenas no primeiro teste).
 
 <p align="center">
  <img src="https://i.imgur.com/Ug4Euou.jpg" width=650px height=370px>
@@ -362,7 +358,7 @@ Remova e recrie o arquivo stubby.yaml e copie/cole todo o texto de<a href="https
 
 -   Instalar<a href="https://mayakron.altervista.org/support/acrylic/Home.htm"><b>Proxy DNS acrílico</b></a>
 
--   Vamos para`C:\Program Files (x86)\Acrylic DNS Proxy`e abra`AcrylicConfiguration.ini`Arquivo. Apague tudo e copie estes<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/AcrylicConfiguration.ini"><b>👉CONFIGURAÇÕES👈</b></a>só mudar_**Endereço do servidor primário**_para o endereço do seu pi.
+-   Vamos para`C:\Program Files (x86)\Acrylic DNS Proxy`e abra`AcrylicConfiguration.ini`Arquivo. Apague tudo e copie estes<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/AcrylicConfiguration.ini"><b>👉CONFIGURAÇÕES👈</b></a>só mudar_**EndereçosServidorPrimário**_para o endereço do seu pi.
 
 -   Na mesma pasta execute`RestartAcrylicService.bat`&`PurgeAcrylicCacheData.bat`
 
@@ -429,7 +425,7 @@ Executar no terminal
 
 -   O script solicitará IPv4/nome de host público para a VPN._Se_você tem ip estático, então continue ou digite o domínio DNS dinâmico que você criou a partir do<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>instruções</b></a>. Por exemplo: trinibvpn.freeddns.org
 
--   Para opção de porta`press enter`para o padrão 51820. Para o nome do cliente, basta colocar o nome que desejar, e para o DNS use a opção 3 (`1.1.1.1`) por enquanto. Nós vamos configurar`adguard/unbound/cloudflare`com a vpn após sua instalação concluída
+-   Para opção de porta`press enter`para o padrão 51820. Para o nome do cliente, basta colocar o nome que quiser, e para o DNS use a opção 3 (`1.1.1.1`) por enquanto. Nós vamos configurar`adguard/unbound/cloudflare`com o vpn depois de instalado
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -464,7 +460,7 @@ Você precisa digitalizar o código QR mostrado no terminal com o aplicativo Wir
 
 WireGuard para janelas:<https://download.wireguard.com/windows-client/wireguard-installer.exe>
 
--   Crie um`new text document`com qualquer nome no pc para copiar e colar o texto do arquivo de configuração do cliente wireguard.
+-   Criar uma`new text document`com qualquer nome no pc para copiar e colar o texto do arquivo de configuração do cliente wireguard.
 
 -   Para ver o texto no arquivo de configuração do cliente, digite terminal:
 
@@ -524,14 +520,14 @@ Então vá para<https://ipv6leak.com/>e você deve ver "_Seu IPv6 não está vaz
 
 ## Como você sabe se a VPN wireguard está realmente funcionando?
 
-Para**janelas**download<a href="https://www.wireshark.org/#download."><b>Wireshark</b></a>
+Por**janelas**download<a href="https://www.wireshark.org/#download."><b>Wireshark</b></a>
 
 Uma vez baixado, você pode usar o aplicativo para inspecionar seus pacotes de dados onde o protocolo está definido para o usado pelo Wireguard VPN. Quando um tráfego de pacotes é`encrypted`, pode ser lido assim, por exemplo:
 
 <p align="center">
  <img src="https://i.imgur.com/Tn4M47R.jpg">
 
-Para**andróide**você pode usar<a href="https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US"><b>PCAPdroid</b></a>. Você deve ver todas as conexões`closed`e status mostrando todas as conexões DNS e não todas as conexões TLS em todos os aplicativos (abra e use aplicativos para PCAPdroid para verificar).
+Por**andróide**você pode usar<a href="https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US"><b>PCAPdroid</b></a>. Você deve ver todas as conexões`closed`e status mostrando todas as conexões DNS e não todas as conexões TLS em todos os aplicativos (abra e use aplicativos para PCAPdroid para verificar).
 
 **[⬆ VOLTAR AO TOPO ⬆](#contents)**
 
@@ -556,7 +552,7 @@ Para**andróide**você pode usar<a href="https://play.google.com/store/apps/deta
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
-O Pi agora será atualizado toda quarta-feira às 3h. Ou você pode ir para<https://crontab.guru/>e defina o seu próprio horário.
+O Pi agora será atualizado todas as quartas-feiras às 3h. Ou você pode ir para<https://crontab.guru/>e defina o seu próprio horário.
 
 Ajuste a data/fuso horário do pi no terminal:
 
@@ -593,13 +589,13 @@ Adicionar fonte de repositório (atualização automática)
 
 <h1 align="center"><b><i>Turn Off Pi LED Lights</b></i> </h1>
 
-Acho que a energia dos LEDs afetará eletricidade e calor desnecessários 🤷😅. De qualquer forma, não há necessidade de usá-lo apenas como um servidor de rede. Abra o arquivo cron digitando na linha de comando`crontab -e`, copie e cole a linha de comando do trabalho abaixo na parte inferior do arquivo cron e salve.
+Acho que a energia dos LEDs afetará eletricidade e calor desnecessários 🤷😅. Não há necessidade disso de qualquer maneira, se apenas usá-lo como um servidor de rede. Abra o arquivo cron digitando na linha de comando`crontab -e`, copie e cole a linha de comando do trabalho abaixo na parte inferior do arquivo cron e salve.
 
 Verde
 
     @reboot echo none | sudo tee /sys/class/leds/led0/trigger
 
-vermelho
+Vermelho
 
     @reboot echo none | sudo tee /sys/class/leds/led1/trigger
 
