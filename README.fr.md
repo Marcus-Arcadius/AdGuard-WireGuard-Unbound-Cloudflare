@@ -20,23 +20,19 @@
 <p align="center">
  <img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
 
-<h1 align="center"><b>A step by step 📜 guide for these</b> 
-<h1 align="center"><b> 🅵🆁🅴🅴 network 📡 security projects to work together on a</b>
-<h1 align="center"><b>𝓡 𝓐 𝓢 𝓟 𝓑 𝓔 𝓡 𝓡 𝓨 ℙ 𝕀 🥧</b></h1>
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_: Adblocker pour vos appareils à la maison (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard comparé à Pi-Hole_</b></a>)
 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard</b></a>_⫸ Adblocker pour vos appareils à la maison (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard comparé à Pi-Hole_</b></a>)
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Un Serveur Vpn à la maison accessible depuis n'importe quel réseau extérieur (IPv4 & IPv6)
 
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_⫸ Un serveur Vpn à la maison accessible depuis n'importe quel réseau extérieur (IPv4 & IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Non lié</b></a>avec &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_stubby/about_stubby/"><b>Trapu</b></a>_: Un résolveur DNS de validation, récursif et de mise en cache
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Non lié</b></a>avec &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_stubby/about_stubby/"><b>Trapu</b></a>_⫸ Un résolveur DNS de validation, récursif et de mise en cache
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Nuageux</b></a>_⫸ Meilleures performances et sécurité lors de la navigation sur des sites Web (DoT & DoH)
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Nuageux</b></a>_: Meilleures performances et sécurité lors de la navigation sur des sites Web (DoT & DoH)
 
 * * *
 
 # 
 
-<h1 align="center">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
+<h2 align="left">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
 
 <b>Temps de requête (google.com) en millisecondes :</b>
 
@@ -89,13 +85,13 @@
     -   [Configurez vos appareils pour qu'ils fonctionnent avec Adguard](#-set-up-your-devices-to-work-with-adguard-)
     -   [Configuration de la liste de blocage AdGuard](#-setting-up-adguard-blocklist-)
         -   [Ajouter/supprimer plusieurs URL à la liste de blocage à la fois](#-addremove-multiple-urls-)
--   [Installation d'Unbound](#unbound-install-)<img src="https://www.privacyguides.org/assets/img/legacy_svg/3rd-party/unbound.svg" width=20px height=20px>
+-   [Installation d'Unbound](#unbound-install-)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [Installer Cloudflare](#cloudflare-install-)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
     -   [Installer Cloudflare (DoH)](#-install-cloudflare-on-pi-with-doh-)
     -   [Configurer Cloudflare sur Unbound (DoT)](#-configure-cloudflare-on-unbound-with-dot-)
     -   [Configurer Stubby (transitaire TLS)](#-configure-stubby-for-unbound-)
     -   [Configurer AdGuard avec Cloudflare (DoH&DoT)](#-configure-adguard-with-cloudflaredohdot-)
--   [Installation de WireGuard](#wireguard-install-)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>ou<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (plus lent)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+-   [Installation de WireGuard](#wireguard-install-)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>ou alors<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (plus lent)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
     -   [Connexion au VPN au téléphone Android/IOS](#-connecting-to-the-vpn-to-androidios-phone-)
     -   [Connexion au VPN depuis un PC (Windows)](#-connecting-to-the-vpn-from-a-pc-windows-)
     -   [Configurer Wireguard avec AdGuard/Unbound/Cloudflare](#-configure-wireguard-with-adguardunboundcloudflare-)
@@ -219,7 +215,7 @@ Exécutez la commande suivante dans votre terminal :
 
     -   <i>IPV4</i>
 
-        Allez dans les paramètres réseau / modifier les options de l'adaptateur et faites un clic droit dans les propriétés puis sélectionnez "Internet Protocol Version 4(TCP/IPv4)". Entrez l'adresse IP de pi dans`Preferred DNS`serveur
+        Allez dans les paramètres réseau / modifiez les options de l'adaptateur et faites un clic droit dans les propriétés puis sélectionnez "Internet Protocol Version 4(TCP/IPv4)". Entrez l'adresse IP de pi dans`Preferred DNS`serveur
 
     -   <i>IPV6 (nécessaire pour`DoH`&`DoT`pour travailler plus tard dans le guide si vous utilisez ipv6 sur votre routeur)</i>
 
@@ -260,7 +256,7 @@ _Si vous utilisez**DiètePi**installer`sudo apt-get install python3-pip -y && pi
 
 Courir :`sudo python3 bulkurls.py`
 
-Pour**retirer**tu dois changer`add`dans<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/62ba01ed8ed3a5bc5294b9fe7ee38c3e83ae1b86/bulkurls.py#L150"><b>deuxième de la dernière ligne</b></a>pour`remove`dans le fichier bulkurls.py.
+Pour**éliminer**tu dois changer`add`dans<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/62ba01ed8ed3a5bc5294b9fe7ee38c3e83ae1b86/bulkurls.py#L150"><b>deuxième de la dernière ligne</b></a>pour`remove`dans le fichier bulkurls.py.
 
 Aller à<https://d3ward.github.io/toolz/adblock.html>pour tester si les publicités bloquent<img src="https://i.imgur.com/Q5oO9EY.png" width=100px height=80px>
 
@@ -281,7 +277,7 @@ Pour interroger de manière récursive un hôte qui n'est pas mis en cache en ta
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
-`IMPORTANT:`Celui-ci doit être mis à jour tous les 6 mois. Pour_**mise à jour automatique**_root.hints tous les 6 mois, vous devez créer une tâche cron.
+`IMPORTANT:`Celui-ci doit être mis à jour tous les 6 mois. Pour_**auto update**_root.hints tous les 6 mois, vous devez créer une tâche cron.
 
 Entrez en ligne de commande`crontab -e`, il demandera Sélectionnez un éditeur (choisissez 1) et collez ces lignes au bas de crontab et enregistrez (contrôle + x puis y puis entrée):
 
@@ -318,7 +314,7 @@ Et copiez et collez tout le texte de<a href="https://raw.githubusercontent.com/t
 
 ## ╸ Configurer Stubby pour Unbound ╸
 
-Utilisez Unbound pour la mise en cache et stubby pour le redirecteur TLS. Installez stubby :
+Utilisez Unbound pour la mise en cache et stubby pour le redirecteur TLS. Installez tronqué :
 
     sudo apt install stubby -y
 
@@ -362,7 +358,7 @@ Supprimez et recréez le fichier stubby.yaml et copiez/collez tout le texte de<a
 
 -   Installer<a href="https://mayakron.altervista.org/support/acrylic/Home.htm"><b>Proxy DNS acrylique</b></a>
 
--   Aller à`C:\Program Files (x86)\Acrylic DNS Proxy`et ouvert`AcrylicConfiguration.ini`fichier. Supprimez tout et copiez-les<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/AcrylicConfiguration.ini"><b>👉RÉGLAGES👈</b></a>seulement changer_**Adresse du serveur principal**_à l'adresse de votre pi.
+-   Aller à`C:\Program Files (x86)\Acrylic DNS Proxy`et ouvert`AcrylicConfiguration.ini`dossier. Supprimez tout et copiez-les<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/AcrylicConfiguration.ini"><b>👉RÉGLAGES👈</b></a>seulement changer_**Adresse du serveur principal**_à l'adresse de votre pi.
 
 -   Dans le même dossier exécuter`RestartAcrylicService.bat`&`PurgeAcrylicCacheData.bat`
 
@@ -406,15 +402,15 @@ Supprimez et recréez le fichier stubby.yaml et copiez/collez tout le texte de<a
 **Avant d'installer WireGuard**, si vous n'avez pas d'adresse IP statique, vous devez obtenir une adresse gratuite`Dynamic DNS Subdomain`ou bien votre adresse IP externe change très probablement de manière dynamique à partir de votre FAI très souvent et pour cette raison, vous devrez configurer un service DNS dynamique. 👉👉**_▓▒░Utilisez ceci<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>INSTRUCTIONS ICI</b></a>░▒▓_**👈👈. Ou bien sauter l'étape.
 
 Nous devons également configurer la redirection de port sur votre routeur afin que nous puissions accéder à Wireguard en dehors de notre réseau, comme dans un hotspot de café ou vos données mobiles.
-TYPE | ÉVALUER  
+TYPE | VALEUR  
 ------------ \| --------------
 Appareil | Nom d'hôte ou IP de Raspberry Pi
 Protocole | UDP
 Plage de ports | 51820-51820
 Port de sortie | 51820
-Autoriser l'accès à Internet (le cas échéant) | Oui
+Autoriser l'accès à Internet (le cas échéant) | oui
 
-Paramètre de port de mon 👇routeur👇. Le vôtre peut-être différent mais vous l'obtiendrez. N'oubliez pas que Google 🔍moteur de recherche🔎 est votre ami. Si vous ne pouvez pas vous connecter à partir d'un réseau extérieur, cela signifie que le FAI a bloqué les connexions sortantes, vous pouvez les appeler et leur demander gentiment de le faire fonctionner.
+Paramètre de port de mon 👇routeur👇. Le vôtre peut-être différent, mais vous l'obtiendrez. N'oubliez pas que Google 🔍moteur de recherche🔎 est votre ami. Si vous ne pouvez pas vous connecter à partir d'un réseau extérieur, cela signifie que le FAI a bloqué les connexions sortantes, vous pouvez les appeler et leur demander gentiment de le faire fonctionner.
 
 <p align="center">
  <img src="https://i.imgur.com/9LBEk1i.jpg">
@@ -510,7 +506,7 @@ Ou vous pouvez changer la plage IP sur votre routeur (d'après mon expérience, 
 
 ## IPV6
 
-Si vous utilisez IPv6, lorsque vous êtes connecté au wifi, vous devez entrer dans WireGuard les adresses IP autorisées`fe80::1/0`ainsi que. Par exemple`192.168.100.0/0, fe80::1/0`
+Si vous utilisez IPv6, lorsque vous êtes connecté au wifi, vous devez entrer dans WireGuard les adresses IP autorisées`fe80::1/0`aussi bien. Par example`192.168.100.0/0, fe80::1/0`
 
 Lorsqu'il est connecté au câble Ethernet sur un PC Windows, vous devez entrer`::1`dans l'adresse IPv6 dans le serveur DNS préféré "Internet Protocol Version 6(TCP/IPv6)".
 
@@ -580,7 +576,7 @@ Manuellement
 
     wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
 
-ou
+ou alors
 
 Ajouter une source de dépôt (mise à jour automatique)
 
@@ -599,7 +595,7 @@ Vert
 
     @reboot echo none | sudo tee /sys/class/leds/led0/trigger
 
-rouge
+Rouge
 
     @reboot echo none | sudo tee /sys/class/leds/led1/trigger
 
