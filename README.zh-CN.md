@@ -20,23 +20,19 @@
 <p align="center">
  <img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
 
-<h1 align="center"><b>A step by step 📜 guide for these</b> 
-<h1 align="center"><b> 🅵🆁🅴🅴 network 📡 security projects to work together on a</b>
-<h1 align="center"><b>𝓡 𝓐 𝓢 𝓟 𝓑 𝓔 𝓡 𝓡 𝓨 ℙ 𝕀 🥧</b></h1>
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>广告卫士</b></a>_：适用于您家中设备的广告拦截器（<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard 与 Pi-Hole 相比_</b></a>)
 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>广告卫士</b></a>_⫸ 家中设备的广告拦截器（<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard 与 Pi-Hole 相比_</b></a>)
+#### _<a href="https://www.wireguard.com/"><b>线卫</b></a>_: 可从任何外部网络访问的家中 Vpn 服务器（IPv4 和 IPv6）
 
-#### _<a href="https://www.wireguard.com/"><b>线卫</b></a>_⫸ 可从任何外部网络访问的家中 Vpn 服务器（IPv4 和 IPv6）
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>未绑定</b></a>与 &lt;a href="[HTTPS://DNS privacy.org/DNS_privacy_daemon](https://dnsprivacy.org/dns_privacy_daemon)_-_粗短/about_stubby/"><b>粗短</b></a>_: 一个验证的、递归的、缓存的 DNS 解析器
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>未绑定</b></a>与 &lt;a href="[HTTPS://DNS privacy.org/DNS_privacy_daemon](https://dnsprivacy.org/dns_privacy_daemon)_-_粗短/about_stubby/"><b>粗短</b></a>_⫸ 一个验证、递归、缓存的 DNS 解析器
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_⫸ 浏览网站时更好的性能和安全性（DoT & DoH）
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_：浏览网站时更好的性能和安全性（DoT 和 DoH）
 
 * * *
 
 # 
 
-<h1 align="center">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
+<h2 align="left">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
 
 <b>以毫秒为单位的查询时间 (google.com)：</b>
 
@@ -65,7 +61,7 @@
 
 <div align="center">
 
-|                             项目                             |                           状态                           |
+|                             项目                             |                           地位                           |
 | :--------------------------------------------------------: | :----------------------------------------------------: |
 |                         AdGuard 主页                         |                            ✅                           |
 |                             未绑定                            |                            ✅                           |
@@ -89,13 +85,13 @@
     -   [设置您的设备以使用 Adguard](#-set-up-your-devices-to-work-with-adguard-)
     -   [设置 AdGuard 阻止列表](#-setting-up-adguard-blocklist-)
         -   [一次将多个 URL 添加/删除到阻止列表](#-addremove-multiple-urls-)
--   [安装未绑定](#unbound-install-)<img src="https://www.privacyguides.org/assets/img/legacy_svg/3rd-party/unbound.svg" width=20px height=20px>
+-   [安装未绑定](#unbound-install-)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [安装 Cloudflare](#cloudflare-install-)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
     -   [安装 Cloudflare (DoH)](#-install-cloudflare-on-pi-with-doh-)
     -   [在未绑定 (DoT) 上配置 Cloudflare](#-configure-cloudflare-on-unbound-with-dot-)
     -   [配置 Stubby（TLS 转发器）](#-configure-stubby-for-unbound-)
-    -   [Configure AdGuard with Cloudflare (DoH&DoT)](#-configure-adguard-with-cloudflaredohdot-)
--   [安装 WireGuard](#wireguard-install-)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>要么<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN（较慢）</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+    -   [使用 Cloudflare (DoH&DoT) 配置 AdGuard](#-configure-adguard-with-cloudflaredohdot-)
+-   [安装 WireGuard](#wireguard-install-)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>或者<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN（较慢）</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
     -   [连接到 VPN 到 Android/IOS 手机](#-connecting-to-the-vpn-to-androidios-phone-)
     -   [从 PC 连接到 VPN (Windows)](#-connecting-to-the-vpn-from-a-pc-windows-)
     -   [使用 AdGuard/Unbound/Cloudflare 配置 Wireguard](#-configure-wireguard-with-adguardunboundcloudflare-)
@@ -144,7 +140,7 @@ Raspberry Pi OS 有桌面版和精简版（精简版仅用于无头模式）。�
 <p align="center">
  <img src="https://i.imgur.com/tbB3VIK.jpg">
 
-刷机完成后，在“This PC”中查找磁盘名称“boot or usb drive”（如果没有看到，请重新插入 USB 读卡器）。转到该磁盘，创建一个名为**_`ssh without 'txt' extention`_**.请注意，它不是“ssh.txt”，而是没有扩展名的“ssh”。如果您没有看到它们，您需要禁用文件资源管理器选项中的“隐藏已知文件类型的扩展名”选项。
+刷机完成后，在“This PC”中查找磁盘名称“boot or usb drive”（如果没有看到，请重新插入 USB 读卡器）。转到该磁盘，创建一个名为**_`ssh without 'txt' extention`_**.请注意，它不是“ssh.txt”，而是没有扩展名的“ssh”。如果您没有看到“文件资源管理器选项”中的“隐藏已知文件类型的扩展名”选项，则需要禁用它们。
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -189,7 +185,7 @@ __等待更新完成并重新启动 PI。然后继续下一步__.....
 
 <h1 align="center"><b><i>AdGuard Install</b></i> </h1>
 
-这个安装脚本来自<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard 主页</b></a>主要项目。关注以保持更新。
+此安装脚本来自<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard 主页</b></a>主要项目。关注以保持更新。
 
 在终端中运行以下命令：
 
@@ -254,7 +250,7 @@ __等待更新完成并重新启动 PI。然后继续下一步__.....
 
     nano bulkurls.py
 
-然后从<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>bulk URL是.朋友</b></a>文件并保存（control+x 然后 y 然后输入）**需要在文件中配置您的 ADGUARD 凭证**.
+然后从<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>bulk URL是.朋友</b></a>文件并保存（control+x 然后 y 然后回车）**需要在文件中配置您的 ADGUARD 凭证**.
 
 _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip install requests`因为它默认不安装。_
 
@@ -277,13 +273,13 @@ _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip inst
 
     sudo apt install unbound -y
 
-For recursively querying a host that is not cached as an address, the resolver needs to start at the top of the server tree and query the root servers, to know where to go for the top level domain for the address being queried. Unbound comes with default builtin hints.
+为了递归查询未缓存为地址的主机，解析器需要从服务器树的顶部开始并查询根服务器，以了解要查询的地址的顶级域的去向。 Unbound 带有默认的内置提示。
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
 `IMPORTANT:`这需要每 6 个月更新一次。到_**自动更新**_root.hints 每 6 个月你需要创建一个 cron 作业。
 
-Enter in command line `crontab -e`，它会询问选择一个编辑器（选择 1）并将这些行粘贴到 crontab 的底部并保存（control+x 然后 y 然后输入）：
+在命令行中输入`crontab -e`，它会询问选择一个编辑器（选择 1）并将这些行粘贴到 crontab 的底部并保存（control+x 然后 y 然后输入）：
 
     1 0 1 */6 * wget -O root.hints https://www.internic.net/domain/named.root
     2 0 1 */6 * sudo mv root.hints /var/lib/unbound/
@@ -306,7 +302,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 ## ╸ 在 Pi 上安装 Cloudflare`(DoH)`╸
 
-通过 HTTPS（DoH）使用 DNS 安装 cloudflare，遵循这些👉<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>指示</b></a>👈.
+通过 HTTPS（DoH）使用 DNS 安装 cloudflare，请遵循这些👉<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>指示</b></a>👈.
 
 ## ╸ 在 Unbound With 上配置 Cloudflare`(DoT)`╸
 
@@ -377,7 +373,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 -   在您使用的任何浏览器中，打开**离开**`Use Secure DNS`选项。
 -   请注意，使用 build.prop dns 调整或应用程序/Magisk 模块的自定义根 roms 和内核可能会发生冲突。
 
-#### _而已_.现在去[HTTPS://1.1.1.1/help](https://1.1.1.1/help)在浏览器中，您应该会看到这些选项输出“是”。
+#### _就是这样_.现在去[HTTPS://1.1.1.1/help](https://1.1.1.1/help)在浏览器中，您应该会看到这些选项输出“是”。
 
 -   [x] 连接到 1.1.1.1
 -   [x] HTTPS 上的 DNS（DoH）
@@ -439,7 +435,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
 
-`IMPORTANT:`您需要为与 VPN 一起使用的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
+`IMPORTANT:`您需要为使用 VPN 的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
 
 ## 如果你想使用_开放式VPN_说明是<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>👉这里👈</b></a>
 
@@ -471,7 +467,7 @@ Wireguard（应用商店）：[HTTPS://apps.apple.com/US/app/wire guard/ID144119
 
     sudo cat /root/yourclientname.conf
 
--   突出显示所有文本，将其复制并粘贴到电脑上的txt文件中并保存。然后将扩展名重命名为`txt`到`conf`.现在你有了那个wireguard客户端的配置文件。
+-   突出显示所有文本，将其复制并粘贴到电脑上的txt文件中并保存。然后重命名扩展名`txt`到`conf`.现在你有了那个wireguard客户端的配置文件。
 
 -   您现在可以将配置文件导入到wireguard（从文件导入选项）。
 
@@ -503,7 +499,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 `IMPORTANT`:_如果您的网络具有以 3 位数字（超过 24 个）结尾的设备的 IP 地址，例如：192.168.100。`999`，您将无法从外部网络正确路由，因为应用 24 仅允许数字 1 到 24。您需要改为`0`路由超出 24 范围，例如：`192.168.100.0/0`_.
 
-或者您可以更改路由器上的 IP 范围（根据我的经验，您可能会获得更好的速度，因为它不会在 24 范围内路由不必要的允许 IP 地址）。
+或者您可以更改路由器上的 ip 范围（根据我的经验，您可能会获得更好的速度，因为它不会在 24 范围内路由不必要的允许 ip 地址）。
 
 <p align="center">
  <img src="https://i.imgur.com/ZZ4aMUI.jpg" width=750px height=550px>
@@ -580,7 +576,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
     wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
 
-要么
+或者
 
 添加 repo 源（自动更新）
 
@@ -595,7 +591,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 我猜 LED 的电源会影响不必要的电力和热量🤷😅。如果只是将其用作网络服务器，则无论如何都不需要它。通过在命令行中输入打开 cron 文件`crontab -e`，在cron文件底部复制粘贴作业命令行并保存。
 
-绿色的
+绿
 
     @reboot echo none | sudo tee /sys/class/leds/led0/trigger
 
