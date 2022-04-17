@@ -20,28 +20,21 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
-
-# 
-
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>Главная страница AdGuard</b></a>_: заблокировать рекламу на всех ваших устройствах(<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_по сравнению с Пи-Хоул_</b></a>)
-
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: VPN-сервер дома доступен из любой внешней сети (IPv4 и IPv6)
-
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Свободный</b></a>с &lt;a href="[хттпс://днсприваций.орг/днс\_приваций\_даемон](https://dnsprivacy.org/dns_privacy_daemon)_-_короткая/о\_коричневой/"><b>Стабби</b></a>_: Проверяющий, рекурсивный, кэширующий преобразователь DNS
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Облачная вспышка</b></a>_: Лучшая производительность и безопасность при просмотре веб-сайтов (DoT и DoH).
-
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+ 
+## Features
+ 
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> with <a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/"><b>Stubby</b></a>_ : A validating, recursive, caching DNS resolver
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
+ 
 <p align="right">
-<i>All software are free, open-source and self-hosted&nbsp;</i></br>
-<a href="https://git.io/About"><b>About</b></a> <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/parrots/party-nyan.gif" width=20px height=20px>
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
-# 
-
-<h3 align="left">🧪 DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
+<h3 align="left">DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
 
 <b>Результаты от google.com в миллисекундах:</b>
 
@@ -49,7 +42,7 @@
 -   Общедоступные DNS-преобразователи Cloudflare/Quad9/Google —`50-70 msec`
 -   Эта установка/конфигурация -`5-10 msec`
 
-<details><summary><b>🎥Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
+<details><summary><b>Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
 <p>
 
 DNS AdGuard по умолчанию<b><i>против</i></b>эта установка⭐ :
@@ -66,7 +59,7 @@ DNS AdGuard по умолчанию<b><i>против</i></b>эта устано
 * * *
 
 <h4><p align="center">
-⏰Last Checked : 17 April 2022⏰</h2>
+Last Checked⏰ : 17 April 2022</h2>
 
 <div align="center">
 
@@ -84,7 +77,7 @@ DNS AdGuard по умолчанию<b><i>против</i></b>эта устано
 #
 # Table of contents
  - [Requirements](#requirements)
- - [Installing Raspberry Pi OS](#installing-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+ - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
  - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
    - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
@@ -116,7 +109,7 @@ DNS AdGuard по умолчанию<b><i>против</i></b>эта устано
 
 # Требования
 
-Это руководство основано на ОС Raspberry Pi, но вы можете использовать любую ОС Linux.<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>Операционная система</b></a><i>(кусочек)</i>, любое оборудование или<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(ОС Raspberry Pi наиболее проста и рекомендуется для Pi или для более опытных пользователей,<b>Диета Пи</b>ОС также рекомендуется)
+Это руководство основано на Raspberry Pi, но вы можете использовать любой Linux.<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>Операционная система</b></a><i>(кусочек)</i>, любое оборудование или<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(ОС Raspberry Pi наиболее проста и рекомендуется для Pi или для более опытных пользователей,<b>Диета Пи</b>ОС также рекомендуется)
 
 -   Версия Raspberry Pi 3 или 4
 -   Маршрутизатор, поддерживающий переадресацию портов (наиболее подходящий)
@@ -127,7 +120,7 @@ DNS AdGuard по умолчанию<b><i>против</i></b>эта устано
 
 # 
 
-<h1 align="center"><b><i>Installing Raspberry Pi OS</b></i> </h1>
+<h1 align="center"><b><i>Install Raspberry Pi OS</b></i> </h1>
 
 ОС Raspberry Pi поставляется в настольной и облегченной версиях (используйте облегченную для<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>без головы</b></a>Режим). Вы можете получить доступ к Raspberry Pi с помощью монитора/клавиатуры/мыши или подключиться через<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>из терминала.
 
@@ -243,7 +236,7 @@ __Перезагрузитесь, когда закончите__
 
     nano bulkurls.py
 
-Затем скопируйте и вставьте конфигурации скрипта[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>кликните сюда</b></a>]. Набор`your AdGuard credentials`и сохраните (control+x, затем y, затем введите).
+Затем скопируйте и вставьте конфигурации скрипта[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>кликните сюда</b></a>]. Set `your AdGuard credentials`и сохраните (control+x, затем y, затем введите).
 
 _При использовании**Диета Пи**установить`sudo apt-get install python3-pip -y && pip install requests`потому что он не устанавливается по умолчанию._
 
@@ -341,7 +334,7 @@ _При использовании**Диета Пи**вам нужно уста�
  
 <b>Click apply and test upstreams</b>(might get a error in the first testing only).
 
-#### `IMPORTANT:`Системе Windows и браузерам Android требуется некоторая настройка, чтобы`stabilize`Преобразователи DNS. Linux работает нормально<i>(проверено на монетном дворе)</i>
+#### `IMPORTANT:`Системе Windows и браузерам Android требуется некоторая настройка, чтобы`stabilize`Преобразователи DNS. Linux работает нормально<i>(tested on mint)</i>
 
 ### Окна
 
@@ -512,7 +505,7 @@ _Помните, что это для тех случаев, когда вы п�
 
 За**окна**скачать Wireshark:[хттпс://ввв.верещарк.орг/#довнлоад](https://www.wireshark.org/#download)
 
-После загрузки вы можете использовать приложение для проверки ваших пакетов данных, в которых установлен протокол, используемый WireGuard VPN. Когда пакетный трафик`encrypted`, его можно прочитать, например, так:
+После загрузки вы можете использовать приложение для проверки пакетов данных, в которых установлен протокол, используемый WireGuard VPN. Когда пакетный трафик`encrypted`, его можно прочитать, например, так:
 
 <p align="center">
  <img src="https://i.imgur.com/Tn4M47R.jpg">
@@ -591,7 +584,7 @@ _Помните, что это для тех случаев, когда вы п�
 
     @reboot echo none | sudo tee /sys/class/leds/led1/trigger
 
-Перезагрузите Пи.
+Reboot Pi.
 
 # 
 
