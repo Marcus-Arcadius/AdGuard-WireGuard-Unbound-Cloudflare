@@ -20,28 +20,21 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
-
-# 
-
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>Página inicial do AdGuard</b></a>_: Bloqueie anúncios em todos os seus dispositivos(<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_comparado ao Pi-Hole_</b></a>)
-
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Servidor VPN em casa acessível a partir de qualquer rede externa (IPv4 e IPv6)
-
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Não vinculado</b></a>com &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_atarracado/sobre_atarracado/"><b>Atarracado</b></a>_: Um resolvedor de DNS de validação, recursivo e com cache
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Melhor desempenho e segurança ao navegar em sites (DoT e DoH)
-
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+ 
+## Features
+ 
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> with <a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/"><b>Stubby</b></a>_ : A validating, recursive, caching DNS resolver
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
+ 
 <p align="right">
-<i>All software are free, open-source and self-hosted&nbsp;</i></br>
-<a href="https://git.io/About"><b>About</b></a> <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/parrots/party-nyan.gif" width=20px height=20px>
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
-# 
-
-<h3 align="left">🧪 DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
+<h3 align="left">DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
 
 <b>Resultados de google.com em milissegundos:</b>
 
@@ -49,7 +42,7 @@
 -   Public Cloudflare/Quad9/Google DNS Resolvers -`50-70 msec`
 -   Esta instalação/configuração -`5-10 msec`
 
-<details><summary><b>🎥Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
+<details><summary><b>Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
 <p>
 
 DNS padrão do AdGuard<b><i>vs</i></b>esta configuração⭐ :
@@ -66,7 +59,7 @@ Public Cloudflare/Quad9/Google DNS resolvers :
 * * *
 
 <h4><p align="center">
-⏰Last Checked : 17 April 2022⏰</h2>
+Last Checked⏰ : 17 April 2022</h2>
 
 <div align="center">
 
@@ -84,7 +77,7 @@ Public Cloudflare/Quad9/Google DNS resolvers :
 #
 # Table of contents
  - [Requirements](#requirements)
- - [Installing Raspberry Pi OS](#installing-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+ - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
  - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
    - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
@@ -116,7 +109,7 @@ Public Cloudflare/Quad9/Google DNS resolvers :
 
 # Requisitos
 
-Este tutorial é baseado no Raspberry Pi OS, mas você pode usar qualquer Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>sistema operacional</b></a><i>(pedaço)</i>, qualquer hardware ou um<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(Raspberry Pi OS é mais simples e recomendado para Pi ou para usuários mais experientes,<b>DietPi</b>OS também é recomendado)
+Este tutorial é baseado no Raspberry Pi, mas você pode usar qualquer Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>sistema operacional</b></a><i>(pedaço)</i>, qualquer hardware ou um<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(Raspberry Pi OS é mais simples e recomendado para Pi ou para usuários mais experientes,<b>DietPi</b>OS também é recomendado)
 
 -   Uma versão Raspberry Pi 3 ou 4
 -   Um roteador que suporta o encaminhamento de porta (Most Can)
@@ -127,7 +120,7 @@ Este tutorial é baseado no Raspberry Pi OS, mas você pode usar qualquer Linux<
 
 # 
 
-<h1 align="center"><b><i>Installing Raspberry Pi OS</b></i> </h1>
+<h1 align="center"><b><i>Install Raspberry Pi OS</b></i> </h1>
 
 Raspberry Pi OS vem nas versões desktop e lite (use lite para<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>sem cabeça</b></a>modo). Você pode acessar um Raspberry Pi com um monitor/teclado/mouse ou conectar via<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>de um terminal.
 
@@ -156,7 +149,7 @@ Depois que o flash for concluído, procure em "Este PC" por um nome de disco "bo
 
 -   Encontre a lista de todos os dispositivos conectados à sua rede e copie o endereço IP do Raspberry Pi (provavelmente terá o nome do host`raspberrypi`)
 
--   Open terminal on your host machine. You can use powerShell on Windows or RaspController for android.
+-   Abra o terminal em sua máquina host. Você pode usar o powerShell no Windows ou RaspController para Android.
 
 Digite o seguinte comando:
 
@@ -416,7 +409,7 @@ Executar no terminal
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
 
--   Aguarde até que a instalação termine e o código QR apareça, não feche. Mas se você fizer isso, para`regenerate qrcode`, digite no terminal, mas substituindo apenas o nome`yourclientname.conf` file to yours: 
+-   Aguarde até que a instalação termine e o código QR apareça, não feche. Mas se você fizer isso, para`regenerate qrcode`, digite no terminal, mas substituindo apenas o nome`yourclientname.conf`arquivo para o seu:
 
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
