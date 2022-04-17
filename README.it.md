@@ -20,28 +20,21 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
-
-# 
-
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Casa</b></a>_: Blocca gli annunci su tutti i tuoi dispositivi(<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_rispetto a Pi-Hole_</b></a>)
-
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Server VPN a casa accessibile da qualsiasi rete esterna (IPv4 e IPv6)
-
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Non vincolato</b></a>con &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_stubby/about_stubby/"><b>Tozzo</b></a>_: un risolutore DNS di convalida, ricorsivo e di memorizzazione nella cache
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Prestazioni e sicurezza migliori durante la navigazione nei siti Web (DoT e DoH)
-
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+ 
+## Features
+ 
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> with <a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/"><b>Stubby</b></a>_ : A validating, recursive, caching DNS resolver
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
+ 
 <p align="right">
-<i>All software are free, open-source and self-hosted&nbsp;</i></br>
-<a href="https://git.io/About"><b>About</b></a> <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/parrots/party-nyan.gif" width=20px height=20px>
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
-# 
-
-<h3 align="left">🧪 DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
+<h3 align="left">DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
 
 <b>Risultati da google.com in millisecondi:</b>
 
@@ -49,7 +42,7 @@
 -   Risolutori DNS Cloudflare/Quad9/Google pubblici -`50-70 msec`
 -   Questa impostazione/configurazione -`5-10 msec`
 
-<details><summary><b>🎥Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
+<details><summary><b>Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
 <p>
 
 DNS predefinito di AdGuard<b><i>contro</i></b>questa configurazione⭐ :
@@ -66,7 +59,7 @@ Risolutori DNS pubblici Cloudflare/Quad9/Google:
 * * *
 
 <h4><p align="center">
-⏰Last Checked : 17 April 2022⏰</h2>
+Last Checked⏰ : 17 April 2022</h2>
 
 <div align="center">
 
@@ -84,7 +77,7 @@ Risolutori DNS pubblici Cloudflare/Quad9/Google:
 #
 # Table of contents
  - [Requirements](#requirements)
- - [Installing Raspberry Pi OS](#installing-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+ - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
  - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
    - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
@@ -116,7 +109,7 @@ Risolutori DNS pubblici Cloudflare/Quad9/Google:
 
 # Requisiti
 
-Questo tutorial è basato sul sistema operativo Raspberry Pi, ma puoi usare qualsiasi Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>sistema operativo</b></a><i>(po)</i>, qualsiasi hardware o a<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(Raspberry Pi OS è il più semplice e consigliato per Pi o per utenti più esperti,<b>DietPi</b>Si consiglia anche il sistema operativo)
+Questo tutorial è basato su Raspberry Pi, ma puoi usare qualsiasi Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>sistema operativo</b></a><i>(po)</i>, qualsiasi hardware o a<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(Raspberry Pi OS è il più semplice e consigliato per Pi o per utenti più esperti,<b>DietPi</b>Si consiglia anche il sistema operativo)
 
 -   Una versione Raspberry Pi 3 o 4
 -   Un router che supporta il port forwarding (Most Can)
@@ -127,7 +120,7 @@ Questo tutorial è basato sul sistema operativo Raspberry Pi, ma puoi usare qual
 
 # 
 
-<h1 align="center"><b><i>Installing Raspberry Pi OS</b></i> </h1>
+<h1 align="center"><b><i>Install Raspberry Pi OS</b></i> </h1>
 
 Raspberry Pi OS è disponibile nelle versioni desktop e lite (usa lite per<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>senza testa</b></a>modalità). Puoi accedere a un Raspberry Pi con un monitor/tastiera/mouse o connetterti tramite<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>da un terminale.
 
@@ -319,7 +312,7 @@ E copia e incolla tutto il testo da questo file di configurazione tozzo[<a href=
 <p align="center">
  <img src="https://i.imgur.com/7zIpWP2.jpg" width=650px height=370px>
 
-## Configure AdGuard with `Cloudflare(DoH&DoT)`
+## Configura AdGuard con`Cloudflare(DoH&DoT)`
 
 -   Nella home page di AdGuard, sotto le impostazioni, seleziona "Impostazioni DNS"
 
@@ -435,7 +428,7 @@ WireGuard (Google Play):<https://play.google.com/store/apps/details?id=com.wireg
 
 WireGuard (App Store):<https://apps.apple.com/us/app/wireguard/id1441195209>
 
-È necessario scansionare il codice QR mostrato nel terminale con l'app WireGuard, selezionare il`+ button` and use the option `Scan from QR code`per installare la configurazione.
+È necessario scansionare il codice QR mostrato nel terminale con l'app WireGuard, selezionare il`+ button`e usa l'opzione`Scan from QR code`per installare la configurazione.
 
 `IMPORTANT`: Abilitare**back-end del modulo del kernel**nelle impostazioni
 
@@ -562,7 +555,7 @@ Uno dei vantaggi più significativi dell'offload della RAM è che migliora il tu
 I file di registro sono una delle cose scritte di più dai vari software che installi.
 Inserendo i file nella RAM, puoi controllare la frequenza con cui vengono scritti sulla scheda SD. Sarai comunque in grado di accedere a questi file sulla RAM come se si trovassero sulla tua scheda SD.
 
-Copy and paste this line in terminal:
+Copia e incolla questa riga nel terminale:
 
 Manualmente
 
