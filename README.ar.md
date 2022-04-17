@@ -17,37 +17,46 @@
          <img src="https://img.shields.io/github/watchers/trinib/AdGuard-WireGuard-Unbound-Cloudflare?color=9700b2&style=for-the-badge"></a>
 </p>
 
+<h2><p align="center">
+<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
+
 <p align="center">
- <img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+<img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>ادجوارد</b></a>_: Adblocker لأجهزتك في المنزل (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_AdGuard مقارنة بـ Pi-Hole_</b></a>)
+# 
 
-#### _<a href="https://www.wireguard.com/"><b>وايرجارد</b></a>_: خادم Vpn في المنزل يمكن الوصول إليه من أي شبكة خارجية (IPv4 و IPv6)
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>صفحة AdGuard الرئيسية</b></a>_: منع الإعلانات على جميع أجهزتك (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_مقارنة بـ Pi-Hole_</b></a>)
+
+#### _<a href="https://www.wireguard.com/"><b>وايرجارد</b></a>_: خادم VPN في المنزل يمكن الوصول إليه من أي شبكة خارجية (IPv4 و IPv6)
 
 #### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>غير مجلد</b></a>مع &lt;a href = "[هتبص://دنسبرفك.عرج/دنسبرفكيدم](https://dnsprivacy.org/dns_privacy_daemon)_-_قصير / about_stubby / "><b>قصير</b></a>_: محلل DNS للتحقق والتكرار والتخزين المؤقت
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>كلاود فلير</b></a>_: أداء وأمان أفضل عند تصفح مواقع الويب (DoT & DoH)
 
+<p align="right">
+<i>All software are free, open-source and self-hosted&nbsp;</i></br>
+<a href="https://git.io/About"><b>About</b></a> <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/parrots/party-nyan.gif" width=20px height=20px>
+
 * * *
 
 # 
 
-<h2 align="left">🧪 Speed results with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND's DNS Tool </b></a> 🧪</h1>
+<h3 align="left">🧪 DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
 
-<b>وقت الاستعلام (google.com) بالمللي ثانية:</b>
+<b>النتائج من google.com بالمللي ثانية:</b>
 
--   محللات Adguard الافتراضية DNS -`60-70 msec`
+-   محللات AdGuard الافتراضية لنظام أسماء النطاقات -`60-70 msec`
 -   Public Cloudflare / Quad9 / Google DNS محللات -`50-70 msec`
 -   هذا الإعداد / التكوين -`5-10 msec`
 
-<details><summary><b>🎥Video Previews🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
+<details><summary><b>🎥Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
 <p>
 
-### 【Adguard الافتراضي DNS<i>ضد</i>هذا الإعداد:
+AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 
 [هتبص://أصرمجس.جذبسركنتنة.كوم/١٨٧٥٦٩٧٥/١٥٠٢٣٠٤٣٨-بحطحيضطف-٤ي١٨-٤٧٩١-بخفي-٠٨١٣٦١٥اعحاع.مب٤](https://user-images.githubusercontent.com/18756975/150230438-b767e86f-4e18-4791-b5fe-0813615a37a3.mp4)
 
-### العامة 【cloudflare / quad9 / google】 محللات DNS:
+أدوات حل Cloudflare / Quad9 / Google DNS العامة:
 
 [هتبص://أصرمجس.جذبسركنتنة.كوم/١٨٧٥٦٩٧٥/١٥٠٣١٩٠٤٩-٣دضاسدسص-٦٢٤ف-٤بط٠-٨يإ-بض٠٢٢٧٥٢٢٢٥٢.مب٤](https://user-images.githubusercontent.com/18756975/150319049-3d8acdc9-624f-4b60-8ee2-b80227522252.mp4)
 
@@ -57,7 +66,7 @@
 * * *
 
 <h4><p align="center">
-⏰Last Checked : 25 Feb 2022⏰</h2>
+⏰Last Checked : 17 April 2022⏰</h2>
 
 <div align="center">
 
@@ -71,43 +80,43 @@
 
 </div>
 <div>
-
-# 
-
-# محتويات
-
--   <a href="https://git.io/About">عن</a><img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/parrots/party-nyan.gif" width=20px height=20px>
--   <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions">المناقشات / F.A.Q</a><img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-speech-balloon.png" width=20px height=20px>
--   [متطلبات](#requirements)
--   [تثبيت نظام التشغيل Pi](#installing-os-image-to-sdcard-)<img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
-    -   [تسجيل الدخول إلى نظام Pi \[بلا رأس\]](#-logging-into-pi-system-headlessly-)
--   [تثبيت AdGuard](#adguard-install-)<img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
-    -   [قم بإعداد أجهزتك للعمل مع Adguard](#-set-up-your-devices-to-work-with-adguard-)
-    -   [إعداد قائمة منع AdGuard](#-setting-up-adguard-blocklist-)
-        -   [إضافة / إزالة عناوين URL متعددة إلى قائمة الحظر مرة واحدة](#-addremove-multiple-urls-)
--   [تثبيت غير منضم](#unbound-install-)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
--   [تثبيت Cloudflare](#cloudflare-install-)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
-    -   [تثبيت Cloudflare (DoH)](#-install-cloudflare-on-pi-with-doh-)
-    -   [تكوين Cloudflare على Unbound (DoT)](#-configure-cloudflare-on-unbound-with-dot-)
-    -   [تكوين Stubby (TLS Forwarder)](#-configure-stubby-for-unbound-)
-    -   [تكوين AdGuard مع Cloudflare (DoH & DoT)](#-configure-adguard-with-cloudflaredohdot-)
--   [تركيب WireGuard](#wireguard-install-)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>أو<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (أبطأ)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
-    -   [الاتصال بشبكة VPN بهاتف Android / IOS](#-connecting-to-the-vpn-to-androidios-phone-)
-    -   [الاتصال بشبكة VPN من جهاز كمبيوتر (Windows)](#-connecting-to-the-vpn-from-a-pc-windows-)
-    -   [قم بتكوين Wireguard باستخدام AdGuard / Unbound / Cloudflare](#-configure-wireguard-with-adguardunboundcloudflare-)
-        -   [الحد من حركة المرور](#limit-traffic)
-        -   [إعداد IPv6](#ipv6)
--   <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md">قم بتعطيل كل IPv6</a>
--   [اختبار Vpn](#how-do-you-know-if-wireguard-vpn-is-really-working-)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
--   [تحديث تلقائي لـ Pi الخاص بك](#auto-update-pi-)
--   [تحسين العمر الافتراضي المحتمل لبطاقة SD الخاصة بك](#log2ram-install-)
--   [قم بإيقاف تشغيل Pi LEDs](#turn-off-pi-led-lights-)
--   [تأمين Raspberry Pi الخاص بك](#secure-your-raspberry-pi-)
--   [موارد المستودع](#repository-resources)<img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-books.png" width=20px height=20px>
+ 
+#
+# Table of contents
+ - [Requirements](#requirements)
+ - [Installing Raspberry Pi OS](#installing-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+   - [Access Pi OS with SSH](#access-pi-os-with-ssh)
+ - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
+   - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
+   - [Setting up AdGuard blocklist](#setting-up-adguard-blocklist)
+     - [Add/Remove multiple URLs](#addremove-multiple-urls)
+ - [Install Unbound](#install-unbound-) <img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
+ - [Install Cloudflare](#install-cloudflare-) <img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
+   - [Setup for Cloudflared (DoH)](#setup-for-cloudflared-doh)
+   - [Configure Cloudflare (DoT) on Unbound](#configure-cloudflare-dot-on-unbound)
+     - [Configure Stubby for Unbound](#configure-stubby-for-unbound)
+   - [Configure AdGuard with Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
+ - [Install WireGuard](#install-wireguard-) <img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>
+   or <a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN(slower)</a> <img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+   - [Connecting VPN to Android/IOS Phone](#connecting-vpn-to-androidios-phone)
+   - [Connecting VPN to Windows](#connecting-vpn-to-windows)
+   - [Configure Wireguard with AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
+     - [Limit traffic](#limit-traffic)
+     - [IPv6](#ipv6)
+     - [Disable all IPv6](#disable-all-ipv6)
+ - [Test Vpn](#test-vpn) <img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
+ - [Auto update Pi](#auto-update-pi-)
+ - [Install Log2ram](#install-log2ram-)
+ - [Turn Off Pi LEDs](#turn-off-pi-led-lights-)
+ - [Secure your Raspberry Pi](#secure-your-raspberry-pi-)
+ - [Repository Resources](#repository-resources)
+ - [F.A.Q](#faq)
 
 # 
 
 # متطلبات
+
+يعتمد هذا البرنامج التعليمي على نظام Raspberry Pi OS ، ولكن يمكنك استخدام أي نظام Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>نظام التشغيل</b></a><i>(قليل)</i>، أي جهاز أو ملف<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(يعد نظام Raspberry Pi OS أبسط ويوصى به لـ Pi أو لمزيد من المستخدمين ذوي الخبرة ،<b>النظام الغذائي</b>يوصى أيضًا باستخدام نظام التشغيل)
 
 -   نسخة Raspberry Pi 3 أو 4
 -   جهاز توجيه يدعم إعادة توجيه المنفذ (Most Can)
@@ -116,54 +125,46 @@
 -   كابل إيثرنت
 -   (اختياري في حالة استخدام الشاشة) MicroHDMI- (RPi 4) أو HDMI- (RPi 3)
 
-    # 
+# 
 
-    <p align="center">
-      <b><img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px> STEP 1 <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px></b>
+<h1 align="center"><b><i>Installing Raspberry Pi OS</b></i> </h1>
 
-<h1 align="center"><b><i>Installing OS Image To SDcard</b></i> </h1>
+يأتي نظام Raspberry Pi OS في إصدارات سطح المكتب والإصدارات الخفيفة (استخدم lite لـ<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>مقطوعة الرأس</b></a>الوضع). يمكنك الوصول إلى Raspberry Pi باستخدام شاشة / لوحة مفاتيح / ماوس أو الاتصال عبر<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>من محطة.
 
-يعتمد هذا البرنامج التعليمي على نظام Raspberry Pi OS ، ولكن يمكنك استخدام أي نظام Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>نظام التشغيل</b></a>(32 بت أو 64 بت) والأجهزة التي تفضلها مع بعض التغيير والتبديل_**إذا كنت تعرف ما تفعله**_! (يعد نظام Raspberry Pi OS أبسط ويوصى به لـ Pi أو لمزيد من المستخدمين ذوي الخبرة ،_نظام DietPi OS_يوصى به أيضًا).
-
-يأتي نظام Raspberry Pi OS بإصدارين لسطح المكتب و Lite (استخدم lite لوضع مقطوعة الرأس فقط). يمكنك إعداد Raspberry Pi باستخدام شاشة / لوحة مفاتيح / ماوس ، أو إعداده "بدون رأس" من الجهاز الطرفي.
-
-قم بتثبيت balenEtcher وتنزيل صورة pi للكتابة على بطاقة microSD.
+قم بتثبيت balenEtcher وتنزيل صورة Pi للكتابة على بطاقة microSD.
 
 -   تنزيل نظام Raspberry Pi OS:[هتبص://وو.راسببريب.عرج/سوفتوير/برتنجصيستمس/](https://www.raspberrypi.org/software/operating-systems/)
 
--   تنزيل whaleEtcher:[هتبص://وو.بالنا.إيه/تشير/](https://www.balena.io/etcher/)
+-   تنزيل BalenaEtcher:[هتبص://وو.بالنا.إيه/تشير/](https://www.balena.io/etcher/)
 
-بعد أن يكون لديك`Etcher`تثبيت و`Raspberry Pi OS`الملف الذي تم تنزيله على جهاز الكمبيوتر الخاص بك ، يمكنك الآن إدخال بطاقة SD مع قارئ بطاقة microSD USB في جهاز الكمبيوتر الخاص بك.
+بعد أن يكون لديك`Etcher`تثبيت و`Raspberry Pi OS`تم تنزيل الملف ، يمكنك الآن إدخال بطاقة SD مع قارئ بطاقة microSD USB في جهاز الكمبيوتر الخاص بك.
 
-قم بتشغيل Etcher واختر صورة Raspberry Pi OS التي قمت بتنزيلها ، وحدد بطاقة microSD الخاصة بك وانقر فوق "Flash".
+-   قم بتشغيل Etcher واختر صورة Raspberry Pi OS التي قمت بتنزيلها ، وحدد بطاقة microSD وانقر فوقها`Flash`.
 
-<p align="center">
- <img src="https://i.imgur.com/tbB3VIK.jpg">
-
-بعد الانتهاء من الوميض ، ابحث في "هذا الكمبيوتر" عن اسم قرص "التمهيد أو محرك أقراص USB" (أعد توصيل قارئ بطاقة USB إذا لم تتم رؤيته). انتقل إلى هذا القرص ، وأنشئ ملفًا نصيًا جديدًا يسمى**_`ssh without 'txt' extention`_**. كن حذرًا ، فهو ليس ملف "ssh.txt" ، إنه "ssh" بدون الامتداد. تحتاج إلى تعطيل خيار "إخفاء الامتدادات لأنواع الملفات المعروفة" في خيارات مستكشف الملفات إذا كنت لا تراها.
+بعد الانتهاء من الوميض ، ابحث في "هذا الكمبيوتر" عن اسم القرص "التمهيد أو محرك أقراص USB" (أعد توصيل قارئ بطاقة USB إذا لم تتم رؤيته). انتقل إلى هذا القرص ، وأنشئ ملفًا نصيًا جديدًا يسمى**_`ssh without 'txt' extension`_**. قم بتعطيل "إخفاء الامتدادات لأنواع الملفات المعروفة" في خيارات مستكشف الملفات إذا كنت لا تراها.
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
 
-الآن ضع بطاقة SD في Raspberry Pi ، وقم بتوصيل كابل Ethernet وقم بالتمهيد.
+<i>ضع بطاقة SD في Raspberry Pi ، وقم بتوصيل كابل Ethernet وقم بالتمهيد</i>
 
-## ╸ تسجيل الدخول إلى نظام Pi[بلا رأس]╸
+## قم بالوصول إلى Pi OS مع SSH
 
--   أنت الآن بحاجة إلى الانتظار لمدة دقيقة حتى يتم بدء تشغيل Pi لأول مرة
+-   انتظر لمدة دقيقة حتى يتم تحميل Pi لأول مرة
 
 -   افتح المتصفح وقم بتسجيل الدخول إلى صفحة لوحة جهاز التوجيه الخاص بك
 
 -   ابحث عن قائمة بجميع الأجهزة المتصلة بشبكتك وانسخ عنوان IP الخاص بـ Raspberry Pi (سيكون على الأرجح اسم المضيف`raspberrypi`)
 
--   افتح Terminal على جهازك المضيف. يمكنك استخدام PowerShell على Windows أو RaspController لنظام Android
+-   افتح المحطة على جهازك المضيف. يمكنك استخدام powerShell على Windows أو RaspController لنظام Android.
 
 اكتب الأمر التالي:
 
-    ssh pi@pi's ip address
+    ssh pi@pi's IP address
 
-يمكنك استخدام زر الماوس الأيمن للصق نص في Windows PowerShell.
+<i>يمكنك استخدام زر الفأرة الأيمن للصق النص في Windows powerShell</i>.
 
-اكتب "نعم" لسؤال بصمة الإصبع ، واكتب "Raspberry" لكلمة المرور. ستكون كلمات المرور غير مرئية عند الكتابة في واجهة لينكس. يمكنك كتابة**_`sudo passwd pi`_**لتغيير كلمة المرور.
+اكتب "نعم" لسؤال بصمة الإصبع ، واكتب "Raspberry" لكلمة المرور الافتراضية (ستكون كلمات المرور غير مرئية في سطر الأوامر). يمكنك كتابة**_`sudo passwd pi`_**لتغيير كلمة المرور.
 
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
@@ -172,18 +173,15 @@
 
     sudo apt update -y && sudo apt upgrade -y
 
-__انتظر التحديث للإنهاء وإعادة تشغيل PI. ثم تابع إلى الخطوة التالية__.....
+__إعادة التشغيل عند الانتهاء__
 
     sudo reboot
 
-**[⬆ العودة إلى الأعلى ⬆](#contents)**
+**[العودة إلى المحتويات ⬆](#table-of-contents)**
 
 # 
 
-<p align="center">
- <b><img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px> STEP 2 <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px></b>
-
-<h1 align="center"><b><i>AdGuard Install</b></i> </h1>
+<h1 align="center"><b><i>Install AdGuard Home</b></i> </h1>
 
 نص التثبيت هذا من<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>صفحة AdGuard الرئيسية</b></a>المشروع الرئيسي. اتبع لتبقى على اطلاع.
 
@@ -191,66 +189,61 @@ __انتظر التحديث للإنهاء وإعادة تشغيل PI. ثم تا
 
     curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 
--   عند الانتهاء من التثبيت ، ستظهر نافذة في الجهاز الطرفي تعرض الروابط المختلفة لصفحة Adguard الرئيسية الخاصة بك (ابدأ)
+-   عند الانتهاء من التثبيت ، ستظهر نافذة منبثقة في عرض المحطة`links`إلى صفحة AdGuard الرئيسية الخاصة بك (ابدأ)
 
 -   `IMPORTANT:`في خيار "واجهات الاستماع" ، اختر`Eth0`وحدد التالي
 
-<p align="center">
-  <img src="https://i.imgur.com/Wa00lDp.jpg" width=580px height=690px>
+    <p align="center">
+     <img src="https://i.imgur.com/Wa00lDp.jpg" width=580px height=690px>
 
--   قم بإعداد اسم المستخدم وكلمة المرور
+-   قم بإعداد اسم المستخدم وكلمة المرور وتسجيل الدخول إلى لوحة الإدارة
 
--   يجب أن تكون الآن في لوحة Adguard الرئيسية
+-   `IMPORTANT:`في الإعدادات العامة ، عيّن "الاحتفاظ بسجلات طلبات البحث" على`24 hours`. (قرأت أنه بالنسبة لبعض الأشخاص ، تملأ السجلات مما يؤدي إلى إبطاء سرعة Pi وتحتاج إلى إعادة التشغيل)
 
--   `IMPORTANT:`في الإعدادات العامة ، عيّن "الاحتفاظ بسجلات طلبات البحث" على`24 hours`(قرأت أنه بالنسبة لبعض الأشخاص ، تملأ السجلات وتبطئ pi وتحتاج إلى إعادة التشغيل في كل مرة)
+## قم بإعداد أجهزتك للعمل مع AdGuard
 
-## ╸ قم بإعداد أجهزتك للعمل مع Adguard
-
--   بالنسبة إلى Android / Apple ، انتقل إلى إعدادات wifi المتقدمة وحدد خيارًا ثابتًا. في`DNS 1`الحقل أدخل عنوان "بي آي بي"
+-   بالنسبة إلى Android / Apple ، انتقل إلى إعدادات WiFi المتقدمة وحدد خيارًا ثابتًا. في`DNS 1`أدخل الحقل عنوان IP "Pi"
 
     <p align="center">
      <img src="https://i.imgur.com/nxpiqDw.jpg" width=450px height=580px>
 
 -   لأجهزة الكمبيوتر / ويندوز
 
-    -   <i>IPV4</i>
+    -   <i>Ипвч</i>
 
-        انتقل إلى إعدادات الشبكة / تغيير خيارات المحول وانقر بزر الماوس الأيمن في الخصائص ثم حدد "Internet Protocol Version 4 (TCP / IPv4)". أدخل عنوان IP الخاص بـ pi في`Preferred DNS`الخادم
+        انتقل إلى إعدادات الشبكة / تغيير خيارات المحول وانقر بزر الماوس الأيمن في الخصائص ثم حدد "Internet Protocol Version 4 (TCP / IPv4)". أدخل عنوان IP الخاص بـ Pi في`Preferred DNS`الخادم.
 
-    -   <i>IPV6 (مطلوب لـ`DoH`&`DoT`للعمل لاحقًا في الدليل إذا كنت تستخدم IPv6 على جهاز التوجيه الخاص بك)</i>
+    -   <i>IPv6 (مطلوب لـ`DoH`&`DoT`للعمل لاحقًا في الدليل إذا كنت تستخدم IPv6 على جهاز التوجيه الخاص بك)</i>
 
         انتقل إلى "Internet Protocol Version 6 (TCP / IPv6)" أدخل`::1`
 
-`OPTIONAL:`<i>يمكنك إضافة نسخة احتياطية لنظام أسماء النطاقات في الحقول البديلة</i>
+`OPTIONAL:`<i>يمكنك إضافة DNS احتياطي في الحقول البديلة</i>
 
-`BE AWARE:`<i>في نظام Android ، تؤدي إضافة نظام أسماء نطاقات عام في الحقل الثاني إلى كسر Adguard adblocking</i>
+`BE AWARE:`<i>في نظام Android ، تؤدي إضافة DNS عام في الحقل الثاني إلى كسر حظر إعلانات AdGuard</i>
 
 <p align="center">
  <img src="https://i.imgur.com/8gsDk3z.jpg">
 
-## ╸ إعداد قائمة حظر AdGuard ╸
+## إعداد قائمة منع AdGuard
 
-في صفحة AdGuard الرئيسية تحت عوامل التصفية ، حدد قسم قائمة حظر DNS لإضافة عناوين url.
+في صفحة AdGuard الرئيسية ضمن عوامل التصفية ، حدد قسم قائمة حظر DNS لإضافة عناوين URL.
 
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-يمكنك البحث في Google عن قائمة حظر مختلفة ، وهنا مخصّصتي<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>قائمة الحظر</b></a>باستخدام عناوين url الخاصة بي أو إنشاء عنوان خاص بك من هؤلاء<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>مصادر</b></a>.
+يمكنك البحث في Google عن قائمة الحظر المختلفة. ها هي قائمة الحظر المخصصة الخاصة بي[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>انقر هنا</b></a>]باستخدام عناوين URL الخاصة بي أو إنشاء عنوان خاص بك من هذه المصادر[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>انقر هنا</b></a>].
 
-`IMPORTANT:`يمكن لبعض قوائم الحظر حظر بعض المحتويات أو مواقع الويب المهمة. لإلغاء الحظر ، انتقل إلى قسم "سجل الاستعلام" وسوف ترى_رفع الحظر_الخيار عند تمرير المؤشر فوق طلب بحث ، ووضعه في "قواعد التصفية المخصصة" على سبيل المثال:`@@||bitly.com^$important`. ابحث عن عنوان IP للعميل والوقت.
+`IMPORTANT:`يمكن لبعض قوائم الحظر حظر بعض المحتويات أو مواقع الويب المهمة. لإلغاء الحظر ، انتقل إلى قسم "سجل الاستعلام" وسوف ترى_رفع الحظر_الخيار عند تمرير المؤشر فوق طلب بحث ، ووضعه في "قواعد التصفية المخصصة" على سبيل المثال:`@@||bitly.com^$important`. ابحث عن عنوان IP الخاص بالعميل والوقت.
 
-<p align="center">
- <img src="https://i.imgur.com/1gZibwD.png">
+## إضافة / إزالة عناوين URL متعددة
 
-## ╸ إضافة / إزالة عناوين URL متعددة
-
-يمكنك فقط إضافة عنوان url واحدًا تلو الآخر في قائمة حظر نظام أسماء النطاقات في Adguard في الوقت الحالي ولكن هناك نص برمجي بيثون لإضافة عناوين url متعددة معًا.
+يمكنك فقط إضافة عنوان URL واحدًا تلو الآخر في قائمة حظر DNS باستخدام AdGuard في الوقت الحالي ولكن هناك برنامج نصي بيثون لإضافة عناوين URL متعددة في وقت واحد.
 
 افتح ملف py جديد (Bulkurls.py):
 
     nano bulkurls.py
 
-ثم انسخ والصق النص من<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>بلقرلس.بي</b></a>ملف وحفظه (control + x ثم y ثم enter)**بحاجة إلى تكوين أوراق اعتماد ADGUARD الخاصة بك في الملف**.
+ثم انسخ والصق تكوينات البرنامج النصي[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>انقر هنا</b></a>]. جلس`your AdGuard credentials`وحفظ (control + x ثم y ثم enter).
 
 _في حالة استخدام**النظام الغذائي**التثبت`sudo apt-get install python3-pip -y && pip install requests`لأنه لا يتم تثبيته بشكل افتراضي._
 
@@ -260,14 +253,11 @@ _في حالة استخدام**النظام الغذائي**التثبت`sudo ap
 
 اذهب إلى[هتبص://دعورد.جذب.إيه/تولز/دبلك.هتمل](https://d3ward.github.io/toolz/adblock.html)لاختبار ما إذا كان يتم حظر الإعلانات<img src="https://i.imgur.com/Q5oO9EY.png" width=100px height=80px>
 
-**[⬆ العودة إلى الأعلى ⬆](#contents)**
+**[العودة إلى المحتويات ⬆](#table-of-contents)**
 
 # 
 
-<p align="center">
- <b><img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px> STEP 3 <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px></b>
-
-<h1 align="center"><b><i>Unbound Install</b></i> </h1>
+<h1 align="center"><b><i>Install Unbound</b></i> </h1>
 
 قم بتشغيل الأمر التالي في جهازك الطرفي:
 
@@ -291,36 +281,35 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 <p align="center">
  <img src="https://i.imgur.com/26ro62t.jpg">
 
-**[⬆ العودة إلى الأعلى ⬆](#contents)**
+**[العودة إلى المحتويات ⬆](#table-of-contents)**
 
 # 
 
-<p align="center">
- <b><img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px> STEP 4 <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px></b>   
+<h1 align="center"><b><i>Install Cloudflare</b></i> </h1>
 
-<h1 align="center"><b><i>Cloudflare Install</b></i> </h1>
+## إعداد Cloudflared`(DoH)`
 
-## ╸ قم بتثبيت Cloudflare على Pi With`(DoH)`╸
+[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>انقر هنا</b></a>]</h4>
 
-قم بتثبيت cloudflare مع DNS عبر HTTPS (DoH) ، اتبع هذه 👉<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>تعليمات</b></a>👈.
-
-## ╸ قم بتكوين Cloudflare On Unbound With`(DoT)`╸
+## تكوين Cloudflare`(DoT)`على غير منضم
 
 قم بإنشاء ملف تكوين غير منضم عن طريق إدخال موجه الأوامر:
 
     sudo nano /etc/unbound/unbound.conf.d/unbound.conf
 
-وانسخ والصق كل النص من<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/unbound.conf"><b>غير منضم</b></a>ملف وحفظه (control + x ثم y ثم enter).
+وانسخ والصق كل النص من هذا الملف غير المقيد[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/unbound.conf"><b>انقر هنا</b></a>]وحفظ (control + x ثم y ثم enter).
 
-## ╸ تكوين Stubby لـ Unbound
+## تكوين Stubby لـ Unbound
 
-استخدم Unbound للتخزين المؤقت و stubby لمعيد توجيه TLS. تثبيت قصير:
+استخدم Unbound للتخزين المؤقت و stubby باعتباره معيد توجيه TLS. تثبيت قصير:
 
     sudo apt install stubby -y
 
-قم بإزالة وإعادة إنشاء ملف stubby.yaml وانسخ / الصق كل النص من<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>👉 هذا التكوين قصير 👈</b></a>وحفظ. (`cd $h`للعودة إلى المجلد الرئيسي عند الانتهاء).
+إزالة وإعادة إنشاء ملف stubby.yaml:
 
     cd /etc/stubby/ && sudo rm stubby.yml && sudo nano stubby.yml
+
+وانسخ والصق كل النص من ملف التكوين القصير هذا[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>انقر هنا</b></a>]وحفظ. (`cd`للعودة إلى المجلد الرئيسي عند الانتهاء).
 
 -   أعد تشغيل غير منضم وقصير وتحقق من الحالة:
 
@@ -330,19 +319,17 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 <p align="center">
  <img src="https://i.imgur.com/7zIpWP2.jpg" width=650px height=370px>
 
-## ╸ تكوين Adguard مع`Cloudflare(DoH&DoT)`╸
+## تكوين AdGuard مع`Cloudflare(DoH&DoT)`
 
--   في صفحة AdGuard الرئيسية ضمن الإعدادات ، حدد "إعدادات نظام أسماء النطاقات"
+-   في صفحة AdGuard الرئيسية ضمن الإعدادات ، حدد "إعدادات DNS"
 
--   احذف كل شيء من خيارات خادم "Upstream" و "Bootstrap DNS" و:
+-   احذف كل شيء من خيارات خادم "Upstream" و "Bootstrap DNS" وأدخل:
 
     -   ل`DNS over TLS(DoT)`يضيف`127.0.0.1:53`في كل من حقلي خادم "Upstream" و "Bootstrap DNS"
     -   ل`DNS over HTTPS(DoH)`يضيف`127.0.0.1:5053`في كل من حقلي خادم "Upstream" و "Bootstrap DNS"
     -   ل`TLS forwarder(stubby)`يضيف`127.0.0.1:8053`في كل من حقلي خادم "Upstream" و "Bootstrap DNS"
 
--   `IMPORTANT:`تحتاج إلى التحقق "<a href="https://adguard.com/en/blog/in-depth-review-adguard-home.html#dns"><b>طلب مواز</b></a>"خيار لمحللات نظام أسماء النطاقات للعمل في وقت واحد.
-
-<b>انقر فوق تطبيق واختبار المنبع</b>(قد يظهر خطأ في الاختبار الأول فقط).
+-   `IMPORTANT:`تحتاج إلى التحقق "<a href="https://adguard.com/en/blog/in-depth-review-adguard-home.html#dns"><b>طلب مواز</b></a>"الخيار لمحللات DNS للعمل في وقت واحد.
 
 <p align="center">
  <img src="https://i.imgur.com/Ug4Euou.jpg" width=650px height=370px>
@@ -351,14 +338,16 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 <p align="center">
  <img src="https://i.imgur.com/8Q5Zb0M.jpg" width=650px height=370px>
+ 
+<b>Click apply and test upstreams</b>(might get a error in the first testing only).
 
-### `IMPORTANT:`يحتاج نظام Windows ومتصفحات Android إلى بعض التغيير والتبديل`stabilize`محللات نظام أسماء النطاقات..لينكس يعمل بشكل جيد<i>(تم اختباره على النعناع)</i>
+#### `IMPORTANT:`يحتاج نظام Windows ومتصفحات Android إلى بعض التغيير والتبديل`stabilize`محللات DNS .. تعمل Linux بشكل جيد<i>(تم اختباره على النعناع)</i>
 
 ### شبابيك
 
--   ثَبَّتَ<a href="https://mayakron.altervista.org/support/acrylic/Home.htm"><b>وكيل DNS الأكريليكي</b></a>
+-   تثبيت الاكريليك DNS Proxy:[هتبص://ميكرون.الترفيصتا.عرج/سبورت/سريلك/هم.حطم](https://mayakron.altervista.org/support/acrylic/Home.htm)
 
--   اذهب إلى`C:\Program Files (x86)\Acrylic DNS Proxy`وفتح`AcrylicConfiguration.ini`ملف. احذف كل شيء وانسخها<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/AcrylicConfiguration.ini"><b>"الإعدادات"</b></a>فقط التغيير_**PrimaryServerAddres**_إلى عنوان بي الخاص بك.
+-   اذهب إلى`C:\Program Files (x86)\Acrylic DNS Proxy`وفتح`AcrylicConfiguration.ini`ملف. احذف كل شيء وانسخ هذه الإعدادات[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/AcrylicConfiguration.ini"><b>انقر هنا</b></a>]فقط التغيير_**PrimaryServerAddres**_إلى عنوان باي الخاص بك.
 
 -   في نفس المجلد المدى`RestartAcrylicService.bat`&`PurgeAcrylicCacheData.bat`
 
@@ -390,27 +379,24 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 [هتبص://دنسك.فص.عنيد.د/](https://dnssec.vs.uni-due.de/)- يجب أن يقول "نعم ، يقوم محلل DNS بالتحقق من صحة توقيعات DNSSEC"
 
-**[⬆ العودة إلى الأعلى ⬆](#contents)**
+**[العودة إلى المحتويات ⬆](#table-of-contents)**
 
 # 
 
-<p align="center">
- <b><img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px> STEP 5 <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/party/party-footprints.png" width=20px height=20px></b>
+<h1 align="center"><b><i>Install WireGuard</b></i> </h1>
 
-<h1 align="center"><b><i>WireGuard Install</b></i> </h1>
+**قبل تثبيت WireGuard**، إذا لم يكن لديك ملف<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>رقم تعريف حاسوب ثابت</b></a>تحتاج إلى الحصول على ملف`Dynamic DNS Subdomain`أو يتغير عنوان IP الخارجي بشكل ديناميكي من مزود خدمة الإنترنت الخاص بك ، لذا ستحتاج إلى إعداد خدمة DNS ديناميكية[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>انقر هنا</b></a>**]. أو تخطي الخطوة.
 
-**قبل تثبيت WireGuard**، إذا لم يكن لديك عنوان IP ثابت ، فأنت بحاجة إلى الحصول على ملف`Dynamic DNS Subdomain`وإلا فإن عنوان IP الخارجي الخاص بك يتغير على الأرجح ديناميكيًا من مزود خدمة الإنترنت لديك كثيرًا ولهذا السبب ستحتاج إلى إعداد خدمة DNS ديناميكية. 👉👉**_▓▒░ استخدم هذا<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>التعليمات هنا</b></a>░▒▓_**👈👈. أو تخطي الخطوة.
-
-نحتاج أيضًا إلى إعداد إعادة توجيه المنفذ على جهاز التوجيه الخاص بك حتى نتمكن من الوصول إلى Wireguard خارج شبكتنا كما هو الحال في نقطة اتصال المقهى أو بيانات هاتفك المحمول
+تحتاج أيضًا إلى الإعداد<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>ميناء الشحن</b></a>على جهاز التوجيه الخاص بك حتى تتمكن من الوصول إلى WireGuard خارج شبكتنا كما هو الحال في نقطة اتصال المقهى أو بيانات هاتفك المحمول.
 النوع | القيمة  
 ------------ \| -------------
 الجهاز | اسم مضيف Raspberry Pi أو IP
 بروتوكول | UDP
 نطاق المنفذ | 51820-51820
 منفذ صادر | 51820
-تصريح الدخول إلى الإنترنت (إذا كان لديك) | نعم
+السماح بالوصول إلى الإنترنت (إذا كان لديك) | نعم
 
-إعداد منفذ 👇router👇 الخاص بي. قد تكون لك مختلفة ولكنك ستفهم. تذكر أن Google "محرك البحث" هو صديقك. إذا لم تتمكن من الاتصال من شبكة خارجية ، فهذا يعني أن ISP قد حظرت الاتصالات الواردة ، يمكنك الاتصال بها وطلبها بلطف لتشغيلها.
+إعداد منفذ 👇router👇 الخاص بي. قد تكون لك مختلفة ولكنك ستفهم. تذكر أن Google "محرك البحث" هو صديقك. إذا لم تتمكن من الاتصال من شبكة خارجية ، فهذا يعني أن مزود خدمة الإنترنت قد حظر الاتصالات الصادرة ، يمكنك الاتصال بهم وطلب تشغيلها بشكل جيد.
 
 <p align="center">
  <img src="https://i.imgur.com/9LBEk1i.jpg">
@@ -423,9 +409,9 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
     wget https://git.io/wireguard -O wireguard-install.sh && sudo bash wireguard-install.sh
 
--   سيطلب منك البرنامج النصي اسم IPv4 / hostname العام لشبكة VPN._لو_لديك عنوان IP ثابت ، ثم تابع أو اكتب مجال DNS الديناميكي الذي قمت بإنشائه من<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>تعليمات</b></a>. على سبيل المثال: trinibvpn.freeddns.org
+-   سيطلب منك البرنامج النصي اسم IPv4 / hostname العام لشبكة VPN._لو_لديك IP ثابت ثم تابع أو اكتب مجال DNS الديناميكي الذي قمت بإنشائه من<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>تعليمات</b></a>. على سبيل المثال: trinibvpn.freeddns.org
 
--   لخيار المنفذ`press enter`للافتراضي 51820. بالنسبة لاسم العميل ، فقط ضع أي اسم تريده ، وبالنسبة لـ DNS استخدم الخيار 3 (`1.1.1.1`) في الوقت الراهن. سنقوم بتكوين`adguard/unbound/cloudflare`مع vpn بعد الانتهاء من تثبيته
+-   لخيار المنفذ`press enter`للافتراضي 51820. بالنسبة لاسم العميل ، فقط ضع أي اسم تريده ، وبالنسبة لـ DNS استخدم الخيار 3 (`1.1.1.1`) في الوقت الراهن. سوف تقوم بتكوين`AdGuard/Unbound/Cloudflare`مع VPN بعد الانتهاء من تثبيته.
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -437,99 +423,105 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 `IMPORTANT:`ستحتاج إلى إضافة مستخدم / عميل جديد لكل جهاز تستخدمه مع VPN. لإضافة مستخدم جديد ، ما عليك سوى إعادة تشغيل البرنامج النصي وإنشاء مستخدم باسم عميل مختلف.
 
-## إذا كنت تريد استخدام_OpenVPN_التعليمات<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>👉هنا👈</b></a>
+<b>يستخدم_OpenVPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>انقر هنا</b></a>]
 
 # 
 
-### ╸ الاتصال بـ VPN بهاتف Android / IOS ╸
+### توصيل VPN بهاتف Android / IOS
 
-قم بتثبيت تطبيق WireGuard من Google Play أو App Store
+قم بتثبيت تطبيق WireGuard من Google Play أو App Store:
 
-Wireguard (جوجل بلاي):[هتبص://بلاي.جوجل.كوم/سطور/عبس/ديتلس?إذ=كوم.ويرجرد.ندرد](https://play.google.com/store/apps/details?id=com.wireguard.android)
+WireGuard (Google Play):[هتبص://بلاي.جوجل.كوم/سطور/عبس/ديتلس?إذ=كوم.ويرجرد.ندرد](https://play.google.com/store/apps/details?id=com.wireguard.android)
 
-Wireguard (متجر التطبيقات):[هتبص://عبس.أبل.كوم/أس/أب/ويرجرد/يد١٤٤١١٩٥٢٠٩](https://apps.apple.com/us/app/wireguard/id1441195209)
+WireGuard (متجر التطبيقات):[هتبص://عبس.أبل.كوم/أس/أب/ويرجرد/يد١٤٤١١٩٥٢٠٩](https://apps.apple.com/us/app/wireguard/id1441195209)
 
-تحتاج إلى مسح رمز الاستجابة السريعة المعروض في الجهاز باستخدام تطبيق Wireguard ، حدد ملف`+ button`واستخدم الخيار`Scan from QR code`لتثبيت التكوين.
+تحتاج إلى مسح رمز الاستجابة السريعة المعروض في الجهاز باستخدام تطبيق WireGuard ، حدد ملف`+ button`واستخدم الخيار`Scan from QR code`لتثبيت التكوين.
 
 `IMPORTANT`: ممكن**الواجهة الخلفية لوحدة النواة**في الاعدادات
 
 <p align="left">
  <img src="https://i.imgur.com/R4qbiOQ.jpg" width=250px height=350px>
 
-### ╸ الاتصال بـ VPN من جهاز كمبيوتر (Windows) ╸
+### توصيل VPN بنظام التشغيل Windows
 
 لـ Windows WireGuard:[هتبص://دونلود.ويرجرد.كوم/ويندووسكلنة/ويرجردنستلر.إكس](https://download.wireguard.com/windows-client/wireguard-installer.exe)
 
--   إنشاء`new text document`مع أي اسم على جهاز الكمبيوتر لنسخ لصق النص من ملف تكوين عميل wireguard.
+-   إنشاء`new text document`مع أي اسم على PV لنسخ لصق النص من ملف تكوين عميل WireGuard.
 
 -   لرؤية نص في ملف تكوين العميل ، اكتب Terminal:
 
 
     sudo cat /root/yourclientname.conf
 
--   قم بتمييز كل النص وانسخه والصقه في ملف txt على جهاز الكمبيوتر واحفظه. ثم أعد تسمية الامتداد من`txt`ل`conf`. الآن لديك ملف التكوين لهذا العميل wireguard.
+-   قم بتمييز كل النص وانسخه والصقه في ملف txt على جهاز الكمبيوتر واحفظه. ثم أعد تسمية الامتداد من`txt`ل`conf`. الآن لديك ملف تكوين لعميل WireGuard هذا.
 
--   يمكنك الآن استيراد ملف التكوين إلى Wireguard (خيار الاستيراد من الملف).
+-   يمكنك الآن استيراد ملف التكوين إلى WireGuard (خيار الاستيراد من ملف).
 
-## ╸ تكوين WireGuard باستخدام`Adguard/Unbound/Cloudflare`╸
+## تكوين WireGuard مع`Adguard/Unbound/Cloudflare`
 
-_تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard VPN على شبكة خارجية أو في المنزل على مدار الساعة طوال أيام الأسبوع لأنك قمت بالفعل بإعداد AdGuard / Unbound / Cloudflare وتشغيله على أجهزتك يدويًا._(لا توجد مشكلة في إعداد كلاهما لتجربتي).
+_تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard VPN على شبكة خارجية أو في المنزل على مدار الساعة طوال أيام الأسبوع لأنك قمت بالفعل بإعداد AdGuard / Unbound / Cloudflare وتشغيله على أجهزتك يدويًا._(لا توجد مشكلة في إعداد كليهما لتجربتي)
 
--   في تطبيق wireguard ، حدد النفق الخاص بك وحدد تحرير (قلم رصاص في أعلى اليمين)
+-   في تطبيق WireGuard ، حدد النفق الخاص بك وحدد تحرير (قلم رصاص في أعلى اليمين)
 
--   ضمن خوادم DNS ، أدخل`pi's ip`وحفظ (IPv4 و IPv6)
+-   تحت خوادم DNS ، أدخل`Pi's IP`وحفظ (IPv4 و IPv6)
 
 <p align="center">
  <img src="https://i.imgur.com/UC0vWfE.jpg" width=450px height=500px>  
 
 ### الحد من حركة المرور
 
-مع WireGuard ، ستفقد حوالي 50٪ من سرعة الإنترنت مما يتسبب في عملية النقل عبر pi إلى جهاز التوجيه إلى الأجهزة \*\*
+مع WireGuard ، ستفقد حوالي 50٪ من سرعة الإنترنت مما يتسبب في عملية النقل عبر النفق عبر Pi إلى جهاز التوجيه إلى الأجهزة \*\*
 
 احذف خيار "0.0.0.0/0 ، :: / 0" في عناوين IP المسموح بها لأنه يوجه كل حركة المرور إلى شبكتك المنزلية التي ستكون بطيئة. تحتاج إلى إرسال حركة المرور من خلال عناوينك فقط.
 
--   تحتاج أولاً إلى استبداله ببوابة الشبكة الخاصة بك مع ضبط الرقم الأخير على صفر و<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>طول البادئة</b></a>إلى 24. على سبيل المثال:`192.168.1.1/24`ل`192.168.1.0/24`أو مثل جهاز توجيه ISP الخاص بي`192.168.100.1/24`ل`192.168.100.0/24`.~~**الآن أفقد سرعة 25٪ فقط**😁 (ps. باستخدام شبكة 5g)~~
+-   تحتاج أولاً إلى استبداله ببوابة الشبكة الخاصة بك مع ضبط الرقم الأخير على صفر و<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>طول البادئة</b></a>إلى 24. على سبيل المثال:`192.168.1.1/24`ل`192.168.1.0/24`أو مثل جهاز توجيه ISP الخاص بي`192.168.100.1/24`ل`192.168.100.0/24`.~~**الآن أفقد سرعة 25٪ فقط**😁 (PS باستخدام شبكة 5g)~~
 
-`UPDATE:`بعد تحديث Wireguard ، لا أحصل على سرعة أكبر عند القيام بذلك :( .. ولكن لا يزال من المنطقي_ليس_ليستخدم`"0.0.0.0/0, ::/0`مع واي فاي. إذا كان أي شخص يعرف أي تعديلات للحصول على دفعة ، فيرجى إبلاغي بذلك.
+`UPDATE:`بعد تحديث WireGuard ، لا أحصل على سرعة أكبر عند القيام بذلك .. لكنه لا يزال منطقيًا_ليس_ليستخدم`"0.0.0.0/0, ::/0`مع WiFi. إذا كان أي شخص يعرف أي تعديلات للحصول على دفعة ، فيرجى إبلاغي بذلك.
 
 <p align="center">
  <img src="https://i.imgur.com/x4m6Pbl.jpg" width=450px height=500px>
 
-### يرجى القراءة !! ، كن حذرا !!
+### PLEASE READ !! , BE AWARE !!
 
-`IMPORTANT`:_إذا كانت شبكتك تحتوي على عناوين IP للأجهزة التي تنتهي برقم مكون من 3 أرقام (أكثر من 24) ، على سبيل المثال: 192.168.100.`999`، لن تكون قادرًا على التوجيه بشكل صحيح من الشبكة الخارجية لأن تطبيق 24 يسمح فقط للأرقام من 1 إلى 24. تحتاج بدلاً من ذلك إلى وضعها`0`للتوجيه خارج النطاق 24 ، على سبيل المثال:`192.168.100.0/0`_.
+`IMPORTANT`: _إذا كانت شبكتك تحتوي على عناوين IP للأجهزة التي تنتهي برقم مكون من 3 أرقام (أكثر من 24) ، على سبيل المثال: 192.168.100.`254`, you will not be able to route properly from outside network because applying 24 only allows numbers 1 through 24. You need to instead put `0`للتوجيه خارج النطاق 24 ، على سبيل المثال:`192.168.100.0/0`_.
 
 أو يمكنك تغيير نطاق IP على جهاز التوجيه الخاص بك (من واقع خبرتي ، قد تحصل على سرعات أفضل قليلاً لأنه لن يوجه عناوين IP غير الضرورية المسموح بها على مدى 24).
 
 <p align="center">
  <img src="https://i.imgur.com/ZZ4aMUI.jpg" width=750px height=550px>
 
-## IPV6
+## Ипвш
 
-إذا كنت تستخدم IPv6 ، فعند الاتصال بشبكة wifi ، تحتاج إلى إدخال عناوين IP المسموح بها لـ WireGuard`fe80::1/0`أيضًا. علي سبيل المثال`192.168.100.0/0, fe80::1/0`
+إذا كنت تستخدم IPv6 ، فعند الاتصال بشبكة WiFi تحتاج إلى إدخال عناوين IP المسموح بها لـ WireGuard`fe80::1/0` as well. For example `192.168.100.0/0, fe80::1/0`
 
-عند الاتصال بكابل إيثرنت على جهاز كمبيوتر يعمل بنظام Windows ، فأنت بحاجة إلى الدخول`::1`في عنوان IPv6 في خادم DNS المفضل "بروتوكول الإنترنت الإصدار 6 (TCP / IPv6)".
+When connected to Ethernet cable on a windows PC, you need to enter `::1` in IPv6 address in "Internet Protocol Version 6(TCP/IPv6)" preferred DNS server.
 
-ثم اذهب الى[هتبص://بفطلك.كوم/](https://ipv6leak.com/)ويجب أن ترى "_IPv6 الخاص بك لا يتسرب_".
-
-# 
-
-<h1 align="left"><a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>Disable all IPv6</b></a></h2>
+Then go to <https://ipv6leak.com/> and you should see "_Your IPv6 is not leaking_".
 
 # 
 
-## كيف تعرف ما إذا كان Wireguard vpn يعمل حقًا ؟؟
+## Disable all IPv6
 
-ل**شبابيك**تحميل<a href="https://www.wireshark.org/#download."><b>وايرشارك</b></a>
+#### قم بتعطيل IPv6 إذا لم يكن لديك أو لا تريده[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>click here</b></a>]. نتيجة لذلك ، إذا كان لديك إنترنت ضعيف ، فإن تعطيل IPv6 يمكن أن يؤدي إلى تسريع طلب نظام أسماء النطاقات ولكن يتمتع بأمان أقل.
 
-بمجرد التنزيل ، يمكنك استخدام التطبيق لفحص حزم البيانات الخاصة بك حيث يتم تعيين البروتوكول على البروتوكول المستخدم بواسطة Wireguard VPN. عندما تكون حركة الحزمة`encrypted`، يمكن قراءتها على هذا النحو على سبيل المثال:
+# 
+
+## Test VPN
+
+كيف تعرف أن WireGuard VPN يعمل حقًا؟
+
+ل**windows**تنزيل Wireshark:[هتبص://وو.وإرشارك.عرج/#دونلود](https://www.wireshark.org/#download)
+
+Once downloaded you can use the application to inspect your data packets where the protocol is set to the one used by WireGuard VPN. When a packet traffic is `encrypted`، يمكن قراءتها على هذا النحو على سبيل المثال:
 
 <p align="center">
  <img src="https://i.imgur.com/Tn4M47R.jpg">
 
-ل**ذكري المظهر**يمكنك استخدام<a href="https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US"><b>PCAPdroid</b></a>. يجب أن ترى كل الاتصالات`closed`والحالة تعرض جميع DNS وليس أي اتصالات TLS في جميع التطبيقات (افتح التطبيقات واستخدمها لـ PCAPdroid لفحصها).
+ل**android**يمكنك استخدام PCAPdroid:[هتبص://بلاي.جوجل.كوم/سطور/عبس/ديتلس?إذ=كوم.إيمانويلف.رمتكبتر&هل=إن&جل=أس](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
 
-**[⬆ العودة إلى الأعلى ⬆](#contents)**
+يجب أن ترى كل الاتصالات`closed`والحالة تعرض جميع DNS وليس أي اتصالات TLS في جميع التطبيقات. (افتح التطبيقات واستخدمها لـ PCAPdroid للمسح الضوئي)
+
+**[العودة إلى المحتويات ⬆](#table-of-contents)**
 
 * * *
 
@@ -537,7 +529,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 <h1 align="center"><b><i>Auto Update Pi</b></i> </h1>
 
--   افتح ملف sh جديد يسمى التحديث وانسخ النص والصق من<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>👉هنا👈</b></a>
+-   افتح ملف sh جديد يسمى التحديث ونسخ اللصق النصي[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>click here</b></a>]
 
 
     sudo nano update.sh
@@ -547,32 +539,32 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
     sudo chmod 700 update.sh
 
--   افتح ملف cron عن طريق إدخال سطر الأوامر`crontab -e`، قم بنسخ ولصق سطر أوامر الوظيفة أدناه في الجزء السفلي من ملف cron وحفظه.
+-   Open cron file by entering in command line `crontab -e`, copy&paste job command line below at the bottom of cron file and save.
 
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
-سيتم تحديث Pi الآن كل أربعاء الساعة 3 صباحًا. أو يمكنك الذهاب إلى[هتبص://كرونتب.جور/](https://crontab.guru/)وتعيين الجدول الزمني الخاص بك.
+Pi will now update every Wednesday at 3am. Or you can go to <https://crontab.guru/>وتعيين الجدول الزمني الخاص بك.
 
-اضبط تاريخ / المنطقة الزمنية في الطرفية:
+اضبط التاريخ / المنطقة الزمنية في Pi ، أدخل في المحطة:
 
     sudo dpkg-reconfigure tzdata
 
-أو تعيين يدويًا
+or set manually
 
     sudo date -s "25 DEC 2012 11:14:00"
 
 # 
 
-<h1 align="center"><b><i>Log2Ram Install</b></i> </h1>
+<h1 align="center"><b><i>Install Log2Ram</b></i> </h1>
 
-تتمثل إحدى أهم مزايا تفريغ ذاكرة الوصول العشوائي في أنها تعمل على تحسين ملفات**العمر الافتراضي المحتمل لبطاقة SD**.
-تعد ملفات السجل من أكثر الأشياء التي يتم كتابتها بواسطة أجزاء البرامج المختلفة التي تقوم بتثبيتها.
-من خلال دفع الملفات إلى ذاكرة الوصول العشوائي الخاصة بك ، يمكنك التحكم في عدد مرات كتابتها على بطاقة SD. ستظل قادرًا على الوصول إلى هذه الملفات على ذاكرة الوصول العشوائي كما لو كانت موجودة على بطاقة SD الخاصة بك.
+تتمثل إحدى أهم مزايا تفريغ ذاكرة الوصول العشوائي في أنها تعمل على تحسين ملفات**SD Card’s potential lifespan**.
+Log files are one of the things written to most by the various pieces of software you install.
+By pushing the files to your RAM, you can control how often they are written to the SD Card. You will still be able to access these files on the RAM as if they sat on your SD Card.
 
-انسخ والصق هذا السطر في المحطة:
+Copy and paste this line in terminal:
 
-يدويا
+Manually
 
     wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
 
@@ -587,7 +579,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 # 
 
-<h1 align="center"><b><i>Turn Off Pi LED Lights</b></i> </h1>
+<h1 align="center"><b><i>Turn off Pi LED lights</b></i> </h1>
 
 أعتقد أن قوة مصابيح LED ستؤثر على الكهرباء والحرارة غير الضرورية 🤷😅. لا داعي لذلك على أي حال إذا كنت تستخدمه كخادم شبكة فقط. افتح ملف cron عن طريق إدخال سطر الأوامر`crontab -e`، قم بنسخ ولصق سطر أوامر الوظيفة أدناه في الجزء السفلي من ملف cron وحفظه.
 
@@ -595,30 +587,27 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
     @reboot echo none | sudo tee /sys/class/leds/led0/trigger
 
-رد
+Red
 
     @reboot echo none | sudo tee /sys/class/leds/led1/trigger
 
-إعادة تشغيل pi.
+Reboot Pi.
 
 # 
 
-<h1 align="center"><b><i>Secure Your Raspberry Pi</b></i> </h1>
+<h1 align="center"><b><i>Secure your Raspberry Pi</b></i> </h1>
 <p align="center">
 <a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
 <p align="center">
-<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>LINK</b></a>
+[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>click here</b></a>]
 
 <i>(أنا فقط استخدم Fail2Ban وقمت بتغيير منفذ SSH)</i>
 
-**[⬆ العودة إلى الأعلى ⬆](#contents)**
+**[العودة إلى المحتويات ⬆](#table-of-contents)**
 
 * * *
 
-<p align="center">
-<b>🎉🎉 THAT'S IT !! 🎉🎉 YOUR FINISH 👌👌
-<p align="center">
-<b>ANY ISSUES, FIXES OR TIPS TO MAKE THESE PROJECTS BETTER PLEASE CONTRIBUTE🤖</b>
+<b>أي مشاكل أو إصلاحات أو نصائح لجعل هذه المشاريع أفضل يرجى المساهمة🤖</b>
 
 * * *
 
@@ -635,7 +624,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/stargazers"><img src="https://reporoster.com/stars/dark/trinib/AdGuard-WireGuard-Unbound-Cloudflare"></a>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" </p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"</p>
 
 # 
 
@@ -665,6 +654,6 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 * * *
 
-<h4
+## _التعليمات_
 
-اطرح الأسئلة بشكل متكرر:<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>حلقة الوصل</b></a>
+اطرح الأسئلة بشكل متكرر[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>انقر هنا</b></a>]
