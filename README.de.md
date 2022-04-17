@@ -20,28 +20,21 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
-
-# 
-
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard-Startseite</b></a>_: Anzeigen auf allen Ihren Geräten blockieren (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_im Vergleich zu Pi-Hole_</b></a>)
-
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: VPN-Server zu Hause zugänglich von jedem externen Netzwerk (IPv4 & IPv6)
-
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Ungebunden</b></a>mit &lt;a href="<https://dnsprivacy.org/dns_privacy_daemon>_-_stubby/über_stubby/"><b>Stummelig</b></a>_: Ein validierender, rekursiver, zwischenspeichernder DNS-Resolver
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Wolkenflare</b></a>_: Bessere Leistung und Sicherheit beim Surfen auf Websites (DoT & DoH)
-
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+ 
+## Features
+ 
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> with <a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/"><b>Stubby</b></a>_ : A validating, recursive, caching DNS resolver
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
+ 
 <p align="right">
-<i>All software are free, open-source and self-hosted&nbsp;</i></br>
-<a href="https://git.io/About"><b>About</b></a> <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/parrots/party-nyan.gif" width=20px height=20px>
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
-# 
-
-<h3 align="left">🧪 DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
+<h3 align="left">DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
 
 <b>Ergebnisse von google.com in Millisekunden:</b>
 
@@ -49,7 +42,7 @@
 -   Öffentliche Cloudflare/Quad9/Google DNS-Resolver -`50-70 msec`
 -   Diese Einrichtung/Konfiguration -`5-10 msec`
 
-<details><summary><b>🎥Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
+<details><summary><b>Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
 <p>
 
 AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
@@ -66,7 +59,7 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
 * * *
 
 <h4><p align="center">
-⏰Last Checked : 17 April 2022⏰</h2>
+Last Checked⏰ : 17 April 2022</h2>
 
 <div align="center">
 
@@ -84,7 +77,7 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
 #
 # Table of contents
  - [Requirements](#requirements)
- - [Installing Raspberry Pi OS](#installing-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+ - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
  - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
    - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
@@ -116,7 +109,7 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
 
 # Anforderungen
 
-Dieses Tutorial basiert auf Raspberry Pi OS, aber Sie können jedes Linux verwenden<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>Betriebssystem</b></a><i>(Bit)</i>, Hardware oder a<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(Raspberry Pi OS ist am einfachsten und wird für Pi oder für erfahrenere Benutzer empfohlen,<b>DiätPi</b>Betriebssystem wird ebenfalls empfohlen)
+Dieses Tutorial basiert auf Raspberry Pi, aber Sie können jedes Linux verwenden<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>Betriebssystem</b></a><i>(Bit)</i>, Hardware oder a<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(Raspberry Pi OS ist am einfachsten und wird für Pi oder für erfahrenere Benutzer empfohlen,<b>DiätPi</b>Betriebssystem wird ebenfalls empfohlen)
 
 -   Eine Raspberry Pi 3 oder 4 Version
 -   Ein Router, der die Portweiterleitung unterstützt (die meisten können)
@@ -127,7 +120,7 @@ Dieses Tutorial basiert auf Raspberry Pi OS, aber Sie können jedes Linux verwen
 
 # 
 
-<h1 align="center"><b><i>Installing Raspberry Pi OS</b></i> </h1>
+<h1 align="center"><b><i>Install Raspberry Pi OS</b></i> </h1>
 
 Raspberry Pi OS gibt es in Desktop- und Lite-Versionen (verwenden Sie Lite für<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>kopflos</b></a>Modus). Sie können mit einem Monitor/einer Tastatur/Maus auf einen Raspberry Pi zugreifen oder eine Verbindung herstellen<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>von einem Endgerät.
 
@@ -213,7 +206,7 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
         Gehen Sie zu Netzwerkeinstellungen / Adapteroptionen ändern und klicken Sie mit der rechten Maustaste auf Eigenschaften und wählen Sie dann "Internetprotokoll Version 4 (TCP/IPv4)". Geben Sie die IP-Adresse von Pi ein`Preferred DNS`Server.
 
-    -   <i>IPv6 (benötigt für`DoH`&`DoT`um später in der Anleitung zu arbeiten, wenn Sie IPv6 auf Ihrem Router verwenden)</i>
+    -   <i>IPv6 (benötigt für`DoH` & `DoT`um später in der Anleitung zu arbeiten, wenn Sie IPv6 auf Ihrem Router verwenden)</i>
 
         Gehen Sie zu "Internetprotokoll Version 6 (TCP/IPv6)" und geben Sie es ein`::1`
 
@@ -287,7 +280,7 @@ _Bei Verwendung**DiätPi**Sie müssen resolvconf installieren und unbound-resolv
 
 <h1 align="center"><b><i>Install Cloudflare</b></i> </h1>
 
-## Einrichtung für Cloudflared`(DoH)`
+## Setup for Cloudflared `(DoH)`
 
 [<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>Klicke hier</b></a>]</h4>
 
@@ -435,7 +428,7 @@ WireGuard (Google Play):<https://play.google.com/store/apps/details?id=com.wireg
 
 WireGuard (App-Store):<https://apps.apple.com/us/app/wireguard/id1441195209>
 
-Sie müssen den im Terminal angezeigten QR-Code mit der WireGuard-App scannen und auswählen`+ button`und nutzen Sie die Möglichkeit`Scan from QR code`Konfiguration zu installieren.
+Sie müssen den im Terminal angezeigten QR-Code mit der WireGuard-App scannen und auswählen`+ button`und nutzen Sie die Möglichkeit`Scan from QR code` to install configuration.
 
 `IMPORTANT`: Ermöglichen**Kernel-Modul-Backend**in den Einstellungen
 
