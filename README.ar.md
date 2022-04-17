@@ -20,28 +20,21 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
-
-# 
-
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>صفحة AdGuard الرئيسية</b></a>_: منع الإعلانات على جميع أجهزتك (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_مقارنة بـ Pi-Hole_</b></a>)
-
-#### _<a href="https://www.wireguard.com/"><b>وايرجارد</b></a>_: خادم VPN في المنزل يمكن الوصول إليه من أي شبكة خارجية (IPv4 و IPv6)
-
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>غير مجلد</b></a>مع &lt;a href = "[هتبص://دنسبرفك.عرج/دنسبرفكيدم](https://dnsprivacy.org/dns_privacy_daemon)_-_قصير / about_stubby / "><b>قصير</b></a>_: محلل DNS للتحقق والتكرار والتخزين المؤقت
-
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>كلاود فلير</b></a>_: أداء وأمان أفضل عند تصفح مواقع الويب (DoT & DoH)
-
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+ 
+## Features
+ 
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> with <a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/"><b>Stubby</b></a>_ : A validating, recursive, caching DNS resolver
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
+ 
 <p align="right">
-<i>All software are free, open-source and self-hosted&nbsp;</i></br>
-<a href="https://git.io/About"><b>About</b></a> <img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/parrots/party-nyan.gif" width=20px height=20px>
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
-# 
-
-<h3 align="left">🧪 DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
+<h3 align="left">DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
 
 <b>النتائج من google.com بالمللي ثانية:</b>
 
@@ -49,7 +42,7 @@
 -   Public Cloudflare / Quad9 / Google DNS محللات -`50-70 msec`
 -   هذا الإعداد / التكوين -`5-10 msec`
 
-<details><summary><b>🎥Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
+<details><summary><b>Preview🎥<img src="https://media.giphy.com/media/WT5h7PgVSScLLKtMaS/giphy.gif" width=50px height=40px></b></summary>
 <p>
 
 AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
@@ -66,7 +59,7 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 * * *
 
 <h4><p align="center">
-⏰Last Checked : 17 April 2022⏰</h2>
+Last Checked⏰ : 17 April 2022</h2>
 
 <div align="center">
 
@@ -84,7 +77,7 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 #
 # Table of contents
  - [Requirements](#requirements)
- - [Installing Raspberry Pi OS](#installing-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+ - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
  - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
    - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
@@ -116,7 +109,7 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 
 # متطلبات
 
-يعتمد هذا البرنامج التعليمي على نظام Raspberry Pi OS ، ولكن يمكنك استخدام أي نظام Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>نظام التشغيل</b></a><i>(قليل)</i>، أي جهاز أو ملف<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(يعد نظام Raspberry Pi OS أبسط ويوصى به لـ Pi أو لمزيد من المستخدمين ذوي الخبرة ،<b>النظام الغذائي</b>يوصى أيضًا باستخدام نظام التشغيل)
+يعتمد هذا البرنامج التعليمي على Raspberry Pi ، ولكن يمكنك استخدام أي نظام Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>نظام التشغيل</b></a><i>(قليل)</i>، أي جهاز أو ملف<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(يعد نظام Raspberry Pi OS أبسط ويوصى به لـ Pi أو لمزيد من المستخدمين ذوي الخبرة ،<b>النظام الغذائي</b>يوصى أيضًا باستخدام نظام التشغيل)
 
 -   نسخة Raspberry Pi 3 أو 4
 -   جهاز توجيه يدعم إعادة توجيه المنفذ (Most Can)
@@ -127,7 +120,7 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 
 # 
 
-<h1 align="center"><b><i>Installing Raspberry Pi OS</b></i> </h1>
+<h1 align="center"><b><i>Install Raspberry Pi OS</b></i> </h1>
 
 يأتي نظام Raspberry Pi OS في إصدارات سطح المكتب والإصدارات الخفيفة (استخدم lite لـ<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>مقطوعة الرأس</b></a>الوضع). يمكنك الوصول إلى Raspberry Pi باستخدام شاشة / لوحة مفاتيح / ماوس أو الاتصال عبر<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>من محطة.
 
@@ -481,9 +474,9 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 <p align="center">
  <img src="https://i.imgur.com/x4m6Pbl.jpg" width=450px height=500px>
 
-### PLEASE READ !! , BE AWARE !!
+### يرجى القراءة !! ، كن حذرا !!
 
-`IMPORTANT`: _إذا كانت شبكتك تحتوي على عناوين IP للأجهزة التي تنتهي برقم مكون من 3 أرقام (أكثر من 24) ، على سبيل المثال: 192.168.100.`254`, you will not be able to route properly from outside network because applying 24 only allows numbers 1 through 24. You need to instead put `0`للتوجيه خارج النطاق 24 ، على سبيل المثال:`192.168.100.0/0`_.
+`IMPORTANT`:_إذا كانت شبكتك تحتوي على عناوين IP للأجهزة التي تنتهي برقم مكون من 3 أرقام (أكثر من 24) ، على سبيل المثال: 192.168.100.`254`، لن تكون قادرًا على التوجيه بشكل صحيح من الشبكة الخارجية لأن تطبيق 24 يسمح فقط للأرقام من 1 إلى 24. تحتاج بدلاً من ذلك إلى وضعها`0`للتوجيه خارج النطاق 24 ، على سبيل المثال:`192.168.100.0/0`_.
 
 أو يمكنك تغيير نطاق IP على جهاز التوجيه الخاص بك (من واقع خبرتي ، قد تحصل على سرعات أفضل قليلاً لأنه لن يوجه عناوين IP غير الضرورية المسموح بها على مدى 24).
 
@@ -492,32 +485,32 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 ## Ипвш
 
-إذا كنت تستخدم IPv6 ، فعند الاتصال بشبكة WiFi تحتاج إلى إدخال عناوين IP المسموح بها لـ WireGuard`fe80::1/0` as well. For example `192.168.100.0/0, fe80::1/0`
+إذا كنت تستخدم IPv6 ، فعند الاتصال بشبكة WiFi تحتاج إلى إدخال عناوين IP المسموح بها لـ WireGuard`fe80::1/0`أيضًا. علي سبيل المثال`192.168.100.0/0, fe80::1/0`
 
-When connected to Ethernet cable on a windows PC, you need to enter `::1` in IPv6 address in "Internet Protocol Version 6(TCP/IPv6)" preferred DNS server.
+عند الاتصال بكابل Ethernet على جهاز كمبيوتر يعمل بنظام Windows ، فأنت بحاجة إلى الدخول`::1`في عنوان IPv6 في خادم DNS المفضل "بروتوكول الإنترنت الإصدار 6 (TCP / IPv6)".
 
-Then go to <https://ipv6leak.com/> and you should see "_Your IPv6 is not leaking_".
-
-# 
-
-## Disable all IPv6
-
-#### قم بتعطيل IPv6 إذا لم يكن لديك أو لا تريده[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>click here</b></a>]. نتيجة لذلك ، إذا كان لديك إنترنت ضعيف ، فإن تعطيل IPv6 يمكن أن يؤدي إلى تسريع طلب نظام أسماء النطاقات ولكن يتمتع بأمان أقل.
+ثم اذهب الى[هتبص://بفطلك.كوم/](https://ipv6leak.com/)ويجب أن ترى "_IPv6 الخاص بك لا يتسرب_".
 
 # 
 
-## Test VPN
+## قم بتعطيل كل IPv6
+
+#### قم بتعطيل IPv6 إذا لم يكن لديك أو لا تريده[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>انقر هنا</b></a>]. نتيجة لذلك ، إذا كان لديك إنترنت ضعيف ، فإن تعطيل IPv6 يمكن أن يؤدي إلى تسريع طلب نظام أسماء النطاقات ولكن يتمتع بأمان أقل.
+
+# 
+
+## اختبار VPN
 
 كيف تعرف أن WireGuard VPN يعمل حقًا؟
 
-ل**windows**تنزيل Wireshark:[هتبص://وو.وإرشارك.عرج/#دونلود](https://www.wireshark.org/#download)
+ل**شبابيك**تنزيل Wireshark:[هتبص://وو.وإرشارك.عرج/#دونلود](https://www.wireshark.org/#download)
 
-Once downloaded you can use the application to inspect your data packets where the protocol is set to the one used by WireGuard VPN. When a packet traffic is `encrypted`، يمكن قراءتها على هذا النحو على سبيل المثال:
+بمجرد التنزيل ، يمكنك استخدام التطبيق لفحص حزم البيانات الخاصة بك حيث يتم تعيين البروتوكول على البروتوكول المستخدم بواسطة WireGuard VPN. عندما تكون حركة الحزمة`encrypted`، يمكن قراءتها على هذا النحو على سبيل المثال:
 
 <p align="center">
  <img src="https://i.imgur.com/Tn4M47R.jpg">
 
-ل**android**يمكنك استخدام PCAPdroid:[هتبص://بلاي.جوجل.كوم/سطور/عبس/ديتلس?إذ=كوم.إيمانويلف.رمتكبتر&هل=إن&جل=أس](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
+ل**ذكري المظهر**يمكنك استخدام PCAPdroid:[هتبص://بلاي.جوجل.كوم/سطور/عبس/ديتلس?إذ=كوم.إيمانويلف.رمتكبتر&هل=إن&جل=أس](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
 
 يجب أن ترى كل الاتصالات`closed`والحالة تعرض جميع DNS وليس أي اتصالات TLS في جميع التطبيقات. (افتح التطبيقات واستخدمها لـ PCAPdroid للمسح الضوئي)
 
@@ -529,7 +522,7 @@ Once downloaded you can use the application to inspect your data packets where t
 
 <h1 align="center"><b><i>Auto Update Pi</b></i> </h1>
 
--   افتح ملف sh جديد يسمى التحديث ونسخ اللصق النصي[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>click here</b></a>]
+-   افتح ملف sh جديد يسمى التحديث ونسخ اللصق النصي[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>انقر هنا</b></a>]
 
 
     sudo nano update.sh
@@ -539,18 +532,18 @@ Once downloaded you can use the application to inspect your data packets where t
 
     sudo chmod 700 update.sh
 
--   Open cron file by entering in command line `crontab -e`, copy&paste job command line below at the bottom of cron file and save.
+-   افتح ملف cron عن طريق إدخال سطر الأوامر`crontab -e`، قم بنسخ ولصق سطر أوامر الوظيفة أدناه في الجزء السفلي من ملف cron وحفظه.
 
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
-Pi will now update every Wednesday at 3am. Or you can go to <https://crontab.guru/>وتعيين الجدول الزمني الخاص بك.
+سيتم تحديث Pi الآن كل أربعاء الساعة 3 صباحًا. أو يمكنك الذهاب إلى[هتبص://كرونتب.جور/](https://crontab.guru/)وتعيين الجدول الزمني الخاص بك.
 
 اضبط التاريخ / المنطقة الزمنية في Pi ، أدخل في المحطة:
 
     sudo dpkg-reconfigure tzdata
 
-or set manually
+أو تعيين يدويًا
 
     sudo date -s "25 DEC 2012 11:14:00"
 
@@ -558,13 +551,13 @@ or set manually
 
 <h1 align="center"><b><i>Install Log2Ram</b></i> </h1>
 
-تتمثل إحدى أهم مزايا تفريغ ذاكرة الوصول العشوائي في أنها تعمل على تحسين ملفات**SD Card’s potential lifespan**.
-Log files are one of the things written to most by the various pieces of software you install.
-By pushing the files to your RAM, you can control how often they are written to the SD Card. You will still be able to access these files on the RAM as if they sat on your SD Card.
+تتمثل إحدى أهم مزايا تفريغ ذاكرة الوصول العشوائي في أنها تعمل على تحسين ملفات**العمر الافتراضي المحتمل لبطاقة SD**.
+تعد ملفات السجل من أكثر الأشياء التي يتم كتابتها بواسطة أجزاء البرامج المختلفة التي تقوم بتثبيتها.
+من خلال دفع الملفات إلى ذاكرة الوصول العشوائي الخاصة بك ، يمكنك التحكم في عدد مرات كتابتها على بطاقة SD. ستظل قادرًا على الوصول إلى هذه الملفات على ذاكرة الوصول العشوائي كما لو كانت موجودة على بطاقة SD الخاصة بك.
 
-Copy and paste this line in terminal:
+انسخ والصق هذا السطر في المحطة:
 
-Manually
+يدويا
 
     wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
 
@@ -587,11 +580,11 @@ Manually
 
     @reboot echo none | sudo tee /sys/class/leds/led0/trigger
 
-Red
+أحمر
 
     @reboot echo none | sudo tee /sys/class/leds/led1/trigger
 
-Reboot Pi.
+إعادة تشغيل Pi.
 
 # 
 
