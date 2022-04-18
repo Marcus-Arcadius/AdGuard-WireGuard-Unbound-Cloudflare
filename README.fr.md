@@ -30,7 +30,7 @@
 
 #### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Serveur VPN à domicile accessible depuis n'importe quel réseau extérieur (IPv4 & IPv6)
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Non lié</b></a>_avec[Trapu](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Un résolveur DNS de validation, récursif et de mise en cache
+#### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Non lié</i></b></a>avec[<i>Trapu</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Un résolveur DNS de validation, récursif et de mise en cache
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Nuageux</b></a>_: Meilleures performances et sécurité lors de la navigation sur les sites Web (DoT & DoH)
 
@@ -407,7 +407,7 @@ Exécuter dans le terminal
 
 -   Le script va vous demander Public IPv4/hostname pour le VPN._Si_vous avez une adresse IP statique, puis continuez ou tapez le domaine DNS dynamique que vous avez créé à partir du<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>des instructions</b></a>. Par exemple : trinibvpn.freeddns.org
 
--   Pour l'option de port`press enter`pour le 51820 par défaut. Pour le nom du client, mettez simplement le nom de votre choix et pour le DNS, utilisez l'option 3 (`1.1.1.1`) pour le moment. vous configurerez`AdGuard/Unbound/Cloudflare`avec le VPN après son installation terminée.
+-   Pour l'option de port`press enter`pour le 51820 par défaut. Pour le nom du client, mettez simplement le nom de votre choix et pour le DNS, utilisez l'option 3 (`1.1.1.1`) for now. You will configure `AdGuard/Unbound/Cloudflare`avec le VPN après son installation terminée.
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
