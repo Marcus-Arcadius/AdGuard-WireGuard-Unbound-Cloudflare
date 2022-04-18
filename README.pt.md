@@ -76,6 +76,7 @@ Last Checked⏰ : 17 April 2022</h2>
  
 #
 # Table of contents
+ 
  - [Requirements](#requirements)
  - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
@@ -134,7 +135,7 @@ Depois que você tiver`Etcher`instalado e`Raspberry Pi OS`arquivo baixado, agora
 
 -   Inicie o Etcher e escolha a imagem do Raspberry Pi OS que você baixou, selecione seu cartão microSD e clique`Flash`.
 
-Depois que o flash for concluído, procure em "Este PC" por um nome de disco "boot ou unidade USB" (reconecte o leitor de cartão USB se não for visto). Vá para esse disco, crie um novo arquivo de texto chamado**_`ssh without 'txt' extension`_**. Desative “Ocultar extensões para tipos de arquivo conhecidos” nas opções do explorador de arquivos, caso não o veja.
+Depois que o flash for concluído, procure em "Este PC" por um nome de disco "boot ou unidade USB" (reconecte o leitor de cartão USB se não for visto). Vá para esse disco, crie um novo arquivo de texto chamado**_`ssh without 'txt' extension`_**. Desative “Ocultar extensões para tipos de arquivos conhecidos” nas opções do explorador de arquivos, caso não o veja.
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -304,7 +305,7 @@ Remova e recrie o arquivo stubby.yaml:
 
 E copie e cole todo o texto deste arquivo de configuração atarracado[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>Clique aqui</b></a>]e salve. (`cd`para retornar à pasta inicial quando terminar).
 
--   Reinicie unbound & stubby e verifique o status:
+-   Reinicie o unbound & stubby e verifique o status:
 
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
@@ -537,7 +538,7 @@ Você deve ver todas as conexões`closed`e status mostrando todas as conexões D
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
-O Pi agora será atualizado toda quarta-feira às 3h. Ou você pode ir para<https://crontab.guru/>e defina o seu próprio horário.
+O Pi agora será atualizado todas as quartas-feiras às 3h. Ou você pode ir para<https://crontab.guru/>e defina o seu próprio horário.
 
 Ajuste a data/fuso horário do Pi no terminal:
 
@@ -574,7 +575,7 @@ Adicionar fonte de repositório (atualização automática)
 
 <h1 align="center"><b><i>Turn off Pi LED lights</b></i> </h1>
 
-Acho que a energia dos LEDs afetará eletricidade e calor desnecessários 🤷😅. De qualquer forma, não há necessidade de usá-lo apenas como um servidor de rede. Abra o arquivo cron digitando na linha de comando`crontab -e`, copie e cole a linha de comando do trabalho abaixo na parte inferior do arquivo cron e salve.
+Acho que a energia dos LEDs afetará eletricidade e calor desnecessários 🤷😅. Não há necessidade disso de qualquer maneira, se apenas usá-lo como um servidor de rede. Abra o arquivo cron digitando na linha de comando`crontab -e`, copie e cole a linha de comando do trabalho abaixo na parte inferior do arquivo cron e salve.
 
 Verde
 
