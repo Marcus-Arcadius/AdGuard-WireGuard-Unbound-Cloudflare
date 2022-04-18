@@ -20,21 +20,27 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700"></h2>
- 
-## Features
- 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> with <a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/"><b>Stubby</b></a>_ : A validating, recursive, caching DNS resolver
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
- 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+
+# 
+
+## विशेषताएँ
+
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>एडगार्ड होम</b></a>_: अपने सभी उपकरणों पर विज्ञापनों को ब्लॉक करें (<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_पाई-होल की तुलना में_</b></a>)
+
+#### _<a href="https://www.wireguard.com/"><b>वायरगार्ड</b></a>_: घर पर वीपीएन सर्वर किसी भी बाहरी नेटवर्क (आईपीवी 4 और आईपीवी 6) से सुलभ
+
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>अबाध</b></a>_साथ[ठूंठदार](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): एक मान्य, पुनरावर्ती, कैशिंग DNS रिज़ॉल्वर
+
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>क्लाउडफ्लेयर</b></a>_: वेबसाइट ब्राउज़ करते समय बेहतर प्रदर्शन और सुरक्षा (DoT और DoH)
+
+# 
+
+<i>सभी सॉफ्टवेयर फ्री, ओपन सोर्स और स्वयं के द्वारा होस्ट </i></br><a href="https://git.io/About"><b>लगभग</b></a>                              
 
 * * *
 
-<h3 align="left">DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
+### DNS क्वेरी गति . के साथ<a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S डिग टूल</b></a>🧪
 
 <b>google.com से मिलीसेकंड में परिणाम:</b>
 
@@ -54,12 +60,11 @@
 [हत्तपः://यूजर-इमेजेज.गीतुबुसेरकॉन्टेन्ट.कॉम/18756975/150319049-3ड़8ैडस9-624फ-4ब्60-8ी2-ब्80227522252.म्प4](https://user-images.githubusercontent.com/18756975/150319049-3d8acdc9-624f-4b60-8ee2-b80227522252.mp4)
 
 </p>
- </details>
+</details>
 
 * * *
 
-<h4><p align="center">
-Last Checked⏰ : 17 April 2022</h2>
+### अंतिम बार जांचा गया⏰ : 17 अप्रैल 2022</h2>
 
 <div align="center">
 
@@ -72,39 +77,36 @@ Last Checked⏰ : 17 April 2022</h2>
 |                              वायरगार्ड                             |                              ✅                             |
 
 </div>
-<div>
- 
-#
-# Table of contents
- 
- - [Requirements](#requirements)
- - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
-   - [Access Pi OS with SSH](#access-pi-os-with-ssh)
- - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
-   - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
-   - [Setting up AdGuard blocklist](#setting-up-adguard-blocklist)
-     - [Add/Remove multiple URLs](#addremove-multiple-urls)
- - [Install Unbound](#install-unbound-) <img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
- - [Install Cloudflare](#install-cloudflare-) <img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
-   - [Setup for Cloudflared (DoH)](#setup-for-cloudflared-doh)
-   - [Configure Cloudflare (DoT) on Unbound](#configure-cloudflare-dot-on-unbound)
-     - [Configure Stubby for Unbound](#configure-stubby-for-unbound)
-   - [Configure AdGuard with Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
- - [Install WireGuard](#install-wireguard-) <img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>
-   or <a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN(slower)</a> <img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
-   - [Connecting VPN to Android/IOS Phone](#connecting-vpn-to-androidios-phone)
-   - [Connecting VPN to Windows](#connecting-vpn-to-windows)
-   - [Configure Wireguard with AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
-     - [Limit traffic](#limit-traffic)
-     - [IPv6](#ipv6)
-     - [Disable all IPv6](#disable-all-ipv6)
- - [Test Vpn](#test-vpn) <img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
- - [Auto update Pi](#auto-update-pi-)
- - [Install Log2ram](#install-log2ram-)
- - [Turn Off Pi LEDs](#turn-off-pi-led-lights-)
- - [Secure your Raspberry Pi](#secure-your-raspberry-pi-)
- - [Repository Resources](#repository-resources)
- - [F.A.Q](#faq)
+
+# विषयसूची
+
+-   [आवश्यकताएं](#requirements)
+-   [रास्पबेरी पाई ओएस स्थापित करें](#install-raspberry-pi-os)<img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+    -   [एसएसएच के साथ पीआई ओएस एक्सेस करें](#access-pi-os-with-ssh)
+-   [एडगार्ड होम स्थापित करें](#install-adguard-home)<img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
+    -   [Adguard के साथ काम करने के लिए अपने उपकरण सेट करें](#set-up-your-devices-to-work-with-adguard)
+    -   [एडगार्ड ब्लॉकलिस्ट सेट करना](#setting-up-adguard-blocklist)
+        -   [अनेक URL जोड़ें/निकालें](#addremove-multiple-urls)
+-   [अनबाउंड स्थापित करें](#install-unbound)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
+-   [क्लाउडफ्लेयर स्थापित करें](#install-cloudflare)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
+    -   [Cloudflared (DoH) के लिए सेटअप](#setup-for-cloudflared-doh)
+    -   [अनबाउंड पर Cloudflare (DoT) को कॉन्फ़िगर करें](#configure-cloudflare-dot-on-unbound)
+        -   [अनबाउंड के लिए स्टब्बी कॉन्फ़िगर करें](#configure-stubby-for-unbound)
+        -   [AdGuard को Cloudflare के साथ कॉन्फ़िगर करें (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
+-   [वायरगार्ड स्थापित करें](#install-wireguard)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>या<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">ओपनवीपीएन (धीमा)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+-   [VPN को Android/IOS फ़ोन से कनेक्ट करना](#connecting-vpn-to-androidios-phone)
+-   [वीपीएन को विंडोज़ से कनेक्ट करना](#connecting-vpn-to-windows)
+-   [वायरगार्ड को एडगार्ड/अनबाउंड/क्लाउडफ्लेयर के साथ कॉन्फ़िगर करें](#configure-wireguard-with-adguardunboundcloudflare)
+    -   [यातायात सीमित करें](#limit-traffic)
+    -   [вш](#ipv6)
+    -   [सभी IPv6 अक्षम करें](#disable-all-ipv6)
+-   [टेस्ट वीपीएन](#test-vpn)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
+-   [ऑटो अपडेट पीआई](#auto-update-pi)
+-   [Log2ram स्थापित करें](#install-log2ram)
+-   [पाई एलईडी बंद करें](#turn-off-pi-led-lights)
+-   [अपने रास्पबेरी पाई को सुरक्षित करें](#secure-your-raspberry-pi)
+-   [भंडार संसाधन](#repository-resources)
+-   [सामान्य प्रश्न](#faq)
 
 # 
 
@@ -121,7 +123,7 @@ Last Checked⏰ : 17 April 2022</h2>
 
 # 
 
-<h1 align="center"><b><i>Install Raspberry Pi OS</b></i> </h1>
+# <i>रास्पबेरी पाई ओएस स्थापित करें</b></i>
 
 रास्पबेरी पाई ओएस डेस्कटॉप और लाइट संस्करणों में आता है (के लिए लाइट का उपयोग करें<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>नेतृत्वहीन</b></a>तरीका)। आप रास्पबेरी पाई को मॉनिटर/कीबोर्ड/माउस के साथ एक्सेस कर सकते हैं या इसके माध्यम से कनेक्ट कर सकते हैं<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>एसएसएच</b></a>एक टर्मिनल से।
 
@@ -171,11 +173,11 @@ __समाप्त होने पर रीबूट करें__
 
     sudo reboot
 
-**[सामग्री पर लौटें](#table-of-contents)**
+**[⬆ सामग्री पर लौटें](#table-of-contents)**
 
 # 
 
-<h1 align="center"><b><i>Install AdGuard Home</b></i> </h1>
+# <i>एडगार्ड होम स्थापित करें</b></i>
 
 यह स्थापना स्क्रिप्ट से है<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>एडगार्ड होम</b></a>मुख्य परियोजना। अपडेट रहने के लिए फॉलो करें।
 
@@ -247,11 +249,11 @@ _यदि उपयोग कर रहे हैं**डाइटपी**इ�
 
 के लिए जाओ[हत्तपः://ड़3वर्ड.गिटहब.ीो/टूल्ज़/एडब्लॉक.हटम्ल](https://d3ward.github.io/toolz/adblock.html)यह जांचने के लिए कि क्या विज्ञापन अवरुद्ध हो रहे हैं<img src="https://i.imgur.com/Q5oO9EY.png" width=100px height=80px>
 
-**[सामग्री पर लौटें](#table-of-contents)**
+**[⬆ सामग्री पर लौटें](#table-of-contents)**
 
 # 
 
-<h1 align="center"><b><i>Install Unbound</b></i> </h1>
+# <i>अनबाउंड स्थापित करें</b></i>
 
 अपने टर्मिनल में निम्न आदेश चलाएँ:
 
@@ -275,11 +277,11 @@ _यदि उपयोग कर रहे हैं**डाइटपी**अ�
 <p align="center">
  <img src="https://i.imgur.com/26ro62t.jpg">
 
-**[सामग्री पर लौटें](#table-of-contents)**
+**[⬆ सामग्री पर लौटें](#table-of-contents)**
 
 # 
 
-<h1 align="center"><b><i>Install Cloudflare</b></i> </h1>
+# <i>क्लाउडफ्लेयर स्थापित करें</b></i>
 
 ## Cloudflared के लिए सेटअप`(DoH)`
 
@@ -373,11 +375,11 @@ stubby.yaml फ़ाइल को निकालें और फिर से
 
 [हत्तपः://डंसेस.वस.ऊनि-देय.दे/](https://dnssec.vs.uni-due.de/)- "हां, आपका DNS रिज़ॉल्वर DNSSEC हस्ताक्षरों को मान्य करता है" कहना चाहिए
 
-**[सामग्री पर लौटें](#table-of-contents)**
+**[⬆ सामग्री पर लौटें](#table-of-contents)**
 
 # 
 
-<h1 align="center"><b><i>Install WireGuard</b></i> </h1>
+# <i>वायरगार्ड स्थापित करें</b></i>
 
 **वायरगार्ड स्थापित करने से पहले**, यदि आपके पास a . नहीं है<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>स्थैतिक आईपी</b></a>आपको एक मुफ्त प्राप्त करने की आवश्यकता है`Dynamic DNS Subdomain`अन्यथा आपका बाहरी आईपी पता आपके आईएसपी से गतिशील रूप से बदलता है, इसलिए आपको एक गतिशील डीएनएस सेवा स्थापित करने की आवश्यकता होगी[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>यहाँ क्लिक करें</b></a>**]. या फिर स्टेप स्किप करें।
 
@@ -405,7 +407,7 @@ stubby.yaml फ़ाइल को निकालें और फिर से
 
 -   स्क्रिप्ट आपसे VPN के लिए Public IPv4/hostname पूछने जा रही है।_अगर_आपके पास स्थिर आईपी है तो जारी रखें या फिर उस गतिशील DNS डोमेन को टाइप करें जिसे आपने बनाया था<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>निर्देश</b></a>. उदाहरण के लिए: trinibvpn.freeddns.org
 
--   पोर्ट विकल्प के लिए`press enter`डिफ़ॉल्ट 51820 के लिए। क्लाइंट नाम के लिए, बस आप जो भी नाम चाहते हैं, और DNS के लिए विकल्प 3 का उपयोग करें (`1.1.1.1`) अभी के लिए। आप कॉन्फ़िगर करेंगे`AdGuard/Unbound/Cloudflare`इसके स्थापित होने के बाद वीपीएन के साथ।
+-   पोर्ट विकल्प के लिए`press enter`डिफ़ॉल्ट रूप से 51820 के लिए। क्लाइंट नाम के लिए, बस आप जो भी नाम चाहते हैं, और DNS के लिए विकल्प 3 का उपयोग करें (`1.1.1.1`) अभी के लिए। आप कॉन्फ़िगर करेंगे`AdGuard/Unbound/Cloudflare`इसके स्थापित होने के बाद वीपीएन के साथ।
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -449,7 +451,7 @@ Google Play या ऐप स्टोर से वायरगार्ड ऐ
 
 -   सभी टेक्स्ट को हाइलाइट करें, इसे पीसी पर txt फाइल में कॉपी और पेस्ट करें और सेव करें। फिर से एक्सटेंशन का नाम बदलें`txt`को`conf`. अब आपके पास उस वायरगार्ड क्लाइंट के लिए कॉन्फिग फाइल है।
 
--   अब आप कॉन्फ़िग फ़ाइल को वायरगार्ड (फ़ाइल विकल्प से आयात) में आयात कर सकते हैं।
+-   You can now import the config file to WireGuard (import from file option).
 
 ## वायरगार्ड को इसके साथ कॉन्फ़िगर करें`Adguard/Unbound/Cloudflare`
 
@@ -488,7 +490,7 @@ _याद रखें कि यह तब होता है जब आप �
 
 यदि आप IPv6 का उपयोग कर रहे हैं, तो WiFi से कनेक्ट होने पर आपको WireGuard द्वारा अनुमत IPs में प्रवेश करना होगा`fe80::1/0`भी। उदाहरण के लिए`192.168.100.0/0, fe80::1/0`
 
-विंडोज़ पीसी पर ईथरनेट केबल से कनेक्ट होने पर, आपको दर्ज करना होगा`::1`IPv6 पते में "इंटरनेट प्रोटोकॉल संस्करण 6 (TCP/IPv6)" पसंदीदा DNS सर्वर में।
+विंडोज़ पीसी पर ईथरनेट केबल से कनेक्ट होने पर, आपको दर्ज करना होगा`::1`"इंटरनेट प्रोटोकॉल संस्करण 6 (टीसीपी/आईपीवी 6)" पसंदीदा DNS सर्वर में IPv6 पते में।
 
 फिर जाएं[हत्तपः://ीपव6लक.कॉम/](https://ipv6leak.com/)और आपको देखना चाहिए"_आपका IPv6 लीक नहीं हो रहा है_".
 
@@ -515,26 +517,23 @@ _याद रखें कि यह तब होता है जब आप �
 
 आपको सभी कनेक्शन देखने चाहिए`closed`और स्थिति सभी ऐप्स में सभी DNS और कोई TLS कनेक्शन नहीं दिखा रही है। (पीसीएपीड्रॉइड को स्कैन करने के लिए ऐप्स खोलें और उनका उपयोग करें)
 
-**[सामग्री पर लौटें](#table-of-contents)**
+**[⬆ सामग्री पर लौटें](#table-of-contents)**
 
 * * *
 
 # 
 
-<h1 align="center"><b><i>Auto Update Pi</b></i> </h1>
+# <i>ऑटो अपडेट पीआई</b></i>
 
--   नई sh फ़ाइल खोलें जिसे अपडेट कहा जाता है और कॉपी पेस्ट स्क्रिप्ट[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>यहाँ क्लिक करें</b></a>]
-
+नई sh फ़ाइल खोलें जिसे अपडेट कहा जाता है और कॉपी पेस्ट स्क्रिप्ट[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>यहाँ क्लिक करें</b></a>]
 
     sudo nano update.sh
 
--   अनुमति सेट करें
-
+अनुमति सेट करें
 
     sudo chmod 700 update.sh
 
--   कमांड लाइन में प्रवेश करके क्रॉन फ़ाइल खोलें`crontab -e`, क्रॉन फ़ाइल के नीचे जॉब कमांड लाइन को कॉपी पेस्ट करें और सेव करें।
-
+कमांड लाइन में प्रवेश करके क्रॉन फ़ाइल खोलें`crontab -e`, क्रॉन फ़ाइल के नीचे जॉब कमांड लाइन को कॉपी पेस्ट करें और सेव करें।
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
@@ -550,11 +549,11 @@ _याद रखें कि यह तब होता है जब आप �
 
 # 
 
-<h1 align="center"><b><i>Install Log2Ram</b></i> </h1>
+# <i>Log2Ram स्थापित करें</b></i>
 
 आपकी RAM को ऑफ़लोड करने के सबसे महत्वपूर्ण लाभों में से एक यह है कि यह आपके को बेहतर बनाता है**एसडी कार्ड का संभावित जीवनकाल**.
 लॉग फ़ाइलें आपके द्वारा इंस्टॉल किए गए सॉफ़्टवेयर के विभिन्न टुकड़ों द्वारा लिखी गई चीज़ों में से एक हैं।
-फ़ाइलों को अपनी रैम में धकेल कर, आप नियंत्रित कर सकते हैं कि वे कितनी बार एसडी कार्ड पर लिखी जाती हैं। आप अभी भी इन फ़ाइलों को रैम पर एक्सेस कर पाएंगे जैसे कि वे आपके एसडी कार्ड पर बैठे हों।
+फ़ाइलों को अपनी रैम में धकेल कर, आप नियंत्रित कर सकते हैं कि वे कितनी बार एसडी कार्ड पर लिखी जाती हैं। आप अभी भी इन फ़ाइलों को RAM पर एक्सेस कर पाएंगे जैसे कि वे आपके SD कार्ड पर बैठे हों।
 
 इस लाइन को टर्मिनल में कॉपी और पेस्ट करें:
 
@@ -573,7 +572,7 @@ _याद रखें कि यह तब होता है जब आप �
 
 # 
 
-<h1 align="center"><b><i>Turn off Pi LED lights</b></i> </h1>
+# <i>पाई एलईडी लाइट बंद करें</b></i>
 
 मुझे लगता है कि एल ई डी की शक्ति अनावश्यक बिजली और गर्मी को प्रभावित करेगी। वैसे भी इसकी कोई आवश्यकता नहीं है अगर इसे केवल नेटवर्क सर्वर के रूप में उपयोग किया जाता है। कमांड लाइन में प्रवेश करके क्रॉन फ़ाइल खोलें`crontab -e`, क्रॉन फ़ाइल के नीचे जॉब कमांड लाइन को कॉपी पेस्ट करें और सेव करें।
 
@@ -589,15 +588,16 @@ _याद रखें कि यह तब होता है जब आप �
 
 # 
 
-<h1 align="center"><b><i>Secure your Raspberry Pi</b></i> </h1>
+# <i>अपने रास्पबेरी पाई को सुरक्षित करें</b></i>
+
 <p align="center">
 <a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
-<p align="center">
-[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>click here</b></a>]
+
+[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>यहाँ क्लिक करें</b></a>]
 
 <i>(मैं सिर्फ Fail2Ban का उपयोग करता हूं और SSH पोर्ट बदलता हूं)</i>
 
-**[सामग्री पर लौटें](#table-of-contents)**
+**[⬆ सामग्री पर लौटें](#table-of-contents)**
 
 * * *
 
@@ -634,7 +634,7 @@ _याद रखें कि यह तब होता है जब आप �
 
 [हत्तपः://डॉक्स.पि-होल.नेट/गाइड्स/डंस/अनबाउंड/](https://docs.pi-hole.net/guides/dns/unbound/)
 
-[हत्तपः://नलनेतलबस.नल/डॉक्यूमेंटेशन/अनबाउंड/अनबाउंड.कफ/](https://nlnetlabs.nl/documentation/unbound/unbound.conf/)
+<https://nlnetlabs.nl/documentation/unbound/unbound.conf/>
 
 [हत्तपः://दंसपरिवस्य.ऑर्ग/डंस\_प्राइवेसी\_क्लाइंट्स/](https://dnsprivacy.org/dns_privacy_clients/)
 
