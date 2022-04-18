@@ -26,7 +26,7 @@
  
 #### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
 #### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a>_ with  [Stubby](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/) : A validating, recursive, caching DNS resolver
+#### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Unbound</i></b></a> with [<i>Stubby</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/) : A validating, recursive, caching DNS resolver
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
  
 #
