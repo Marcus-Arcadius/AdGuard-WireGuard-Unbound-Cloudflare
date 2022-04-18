@@ -67,7 +67,7 @@ Last Checked⏰ : 17 April 2022</h2>
 | :---------------------------------------------------------------: | :--------------------------------------------------------: |
 |                         Inicio de AdGuard                         |                              ✅                             |
 |                           Sin consolidar                          |                              ✅                             |
-|                         Llamarada de nube                         |                              ✅                             |
+|                        Llamarada de la nube                       |                              ✅                             |
 |                            Achaparrado                            |                              ✅                             |
 |                         Guardia de alambre                        |                              ✅                             |
 
@@ -76,6 +76,7 @@ Last Checked⏰ : 17 April 2022</h2>
  
 #
 # Table of contents
+ 
  - [Requirements](#requirements)
  - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
@@ -184,7 +185,7 @@ Ejecute el siguiente comando en su terminal:
 
 -   Cuando finalice la instalación, aparecerá una ventana emergente en la terminal que muestra`links`a su página de inicio de AdGuard (Comenzar)
 
--   `IMPORTANT:`En la opción Escuchar interfaces, elija`Eth0` and select next
+-   `IMPORTANT:`En la opción Escuchar interfaces, elija`Eth0`y seleccione siguiente
 
     <p align="center">
      <img src="https://i.imgur.com/Wa00lDp.jpg" width=580px height=690px>
@@ -260,7 +261,7 @@ Para consultar recursivamente un host que no está almacenado en caché como una
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
-`IMPORTANT:` This needs to update every 6 months. To _**actualización automática**_root.hints cada 6 meses necesita crear un trabajo cron.
+`IMPORTANT:`Esto necesita actualizarse cada 6 meses. Para_**actualización automática**_root.hints cada 6 meses necesita crear un trabajo cron.
 
 Entrar en línea de comando`crontab -e`, le pedirá que seleccione un editor (elija 1) y pegue estas líneas en la parte inferior de crontab y guarde (control+x luego y luego ingrese):
 
@@ -327,7 +328,7 @@ Y copie y pegue todo el texto de este archivo de configuración rechoncho[<a hre
 <p align="center">
  <img src="https://i.imgur.com/Ug4Euou.jpg" width=650px height=370px>
 
--   Luego, en la configuración de DNS, busque la sección de configuración de caché de DNS y establezca el tamaño de caché en`0`(el almacenamiento en caché ya lo maneja Unbound) y haga clic en Aplicar.
+-   Luego, en la configuración de DNS, busque la sección de configuración de caché de DNS y establezca el tamaño de caché en`0`(el almacenamiento en caché ya lo gestiona Unbound) y haga clic en Aplicar.
 
 <p align="center">
  <img src="https://i.imgur.com/8Q5Zb0M.jpg" width=650px height=370px>
@@ -574,7 +575,7 @@ Agregar fuente de repositorio (actualización automática)
 
 <h1 align="center"><b><i>Turn off Pi LED lights</b></i> </h1>
 
-Supongo que la alimentación de los LED afectará a la electricidad y el calor innecesarios 🤷😅. De todos modos, no es necesario si solo lo usa como servidor de red. Abra el archivo cron ingresando en la línea de comando`crontab -e`, copie la línea de comando de trabajo de pegado a continuación en la parte inferior del archivo cron y guárdela.
+Supongo que la alimentación de los LED afectará a la electricidad y el calor innecesarios 🤷😅. De todos modos, no es necesario si solo lo usa como un servidor de red. Abra el archivo cron ingresando en la línea de comando`crontab -e`, copie la línea de comando de trabajo de pegado a continuación en la parte inferior del archivo cron y guárdela.
 
 Verde
 
