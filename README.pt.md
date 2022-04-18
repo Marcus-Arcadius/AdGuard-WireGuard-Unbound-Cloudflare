@@ -30,7 +30,7 @@
 
 #### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Servidor VPN em casa acessível a partir de qualquer rede externa (IPv4 e IPv6)
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Não vinculado</b></a>_com[Atarracado](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Um resolvedor de DNS de validação, recursivo e com cache
+#### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Não vinculado</i></b></a>com[<i>Atarracado</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Um resolvedor de DNS de validação, recursivo e com cache
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Melhor desempenho e segurança ao navegar em sites (DoT e DoH)
 
@@ -93,7 +93,7 @@ Public Cloudflare/Quad9/Google DNS resolvers :
     -   [Configurar Cloudflare (DoT) em Unbound](#configure-cloudflare-dot-on-unbound)
         -   [Configurar Stubby para Unbound](#configure-stubby-for-unbound)
         -   [Configurar AdGuard com Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
--   [Instalar o WireGuard](#install-wireguard)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>ou<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (mais lento)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+-   [Install WireGuard](#install-wireguard)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>ou<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (mais lento)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
 -   [Conectando VPN ao telefone Android/IOS](#connecting-vpn-to-androidios-phone)
 -   [Conectando VPN ao Windows](#connecting-vpn-to-windows)
 -   [Configurar Wireguard com AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
@@ -129,7 +129,7 @@ Raspberry Pi OS vem nas versões desktop e lite (use lite para<a href="https://w
 
 Instale o balenEtcher e baixe a imagem Pi para escrever no cartão microSD.
 
--   Download Raspberry Pi OS:<https://www.raspberrypi.org/software/operating-systems/>
+-   Download Raspberry Pi OS: <https://www.raspberrypi.org/software/operating-systems/>
 
 -   Baixe o BalenaEtcher:<https://www.balena.io/etcher/>
 
@@ -433,7 +433,7 @@ WireGuard (App Store):<https://apps.apple.com/us/app/wireguard/id1441195209>
 
 Você precisa digitalizar o código QR mostrado no terminal com o aplicativo WireGuard, selecione o`+ button`e use a opção`Scan from QR code`para instalar a configuração.
 
-`IMPORTANT`: Habilitar**back-end do módulo do kernel**nas configurações
+`IMPORTANT`: Habilitar**back-end do módulo do kernel** in settings
 
 <p align="left">
  <img src="https://i.imgur.com/R4qbiOQ.jpg" width=250px height=350px>
