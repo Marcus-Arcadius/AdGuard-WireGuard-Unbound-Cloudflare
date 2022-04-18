@@ -20,7 +20,7 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700"></h2>
  
 ## Features
  
@@ -109,11 +109,11 @@ Last Checked⏰ : 17 April 2022</h2>
 
 # Conditions
 
-Ce tutoriel est basé sur Raspberry Pi, mais vous pouvez utiliser n'importe quel Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>système opérateur</b></a><i>(bit)</i>, tout matériel ou un<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>SVP</b></a>.</br>(Raspberry Pi OS est le plus simple et recommandé pour Pi ou pour les utilisateurs plus expérimentés,<b>DiètePi</b>OS est également recommandé)
+Ce tutoriel est basé sur Raspberry Pi, mais vous pouvez utiliser n'importe quel Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>système opérateur</b></a><i>(bit)</i>, tout matériel ou un<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>SVP</b></a>.</br>(Raspberry Pi OS is most simple and recommended for Pi or for more experience users, <b>DiètePi</b>OS est également recommandé)
 
--   Une version Raspberry Pi 3 ou 4
+-   A Raspberry Pi 3 or 4 version
 -   Un routeur qui prend en charge la redirection de port (Most Can)
--   Lecteur de carte micro SD USB
+-   MicroSD USB card reader
 -   Carte MicroSD (8 Go ou plus, au moins Classe 4)
 -   câble Ethernet
 -   (Facultatif si vous utilisez un moniteur) MicroHDMI-(RPi 4) ou HDMI-(RPi 3)
@@ -145,7 +145,7 @@ Une fois le clignotement terminé, recherchez dans "Ce PC" un nom de disque "dé
 
 -   Attendez une minute pour le premier démarrage de Pi
 
--   Ouvrez le navigateur et connectez-vous à la page du panneau de votre routeur
+-   Open browser and log in your router's panel page
 
 -   Trouvez la liste de tous les appareils connectés à votre réseau et copiez l'adresse IP du Raspberry Pi (il aura très probablement le nom d'hôte`raspberrypi`)
 
@@ -162,7 +162,7 @@ Tapez "oui" pour la question sur les empreintes digitales et tapez "framboise" p
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
 
-Exécutez dans le terminal :
+Run in terminal:
 
     sudo apt update -y && sudo apt upgrade -y
 
@@ -182,7 +182,7 @@ Exécutez la commande suivante dans votre terminal :
 
     curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 
--   Lorsque l'installation est terminée, une fenêtre apparaîtra dans le terminal montrant`links`à votre page d'accueil AdGuard (Commencer)
+-   Lorsque l'installation est terminée, une fenêtre apparaîtra dans le terminal montrant`links` to your AdGuard home page(Get Started)
 
 -   `IMPORTANT:`Dans l'option Écouter les interfaces, choisissez`Eth0`et sélectionnez suivant
 
