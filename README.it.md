@@ -76,6 +76,7 @@ Last Checked⏰ : 17 April 2022</h2>
  
 #
 # Table of contents
+ 
  - [Requirements](#requirements)
  - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
@@ -441,7 +442,7 @@ WireGuard per Windows:<https://download.wireguard.com/windows-client/wireguard-i
 
 -   Creare un`new text document`con qualsiasi nome su PV per copiare e incollare il testo dal file di configurazione del client WireGuard.
 
--   Per vedere il testo nel file di configurazione del client, digita nel terminale:
+-   Per vedere il testo nel file di configurazione del client, digitare nel terminale:
 
 
     sudo cat /root/yourclientname.conf
