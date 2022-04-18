@@ -30,7 +30,7 @@
 
 #### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Server VPN a casa accessibile da qualsiasi rete esterna (IPv4 e IPv6)
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Non vincolato</b></a>_insieme a[Tozzo](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): un risolutore DNS di convalida, ricorsivo e di memorizzazione nella cache
+#### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Non vincolato</i></b></a>insieme a[<i>Tozzo</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): un risolutore DNS di convalida, ricorsivo e di memorizzazione nella cache
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Prestazioni e sicurezza migliori durante la navigazione nei siti Web (DoT e DoH)
 
@@ -457,7 +457,7 @@ WireGuard per Windows:<https://download.wireguard.com/windows-client/wireguard-i
 
 _Ricorda che questo è per quando sei connesso a WireGuard VPN su una rete esterna o a casa 24 ore su 24, 7 giorni su 7, perché hai già AdGuard/Unbound/Cloudflare configurato e in esecuzione manualmente sui tuoi dispositivi._(nessun problema con entrambi impostati per la mia esperienza)
 
--   Nell'app WireGuard, seleziona il tuo tunnel e seleziona Modifica (matita in alto a destra)
+-   In WireGuard app, select your tunnel and select edit (pencil on top right)
 
 -   In Server DNS accedi`Pi's IP`e salva (IPv4 e IPv6)
 
