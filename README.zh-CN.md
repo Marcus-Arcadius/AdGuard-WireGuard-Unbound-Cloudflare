@@ -20,21 +20,27 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700"></h2>
- 
-## Features
- 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> with <a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/"><b>Stubby</b></a>_ : A validating, recursive, caching DNS resolver
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
- 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+
+# 
+
+## 特征
+
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard 主页</b></a>_：在您的所有设备上屏蔽广告（<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_与 Pi-Hole 相比_</b></a>)
+
+#### _<a href="https://www.wireguard.com/"><b>线卫</b></a>_：可从任何外部网络访问家中的 VPN 服务器（IPv4 和 IPv6）
+
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>未绑定</b></a>_和[粗短](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): 一个验证的、递归的、缓存的 DNS 解析器
+
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: 浏览网站时更好的性能和安全性(DoT & DoH)
+
+# 
+
+<i>所有软件都是免费、开源和 自托管 </i></br><a href="https://git.io/About"><b>关于</b></a>                              
 
 * * *
 
-<h3 align="left">DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
+### DNS查询速度与<a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND的挖掘工具</b></a>🧪
 
 <b>google.com 的结果（以毫秒为单位）：</b>
 
@@ -54,12 +60,11 @@ AdGuard 默认 DNS<b><i>对比</i></b>这个设置⭐：
 [HTTPS://user-images.GitHub user content.com/18756975/150319049-3的8ACD C9-624发-4不60-8哦哦2-不80227522252.门票4](https://user-images.githubusercontent.com/18756975/150319049-3d8acdc9-624f-4b60-8ee2-b80227522252.mp4)
 
 </p>
- </details>
+</details>
 
 * * *
 
-<h4><p align="center">
-Last Checked⏰ : 17 April 2022</h2>
+### 最后检查⏰：2022 年 4 月 17 日</h2>
 
 <div align="center">
 
@@ -72,39 +77,36 @@ Last Checked⏰ : 17 April 2022</h2>
 |                             线卫                             |                            ✅                           |
 
 </div>
-<div>
- 
-#
-# Table of contents
- 
- - [Requirements](#requirements)
- - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
-   - [Access Pi OS with SSH](#access-pi-os-with-ssh)
- - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
-   - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
-   - [Setting up AdGuard blocklist](#setting-up-adguard-blocklist)
-     - [Add/Remove multiple URLs](#addremove-multiple-urls)
- - [Install Unbound](#install-unbound-) <img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
- - [Install Cloudflare](#install-cloudflare-) <img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
-   - [Setup for Cloudflared (DoH)](#setup-for-cloudflared-doh)
-   - [Configure Cloudflare (DoT) on Unbound](#configure-cloudflare-dot-on-unbound)
-     - [Configure Stubby for Unbound](#configure-stubby-for-unbound)
-   - [Configure AdGuard with Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
- - [Install WireGuard](#install-wireguard-) <img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>
-   or <a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN(slower)</a> <img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
-   - [Connecting VPN to Android/IOS Phone](#connecting-vpn-to-androidios-phone)
-   - [Connecting VPN to Windows](#connecting-vpn-to-windows)
-   - [Configure Wireguard with AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
-     - [Limit traffic](#limit-traffic)
-     - [IPv6](#ipv6)
-     - [Disable all IPv6](#disable-all-ipv6)
- - [Test Vpn](#test-vpn) <img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
- - [Auto update Pi](#auto-update-pi-)
- - [Install Log2ram](#install-log2ram-)
- - [Turn Off Pi LEDs](#turn-off-pi-led-lights-)
- - [Secure your Raspberry Pi](#secure-your-raspberry-pi-)
- - [Repository Resources](#repository-resources)
- - [F.A.Q](#faq)
+
+# 目录
+
+-   [要求](#requirements)
+-   [安装树莓派操作系统](#install-raspberry-pi-os)<img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+    -   [使用 SSH 访问 Pi OS](#access-pi-os-with-ssh)
+-   [安装 AdGuard 主页](#install-adguard-home)<img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
+    -   [设置您的设备以使用 Adguard](#set-up-your-devices-to-work-with-adguard)
+    -   [设置 AdGuard 阻止列表](#setting-up-adguard-blocklist)
+        -   [添加/删除多个 URL](#addremove-multiple-urls)
+-   [安装未绑定](#install-unbound)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
+-   [安装 Cloudflare](#install-cloudflare)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
+    -   [Cloudflared (DoH) 的设置](#setup-for-cloudflared-doh)
+    -   [在 Unbound 上配置 Cloudflare (DoT)](#configure-cloudflare-dot-on-unbound)
+        -   [为未绑定配置 Stubby](#configure-stubby-for-unbound)
+        -   [使用 Cloudflare (DoH&DoT) 配置 AdGuard](#configure-adguard-with-cloudflaredohdot)
+-   [安装 WireGuard](#install-wireguard)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>或者<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN（较慢）</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+-   [将 VPN 连接到 Android/IOS 手机](#connecting-vpn-to-androidios-phone)
+-   [将 VPN 连接到 Windows](#connecting-vpn-to-windows)
+-   [使用 AdGuard/Unbound/Cloudflare 配置 Wireguard](#configure-wireguard-with-adguardunboundcloudflare)
+    -   [限制流量](#limit-traffic)
+    -   [Ипвш](#ipv6)
+    -   [禁用所有 IPv6](#disable-all-ipv6)
+-   [测试VPN](#test-vpn)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
+-   [自动更新 Pi](#auto-update-pi)
+-   [安装 Log2ram](#install-log2ram)
+-   [关闭 Pi LED](#turn-off-pi-led-lights)
+-   [保护您的树莓派](#secure-your-raspberry-pi)
+-   [存储库资源](#repository-resources)
+-   [常问问题](#faq)
 
 # 
 
@@ -121,11 +123,11 @@ Last Checked⏰ : 17 April 2022</h2>
 
 # 
 
-<h1 align="center"><b><i>Install Raspberry Pi OS</b></i> </h1>
+# <i>安装树莓派操作系统</b></i>
 
-Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>无头</b></a>模式）。您可以使用显示器/键盘/鼠标访问 Raspberry Pi 或通过以下方式连接<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>从一个终端。
+Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>无头</b></a>模式）。您可以使用显示器/键盘/鼠标访问 Raspberry Pi 或通过以下方式连接<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>从终端。
 
-安装 balenEtcher 并下载 Pi 映像以写入 microSD 卡。
+安装balenEtcher并下载Pi镜像写入microSD卡。
 
 -   下载树莓派操作系统：[HTTPS://呜呜呜.raspberry皮.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/)
 
@@ -135,7 +137,7 @@ Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.g
 
 -   启动 Etcher 并选择您下载的 Raspberry Pi OS 映像，选择您的 microSD 卡并单击`Flash`.
 
-刷机完成后，在“这台电脑”中查找磁盘名称“boot or USB drive”（如果没有看到，请重新插入 USB 读卡器）。转到该磁盘，创建一个名为的新文本文件**_`ssh without 'txt' extension`_**.如果看不到，请在文件资源管理器选项中禁用“隐藏已知文件类型的扩展名”。
+刷机完成后，在“This PC”中查找磁盘名称“boot or USB drive”（如果没有看到，请重新插入 USB 读卡器）。转到该磁盘，创建一个名为的新文本文件**_`ssh without 'txt' extension`_**.如果看不到，请在文件资源管理器选项中禁用“隐藏已知文件类型的扩展名”。
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -175,7 +177,7 @@ __完成后重启__
 
 # 
 
-<h1 align="center"><b><i>Install AdGuard Home</b></i> </h1>
+# <i>安装 AdGuard 主页</b></i>
 
 这个安装脚本来自<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard 主页</b></a>主要项目。关注以保持更新。
 
@@ -237,7 +239,7 @@ __完成后重启__
 
     nano bulkurls.py
 
-然后复制粘贴脚本配置[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>点击这里</b></a>].放`your AdGuard credentials`并保存（control+x 然后 y 然后输入）。
+然后复制并粘贴脚本配置[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>点击这里</b></a>].放`your AdGuard credentials`并保存（control+x 然后 y 然后输入）。
 
 _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip install requests`因为它默认不安装。_
 
@@ -251,7 +253,7 @@ _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip inst
 
 # 
 
-<h1 align="center"><b><i>Install Unbound</b></i> </h1>
+# <i>安装未绑定</b></i>
 
 在终端中运行以下命令：
 
@@ -279,7 +281,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 # 
 
-<h1 align="center"><b><i>Install Cloudflare</b></i> </h1>
+# <i>安装 Cloudflare</b></i>
 
 ## Cloudflared 的设置`(DoH)`
 
@@ -377,7 +379,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 # 
 
-<h1 align="center"><b><i>Install WireGuard</b></i> </h1>
+# <i>安装 WireGuard</b></i>
 
 **安装 WireGuard 之前**, 如果你没有<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>静态IP</b></a>你需要得到一个免费的`Dynamic DNS Subdomain`否则您的外部 IP 地址会从您的 ISP 动态更改，因此您需要设置动态 DNS 服务[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>点击这里</b></a>**].否则跳过这一步。
 
@@ -410,12 +412,12 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
 
--   等待安装完成并显示二维码，不要关闭。但如果你这样做，`regenerate qrcode`, 输入终端但只替换名称`yourclientname.conf`文件到你的：
+-   等待安装完成并显示二维码，不要关闭。但如果你这样做，`regenerate qrcode`, 输入终端但只替换名称`yourclientname.conf`文件给你：
 
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
 
-`IMPORTANT:`您需要为与 VPN 一起使用的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
+`IMPORTANT:`您需要为使用 VPN 的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
 
 <b>采用_开放式VPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>点击这里</b></a>]
 
@@ -521,20 +523,17 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 # 
 
-<h1 align="center"><b><i>Auto Update Pi</b></i> </h1>
+# <i>自动更新 Pi</b></i>
 
--   打开名为更新和复制粘贴脚本的新 sh 文件[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>点击这里</b></a>]
-
+打开名为更新和复制粘贴脚本的新 sh 文件[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>点击这里</b></a>]
 
     sudo nano update.sh
 
--   设置权限
-
+设置权限
 
     sudo chmod 700 update.sh
 
--   通过在命令行中输入打开 cron 文件`crontab -e`，在cron文件底部复制粘贴作业命令行并保存。
-
+通过在命令行中输入打开 cron 文件`crontab -e`，在cron文件底部复制粘贴作业命令行并保存。
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
@@ -550,9 +549,9 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 # 
 
-<h1 align="center"><b><i>Install Log2Ram</b></i> </h1>
+# <i>安装 Log2Ram</b></i>
 
-卸载 RAM 的最显着优势之一是它可以改善您的**SD 卡的潜在使用寿命**.
+卸载 RAM 的最显着优势之一是它可以提高您的**SD 卡的潜在使用寿命**.
 日志文件是您安装的各种软件写入最多的内容之一。
 通过将文件推送到 RAM，您可以控制将它们写入 SD 卡的频率。您仍然可以访问 RAM 上的这些文件，就像它们位于您的 SD 卡上一样。
 
@@ -573,7 +572,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 # 
 
-<h1 align="center"><b><i>Turn off Pi LED lights</b></i> </h1>
+# <i>关闭 Pi LED 灯</b></i>
 
 我猜 LED 的电源会影响不必要的电力和热量🤷😅。如果只是将其用作网络服务器，则无论如何都不需要它。通过在命令行中输入打开 cron 文件`crontab -e`，在cron文件底部复制粘贴作业命令行并保存。
 
@@ -589,11 +588,12 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 # 
 
-<h1 align="center"><b><i>Secure your Raspberry Pi</b></i> </h1>
+# <i>保护您的树莓派</b></i>
+
 <p align="center">
 <a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
-<p align="center">
-[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>click here</b></a>]
+
+[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>点击这里</b></a>]
 
 <i>（我只是使用 Fail2Ban 并更改 SSH 端口）</i>
 
@@ -636,7 +636,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 [HTTPS://NL net labs.哪里/documentation/unbound/unbound.conf/](https://nlnetlabs.nl/documentation/unbound/unbound.conf/)
 
-<https://dnsprivacy.org/dns_privacy_clients/>
+[HTTPS://DNS privacy.org/DNS_privacy_clients/](https://dnsprivacy.org/dns_privacy_clients/)
 
 [HTTPS://GitHub.com/按U的EP ND/pi hole-unbound](https://github.com/anudeepND/pihole-unbound)
 
