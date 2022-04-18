@@ -20,21 +20,27 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700"></h2>
- 
-## Features
- 
-#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Home</b></a>_ : Block ads on all your devices( <a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_compared to Pi-Hole_</b></a> )
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_ : VPN server at home accessible from any outside network(IPv4 & IPv6)
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> with <a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/"><b>Stubby</b></a>_ : A validating, recursive, caching DNS resolver
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
- 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+
+# 
+
+## Функции
+
+#### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>Главная страница AdGuard</b></a>_: заблокировать рекламу на всех ваших устройствах(<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_по сравнению с Пи-Хоул_</b></a>)
+
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: VPN-сервер дома доступен из любой внешней сети (IPv4 и IPv6)
+
+#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Свободный</b></a>_с[Стабби](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Проверяющий, рекурсивный, кэширующий преобразователь DNS
+
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Облачная вспышка</b></a>_: Лучшая производительность и безопасность при просмотре веб-сайтов (DoT и DoH).
+
+# 
+
+<i>Все программное обеспечение является бесплатным, с открытым исходным кодом и самостоятельный </i></br><a href="https://git.io/About"><b>О</b></a>                              
 
 * * *
 
-<h3 align="left">DNS query speed with <a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool </b></a> 🧪</h1>
+### Скорость запроса DNS с<a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>Инструмент для раскопок BIND'S</b></a>🧪
 
 <b>Результаты с google.com в миллисекундах:</b>
 
@@ -54,12 +60,11 @@ DNS AdGuard по умолчанию<b><i>против</i></b>эта устано
 [хттпс://усер-итагес.гитнубосерконтент.ком/18756975/150319049-3д8акдс9-624ф-4б60-8е2-б80227522252.мпч](https://user-images.githubusercontent.com/18756975/150319049-3d8acdc9-624f-4b60-8ee2-b80227522252.mp4)
 
 </p>
- </details>
+</details>
 
 * * *
 
-<h4><p align="center">
-Last Checked⏰ : 17 April 2022</h2>
+### Последняя проверка⏰ : 17 апреля 2022 г.</h2>
 
 <div align="center">
 
@@ -72,39 +77,36 @@ Last Checked⏰ : 17 April 2022</h2>
 |                            WireGuard                            |                              ✅                             |
 
 </div>
-<div>
- 
-#
-# Table of contents
- 
- - [Requirements](#requirements)
- - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
-   - [Access Pi OS with SSH](#access-pi-os-with-ssh)
- - [Install AdGuard Home](#install-adguard-home-) <img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
-   - [Set up your devices to work with Adguard](#set-up-your-devices-to-work-with-adguard)
-   - [Setting up AdGuard blocklist](#setting-up-adguard-blocklist)
-     - [Add/Remove multiple URLs](#addremove-multiple-urls)
- - [Install Unbound](#install-unbound-) <img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
- - [Install Cloudflare](#install-cloudflare-) <img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
-   - [Setup for Cloudflared (DoH)](#setup-for-cloudflared-doh)
-   - [Configure Cloudflare (DoT) on Unbound](#configure-cloudflare-dot-on-unbound)
-     - [Configure Stubby for Unbound](#configure-stubby-for-unbound)
-   - [Configure AdGuard with Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
- - [Install WireGuard](#install-wireguard-) <img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>
-   or <a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN(slower)</a> <img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
-   - [Connecting VPN to Android/IOS Phone](#connecting-vpn-to-androidios-phone)
-   - [Connecting VPN to Windows](#connecting-vpn-to-windows)
-   - [Configure Wireguard with AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
-     - [Limit traffic](#limit-traffic)
-     - [IPv6](#ipv6)
-     - [Disable all IPv6](#disable-all-ipv6)
- - [Test Vpn](#test-vpn) <img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
- - [Auto update Pi](#auto-update-pi-)
- - [Install Log2ram](#install-log2ram-)
- - [Turn Off Pi LEDs](#turn-off-pi-led-lights-)
- - [Secure your Raspberry Pi](#secure-your-raspberry-pi-)
- - [Repository Resources](#repository-resources)
- - [F.A.Q](#faq)
+
+# Оглавление
+
+-   [Требования](#requirements)
+-   [Установите ОС Raspberry Pi](#install-raspberry-pi-os)<img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+    -   [Доступ к ОС Pi с помощью SSH](#access-pi-os-with-ssh)
+-   [Установить AdGuard Главная](#install-adguard-home)<img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
+    -   [Настройте свои устройства для работы с Adguard](#set-up-your-devices-to-work-with-adguard)
+    -   [Настройка черного списка AdGuard](#setting-up-adguard-blocklist)
+        -   [Добавить/удалить несколько URL-адресов](#addremove-multiple-urls)
+-   [Установить без привязки](#install-unbound)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
+-   [Установить CloudFlare](#install-cloudflare)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
+    -   [Настройка для Cloudflared (DoH)](#setup-for-cloudflared-doh)
+    -   [Настройте Cloudflare (DoT) на Unbound](#configure-cloudflare-dot-on-unbound)
+        -   [Настроить Stubby для несвязанных](#configure-stubby-for-unbound)
+        -   [Настройте AdGuard с Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
+-   [Установить WireGuard](#install-wireguard)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>или<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (медленнее)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+-   [Подключение VPN к телефону Android/IOS](#connecting-vpn-to-androidios-phone)
+-   [Подключение VPN к Windows](#connecting-vpn-to-windows)
+-   [Настройте Wireguard с помощью AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
+    -   [Ограничить трафик](#limit-traffic)
+    -   [Ипвш](#ipv6)
+    -   [Отключить все IPv6](#disable-all-ipv6)
+-   [Тестовый VPN](#test-vpn)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
+-   [Автоматическое обновление Пи](#auto-update-pi)
+-   [Установить Log2ram](#install-log2ram)
+-   [Выключите светодиоды Pi](#turn-off-pi-led-lights)
+-   [Защитите свой Raspberry Pi](#secure-your-raspberry-pi)
+-   [Ресурсы репозитория](#repository-resources)
+-   [ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ](#faq)
 
 # 
 
@@ -121,7 +123,7 @@ Last Checked⏰ : 17 April 2022</h2>
 
 # 
 
-<h1 align="center"><b><i>Install Raspberry Pi OS</b></i> </h1>
+# <i>Установите ОС Raspberry Pi</b></i>
 
 ОС Raspberry Pi поставляется в настольной и облегченной версиях (используйте облегченную для<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>без головы</b></a>Режим). Вы можете получить доступ к Raspberry Pi с помощью монитора/клавиатуры/мыши или подключиться через<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>из терминала.
 
@@ -175,7 +177,7 @@ __Перезагрузитесь, когда закончите__
 
 # 
 
-<h1 align="center"><b><i>Install AdGuard Home</b></i> </h1>
+# <i>Установить AdGuard Главная</b></i>
 
 Этот сценарий установки взят из<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>Главная страница AdGuard</b></a>основной проект. Следите, чтобы быть в курсе.
 
@@ -207,7 +209,7 @@ __Перезагрузитесь, когда закончите__
 
         Перейдите в настройки сети / измените параметры адаптера и щелкните правой кнопкой мыши в свойствах, затем выберите «Протокол Интернета версии 4 (TCP / IPv4)». Введите IP-адрес Pi в`Preferred DNS`сервер.
 
-    -   <i>IPv6 (needed for `DoH`&`DoT`чтобы работать позже в руководстве, если вы используете IPv6 на вашем маршрутизаторе)</i>
+    -   <i>IPv6 (необходим для`DoH`&`DoT`чтобы работать позже в руководстве, если вы используете IPv6 на вашем маршрутизаторе)</i>
 
         Перейдите к «Протокол Интернета версии 6 (TCP/IPv6)».`::1`
 
@@ -231,7 +233,7 @@ __Перезагрузитесь, когда закончите__
 
 ## Добавить/удалить несколько URL-адресов
 
-На данный момент вы можете добавлять только один URL-адрес в черный список DNS с помощью AdGuard, но есть скрипт Python для добавления нескольких URL-адресов одновременно.
+На данный момент вы можете добавлять только один URL-адрес в черный список DNS с помощью AdGuard, но есть скрипт python для одновременного добавления нескольких URL-адресов.
 
 Откройте новый py-файл (bulkurls.py):
 
@@ -251,7 +253,7 @@ _При использовании**Диета Пи**установить`sudo a
 
 # 
 
-<h1 align="center"><b><i>Install Unbound</b></i> </h1>
+# <i>Установить без привязки</b></i>
 
 Запустите следующую команду в своем терминале:
 
@@ -279,7 +281,7 @@ _При использовании**Диета Пи**вам нужно уста�
 
 # 
 
-<h1 align="center"><b><i>Install Cloudflare</b></i> </h1>
+# <i>Установить CloudFlare</b></i>
 
 ## Настройка для Cloudflared`(DoH)`
 
@@ -377,7 +379,7 @@ _При использовании**Диета Пи**вам нужно уста�
 
 # 
 
-<h1 align="center"><b><i>Install WireGuard</b></i> </h1>
+# <i>Установить WireGuard</b></i>
 
 **Перед установкой WireGuard**, если у вас нет<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>Статический IP</b></a>вам нужно получить бесплатно`Dynamic DNS Subdomain`иначе ваш внешний IP-адрес динамически меняется от вашего интернет-провайдера, поэтому вам необходимо настроить динамическую службу DNS.[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>кликните сюда</b></a>**]. Или пропустить шаг.
 
@@ -405,7 +407,7 @@ _При использовании**Диета Пи**вам нужно уста�
 
 -   Скрипт запросит у вас общедоступный IPv4/имя хоста для VPN._Если_у вас есть статический IP-адрес, затем продолжите или введите динамический домен DNS, который вы создали из<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>инструкции</b></a>. Например: trinibvpn.freeddns.org
 
--   Для варианта порта`press enter`по умолчанию 51820. Для имени клиента просто введите любое имя, которое вы хотите, а для DNS используйте вариант 3 (`1.1.1.1`) теперь. Вы будете настраивать`AdGuard/Unbound/Cloudflare`с VPN после завершения его установки.
+-   Для варианта порта`press enter`по умолчанию 51820. Для имени клиента просто введите любое имя, которое вы хотите, а для DNS используйте вариант 3 (`1.1.1.1`) теперь. Вы будете настраивать`AdGuard/Unbound/Cloudflare`с VPN после его завершения.
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -475,7 +477,7 @@ _Помните, что это для тех случаев, когда вы п�
 <p align="center">
  <img src="https://i.imgur.com/x4m6Pbl.jpg" width=450px height=500px>
 
-### ПОЖАЛУЙСТА, ПРОЧИТАЙТЕ !! , ОСТОРОЖНО!!
+### ПОЖАЛУЙСТА, ПРОЧИТАЙТЕ !! , БУДЬТЕ ОСТОРОЖНЫ!!
 
 `IMPORTANT`:_Если в вашей сети есть IP-адреса для устройств, которые заканчиваются трехзначным числом (более 24), например: 192.168.100.`254`, вы не сможете правильно маршрутизировать из внешней сети, потому что применение 24 позволяет использовать только числа от 1 до 24. Вместо этого вам нужно поставить`0`для маршрутизации из диапазона 24, например:`192.168.100.0/0`_.
 
@@ -506,7 +508,7 @@ _Помните, что это для тех случаев, когда вы п�
 
 За**окна**скачать Wireshark:[хттпс://ввв.верещарк.орг/#довнлоад](https://www.wireshark.org/#download)
 
-После загрузки вы можете использовать приложение для проверки ваших пакетов данных, в которых установлен протокол, используемый WireGuard VPN. Когда пакетный трафик`encrypted`, его можно прочитать, например, так:
+После загрузки вы можете использовать приложение для проверки пакетов данных, в которых установлен протокол, используемый WireGuard VPN. Когда пакетный трафик`encrypted`, его можно прочитать, например, так:
 
 <p align="center">
  <img src="https://i.imgur.com/Tn4M47R.jpg">
@@ -521,20 +523,17 @@ _Помните, что это для тех случаев, когда вы п�
 
 # 
 
-<h1 align="center"><b><i>Auto Update Pi</b></i> </h1>
+# <i>Автоматическое обновление Пи</b></i>
 
--   Откройте новый файл sh с именем update и скопируйте и вставьте скрипт.[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>кликните сюда</b></a>]
-
+Откройте новый файл sh с именем update и скопируйте и вставьте скрипт.[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>кликните сюда</b></a>]
 
     sudo nano update.sh
 
--   Установить разрешение
-
+Установить разрешение
 
     sudo chmod 700 update.sh
 
--   Откройте файл cron, введя в командной строке`crontab -e`, скопируйте и вставьте командную строку задания внизу файла cron и сохраните.
-
+Откройте файл cron, введя в командной строке`crontab -e`, скопируйте и вставьте командную строку задания внизу файла cron и сохраните.
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
@@ -550,11 +549,11 @@ _Помните, что это для тех случаев, когда вы п�
 
 # 
 
-<h1 align="center"><b><i>Install Log2Ram</b></i> </h1>
+# <i>Установить Лог2Рам</b></i>
 
 Одним из наиболее значительных преимуществ разгрузки оперативной памяти является то, что она улучшает**Потенциальный срок службы SD-карты**.
 Файлы журналов — это одна из тех вещей, которые чаще всего записываются различными программами, которые вы устанавливаете.
-Перемещая файлы в оперативную память, вы можете контролировать, как часто они записываются на SD-карту. Вы по-прежнему сможете получить доступ к этим файлам в оперативной памяти, как если бы они находились на вашей SD-карте.
+Перемещая файлы в оперативную память, вы можете контролировать, как часто они записываются на SD-карту. Вы по-прежнему сможете получить доступ к этим файлам в ОЗУ, как если бы они находились на вашей SD-карте.
 
 Скопируйте и вставьте эту строку в терминал:
 
@@ -573,7 +572,7 @@ _Помните, что это для тех случаев, когда вы п�
 
 # 
 
-<h1 align="center"><b><i>Turn off Pi LED lights</b></i> </h1>
+# <i>Выключите светодиодные индикаторы Pi</b></i>
 
 Я предполагаю, что мощность светодиодов повлияет на ненужное электричество и тепло 🤷😅. В любом случае, в этом нет необходимости, если вы просто используете его как сетевой сервер. Откройте файл cron, введя в командной строке`crontab -e`, скопируйте и вставьте командную строку задания внизу файла cron и сохраните.
 
@@ -589,11 +588,12 @@ _Помните, что это для тех случаев, когда вы п�
 
 # 
 
-<h1 align="center"><b><i>Secure your Raspberry Pi</b></i> </h1>
+# <i>Защитите свой Raspberry Pi</b></i>
+
 <p align="center">
 <a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
-<p align="center">
-[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>click here</b></a>]
+
+[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>кликните сюда</b></a>]
 
 <i>(Я просто использую Fail2Ban и меняю порт SSH)</i>
 
