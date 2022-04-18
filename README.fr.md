@@ -76,6 +76,7 @@ Last Checked⏰ : 17 April 2022</h2>
  
 #
 # Table of contents
+ 
  - [Requirements](#requirements)
  - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
@@ -109,11 +110,11 @@ Last Checked⏰ : 17 April 2022</h2>
 
 # Conditions
 
-Ce tutoriel est basé sur Raspberry Pi, mais vous pouvez utiliser n'importe quel Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>système opérateur</b></a><i>(bit)</i>, tout matériel ou un<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>SVP</b></a>.</br>(Raspberry Pi OS is most simple and recommended for Pi or for more experience users, <b>DiètePi</b>OS est également recommandé)
+Ce tutoriel est basé sur Raspberry Pi, mais vous pouvez utiliser n'importe quel Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>système opérateur</b></a><i>(bit)</i>, tout matériel ou un<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>SVP</b></a>.</br>(Raspberry Pi OS est le plus simple et recommandé pour Pi ou pour les utilisateurs plus expérimentés,<b>DiètePi</b>OS est également recommandé)
 
--   A Raspberry Pi 3 or 4 version
+-   Une version Raspberry Pi 3 ou 4
 -   Un routeur qui prend en charge la redirection de port (Most Can)
--   MicroSD USB card reader
+-   Lecteur de carte micro SD USB
 -   Carte MicroSD (8 Go ou plus, au moins Classe 4)
 -   câble Ethernet
 -   (Facultatif si vous utilisez un moniteur) MicroHDMI-(RPi 4) ou HDMI-(RPi 3)
@@ -128,7 +129,7 @@ Installez balenEtcher et téléchargez l'image Pi pour écrire sur la carte micr
 
 -   Téléchargez le système d'exploitation Raspberry Pi :<https://www.raspberrypi.org/software/operating-systems/>
 
--   Télécharger balenaEtcher :<https://www.balena.io/etcher/>
+-   Télécharger balenaEtcher :<https://www.balena.io/etcher/>
 
 Après avoir`Etcher`installé et`Raspberry Pi OS`fichier téléchargé, vous pouvez maintenant insérer la carte SD avec lecteur de carte USB microSD dans votre ordinateur.
 
@@ -145,7 +146,7 @@ Une fois le clignotement terminé, recherchez dans "Ce PC" un nom de disque "dé
 
 -   Attendez une minute pour le premier démarrage de Pi
 
--   Open browser and log in your router's panel page
+-   Ouvrez le navigateur et connectez-vous à la page du panneau de votre routeur
 
 -   Trouvez la liste de tous les appareils connectés à votre réseau et copiez l'adresse IP du Raspberry Pi (il aura très probablement le nom d'hôte`raspberrypi`)
 
@@ -162,7 +163,7 @@ Tapez "oui" pour la question sur les empreintes digitales et tapez "framboise" p
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
 
-Run in terminal:
+Exécutez dans le terminal :
 
     sudo apt update -y && sudo apt upgrade -y
 
@@ -182,7 +183,7 @@ Exécutez la commande suivante dans votre terminal :
 
     curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 
--   Lorsque l'installation est terminée, une fenêtre apparaîtra dans le terminal montrant`links` to your AdGuard home page(Get Started)
+-   Lorsque l'installation est terminée, une fenêtre apparaîtra dans le terminal montrant`links`à votre page d'accueil AdGuard (Commencer)
 
 -   `IMPORTANT:`Dans l'option Écouter les interfaces, choisissez`Eth0`et sélectionnez suivant
 
@@ -232,7 +233,7 @@ Vous pouvez rechercher sur Google une liste de blocage différente. Voici ma lis
 
 Vous ne pouvez ajouter qu'une URL par une dans la liste de blocage DNS avec AdGuard pour le moment, mais il existe un script python pour ajouter plusieurs URL à la fois.
 
-Ouvrez un nouveau fichier py (bulkurls.py) :
+Ouvrez un nouveau fichier py (bulkurls.py) :
 
     nano bulkurls.py
 
@@ -389,7 +390,7 @@ Plage de ports | 51820-51820
 Port de sortie | 51820
 Autoriser l'accès à Internet (le cas échéant) | oui
 
-Paramètre de port de mon 👇routeur👇. Le vôtre peut-être différent mais vous l'obtiendrez. N'oubliez pas que Google 🔍moteur de recherche🔎 est votre ami. Si vous ne pouvez pas vous connecter à partir d'un réseau extérieur, cela signifie que le FAI a bloqué les connexions sortantes, vous pouvez les appeler et leur demander gentiment de le faire fonctionner.
+Paramètre de port de mon 👇routeur👇. Le vôtre peut-être différent, mais vous l'obtiendrez. N'oubliez pas que Google 🔍moteur de recherche🔎 est votre ami. Si vous ne pouvez pas vous connecter à partir d'un réseau extérieur, cela signifie que le FAI a bloqué les connexions sortantes, vous pouvez les appeler et leur demander gentiment de le faire fonctionner.
 
 <p align="center">
  <img src="https://i.imgur.com/9LBEk1i.jpg">
@@ -467,7 +468,7 @@ Avec WireGuard, vous perdrez environ 50 % de la vitesse Internet en raison du p
 
 Supprimer dans les adresses IP autorisées l'option "0.0.0.0/0, ::/0" car elle achemine tout le trafic vers votre réseau domestique qui sera lent. Vous devez envoyer du trafic via vos adresses uniquement.
 
--   Vous devez d'abord le remplacer par votre passerelle réseau, mais en définissant le dernier chiffre sur zéro et<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>longueur du préfixe</b></a>à 24. Par exemple :`192.168.1.1/24`pour`192.168.1.0/24`ou comme mon routeur FAI`192.168.100.1/24`pour`192.168.100.0/24`.~~**Maintenant je ne perds que 25% de vitesse**😁 (PS. en utilisant le réseau 5g)~~
+-   Vous devez d'abord le remplacer par votre passerelle réseau, mais en définissant le dernier numéro sur zéro et<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>longueur du préfixe</b></a>à 24. Par exemple :`192.168.1.1/24`pour`192.168.1.0/24`ou comme mon routeur FAI`192.168.100.1/24`pour`192.168.100.0/24`.~~**Maintenant je ne perds que 25% de vitesse**😁 (PS. en utilisant le réseau 5g)~~
 
 `UPDATE:`Après une mise à jour de WireGuard, je n'obtiens pas une vitesse plus rapide en faisant cela😞 .. mais cela a toujours du sens_ne pas_utiliser`"0.0.0.0/0, ::/0`avec Wi-Fi. Si quelqu'un connaît des ajustements pour obtenir un coup de pouce, faites le moi savoir.
 
@@ -503,7 +504,7 @@ Ensuite aller à<https://ipv6leak.com/>et tu devrais voir "_Votre IPv6 ne fuit p
 
 Comment savoir si WireGuard VPN fonctionne vraiment ?
 
-Pour**les fenêtres**télécharger Wireshark :<https://www.wireshark.org/#download>
+Pour**les fenêtres**télécharger Wireshark :<https://www.wireshark.org/#download>
 
 Une fois téléchargé, vous pouvez utiliser l'application pour inspecter vos paquets de données où le protocole est défini sur celui utilisé par WireGuard VPN. Lorsqu'un trafic de paquets est`encrypted`, il peut être lu comme ceci par exemple :
 
