@@ -20,7 +20,7 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700"></h2>
  
 ## Features
  
@@ -184,7 +184,7 @@ Ejecute el siguiente comando en su terminal:
 
 -   Cuando finalice la instalación, aparecerá una ventana emergente en la terminal que muestra`links`a su página de inicio de AdGuard (Comenzar)
 
--   `IMPORTANT:`En la opción Escuchar interfaces, elija`Eth0`y seleccione siguiente
+-   `IMPORTANT:`En la opción Escuchar interfaces, elija`Eth0` and select next
 
     <p align="center">
      <img src="https://i.imgur.com/Wa00lDp.jpg" width=580px height=690px>
@@ -226,7 +226,7 @@ En la página de inicio de AdGuard en filtros, seleccione la sección de lista d
 
 Puede buscar en Google diferentes listas de bloqueo. Aquí está mi lista de bloqueo personalizada[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>haga clic aquí</b></a>]con mis URL o cree las suyas propias a partir de estas fuentes[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>haga clic aquí</b></a>].
 
-`IMPORTANT:`Algunas listas de bloqueo pueden bloquear algunos contenidos o sitios web importantes. Para desbloquear vaya a la sección "Query Log" y verá_desatascar_ option when cursor is hovered over a query, putting unblocked websites it in "Custom filtering rules" example: `@@||bitly.com^$important`. Busque la IP y la hora del cliente.
+`IMPORTANT:`Algunas listas de bloqueo pueden bloquear algunos contenidos o sitios web importantes. Para desbloquear vaya a la sección "Query Log" y verá_desatascar_opción cuando el cursor se desplaza sobre una consulta, colocando los sitios web desbloqueados en el ejemplo de "Reglas de filtrado personalizadas":`@@||bitly.com^$important`. Busque la IP y la hora del cliente.
 
 ## Agregar/eliminar varias URL
 
@@ -260,7 +260,7 @@ Para consultar recursivamente un host que no está almacenado en caché como una
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
-`IMPORTANT:`Esto necesita actualizarse cada 6 meses. Para_**actualización automática**_root.hints cada 6 meses necesita crear un trabajo cron.
+`IMPORTANT:` This needs to update every 6 months. To _**actualización automática**_root.hints cada 6 meses necesita crear un trabajo cron.
 
 Entrar en línea de comando`crontab -e`, le pedirá que seleccione un editor (elija 1) y pegue estas líneas en la parte inferior de crontab y guarde (control+x luego y luego ingrese):
 
