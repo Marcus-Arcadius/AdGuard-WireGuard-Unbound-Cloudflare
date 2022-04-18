@@ -76,6 +76,7 @@ Last Checked⏰ : 17 April 2022</h2>
  
 #
 # Table of contents
+ 
  - [Requirements](#requirements)
  - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
@@ -134,7 +135,7 @@ Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.g
 
 -   启动 Etcher 并选择您下载的 Raspberry Pi OS 映像，选择您的 microSD 卡并单击`Flash`.
 
-刷机完成后，在“This PC”中查找磁盘名称“boot or USB drive”（如果没有看到，请重新插入 USB 读卡器）。转到该磁盘，创建一个名为的新文本文件**_`ssh without 'txt' extension`_**.如果看不到，请在文件资源管理器选项中禁用“隐藏已知文件类型的扩展名”。
+刷机完成后，在“这台电脑”中查找磁盘名称“boot or USB drive”（如果没有看到，请重新插入 USB 读卡器）。转到该磁盘，创建一个名为的新文本文件**_`ssh without 'txt' extension`_**.如果看不到，请在文件资源管理器选项中禁用“隐藏已知文件类型的扩展名”。
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -236,7 +237,7 @@ __完成后重启__
 
     nano bulkurls.py
 
-然后复制并粘贴脚本配置[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>点击这里</b></a>].放`your AdGuard credentials`并保存（control+x 然后 y 然后输入）。
+然后复制粘贴脚本配置[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>点击这里</b></a>].放`your AdGuard credentials`并保存（control+x 然后 y 然后输入）。
 
 _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip install requests`因为它默认不安装。_
 
@@ -409,7 +410,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
 
--   等待安装完成并显示二维码，不要关闭。但如果你这样做，`regenerate qrcode`, 输入终端但只替换名称`yourclientname.conf`文件给你：
+-   等待安装完成并显示二维码，不要关闭。但如果你这样做，`regenerate qrcode`, 输入终端但只替换名称`yourclientname.conf`文件到你的：
 
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
@@ -467,7 +468,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 删除允许的 IPs "0.0.0.0/0, ::/0" 选项，因为它将所有流量路由到您的家庭网络，这会很慢。您只需要通过您的地址发送流量。
 
--   首先，您需要将其替换为您的网络网关，但将最后一个数字设置为零并且<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>前缀长度</b></a>至 24。例如：`192.168.1.1/24`到`192.168.1.0/24`或者像我的 ISP 路由器`192.168.100.1/24`到`192.168.100.0/24`.~~**现在我只损失 25% 的速度**😁（PS.使用5g网络）~~
+-   首先，您需要将其替换为您的网络网关，但将最后一个数字设置为零并且<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>前缀长度</b></a>至 24. 例如：`192.168.1.1/24`到`192.168.1.0/24`或者像我的 ISP 路由器`192.168.100.1/24`到`192.168.100.0/24`.~~**现在我只损失 25% 的速度**😁（PS.使用5g网络）~~
 
 `UPDATE:`在 WireGuard 更新后，我没有得到更快的速度😞 .. 但它仍然有意义_不是_使用`"0.0.0.0/0, ::/0`带无线网络。如果有人知道任何调整以获得提升，请告诉我。
 
@@ -551,7 +552,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 <h1 align="center"><b><i>Install Log2Ram</b></i> </h1>
 
-卸载 RAM 的最显着优势之一是它可以提高您的**SD 卡的潜在使用寿命**.
+卸载 RAM 的最显着优势之一是它可以改善您的**SD 卡的潜在使用寿命**.
 日志文件是您安装的各种软件写入最多的内容之一。
 通过将文件推送到 RAM，您可以控制将它们写入 SD 卡的频率。您仍然可以访问 RAM 上的这些文件，就像它们位于您的 SD 卡上一样。
 
@@ -635,7 +636,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 [HTTPS://NL net labs.哪里/documentation/unbound/unbound.conf/](https://nlnetlabs.nl/documentation/unbound/unbound.conf/)
 
-[HTTPS://DNS privacy.org/DNS_privacy_clients/](https://dnsprivacy.org/dns_privacy_clients/)
+<https://dnsprivacy.org/dns_privacy_clients/>
 
 [HTTPS://GitHub.com/按U的EP ND/pi hole-unbound](https://github.com/anudeepND/pihole-unbound)
 
