@@ -20,7 +20,7 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700"></h2>
  
 ## Features
  
@@ -236,7 +236,7 @@ __Перезагрузитесь, когда закончите__
 
     nano bulkurls.py
 
-Затем скопируйте и вставьте конфигурации скрипта[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>кликните сюда</b></a>]. Set `your AdGuard credentials`и сохраните (control+x, затем y, затем введите).
+Затем скопируйте и вставьте конфигурации скрипта[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>кликните сюда</b></a>]. Набор`your AdGuard credentials`и сохраните (control+x, затем y, затем введите).
 
 _При использовании**Диета Пи**установить`sudo apt-get install python3-pip -y && pip install requests`потому что он не устанавливается по умолчанию._
 
@@ -334,7 +334,7 @@ _При использовании**Диета Пи**вам нужно уста�
  
 <b>Click apply and test upstreams</b>(might get a error in the first testing only).
 
-#### `IMPORTANT:`Системе Windows и браузерам Android требуется некоторая настройка, чтобы`stabilize`Преобразователи DNS. Linux работает нормально<i>(tested on mint)</i>
+#### `IMPORTANT:`Системе Windows и браузерам Android требуется некоторая настройка, чтобы`stabilize`Преобразователи DNS. Linux работает нормально<i>(проверено на монетном дворе)</i>
 
 ### Окна
 
@@ -584,7 +584,7 @@ _Помните, что это для тех случаев, когда вы п�
 
     @reboot echo none | sudo tee /sys/class/leds/led1/trigger
 
-Reboot Pi.
+Перезагрузите Пи.
 
 # 
 
