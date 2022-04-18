@@ -30,9 +30,9 @@
 
 #### _<a href="https://www.wireguard.com/"><b>Guardia de alambre</b></a>_: servidor VPN en casa accesible desde cualquier red externa (IPv4 e IPv6)
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Sin consolidar</b></a>_con[Achaparrado](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Un solucionador de DNS validador, recursivo y de almacenamiento en caché
+#### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Sin consolidar</i></b></a>con[<i>Achaparrado</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Un solucionador de DNS validador, recursivo y de almacenamiento en caché
 
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de la nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
 
 # 
 
@@ -72,7 +72,7 @@ Solucionadores de DNS públicos de Cloudflare/Quad9/Google:
 | :---------------------------------------------------------------: | :--------------------------------------------------------: |
 |                         Inicio de AdGuard                         |                              ✅                             |
 |                           Sin consolidar                          |                              ✅                             |
-|                         Llamarada de nube                         |                              ✅                             |
+|                        Llamarada de la nube                       |                              ✅                             |
 |                            Achaparrado                            |                              ✅                             |
 |                         Guardia de alambre                        |                              ✅                             |
 
@@ -449,7 +449,7 @@ WireGuard para ventanas:<https://download.wireguard.com/windows-client/wireguard
 
     sudo cat /root/yourclientname.conf
 
--   Resalte todo el texto, cópielo y péguelo en el archivo txt en la PC y guárdelo. Luego cambie el nombre de la extensión de`txt`para`conf`. Ahora tiene un archivo de configuración para ese cliente de WireGuard.
+-   Resalte todo el texto, cópielo y péguelo en el archivo txt en la PC y guárdelo. Luego cambie el nombre de la extensión de`txt`para`conf`. Now you have config file for that WireGuard client.
 
 -   Ahora puede importar el archivo de configuración a WireGuard (opción importar desde archivo).
 
