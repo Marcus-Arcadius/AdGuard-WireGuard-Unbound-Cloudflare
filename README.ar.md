@@ -30,7 +30,7 @@
 
 #### _<a href="https://www.wireguard.com/"><b>وايرجارد</b></a>_: خادم VPN في المنزل يمكن الوصول إليه من أي شبكة خارجية (IPv4 و IPv6)
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>غير مجلد</b></a>_مع[قصير](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): محلل DNS للتحقق والتكرار والتخزين المؤقت
+#### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>غير مجلد</i></b></a>مع[<i>قصير</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): محلل DNS للتحقق والتكرار والتخزين المؤقت
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>كلاود فلير</b></a>_: أداء وأمان أفضل عند تصفح مواقع الويب (DoT & DoH)
 
@@ -369,7 +369,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 #### مواقع أخرى للتحقق من الأمن
 
-<https://browserleaks.com/dns>- يجب إظهار كل ما هو متصل بـ "Cloudflare"
+[هتبص://برووسرلكس.كوم/دنس](https://browserleaks.com/dns)- يجب إظهار كل ما هو متصل بـ "Cloudflare"
 
 [هتبص://وو.كلودفلر.كوم/صل/نسريبتدصن/](https://www.cloudflare.com/ssl/encrypted-sni/)- يجب أن يكون "Secure DNS / DNSSEC / TLS 1.3" علامة خضراء
 
@@ -427,7 +427,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 قم بتثبيت تطبيق WireGuard من Google Play أو App Store:
 
-WireGuard (Google Play):<https://play.google.com/store/apps/details?id=com.wireguard.android>
+WireGuard (Google Play):[هتبص://بلاي.جوجل.كوم/سطور/عبس/ديتلس?إذ=كوم.ويرجرد.ندرد](https://play.google.com/store/apps/details?id=com.wireguard.android)
 
 WireGuard (متجر التطبيقات):[هتبص://عبس.أبل.كوم/أس/أب/ويرجرد/يد١٤٤١١٩٥٢٠٩](https://apps.apple.com/us/app/wireguard/id1441195209)
 
