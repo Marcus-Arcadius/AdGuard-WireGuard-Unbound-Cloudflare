@@ -76,6 +76,7 @@ Last Checked⏰ : 17 April 2022</h2>
  
 #
 # Table of contents
+ 
  - [Requirements](#requirements)
  - [Install Raspberry Pi OS](#install-raspberry-pi-os-) <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
    - [Access Pi OS with SSH](#access-pi-os-with-ssh)
@@ -147,7 +148,7 @@ Nachdem das Flashen abgeschlossen ist, suchen Sie in „Dieser PC“ nach einem 
 
 -   Öffnen Sie den Browser und melden Sie sich auf der Panel-Seite Ihres Routers an
 
--   Finden Sie eine Liste aller Geräte, die mit Ihrem Netzwerk verbunden sind, und kopieren Sie die IP-Adresse des Raspberry Pi (es wird höchstwahrscheinlich den Hostnamen`raspberrypi`)
+-   Finden Sie eine Liste aller mit Ihrem Netzwerk verbundenen Geräte und kopieren Sie die IP-Adresse des Raspberry Pi (es wird höchstwahrscheinlich den Hostnamen`raspberrypi`)
 
 -   Öffnen Sie das Terminal auf Ihrem Host-Rechner. Sie können PowerShell unter Windows oder RaspController für Android verwenden.
 
@@ -210,14 +211,14 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
         Gehen Sie zu "Internetprotokoll Version 6 (TCP/IPv6)" und geben Sie es ein`::1`
 
-`OPTIONAL:`<i>Sie können in den alternativen Feldern ein Backup-DNS hinzufügen</i>
+`OPTIONAL:`<i>Sie können in den alternativen Feldern einen Backup-DNS hinzufügen</i>
 
 `BE AWARE:`<i>In Android unterbricht das Hinzufügen eines öffentlichen DNS im zweiten Feld die AdGuard-Werbeblockierung</i>
 
 <p align="center">
  <img src="https://i.imgur.com/8gsDk3z.jpg">
 
-## Einrichtung der AdGuard-Sperrliste
+## Einrichten der AdGuard-Sperrliste
 
 Wählen Sie auf der AdGuard-Startseite unter Filtern den Abschnitt DNS-Sperrliste zum Hinzufügen von URLs aus.
 
@@ -238,7 +239,7 @@ Sie können mit AdGuard derzeit nur eine URL nach der anderen zur DNS-Blocklist 
 
 Kopieren Sie dann die Skriptkonfigurationen und fügen Sie sie ein[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>Klicke hier</b></a>]. Satz`your AdGuard credentials`und speichern (Strg+x dann y dann enter).
 
-_Bei Verwendung**DiätPi**Installieren`sudo apt-get install python3-pip -y && pip install requests`für seine nicht standardmäßig installieren._
+_Bei Verwendung**DiätPi**Installieren`sudo apt-get install python3-pip -y && pip install requests`weil es nicht standardmäßig installiert ist._
 
 Laufen :`sudo python3 bulkurls.py`
 
@@ -334,7 +335,7 @@ Kopieren Sie den gesamten Text aus dieser kurzen Konfigurationsdatei und fügen 
  
 <b>Click apply and test upstreams</b>(might get a error in the first testing only).
 
-#### `IMPORTANT:`Windows-System- und Android-Browser müssen etwas angepasst werden`stabilize`DNS-Resolver..Linux funktioniert gut<i>(getestet auf Minze)</i>
+#### `IMPORTANT:`Windows-System- und Android-Browser müssen etwas angepasst werden`stabilize`DNS-Auflöser. Linux funktioniert gut<i>(getestet auf Minze)</i>
 
 ### Windows
 
@@ -352,7 +353,7 @@ Kopieren Sie den gesamten Text aus dieser kurzen Konfigurationsdatei und fügen 
 
 ### Android
 
--   Wenden Sie sich in welchem ​​Browser auch immer Sie verwenden**aus**`Use Secure DNS`Möglichkeit.
+-   Wenden Sie sich in jedem Browser, den Sie verwenden, an**aus**`Use Secure DNS`Möglichkeit.
 -   Beachten Sie, dass Konflikte mit benutzerdefinierten gerooteten Roms und Kernels mit build.prop-DNS-Optimierungen oder Apps/Magisk-Modulen auftreten können.
 
 #### _Das ist es_. Gehen Sie jetzt zu<https://1.1.1.1/help>im Browser und Sie sollten sehen, dass diese Optionen "Ja" ausgeben.
@@ -368,7 +369,7 @@ Kopieren Sie den gesamten Text aus dieser kurzen Konfigurationsdatei und fügen 
 
 <https://browserleaks.com/dns>- sollte alle mit "Cloudflare" verbundenen anzeigen
 
-<https://www.cloudflare.com/ssl/encrypted-sni/>- "Secure DNS / DNSSEC / TLS 1.3" sollte alles ein grünes Häkchen sein
+<https://www.cloudflare.com/ssl/encrypted-sni/>- "Sicheres DNS / DNSSEC / TLS 1.3" sollte alles ein grünes Häkchen sein
 
 <https://dnssec.vs.uni-due.de/>- sollte "Ja, Ihr DNS-Resolver validiert DNSSEC-Signaturen" sagen
 
@@ -404,7 +405,7 @@ Im Terminal ausführen
 
 -   Das Skript fragt Sie nach der öffentlichen IPv4/dem Hostnamen für das VPN._Ob_Sie haben eine statische IP-Adresse, fahren Sie fort oder geben Sie die dynamische DNS-Domäne ein, die Sie aus der erstellt haben<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>Anweisungen</b></a>. Zum Beispiel:trinibvpn.freeddns.org
 
--   Für Port-Option`press enter`für Standard 51820. Geben Sie als Client-Namen einfach einen beliebigen Namen ein und verwenden Sie für DNS Option 3 (`1.1.1.1`) zur Zeit. Sie werden konfigurieren`AdGuard/Unbound/Cloudflare`mit dem VPN, nachdem es fertig installiert ist.
+-   Für Port-Option`press enter`für Standard 51820. Geben Sie für den Client-Namen einfach einen beliebigen Namen ein und verwenden Sie für DNS Option 3 (`1.1.1.1`) zur Zeit. Sie werden konfigurieren`AdGuard/Unbound/Cloudflare`mit dem VPN, nachdem es fertig installiert ist.
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -551,7 +552,7 @@ oder manuell einstellen
 
 <h1 align="center"><b><i>Install Log2Ram</b></i> </h1>
 
-Einer der bedeutendsten Vorteile des Offloading Ihres RAMs ist, dass es Ihren verbessert**Potenzielle Lebensdauer der SD-Karte**.
+Einer der wichtigsten Vorteile des Offloading Ihres RAMs ist, dass es Ihren verbessert**Potenzielle Lebensdauer der SD-Karte**.
 Protokolldateien gehören zu den Dingen, die von den verschiedenen Softwarekomponenten, die Sie installieren, am häufigsten geschrieben werden.
 Indem Sie die Dateien in Ihren Arbeitsspeicher verschieben, können Sie steuern, wie oft sie auf die SD-Karte geschrieben werden. Sie können weiterhin auf diese Dateien im RAM zugreifen, als ob sie sich auf Ihrer SD-Karte befinden würden.
 
