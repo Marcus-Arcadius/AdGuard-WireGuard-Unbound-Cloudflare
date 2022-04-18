@@ -30,7 +30,7 @@
 
 #### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: VPN-Server zu Hause zugänglich von jedem externen Netzwerk (IPv4 & IPv6)
 
-#### _<a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b>Ungebunden</b></a>_mit[Stummelig](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Ein validierender, rekursiver, zwischenspeichernder DNS-Resolver
+#### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Ungebunden</i></b></a>mit[<i>Stummelig</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Ein validierender, rekursiver, zwischenspeichernder DNS-Resolver
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Wolkenflare</b></a>_: Bessere Leistung und Sicherheit beim Surfen auf Websites (DoT & DoH)
 
