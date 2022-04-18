@@ -20,7 +20,7 @@
 <h2><p align="center">
 <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.zh-CN.md"><b>🇨🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.es.md"><b>🇪🇸</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ru.md"><b>🇷🇺</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.hi.md"><b>🇮🇳</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.fr.md"><b>🇫🇷</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.it.md"><b>🇮🇹</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.de.md"><b>🇩🇪</b></a>&nbsp;<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/lang/README.ar.md"><b>🇦🇪</b></a></h2>
 
-<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700">
+<h2 align="center"><img src="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/assets/images/awcu.gif" width= "700"></h2>
  
 ## Features
  
@@ -206,7 +206,7 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
         Gehen Sie zu Netzwerkeinstellungen / Adapteroptionen ändern und klicken Sie mit der rechten Maustaste auf Eigenschaften und wählen Sie dann "Internetprotokoll Version 4 (TCP/IPv4)". Geben Sie die IP-Adresse von Pi ein`Preferred DNS`Server.
 
-    -   <i>IPv6 (benötigt für`DoH` & `DoT`um später in der Anleitung zu arbeiten, wenn Sie IPv6 auf Ihrem Router verwenden)</i>
+    -   <i>IPv6 (benötigt für`DoH`&`DoT`um später in der Anleitung zu arbeiten, wenn Sie IPv6 auf Ihrem Router verwenden)</i>
 
         Gehen Sie zu "Internetprotokoll Version 6 (TCP/IPv6)" und geben Sie es ein`::1`
 
@@ -280,7 +280,7 @@ _Bei Verwendung**DiätPi**Sie müssen resolvconf installieren und unbound-resolv
 
 <h1 align="center"><b><i>Install Cloudflare</b></i> </h1>
 
-## Setup for Cloudflared `(DoH)`
+## Einrichtung für Cloudflared`(DoH)`
 
 [<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>Klicke hier</b></a>]</h4>
 
@@ -428,7 +428,7 @@ WireGuard (Google Play):<https://play.google.com/store/apps/details?id=com.wireg
 
 WireGuard (App-Store):<https://apps.apple.com/us/app/wireguard/id1441195209>
 
-Sie müssen den im Terminal angezeigten QR-Code mit der WireGuard-App scannen und auswählen`+ button`und nutzen Sie die Möglichkeit`Scan from QR code` to install configuration.
+Sie müssen den im Terminal angezeigten QR-Code mit der WireGuard-App scannen und auswählen`+ button`und nutzen Sie die Möglichkeit`Scan from QR code`Konfiguration zu installieren.
 
 `IMPORTANT`: Ermöglichen**Kernel-Modul-Backend**in den Einstellungen
 
