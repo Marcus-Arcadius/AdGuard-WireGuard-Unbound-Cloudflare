@@ -224,7 +224,10 @@ __إعادة التشغيل عند الانتهاء__
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-يمكنك البحث في Google عن قائمة الحظر المختلفة. هنا قائمة الحظر المخصصة الخاصة بي على سبيل المثال[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>انقر هنا</b></a>]. قم ببناء القائمة الخاصة بك من قائمة مصادر قائمة الحظر الرئيسية التي جمعتها[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>انقر هنا</b></a>]. أو تحقق من:</br><a href="https://github.com/T145/black-mirror"><b>مرآة سوداء</b></a>-_**_يتم الاحتفاظ تلقائيًا بالقوائم السوداء للمضيف الخبيث والقوائم البيضاء الإيجابية الخاطئة_**_</br>شكرا جزيلا<a href="https://github.com/T145"><b>ت١٤٥</b></a>
+قائمة الحظر الخاصة بي على سبيل المثال[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>انقر هنا</b></a>]
+
+**_مصادر قوائم الحظر النهائية_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+<a href="https://github.com/T145/black-mirror"><b>مرآة سوداء</b></a>-_يتم الاحتفاظ تلقائيًا بالقوائم السوداء للمضيف الخبيث والقوائم البيضاء الإيجابية الخاطئة_</br>"شكرًا جزيلاً"<a href="https://github.com/T145"><b>ت١٤٥</b></a>
 
 `IMPORTANT:`يمكن لبعض قوائم الحظر حظر بعض المحتويات المهمة أو مواقع الويب. لإلغاء الحظر ، انتقل إلى قسم "سجل الاستعلام" وسوف ترى_رفع الحظر_الخيار عند تمرير المؤشر فوق طلب بحث ، ووضعه في "قواعد التصفية المخصصة" على سبيل المثال:`@@||bitly.com^$important`. ابحث عن عنوان IP الخاص بالعميل والوقت.
 
