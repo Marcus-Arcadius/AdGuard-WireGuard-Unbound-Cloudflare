@@ -34,8 +34,7 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de la nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>Todo el software es gratuito, de código abierto y alojado en sí mismo </i></br><a href="https://git.io/About"><b>Acerca de</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>PREGUNTAS MÁS FRECUENTES</b></a>                              
 
 * * *
 
@@ -305,8 +304,7 @@ Elimina y vuelve a crear el archivo stubby.yaml:
 
 Y copie y pegue todo el texto de este archivo de configuración rechoncho[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>haga clic aquí</b></a>]y guardar. (`cd`para volver a la carpeta de inicio cuando termine).
 
--   Reinicie sin vincular y rechoncho y verifique el estado:
-
+Reinicie sin vincular y rechoncho y verifique el estado:
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 
