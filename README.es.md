@@ -34,9 +34,8 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de la nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
 
-# 
-
-<i>Todo el software es gratuito, de código abierto y alojado en sí mismo </i></br><a href="https://git.io/About"><b>Acerca de</b></a>                              
+<p align="right">
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
@@ -106,7 +105,6 @@ Solucionadores de DNS públicos de Cloudflare/Quad9/Google:
 -   [Apague los LED Pi](#turn-off-pi-led-lights)
 -   [Asegure su Raspberry Pi](#secure-your-raspberry-pi)
 -   [Recursos del repositorio](#repository-resources)
--   [PREGUNTAS MÁS FRECUENTES](#faq)
 
 # 
 
@@ -125,7 +123,7 @@ Este tutorial está basado en Raspberry Pi, pero puedes usar cualquier Linux<a h
 
 # <i>Instalar el sistema operativo Raspberry Pi</b></i>
 
-Raspberry Pi OS viene en versiones de escritorio y lite (use lite para<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>sin cabeza</b></a>modo). Puede acceder a una Raspberry Pi con un monitor/teclado/ratón o conectarse a través de<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>desde una terminal.
+Raspberry Pi OS viene en versiones de escritorio y lite (use lite para<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>sin cabeza</b></a>modo). Puede acceder a una Raspberry Pi con un monitor/teclado/ratón o conectarse a través de<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>ssh</b></a>desde una terminal.
 
 Instale balenEtcher y descargue la imagen Pi para escribir en la tarjeta microSD.
 
@@ -160,7 +158,7 @@ Escribe el siguiente comando:
 
 <i>Puede usar el botón derecho del mouse para pegar texto en Windows powerShell</i>.
 
-Escriba "sí" para la pregunta de huellas dactilares y escriba "frambuesa" para la contraseña predeterminada (las contraseñas serán invisibles en la línea de comandos). puedes escribir**_`sudo passwd pi`_**para cambiar la contraseña.
+Escriba "sí" para la pregunta de huellas dactilares y escriba "frambuesa" para la contraseña predeterminada (las contraseñas serán invisibles en la línea de comandos). puedes escribir**_`sudo passwd pi`_**para cambiar la contraseña después.
 
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
@@ -227,7 +225,7 @@ En la página de inicio de AdGuard en filtros, seleccione la sección de lista d
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Puede buscar en Google diferentes listas de bloqueo. Aquí está mi lista de bloqueo personalizada[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>haga clic aquí</b></a>]con mis URL o cree las suyas propias a partir de estas fuentes[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>haga clic aquí</b></a>].
+Puede buscar en Google diferentes listas de bloqueo. Aquí está mi lista de bloqueo personalizada, por ejemplo[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>haga clic aquí</b></a>]. Cree el suyo propio a partir de una lista de las principales fuentes de listas de bloqueo que recopilé[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>haga clic aquí</b></a>]. O echa un vistazo a:</br><a href="https://github.com/T145/black-mirror"><b>Espejo negro</b></a>-_**_Listas negras de hosts maliciosos y listas blancas de falsos positivos mantenidas automáticamente_**_</br>👊MUCHAS GRACIAS👊 a<a href="https://github.com/T145"><b>T 145</b></a>
 
 `IMPORTANT:`Algunas listas de bloqueo pueden bloquear algunos contenidos o sitios web importantes. Para desbloquear vaya a la sección "Query Log" y verá_desatascar_opción cuando el cursor se desplaza sobre una consulta, colocando los sitios web desbloqueados en el ejemplo de "Reglas de filtrado personalizadas":`@@||bitly.com^$important`. Busque la IP y la hora del cliente.
 
@@ -330,7 +328,7 @@ Y copie y pegue todo el texto de este archivo de configuración rechoncho[<a hre
 <p align="center">
  <img src="https://i.imgur.com/Ug4Euou.jpg" width=650px height=370px>
 
--   Luego, en la configuración de DNS, busque la sección de configuración de caché de DNS y establezca el tamaño de caché en`0`(el almacenamiento en caché ya lo maneja Unbound) y haga clic en Aplicar.
+-   Luego, en la configuración de DNS, busque la sección de configuración de caché de DNS y establezca el tamaño de caché en`0`(el almacenamiento en caché ya lo maneja Unbound) y haga clic en aplicar.
 
 <p align="center">
  <img src="https://i.imgur.com/8Q5Zb0M.jpg" width=650px height=370px>
@@ -433,7 +431,7 @@ WireGuard (tienda de aplicaciones):<https://apps.apple.com/us/app/wireguard/id14
 
 Debe escanear el código QR que se muestra en el terminal con la aplicación WireGuard, seleccione el`+ button`y usa la opcion`Scan from QR code`para instalar la configuración.
 
-`IMPORTANT`: Permitir**back-end del módulo del kernel**en la configuración de
+`IMPORTANT`: Permitir**back-end del módulo del núcleo**en la configuración de
 
 <p align="left">
  <img src="https://i.imgur.com/R4qbiOQ.jpg" width=250px height=350px>
@@ -449,7 +447,7 @@ WireGuard para ventanas:<https://download.wireguard.com/windows-client/wireguard
 
     sudo cat /root/yourclientname.conf
 
--   Resalte todo el texto, cópielo y péguelo en el archivo txt en la PC y guárdelo. Luego cambie el nombre de la extensión de`txt`para`conf`. Now you have config file for that WireGuard client.
+-   Resalte todo el texto, cópielo y péguelo en el archivo txt en la PC y guárdelo. Luego cambie el nombre de la extensión de`txt`para`conf`. Ahora tiene un archivo de configuración para ese cliente de WireGuard.
 
 -   Ahora puede importar el archivo de configuración a WireGuard (opción importar desde archivo).
 
@@ -646,8 +644,6 @@ Reinicie Pi.
 
 <https://github.com/azlux/log2ram>
 
+<https://github.com/T145/black-mirror>
+
 * * *
-
-## _PREGUNTAS MÁS FRECUENTES_
-
-preguntas frecuentes[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>haga clic aquí</b></a>]
