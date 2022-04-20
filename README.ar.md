@@ -34,9 +34,8 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>كلاود فلير</b></a>_: أداء وأمان أفضل عند تصفح مواقع الويب (DoT & DoH)
 
-# 
-
-<i>جميع البرامج مجانية ومفتوحة المصدر و الاستضافة الذاتية </i></br><a href="https://git.io/About"><b>عن</b></a>                              
+<p align="right">
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
@@ -55,7 +54,7 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 
 [هتبص://أصرمجس.جذبسركنتنة.كوم/١٨٧٥٦٩٧٥/١٥٠٢٣٠٤٣٨-بحطحيضطف-٤ي١٨-٤٧٩١-بخفي-٠٨١٣٦١٥اعحاع.مب٤](https://user-images.githubusercontent.com/18756975/150230438-b767e86f-4e18-4791-b5fe-0813615a37a3.mp4)
 
-أدوات حل Cloudflare / Quad9 / Google DNS العامة:
+حلول Cloudflare / Quad9 / Google DNS العامة:
 
 [هتبص://أصرمجس.جذبسركنتنة.كوم/١٨٧٥٦٩٧٥/١٥٠٣١٩٠٤٩-٣دضاسدسص-٦٢٤ف-٤بط٠-٨يإ-بض٠٢٢٧٥٢٢٢٥٢.مب٤](https://user-images.githubusercontent.com/18756975/150319049-3d8acdc9-624f-4b60-8ee2-b80227522252.mp4)
 
@@ -89,7 +88,7 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
         -   [إضافة / إزالة عناوين URL متعددة](#addremove-multiple-urls)
 -   [تثبيت Unbound](#install-unbound)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [قم بتثبيت Cloudflare](#install-cloudflare)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
-    -   [إعداد Cloudflared (DoH)](#setup-for-cloudflared-doh)
+    -   [الإعداد لـ Cloudflared (DoH)](#setup-for-cloudflared-doh)
     -   [قم بتكوين Cloudflare (DoT) على Unbound](#configure-cloudflare-dot-on-unbound)
         -   [تكوين Stubby لـ Unbound](#configure-stubby-for-unbound)
         -   [تكوين AdGuard مع Cloudflare (DoH & DoT)](#configure-adguard-with-cloudflaredohdot)
@@ -106,13 +105,12 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 -   [قم بإيقاف تشغيل Pi LEDs](#turn-off-pi-led-lights)
 -   [تأمين Raspberry Pi الخاص بك](#secure-your-raspberry-pi)
 -   [موارد المستودع](#repository-resources)
--   [التعليمات](#faq)
 
 # 
 
 # متطلبات
 
-يعتمد هذا البرنامج التعليمي على Raspberry Pi ، ولكن يمكنك استخدام أي نظام Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>نظام التشغيل</b></a><i>(قليل)</i>، أي جهاز أو ملف<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(يعد نظام Raspberry Pi OS أبسط ويوصى به لـ Pi أو لمزيد من المستخدمين ذوي الخبرة ،<b>النظام الغذائي</b>يوصى أيضًا باستخدام نظام التشغيل)
+يعتمد هذا البرنامج التعليمي على Raspberry Pi ، ولكن يمكنك استخدام أي نظام Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>نظام التشغيل</b></a><i>(قليل)</i>، أي جهاز أو ملف<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(يعتبر نظام Raspberry Pi OS أبسط ويوصى به لـ Pi أو لمستخدمي الخبرة ،<b>النظام الغذائي</b>يوصى أيضًا باستخدام نظام التشغيل)
 
 -   نسخة Raspberry Pi 3 أو 4
 -   جهاز توجيه يدعم إعادة توجيه المنفذ (Most Can)
@@ -125,7 +123,7 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 
 # <i>قم بتثبيت نظام Raspberry Pi OS</b></i>
 
-يأتي نظام Raspberry Pi OS في إصدارات سطح المكتب والإصدارات الخفيفة (استخدم lite لـ<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>مقطوعة الرأس</b></a>الوضع). يمكنك الوصول إلى Raspberry Pi باستخدام شاشة / لوحة مفاتيح / ماوس أو الاتصال عبر<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>من محطة.
+يأتي نظام Raspberry Pi OS في إصدارات سطح المكتب والإصدارات الخفيفة (استخدم lite لـ<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>مقطوعة الرأس</b></a>الوضع). يمكنك الوصول إلى Raspberry Pi باستخدام شاشة / لوحة مفاتيح / ماوس أو الاتصال عبر<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>ssh</b></a>من محطة.
 
 قم بتثبيت balenEtcher وتنزيل صورة Pi للكتابة على بطاقة microSD.
 
@@ -160,7 +158,7 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 
 <i>يمكنك استخدام زر الفأرة الأيمن للصق النص في Windows powerShell</i>.
 
-اكتب "نعم" لسؤال بصمة الإصبع ، واكتب "Raspberry" لكلمة المرور الافتراضية (ستكون كلمات المرور غير مرئية في سطر الأوامر). يمكنك كتابة**_`sudo passwd pi`_**لتغيير كلمة المرور.
+اكتب "نعم" لسؤال بصمة الإصبع ، واكتب "Raspberry" لكلمة المرور الافتراضية (ستكون كلمات المرور غير مرئية في سطر الأوامر). يمكنك كتابة**_`sudo passwd pi`_**لتغيير كلمة المرور بعد.
 
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
@@ -227,9 +225,9 @@ __إعادة التشغيل عند الانتهاء__
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-يمكنك البحث في Google عن قائمة الحظر المختلفة. ها هي قائمة الحظر المخصصة الخاصة بي[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>انقر هنا</b></a>]باستخدام عناوين URL الخاصة بي أو إنشاء عنوان خاص بك من هذه المصادر[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>انقر هنا</b></a>].
+يمكنك البحث في Google عن قائمة الحظر المختلفة. هنا قائمة الحظر المخصصة الخاصة بي على سبيل المثال[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>انقر هنا</b></a>]. قم ببناء القائمة الخاصة بك من قائمة مصادر قائمة الحظر الرئيسية التي جمعتها[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>انقر هنا</b></a>]. أو تحقق من:</br><a href="https://github.com/T145/black-mirror"><b>مرآة سوداء</b></a>-_**_يتم الاحتفاظ تلقائيًا بالقوائم السوداء للمضيف الخبيث والقوائم البيضاء الإيجابية الخاطئة_**_</br>شكرا جزيلا<a href="https://github.com/T145"><b>ت١٤٥</b></a>
 
-`IMPORTANT:`يمكن لبعض قوائم الحظر حظر بعض المحتويات أو مواقع الويب المهمة. لإلغاء الحظر ، انتقل إلى قسم "سجل الاستعلام" وسوف ترى_رفع الحظر_الخيار عند تمرير المؤشر فوق طلب بحث ، ووضعه في "قواعد التصفية المخصصة" على سبيل المثال:`@@||bitly.com^$important`. ابحث عن عنوان IP الخاص بالعميل والوقت.
+`IMPORTANT:`يمكن لبعض قوائم الحظر حظر بعض المحتويات المهمة أو مواقع الويب. لإلغاء الحظر ، انتقل إلى قسم "سجل الاستعلام" وسوف ترى_رفع الحظر_الخيار عند تمرير المؤشر فوق طلب بحث ، ووضعه في "قواعد التصفية المخصصة" على سبيل المثال:`@@||bitly.com^$important`. ابحث عن عنوان IP الخاص بالعميل والوقت.
 
 ## إضافة / إزالة عناوين URL متعددة
 
@@ -307,7 +305,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 وانسخ والصق كل النص من ملف التكوين القصير هذا[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>انقر هنا</b></a>]وحفظ. (`cd`للعودة إلى المجلد الرئيسي عند الانتهاء).
 
--   أعد تشغيل غير منضم وقليل وتحقق من الحالة:
+-   أعد تشغيل غير منضم وقصير وتحقق من الحالة:
 
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
@@ -330,7 +328,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 <p align="center">
  <img src="https://i.imgur.com/Ug4Euou.jpg" width=650px height=370px>
 
--   ثم في إعداد DNS ، ابحث عن قسم تكوين ذاكرة التخزين المؤقت DNS وقم بتعيين حجم ذاكرة التخزين المؤقت على`0`(يتم التعامل مع التخزين المؤقت بالفعل بواسطة Unbound) وانقر فوق تطبيق.
+-   ثم في إعداد DNS ، ابحث عن قسم تكوين ذاكرة التخزين المؤقت لنظام أسماء النطاقات وقم بتعيين حجم ذاكرة التخزين المؤقت على`0`(يتم التعامل مع التخزين المؤقت بالفعل بواسطة Unbound) وانقر فوق تطبيق.
 
 <p align="center">
  <img src="https://i.imgur.com/8Q5Zb0M.jpg" width=650px height=370px>
@@ -412,7 +410,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
 
--   انتظر حتى انتهاء التثبيت وظهور رمز الاستجابة السريعة ، لا تغلق. ولكن إذا قمت بذلك ، إلى`regenerate qrcode`، أدخل في Terminal ولكن مع استبدال الاسم فقط`yourclientname.conf`ملف لك:
+-   Wait until the installation is finished and QR code to show, don't close. But if you do, to `regenerate qrcode`، أدخل في Terminal ولكن مع استبدال الاسم فقط`yourclientname.conf`ملف لك:
 
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
@@ -459,7 +457,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 -   في تطبيق WireGuard ، حدد النفق الخاص بك وحدد تحرير (قلم رصاص في أعلى اليمين)
 
--   تحت خوادم DNS ، أدخل`Pi's IP`وحفظ (IPv4 و IPv6)
+-   Under DNS servers enter `Pi's IP`وحفظ (IPv4 و IPv6)
 
 <p align="center">
  <img src="https://i.imgur.com/UC0vWfE.jpg" width=450px height=500px>  
@@ -492,7 +490,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 عند الاتصال بكابل Ethernet على جهاز كمبيوتر يعمل بنظام Windows ، فأنت بحاجة إلى الدخول`::1`في عنوان IPv6 في خادم DNS المفضل "بروتوكول الإنترنت الإصدار 6 (TCP / IPv6)".
 
-ثم اذهب الى[هتبص://بفطلك.كوم/](https://ipv6leak.com/)ويجب أن ترى "_IPv6 الخاص بك لا يتسرب_".
+Then go to [هتبص://بفطلك.كوم/](https://ipv6leak.com/)ويجب أن ترى "_IPv6 الخاص بك لا يتسرب_".
 
 # 
 
@@ -515,7 +513,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 ل**ذكري المظهر**يمكنك استخدام PCAPdroid:[هتبص://بلاي.جوجل.كوم/سطور/عبس/ديتلس?إذ=كوم.إيمانويلف.رمتكبتر&هل=إن&جل=أس](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
 
-يجب أن ترى كل الاتصالات`closed`والحالة تعرض جميع DNS وليس أي اتصالات TLS في جميع التطبيقات. (افتح التطبيقات واستخدمها لـ PCAPdroid للمسح الضوئي)
+You should see all connections `closed`والحالة تعرض جميع DNS وليس أي اتصالات TLS في جميع التطبيقات. (افتح التطبيقات واستخدمها لـ PCAPdroid للمسح الضوئي)
 
 **[العودة إلى المحتويات ⬆](#table-of-contents)**
 
@@ -646,8 +644,6 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 [هتبص://جذب.كوم/أزلكس/لوجارم](https://github.com/azlux/log2ram)
 
+[هتبص://جذب.كوم/ت١٤٥/بلكمرر](https://github.com/T145/black-mirror)
+
 * * *
-
-## _التعليمات_
-
-اطرح الأسئلة بشكل متكرر[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>انقر هنا</b></a>]
