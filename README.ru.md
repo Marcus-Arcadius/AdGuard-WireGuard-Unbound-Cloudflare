@@ -34,8 +34,7 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Облачная вспышка</b></a>_: Лучшая производительность и безопасность при просмотре веб-сайтов (DoT и DoH).
 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>Все программное обеспечение является бесплатным, с открытым исходным кодом и самостоятельный </i></br><a href="https://git.io/About"><b>О</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</b></a>                              
 
 * * *
 
@@ -305,8 +304,7 @@ _При использовании**Диета Пи**вам нужно уста�
 
 И скопируйте и вставьте весь текст из этого короткого конфигурационного файла.[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>кликните сюда</b></a>]и сохранить. (`cd`чтобы вернуться в домашнюю папку, когда закончите).
 
--   Перезапустите unbound & stubby и проверьте статус:
-
+Перезапустите unbound & stubby и проверьте статус:
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 
