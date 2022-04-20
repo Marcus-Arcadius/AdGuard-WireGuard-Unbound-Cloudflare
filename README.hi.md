@@ -34,8 +34,7 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>क्लाउडफ्लेयर</b></a>_: वेबसाइट ब्राउज़ करते समय बेहतर प्रदर्शन और सुरक्षा (DoT और DoH)
 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>सभी सॉफ्टवेयर फ्री, ओपन सोर्स और स्वयं के द्वारा होस्ट </i></br><a href="https://git.io/About"><b>लगभग</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>सामान्य प्रश्न</b></a>                              
 
 * * *
 
@@ -305,8 +304,7 @@ stubby.yaml फ़ाइल को निकालें और फिर से
 
 और इस ठूंठदार कॉन्फ़िगरेशन फ़ाइल से सभी टेक्स्ट को कॉपी और पेस्ट करें[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>यहाँ क्लिक करें</b></a>]और बचाओ। (`cd`समाप्त होने पर होम फोल्डर पर लौटने के लिए)।
 
--   अनबाउंड और स्टब्बी को पुनरारंभ करें और स्थिति जांचें:
-
+अनबाउंड और स्टब्बी को पुनरारंभ करें और स्थिति जांचें:
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 
