@@ -122,7 +122,7 @@ AdGuard 默认 DNS<b><i>对比</i></b>这个设置⭐：
 
 # <i>安装树莓派操作系统</b></i>
 
-Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>无头</b></a>模式）。您可以使用显示器/键盘/鼠标访问 Raspberry Pi 或通过以下方式连接<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>从一个终端。
+Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>无头</b></a>模式）。您可以使用显示器/键盘/鼠标访问 Raspberry Pi 或通过以下方式连接<a href="https://www.google.com/search?q=What+is+SSH+in+Linux%3F&client=firefox-b-d&sxsrf=APq-WBsiHvek7g0OrBHWDbEy-x7m-B6O3Q%3A1650481751310&ei=V1pgYoHNEs-uwbkPtI25mAI&ved=0ahUKEwjB1PrTq6P3AhVPVzABHbRGDiMQ4dUDCA0&uact=5&oq=What+is+SSH+in+Linux%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCCMQsAMQJzoHCAAQRxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYAToPCC4Q1AIQyAMQsAMQQxgCSgQIQRgASgQIRhgBUM8IWM8IYJAMaAFwAXgAgAFxiAFxkgEDMC4xmAEAoAECoAEByAERwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz"><b>SSH</b></a>从一个终端。
 
 安装 balenEtcher 并下载 Pi 映像以写入 microSD 卡。
 
@@ -368,11 +368,11 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 #### 其他检查安全的网站
 
-[HTTPS://browser leaks.com/DNS](https://browserleaks.com/dns)- 应该显示所有连接到“Cloudflare”
+<https://browserleaks.com/dns>- 应该显示所有连接到“Cloudflare”
 
 [HTTPS://呜呜呜.cloud flare.com/收视率/encrypted-是你/](https://www.cloudflare.com/ssl/encrypted-sni/)- “安全 DNS / DNSSEC / TLS 1.3”应该都是绿色的勾
 
-<https://dnssec.vs.uni-due.de/>- 应该说“是的，您的 DNS 解析器验证 DNSSEC 签名”
+[HTTPS://DNS Sec.vs.u你-毒蛾.的/](https://dnssec.vs.uni-due.de/)- 应该说“是的，您的 DNS 解析器验证 DNSSEC 签名”
 
 **[⬆ 返回内容⬆](#table-of-contents)**
 
@@ -505,14 +505,14 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 你怎么知道 WireGuard VPN 是否真的有效？
 
-为了**视窗**下载 Wireshark：<https://www.wireshark.org/#download>
+为了**视窗**下载 Wireshark：[HTTPS://呜呜呜.Wireshark.org/#download](https://www.wireshark.org/#download)
 
 下载后，您可以使用该应用程序检查协议设置为 WireGuard VPN 使用的协议的数据包。当数据包流量`encrypted`，例如可以这样读：
 
 <p align="center">
  <img src="https://i.imgur.com/Tn4M47R.jpg">
 
-为了**android**你可以使用 PCAPdroid：[HTTPS://play.Google.com/store/apps/details?ID=com.Emanuele发.remote_capture&后来=恩&公里=US](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
+为了**安卓**你可以使用 PCAPdroid：[HTTPS://play.Google.com/store/apps/details?ID=com.Emanuele发.remote_capture&后来=恩&公里=US](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
 
 您应该看到所有连接`closed`和状态显示所有应用程序中的所有 DNS 而不是任何 TLS 连接。 （打开并使用 PCAPdroid 的应用程序进行扫描）
 
@@ -536,7 +536,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
-Pi 现在将在每周三凌晨 3 点更新。或者你可以去<https://crontab.guru/>并设置自己的时间表。
+Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.guru/](https://crontab.guru/)并设置自己的时间表。
 
 调整 Pi 的日期/时区在终端中输入：
 
