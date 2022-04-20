@@ -224,7 +224,10 @@ Nella home page di AdGuard, sotto i filtri, seleziona la sezione DNS blocklist p
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Puoi cercare su Google diverse blocklist. Ecco la mia blocklist personalizzata per esempio[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>clicca qui</b></a>]. Costruisci il tuo da un elenco di principali fonti di blocklist che ho raccolto[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>clicca qui</b></a>]. Oppure controlla:</br><a href="https://github.com/T145/black-mirror"><b>Specchio nero</b></a>-_**_Blacklist di host dannosi gestite automaticamente e whitelist di falsi positivi_**_</br>👊GRANDE GRAZIE👊a<a href="https://github.com/T145"><b>T 145</b></a>
+La mia blocklist per esempio[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>clicca qui</b></a>]
+
+**_Fonti delle liste di blocco definitive_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+<a href="https://github.com/T145/black-mirror"><b>specchio nero</b></a>-_Blacklist di host dannosi gestite automaticamente e whitelist di falsi positivi_</br>👊GRANDE GRAZIE👊 a<a href="https://github.com/T145"><b>T 145</b></a>
 
 `IMPORTANT:`Alcuni elenchi di blocco possono bloccare alcuni contenuti o siti Web importanti. Per sbloccare vai nella sezione "Registro query" e vedrai_sbloccare_opzione quando il cursore viene posizionato su una query, inserendo i siti Web sbloccati nell'esempio "Regole di filtro personalizzate":`@@||bitly.com^$important`. Cerca l'IP e l'ora del client.
 
