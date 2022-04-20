@@ -34,8 +34,7 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Prestazioni e sicurezza migliori durante la navigazione nei siti Web (DoT e DoH)
 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>Tutti i software sono gratuiti, open source e auto-ospitato </i></br><a href="https://git.io/About"><b>Di</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>FAQ</b></a>                              
 
 * * *
 
@@ -305,8 +304,7 @@ Rimuovere e ricreare il file stubby.yaml:
 
 E copia e incolla tutto il testo da questo file di configurazione tozzo[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>clicca qui</b></a>]e risparmia. (`cd`per tornare alla cartella Inizio al termine).
 
--   Riavvia unbound & stubby e controlla lo stato:
-
+Riavvia unbound & stubby e controlla lo stato:
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 
