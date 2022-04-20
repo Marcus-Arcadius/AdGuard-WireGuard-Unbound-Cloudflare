@@ -34,9 +34,8 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: 浏览网站时更好的性能和安全性(DoT & DoH)
 
-# 
-
-<i>所有软件都是免费、开源和 自托管 </i></br><a href="https://git.io/About"><b>关于</b></a>                              
+<p align="right">
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
@@ -106,7 +105,6 @@ AdGuard 默认 DNS<b><i>对比</i></b>这个设置⭐：
 -   [关闭 Pi LED](#turn-off-pi-led-lights)
 -   [保护您的树莓派](#secure-your-raspberry-pi)
 -   [存储库资源](#repository-resources)
--   [常问问题](#faq)
 
 # 
 
@@ -125,11 +123,11 @@ AdGuard 默认 DNS<b><i>对比</i></b>这个设置⭐：
 
 # <i>安装树莓派操作系统</b></i>
 
-Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>无头</b></a>模式）。您可以使用显示器/键盘/鼠标访问 Raspberry Pi 或通过以下方式连接<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>从终端。
+Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>无头</b></a>模式）。您可以使用显示器/键盘/鼠标访问 Raspberry Pi 或通过以下方式连接<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>从一个终端。
 
-安装balenEtcher并下载Pi镜像写入microSD卡。
+安装 balenEtcher 并下载 Pi 映像以写入 microSD 卡。
 
--   下载树莓派操作系统：[HTTPS://呜呜呜.raspberry皮.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/)
+-   下载树莓派操作系统：<https://www.raspberrypi.org/software/operating-systems/>
 
 -   下载balenaEtcher：[HTTPS://呜呜呜.拔了那.IO/etcher/](https://www.balena.io/etcher/)
 
@@ -160,7 +158,7 @@ Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.g
 
 <i>您可以使用鼠标右键在 Windows powerShell 中粘贴文本</i>.
 
-指纹问题输入“yes”，默认密码输入“raspberry”（密码在命令行中不可见）。你可以输入**_`sudo passwd pi`_**更改密码。
+指纹问题输入“yes”，默认密码输入“raspberry”（密码在命令行中不可见）。你可以输入**_`sudo passwd pi`_**后更改密码。
 
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
@@ -227,7 +225,7 @@ __完成后重启__
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-您可以在 Google 上搜索不同的阻止列表。这是我的自定义阻止列表[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>点击这里</b></a>]使用我的 URL 或从这些来源构建您自己的[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>点击这里</b></a>].
+您可以在 Google 上搜索不同的阻止列表。例如，这是我的自定义阻止列表[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>点击这里</b></a>].从我收集的主要阻止列表来源列表中构建自己的[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>点击这里</b></a>].或查看：</br><a href="https://github.com/T145/black-mirror"><b>黑镜子</b></a>-_**_自动维护恶意主机黑名单和误报白名单_**_</br>👊非常感谢👊to<a href="https://github.com/T145"><b>145</b></a>
 
 `IMPORTANT:`一些阻止列表可以阻止一些重要的内容或网站。要取消阻止，请转到“查询日志”部分，然后会看到_解除封锁_当光标悬停在查询上时的选项，将未阻止的网站放在“自定义过滤规则”示例中：`@@||bitly.com^$important`.查找客户端 IP 和时间。
 
@@ -239,7 +237,7 @@ __完成后重启__
 
     nano bulkurls.py
 
-然后复制并粘贴脚本配置[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>点击这里</b></a>].放`your AdGuard credentials`并保存（control+x 然后 y 然后输入）。
+然后复制粘贴脚本配置[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>点击这里</b></a>].放`your AdGuard credentials`并保存（control+x 然后 y 然后输入）。
 
 _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip install requests`因为它默认不安装。_
 
@@ -551,7 +549,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 # <i>安装 Log2Ram</b></i>
 
-卸载 RAM 的最显着优势之一是它可以提高您的**SD 卡的潜在使用寿命**.
+卸载 RAM 的最显着优势之一是它可以改善您的**SD 卡的潜在使用寿命**.
 日志文件是您安装的各种软件写入最多的内容之一。
 通过将文件推送到 RAM，您可以控制将它们写入 SD 卡的频率。您仍然可以访问 RAM 上的这些文件，就像它们位于您的 SD 卡上一样。
 
@@ -646,8 +644,6 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 [HTTPS://GitHub.com/阿正陆续/log2RAM](https://github.com/azlux/log2ram)
 
+[HTTPS://GitHub.com/T145/black-mirror](https://github.com/T145/black-mirror)
+
 * * *
-
-## _常问问题_
-
-常见问题[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>点击这里</b></a>]
