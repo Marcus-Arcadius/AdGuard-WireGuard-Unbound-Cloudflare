@@ -34,8 +34,7 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: 浏览网站时更好的性能和安全性(DoT & DoH)
 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>所有软件都是免费、开源和 自托管 </i></br><a href="https://git.io/About"><b>关于</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>常问问题</b></a>                              
 
 * * *
 
@@ -127,7 +126,7 @@ Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.g
 
 安装 balenEtcher 并下载 Pi 映像以写入 microSD 卡。
 
--   下载树莓派操作系统：<https://www.raspberrypi.org/software/operating-systems/>
+-   下载树莓派操作系统：[HTTPS://呜呜呜.raspberry皮.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/)
 
 -   下载balenaEtcher：[HTTPS://呜呜呜.拔了那.IO/etcher/](https://www.balena.io/etcher/)
 
@@ -305,8 +304,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 并复制并粘贴此 stubby 配置文件中的所有文本[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>点击这里</b></a>]并保存。 (`cd`完成后返回主文件夹）。
 
--   重启 unbound & stubby 并检查状态：
-
+重启 unbound & stubby 并检查状态：
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 
