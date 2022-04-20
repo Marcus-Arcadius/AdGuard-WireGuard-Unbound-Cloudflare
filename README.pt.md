@@ -224,7 +224,10 @@ Na página inicial do AdGuard em filtros, selecione a seção de lista de bloque
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Você pode pesquisar no Google por uma lista de bloqueio diferente. Aqui está minha lista de bloqueio personalizada, por exemplo[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Clique aqui</b></a>]. Crie o seu próprio a partir de uma lista das principais fontes de lista de bloqueio que coletei[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>Clique aqui</b></a>]. Ou confira:</br><a href="https://github.com/T145/black-mirror"><b>Espelho preto</b></a>-_**_Listas negras de hosts maliciosos mantidas automaticamente e listas brancas de falsos positivos_**_</br>👊MUITO OBRIGADO👊a<a href="https://github.com/T145"><b>T 145</b></a>
+Minha lista de bloqueio, por exemplo[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Clique aqui</b></a>]
+
+**_Fontes de listas de bloqueio finais_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+<a href="https://github.com/T145/black-mirror"><b>espelho preto</b></a>-_Listas negras de hosts maliciosos mantidas automaticamente e listas brancas de falsos positivos_</br>👊 MUITO OBRIGADO 👊 a<a href="https://github.com/T145"><b>T 145</b></a>
 
 `IMPORTANT:`Algumas listas de bloqueio podem bloquear alguns conteúdos ou sites importantes. Para desbloquear vá na seção "Query Log" e verá_desbloquear_opção quando o cursor passa sobre uma consulta, colocando sites desbloqueados no exemplo de "Regras de filtragem personalizadas":`@@||bitly.com^$important`. Procure pelo IP e horário do cliente.
 
