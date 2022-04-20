@@ -34,9 +34,8 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Melhor desempenho e segurança ao navegar em sites (DoT e DoH)
 
-# 
-
-<i>Todos os softwares são gratuitos, de código aberto e auto-hospedado </i></br><a href="https://git.io/About"><b>Sobre</b></a>                              
+<p align="right">
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
@@ -93,8 +92,8 @@ Public Cloudflare/Quad9/Google DNS resolvers :
     -   [Configurar Cloudflare (DoT) em Unbound](#configure-cloudflare-dot-on-unbound)
         -   [Configurar Stubby para Unbound](#configure-stubby-for-unbound)
         -   [Configurar AdGuard com Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
--   [Install WireGuard](#install-wireguard)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>ou<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (mais lento)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
--   [Conectando VPN ao telefone Android/IOS](#connecting-vpn-to-androidios-phone)
+-   [Instalar o WireGuard](#install-wireguard)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>ou<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (mais lento)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+-   [Connecting VPN to Android/IOS Phone](#connecting-vpn-to-androidios-phone)
 -   [Conectando VPN ao Windows](#connecting-vpn-to-windows)
 -   [Configurar Wireguard com AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
     -   [Limitar o tráfego](#limit-traffic)
@@ -106,7 +105,6 @@ Public Cloudflare/Quad9/Google DNS resolvers :
 -   [Desligue os LEDs Pi](#turn-off-pi-led-lights)
 -   [Proteja seu Raspberry Pi](#secure-your-raspberry-pi)
 -   [Recursos do Repositório](#repository-resources)
--   [PERGUNTAS FREQUENTES](#faq)
 
 # 
 
@@ -125,11 +123,11 @@ Este tutorial é baseado no Raspberry Pi, mas você pode usar qualquer Linux<a h
 
 # <i>Install Raspberry Pi OS</b></i>
 
-Raspberry Pi OS vem nas versões desktop e lite (use lite para<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>sem cabeça</b></a>modo). Você pode acessar um Raspberry Pi com um monitor/teclado/mouse ou conectar via<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>de um terminal.
+Raspberry Pi OS vem nas versões desktop e lite (use lite para<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>sem cabeça</b></a>modo). Você pode acessar um Raspberry Pi com um monitor/teclado/mouse ou conectar via<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>ssh</b></a>de um terminal.
 
 Instale o balenEtcher e baixe a imagem Pi para escrever no cartão microSD.
 
--   Download Raspberry Pi OS: <https://www.raspberrypi.org/software/operating-systems/>
+-   Download Raspberry Pi OS:<https://www.raspberrypi.org/software/operating-systems/>
 
 -   Baixe o BalenaEtcher:<https://www.balena.io/etcher/>
 
@@ -137,7 +135,7 @@ Depois que você tiver`Etcher`instalado e`Raspberry Pi OS`arquivo baixado, agora
 
 -   Inicie o Etcher e escolha a imagem do Raspberry Pi OS que você baixou, selecione seu cartão microSD e clique em`Flash`.
 
-Depois que o flash for concluído, procure em "Este PC" por um nome de disco "boot ou unidade USB" (reconecte o leitor de cartão USB se não for visto). Vá para esse disco, crie um novo arquivo de texto chamado**_`ssh without 'txt' extension`_**. Desative “Ocultar extensões para tipos de arquivos conhecidos” nas opções do explorador de arquivos, caso não o veja.
+Depois que o flash for concluído, procure em "Este PC" por um nome de disco "boot ou unidade USB" (reconecte o leitor de cartão USB se não for visto). Vá para esse disco, crie um novo arquivo de texto chamado**_`ssh without 'txt' extension`_**. Desative “Ocultar extensões para tipos de arquivo conhecidos” nas opções do explorador de arquivos, caso não o veja.
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -160,7 +158,7 @@ Digite o seguinte comando:
 
 <i>Você pode usar o botão direito do mouse para colar texto no Windows powerShell</i>.
 
-Digite "yes" para a pergunta de impressão digital e digite "raspberry" para a senha padrão (as senhas serão invisíveis na linha de comando). Você pode digitar**_`sudo passwd pi`_**para alterar a senha.
+Digite "yes" para a pergunta de impressão digital e digite "raspberry" para a senha padrão (as senhas serão invisíveis na linha de comando). Você pode digitar**_`sudo passwd pi`_**para alterar a senha depois.
 
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
@@ -227,7 +225,7 @@ Na página inicial do AdGuard em filtros, selecione a seção de lista de bloque
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Você pode pesquisar no Google por uma lista de bloqueio diferente. Aqui está minha lista de bloqueio personalizada[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>Clique aqui</b></a>]com meus URLs ou crie seu próprio a partir dessas fontes[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>Clique aqui</b></a>].
+Você pode pesquisar no Google por uma lista de bloqueio diferente. Aqui está minha lista de bloqueio personalizada, por exemplo[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Clique aqui</b></a>]. Crie o seu próprio a partir de uma lista das principais fontes de lista de bloqueio que coletei[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>Clique aqui</b></a>]. Ou confira:</br><a href="https://github.com/T145/black-mirror"><b>Espelho preto</b></a>-_**_Listas negras de hosts maliciosos mantidas automaticamente e listas brancas de falsos positivos_**_</br>👊MUITO OBRIGADO👊a<a href="https://github.com/T145"><b>T 145</b></a>
 
 `IMPORTANT:`Algumas listas de bloqueio podem bloquear alguns conteúdos ou sites importantes. Para desbloquear vá na seção "Query Log" e verá_desbloquear_opção quando o cursor passa sobre uma consulta, colocando sites desbloqueados no exemplo de "Regras de filtragem personalizadas":`@@||bitly.com^$important`. Procure pelo IP e horário do cliente.
 
@@ -433,7 +431,7 @@ WireGuard (App Store):<https://apps.apple.com/us/app/wireguard/id1441195209>
 
 Você precisa digitalizar o código QR mostrado no terminal com o aplicativo WireGuard, selecione o`+ button`e use a opção`Scan from QR code`para instalar a configuração.
 
-`IMPORTANT`: Habilitar**back-end do módulo do kernel** in settings
+`IMPORTANT`: Habilitar**back-end do módulo do kernel**nas configurações
 
 <p align="left">
  <img src="https://i.imgur.com/R4qbiOQ.jpg" width=250px height=350px>
@@ -646,8 +644,6 @@ Reinicie o Pi.
 
 <https://github.com/azlux/log2ram>
 
+<https://github.com/T145/black-mirror>
+
 * * *
-
-## _PERGUNTAS FREQUENTES_
-
-Faça perguntas frequentes[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>Clique aqui</b></a>]
