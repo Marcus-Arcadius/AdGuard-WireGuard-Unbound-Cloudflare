@@ -34,8 +34,7 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>كلاود فلير</b></a>_: أداء وأمان أفضل عند تصفح مواقع الويب (DoT & DoH)
 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>جميع البرامج مجانية ومفتوحة المصدر و الاستضافة الذاتية </i></br><a href="https://git.io/About"><b>عن</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>التعليمات</b></a>                              
 
 * * *
 
@@ -305,8 +304,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 وانسخ والصق كل النص من ملف التكوين القصير هذا[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>انقر هنا</b></a>]وحفظ. (`cd`للعودة إلى المجلد الرئيسي عند الانتهاء).
 
--   أعد تشغيل غير منضم وقصير وتحقق من الحالة:
-
+أعد تشغيل غير منضم وقصير وتحقق من الحالة:
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 
@@ -410,7 +408,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
 
--   Wait until the installation is finished and QR code to show, don't close. But if you do, to `regenerate qrcode`، أدخل في Terminal ولكن مع استبدال الاسم فقط`yourclientname.conf`ملف لك:
+-   انتظر حتى انتهاء التثبيت وظهور رمز الاستجابة السريعة ، لا تغلق. ولكن إذا قمت بذلك ، إلى`regenerate qrcode`، أدخل في Terminal ولكن مع استبدال الاسم فقط`yourclientname.conf`ملف لك:
 
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
@@ -457,7 +455,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 -   في تطبيق WireGuard ، حدد النفق الخاص بك وحدد تحرير (قلم رصاص في أعلى اليمين)
 
--   Under DNS servers enter `Pi's IP`وحفظ (IPv4 و IPv6)
+-   تحت خوادم DNS ، أدخل`Pi's IP`وحفظ (IPv4 و IPv6)
 
 <p align="center">
  <img src="https://i.imgur.com/UC0vWfE.jpg" width=450px height=500px>  
@@ -490,7 +488,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 عند الاتصال بكابل Ethernet على جهاز كمبيوتر يعمل بنظام Windows ، فأنت بحاجة إلى الدخول`::1`في عنوان IPv6 في خادم DNS المفضل "بروتوكول الإنترنت الإصدار 6 (TCP / IPv6)".
 
-Then go to [هتبص://بفطلك.كوم/](https://ipv6leak.com/)ويجب أن ترى "_IPv6 الخاص بك لا يتسرب_".
+ثم اذهب الى[هتبص://بفطلك.كوم/](https://ipv6leak.com/)ويجب أن ترى "_IPv6 الخاص بك لا يتسرب_".
 
 # 
 
@@ -513,7 +511,7 @@ Then go to [هتبص://بفطلك.كوم/](https://ipv6leak.com/)ويجب أن �
 
 ل**ذكري المظهر**يمكنك استخدام PCAPdroid:[هتبص://بلاي.جوجل.كوم/سطور/عبس/ديتلس?إذ=كوم.إيمانويلف.رمتكبتر&هل=إن&جل=أس](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
 
-You should see all connections `closed`والحالة تعرض جميع DNS وليس أي اتصالات TLS في جميع التطبيقات. (افتح التطبيقات واستخدمها لـ PCAPdroid للمسح الضوئي)
+يجب أن ترى كل الاتصالات`closed`والحالة تعرض جميع DNS وليس أي اتصالات TLS في جميع التطبيقات. (افتح التطبيقات واستخدمها لـ PCAPdroid للمسح الضوئي)
 
 **[العودة إلى المحتويات ⬆](#table-of-contents)**
 
