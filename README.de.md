@@ -224,7 +224,10 @@ Wählen Sie auf der AdGuard-Startseite unter Filtern den Abschnitt DNS-Sperrlist
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Sie können Google nach verschiedenen Sperrlisten durchsuchen. Hier ist zum Beispiel meine benutzerdefinierte Sperrliste[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Klicke hier</b></a>]. Erstellen Sie Ihre eigene aus einer Liste der wichtigsten Blocklist-Quellen, die ich gesammelt habe[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>Klicke hier</b></a>]. Oder schauen Sie sich an:</br><a href="https://github.com/T145/black-mirror"><b>Schwarzer Spiegel</b></a>-_**_Automatisch geführte Blacklists und Whitelists für bösartige Hosts_**_</br>👊HERZLICHEN DANK👊an<a href="https://github.com/T145"><b>T145</b></a>
+Meine Blocklist zum Beispiel[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Klicke hier</b></a>]
+
+**_Ultimative Sperrlistenquellen_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+<a href="https://github.com/T145/black-mirror"><b>schwarzer Spiegel</b></a>-_Automatisch geführte Blacklists und Whitelists für bösartige Hosts_</br>👊HERZLICHEN DANK👊 an<a href="https://github.com/T145"><b>T145</b></a>
 
 `IMPORTANT:`Einige Sperrlisten können einige wichtige Inhalte oder Websites blockieren. Um die Blockierung aufzuheben, gehen Sie zum Abschnitt "Abfrageprotokoll" und sehen Sie_entsperren_Option, wenn der Mauszeiger über eine Abfrage bewegt wird, um nicht blockierte Websites in das Beispiel "Benutzerdefinierte Filterregeln" zu setzen:`@@||bitly.com^$important`. Suchen Sie nach Client-IP und Uhrzeit.
 
