@@ -34,8 +34,7 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Melhor desempenho e segurança ao navegar em sites (DoT e DoH)
 
-<p align="right">
-<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>Todos os softwares são gratuitos, de código aberto e auto-hospedado </i></br><a href="https://git.io/About"><b>Sobre</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>PERGUNTAS FREQUENTES</b></a>                              
 
 * * *
 
@@ -93,7 +92,7 @@ Public Cloudflare/Quad9/Google DNS resolvers :
         -   [Configurar Stubby para Unbound](#configure-stubby-for-unbound)
         -   [Configurar AdGuard com Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
 -   [Instalar o WireGuard](#install-wireguard)<img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>ou<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN (mais lento)</a><img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
--   [Connecting VPN to Android/IOS Phone](#connecting-vpn-to-androidios-phone)
+-   [Conectando VPN ao telefone Android/IOS](#connecting-vpn-to-androidios-phone)
 -   [Conectando VPN ao Windows](#connecting-vpn-to-windows)
 -   [Configurar Wireguard com AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
     -   [Limitar o tráfego](#limit-traffic)
@@ -305,8 +304,7 @@ Remova e recrie o arquivo stubby.yaml:
 
 E copie e cole todo o texto deste arquivo de configuração atarracado[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>Clique aqui</b></a>]e salve. (`cd`para retornar à pasta inicial quando terminar).
 
--   Reinicie unbound & stubby e verifique o status:
-
+Reinicie unbound & stubby e verifique o status:
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 
