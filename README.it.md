@@ -34,9 +34,8 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: Prestazioni e sicurezza migliori durante la navigazione nei siti Web (DoT e DoH)
 
-# 
-
-<i>Tutti i software sono gratuiti, open source e auto-ospitato </i></br><a href="https://git.io/About"><b>Di</b></a>                              
+<p align="right">
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
@@ -106,7 +105,6 @@ Risolutori DNS pubblici Cloudflare/Quad9/Google:
 -   [Spegni i LED Pi](#turn-off-pi-led-lights)
 -   [Proteggi il tuo Raspberry Pi](#secure-your-raspberry-pi)
 -   [Risorse del repository](#repository-resources)
--   [FAQ](#faq)
 
 # 
 
@@ -125,7 +123,7 @@ Questo tutorial è basato su Raspberry Pi, ma puoi usare qualsiasi Linux<a href=
 
 # <i>Installa il sistema operativo Raspberry Pi</b></i>
 
-Raspberry Pi OS è disponibile nelle versioni desktop e lite (usa lite per<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>senza testa</b></a>modalità). Puoi accedere a un Raspberry Pi con un monitor/tastiera/mouse o connetterti tramite<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>da un terminale.
+Raspberry Pi OS è disponibile nelle versioni desktop e lite (usa lite per<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>senza testa</b></a>modalità). Puoi accedere a un Raspberry Pi con un monitor/tastiera/mouse o connetterti tramite<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>ssh</b></a>da un terminale.
 
 Installa balenEtcher e scarica l'immagine Pi da scrivere sulla scheda microSD.
 
@@ -160,7 +158,7 @@ Digita il seguente comando:
 
 <i>È possibile utilizzare il pulsante destro del mouse per incollare il testo in Windows PowerShell</i>.
 
-Digita "yes" per la domanda sull'impronta digitale e digita "raspberry" per la password predefinita (le password saranno invisibili nella riga di comando). Puoi digitare**_`sudo passwd pi`_**per cambiare la password.
+Digita "yes" per la domanda sull'impronta digitale e digita "raspberry" per la password predefinita (le password saranno invisibili nella riga di comando). Puoi digitare**_`sudo passwd pi`_**per cambiare la password dopo.
 
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
@@ -179,7 +177,7 @@ __Riavvia al termine__
 
 # <i>Installa AdGuard Home</b></i>
 
-Questo script di installazione proviene da<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Casa</b></a>progetto principale. Segui per essere sempre aggiornato.
+Questo script di installazione proviene da<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Casa</b></a>progetto principale. Segui per restare aggiornato.
 
 Esegui il seguente comando nel tuo terminale:
 
@@ -227,7 +225,7 @@ Nella home page di AdGuard, sotto i filtri, seleziona la sezione DNS blocklist p
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Puoi cercare su Google diverse blocklist. Ecco la mia blocklist personalizzata[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>clicca qui</b></a>]con i miei URL o creane uno tuo da queste fonti[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>clicca qui</b></a>].
+Puoi cercare su Google diverse blocklist. Ecco la mia blocklist personalizzata per esempio[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>clicca qui</b></a>]. Costruisci il tuo da un elenco di principali fonti di blocklist che ho raccolto[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>clicca qui</b></a>]. Oppure controlla:</br><a href="https://github.com/T145/black-mirror"><b>Specchio nero</b></a>-_**_Blacklist di host dannosi gestite automaticamente e whitelist di falsi positivi_**_</br>👊GRANDE GRAZIE👊a<a href="https://github.com/T145"><b>T 145</b></a>
 
 `IMPORTANT:`Alcuni elenchi di blocco possono bloccare alcuni contenuti o siti Web importanti. Per sbloccare vai nella sezione "Registro query" e vedrai_sbloccare_opzione quando il cursore viene posizionato su una query, inserendo i siti Web sbloccati nell'esempio "Regole di filtro personalizzate":`@@||bitly.com^$important`. Cerca l'IP e l'ora del client.
 
@@ -392,14 +390,14 @@ Intervallo di porte | 51820-51820
 Porto in uscita | 51820
 Consenti l'accesso a Internet (se disponibile) | sì
 
-Impostazione della porta del mio 👇router👇. Il tuo forse è diverso ma lo capirai. Ricorda che Google 🔍motore di ricerca🔎 è tuo amico. Se non riesci a connetterti da una rete esterna, significa che l'ISP ha bloccato le connessioni in uscita, puoi chiamarli e chiedere gentilmente di farlo funzionare.
+Impostazione della mia porta 👇router👇. Il tuo forse è diverso ma lo capirai. Ricorda che Google 🔍motore di ricerca🔎 è tuo amico. Se non riesci a connetterti da una rete esterna, significa che l'ISP ha bloccato le connessioni in uscita, puoi chiamarli e chiedere gentilmente di farlo funzionare.
 
 <p align="center">
  <img src="https://i.imgur.com/9LBEk1i.jpg">
 
 * * *
 
-👊GRANDE GRAZIE👊 per questo script di installazione da<a href="https://github.com/Nyr/wireguard-install"><b>Nyr</b></a>. Segui per essere sempre aggiornato.
+👊GRANDE GRAZIE👊 per questo script di installazione da<a href="https://github.com/Nyr/wireguard-install"><b>Nyr</b></a>. Segui per restare aggiornato.
 
 Esegui nel terminale
 
@@ -457,7 +455,7 @@ WireGuard per Windows:<https://download.wireguard.com/windows-client/wireguard-i
 
 _Ricorda che questo è per quando sei connesso a WireGuard VPN su una rete esterna o a casa 24 ore su 24, 7 giorni su 7, perché hai già AdGuard/Unbound/Cloudflare configurato e in esecuzione manualmente sui tuoi dispositivi._(nessun problema con entrambi impostati per la mia esperienza)
 
--   In WireGuard app, select your tunnel and select edit (pencil on top right)
+-   Nell'app WireGuard, seleziona il tuo tunnel e seleziona Modifica (matita in alto a destra)
 
 -   In Server DNS accedi`Pi's IP`e salva (IPv4 e IPv6)
 
@@ -490,7 +488,7 @@ Oppure puoi cambiare l'intervallo IP sul tuo router (secondo la mia esperienza p
 
 Se stai usando IPv6, quando sei connesso al WiFi devi inserire gli IP consentiti da WireGuard`fe80::1/0`anche. Per esempio`192.168.100.0/0, fe80::1/0`
 
-Quando è collegato al cavo Ethernet su un PC Windows, è necessario accedere`::1`nell'indirizzo IPv6 nel server DNS preferito "Protocollo Internet versione 6(TCP/IPv6)".
+Quando si è collegati al cavo Ethernet su un PC Windows, è necessario accedere`::1`nell'indirizzo IPv6 nel server DNS preferito "Protocollo Internet versione 6(TCP/IPv6)".
 
 Allora vai a<https://ipv6leak.com/>e dovresti vedere "_Il tuo IPv6 non perde_".
 
@@ -646,8 +644,6 @@ Riavvia Pi.
 
 <https://github.com/azlux/log2ram>
 
+<https://github.com/T145/black-mirror>
+
 * * *
-
-## _FAQ_
-
-Fai domande frequenti[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>clicca qui</b></a>]
