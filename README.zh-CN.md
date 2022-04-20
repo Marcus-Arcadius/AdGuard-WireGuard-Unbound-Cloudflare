@@ -224,7 +224,10 @@ __完成后重启__
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-您可以在 Google 上搜索不同的阻止列表。例如，这是我的自定义阻止列表[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>点击这里</b></a>].从我收集的主要阻止列表来源列表中构建自己的[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>点击这里</b></a>].或查看：</br><a href="https://github.com/T145/black-mirror"><b>黑镜子</b></a>-_**_自动维护恶意主机黑名单和误报白名单_**_</br>👊非常感谢👊to<a href="https://github.com/T145"><b>145</b></a>
+例如我的黑名单[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>点击这里</b></a>]
+
+**_终极黑名单来源_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+<a href="https://github.com/T145/black-mirror"><b>黑镜子</b></a>-_自动维护恶意主机黑名单和误报白名单_</br>👊非常感谢👊<a href="https://github.com/T145"><b>145</b></a>
 
 `IMPORTANT:`一些阻止列表可以阻止一些重要的内容或网站。要取消阻止，请转到“查询日志”部分，然后会看到_解除封锁_当光标悬停在查询上时的选项，将未阻止的网站放在“自定义过滤规则”示例中：`@@||bitly.com^$important`.查找客户端 IP 和时间。
 
@@ -260,7 +263,7 @@ _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip inst
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
-`IMPORTANT:`这需要每 6 个月更新一次。到_**自动更新**_root.hints 你需要每 6 个月创建一个 cron 作业。
+`IMPORTANT:`这需要每 6 个月更新一次。到_**自动更新**_root.hints 每 6 个月你需要创建一个 cron 作业。
 
 在命令行中输入`crontab -e`，它会要求选择一个编辑器（选择 1）并将这些行粘贴到 crontab 的底部并保存（control+x 然后 y 然后输入）：
 
@@ -413,7 +416,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
 
-`IMPORTANT:`您需要为使用 VPN 的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
+`IMPORTANT:`您需要为与 VPN 一起使用的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
 
 <b>采用_开放式VPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>点击这里</b></a>]
 
@@ -484,7 +487,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 ## Ипвш
 
-如果您使用的是 IPv6，当连接到 WiFi 时，您需要输入 WireGuard 允许的 IP`fe80::1/0`也是。例如`192.168.100.0/0, fe80::1/0`
+如果您使用的是 IPv6，则在连接到 WiFi 时，您需要输入 WireGuard 允许的 IP`fe80::1/0`也是。例如`192.168.100.0/0, fe80::1/0`
 
 在 windows PC 上连接以太网电缆时，您需要输入`::1`在“Internet 协议版本 6(TCP/IPv6)”首选 DNS 服务器中的 IPv6 地址中。
 
@@ -597,7 +600,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 * * *
 
-<b>使这些项目更好的任何问题、修复或提示请贡献🤖</b>
+<b>任何使这些项目更好的问题、修复或提示请贡献🤖</b>
 
 * * *
 
