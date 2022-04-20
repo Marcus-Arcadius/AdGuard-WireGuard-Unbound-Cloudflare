@@ -34,9 +34,8 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Wolkenflare</b></a>_: Bessere Leistung und Sicherheit beim Surfen auf Websites (DoT & DoH)
 
-# 
-
-<i>Alle Software ist kostenlos, Open Source und selbst gehostet </i></br><a href="https://git.io/About"><b>Über</b></a>                              
+<p align="right">
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
@@ -81,11 +80,11 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
 # Inhaltsverzeichnis
 
 -   [Anforderungen](#requirements)
--   [Installieren Sie das Raspberry Pi-Betriebssystem](#install-raspberry-pi-os)<img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+-   [Installieren Sie das Raspberry-Pi-Betriebssystem](#install-raspberry-pi-os)<img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
     -   [Greifen Sie mit SSH auf Pi OS zu](#access-pi-os-with-ssh)
 -   [Installieren Sie AdGuard Home](#install-adguard-home)<img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
     -   [Richten Sie Ihre Geräte so ein, dass sie mit Adguard funktionieren](#set-up-your-devices-to-work-with-adguard)
-    -   [Einrichten der AdGuard-Sperrliste](#setting-up-adguard-blocklist)
+    -   [Einrichtung der AdGuard-Sperrliste](#setting-up-adguard-blocklist)
         -   [Mehrere URLs hinzufügen/entfernen](#addremove-multiple-urls)
 -   [Ungebunden installieren](#install-unbound)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [Installieren Sie Cloudflare](#install-cloudflare)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
@@ -106,7 +105,6 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
 -   [Schalten Sie die Pi-LEDs aus](#turn-off-pi-led-lights)
 -   [Sichern Sie Ihren Raspberry Pi](#secure-your-raspberry-pi)
 -   [Repository-Ressourcen](#repository-resources)
--   [FAQ](#faq)
 
 # 
 
@@ -123,9 +121,9 @@ Dieses Tutorial basiert auf Raspberry Pi, aber Sie können jedes Linux verwenden
 
 # 
 
-# <i>Installieren Sie das Raspberry Pi-Betriebssystem</b></i>
+# <i>Installieren Sie das Raspberry-Pi-Betriebssystem</b></i>
 
-Raspberry Pi OS gibt es in Desktop- und Lite-Versionen (verwenden Sie Lite für<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>kopflos</b></a>Modus). Sie können mit einem Monitor/einer Tastatur/Maus auf einen Raspberry Pi zugreifen oder eine Verbindung herstellen<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>von einem Endgerät.
+Raspberry Pi OS gibt es in Desktop- und Lite-Versionen (verwenden Sie Lite für<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>kopflos</b></a>Modus). Sie können mit einem Monitor/einer Tastatur/Maus auf einen Raspberry Pi zugreifen oder eine Verbindung herstellen<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>sch</b></a>von einem Endgerät.
 
 Installieren Sie balenEtcher und laden Sie das Pi-Image herunter, um es auf die microSD-Karte zu schreiben.
 
@@ -160,7 +158,7 @@ Geben Sie den folgenden Befehl ein:
 
 <i>Sie können die rechte Maustaste verwenden, um Text in Windows PowerShell einzufügen</i>.
 
-Geben Sie „Ja“ für die Frage nach dem Fingerabdruck und „Himbeere“ als Standardpasswort ein (Passwörter sind in der Befehlszeile unsichtbar). Du kannst Tippen**_`sudo passwd pi`_**Passwort zu ändern.
+Geben Sie „Ja“ für die Frage nach dem Fingerabdruck und „Himbeere“ als Standardpasswort ein (Passwörter sind in der Befehlszeile unsichtbar). Du kannst Tippen**_`sudo passwd pi`_**um das Passwort danach zu ändern.
 
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
@@ -213,21 +211,21 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
         Gehen Sie zu "Internetprotokoll Version 6 (TCP/IPv6)" und geben Sie es ein`::1`
 
-`OPTIONAL:`<i>Sie können in den alternativen Feldern einen Backup-DNS hinzufügen</i>
+`OPTIONAL:`<i>Sie können in den alternativen Feldern ein Backup-DNS hinzufügen</i>
 
 `BE AWARE:`<i>In Android unterbricht das Hinzufügen eines öffentlichen DNS im zweiten Feld die AdGuard-Werbeblockierung</i>
 
 <p align="center">
  <img src="https://i.imgur.com/8gsDk3z.jpg">
 
-## Einrichten der AdGuard-Sperrliste
+## Einrichtung der AdGuard-Sperrliste
 
 Wählen Sie auf der AdGuard-Startseite unter Filtern den Abschnitt DNS-Sperrliste zum Hinzufügen von URLs aus.
 
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Sie können Google nach verschiedenen Sperrlisten durchsuchen. Hier ist meine benutzerdefinierte Sperrliste[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>Klicke hier</b></a>]mit meinen URLs oder erstellen Sie Ihre eigenen aus diesen Quellen[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>Klicke hier</b></a>].
+Sie können Google nach verschiedenen Sperrlisten durchsuchen. Hier ist zum Beispiel meine benutzerdefinierte Sperrliste[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Klicke hier</b></a>]. Erstellen Sie Ihre eigene aus einer Liste der wichtigsten Blocklist-Quellen, die ich gesammelt habe[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>Klicke hier</b></a>]. Oder schauen Sie sich an:</br><a href="https://github.com/T145/black-mirror"><b>Schwarzer Spiegel</b></a>-_**_Automatisch geführte Blacklists und Whitelists für bösartige Hosts_**_</br>👊HERZLICHEN DANK👊an<a href="https://github.com/T145"><b>T145</b></a>
 
 `IMPORTANT:`Einige Sperrlisten können einige wichtige Inhalte oder Websites blockieren. Um die Blockierung aufzuheben, gehen Sie zum Abschnitt "Abfrageprotokoll" und sehen Sie_entsperren_Option, wenn der Mauszeiger über eine Abfrage bewegt wird, um nicht blockierte Websites in das Beispiel "Benutzerdefinierte Filterregeln" zu setzen:`@@||bitly.com^$important`. Suchen Sie nach Client-IP und Uhrzeit.
 
@@ -241,7 +239,7 @@ Sie können mit AdGuard derzeit nur eine URL nach der anderen zur DNS-Blocklist 
 
 Kopieren Sie dann die Skriptkonfigurationen und fügen Sie sie ein[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>Klicke hier</b></a>]. Satz`your AdGuard credentials`und speichern (Strg+x dann y dann enter).
 
-_Bei Verwendung**DiätPi**Installieren`sudo apt-get install python3-pip -y && pip install requests`weil es nicht standardmäßig installiert ist._
+_Bei Verwendung**DiätPi**Installieren`sudo apt-get install python3-pip -y && pip install requests`für seine nicht standardmäßig installieren._
 
 Laufen :`sudo python3 bulkurls.py`
 
@@ -525,7 +523,7 @@ Sie sollten alle Verbindungen sehen`closed`und Status, der alle DNS- und keine T
 
 # <i>Pi automatisch aktualisieren</b></i>
 
-Öffnen Sie eine neue sh-Datei mit dem Namen update und kopieren Sie das Skript zum Einfügen[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>Klicke hier</b></a>]
+Öffnen Sie eine neue sh-Datei namens update und kopieren Sie das Skript zum Einfügen[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>Klicke hier</b></a>]
 
     sudo nano update.sh
 
@@ -646,8 +644,6 @@ Starten Sie Pi neu.
 
 <https://github.com/azlux/log2ram>
 
+<https://github.com/T145/black-mirror>
+
 * * *
-
-## _FAQ_
-
-Stellen Sie häufig Fragen[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>Klicke hier</b></a>]
