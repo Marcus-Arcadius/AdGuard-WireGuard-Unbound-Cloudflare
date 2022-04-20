@@ -263,7 +263,7 @@ _如果使用**饮食派**安装`sudo apt-get install python3-pip -y && pip inst
 
     wget -O root.hints https://www.internic.net/domain/named.root && sudo mv root.hints /var/lib/unbound/
 
-`IMPORTANT:`这需要每 6 个月更新一次。到_**自动更新**_root.hints 每 6 个月你需要创建一个 cron 作业。
+`IMPORTANT:`这需要每 6 个月更新一次。到_**自动更新**_root.hints 你需要每 6 个月创建一个 cron 作业。
 
 在命令行中输入`crontab -e`，它会要求选择一个编辑器（选择 1）并将这些行粘贴到 crontab 的底部并保存（control+x 然后 y 然后输入）：
 
@@ -372,7 +372,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 [HTTPS://呜呜呜.cloud flare.com/收视率/encrypted-是你/](https://www.cloudflare.com/ssl/encrypted-sni/)- “安全 DNS / DNSSEC / TLS 1.3”应该都是绿色的勾
 
-[HTTPS://DNS Sec.vs.u你-毒蛾.的/](https://dnssec.vs.uni-due.de/)- 应该说“是的，您的 DNS 解析器验证 DNSSEC 签名”
+<https://dnssec.vs.uni-due.de/>- 应该说“是的，您的 DNS 解析器验证 DNSSEC 签名”
 
 **[⬆ 返回内容⬆](#table-of-contents)**
 
@@ -416,7 +416,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
     sudo cp /root/yourclientname.conf /home/pi && sudo qrencode -t ansiutf8 < yourclientname.conf
 
-`IMPORTANT:`您需要为与 VPN 一起使用的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
+`IMPORTANT:`您需要为使用 VPN 的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
 
 <b>采用_开放式VPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>点击这里</b></a>]
 
@@ -487,7 +487,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 ## Ипвш
 
-如果您使用的是 IPv6，则在连接到 WiFi 时，您需要输入 WireGuard 允许的 IP`fe80::1/0`也是。例如`192.168.100.0/0, fe80::1/0`
+如果您使用的是 IPv6，当连接到 WiFi 时，您需要输入 WireGuard 允许的 IP`fe80::1/0`也是。例如`192.168.100.0/0, fe80::1/0`
 
 在 windows PC 上连接以太网电缆时，您需要输入`::1`在“Internet 协议版本 6(TCP/IPv6)”首选 DNS 服务器中的 IPv6 地址中。
 
@@ -505,14 +505,14 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 你怎么知道 WireGuard VPN 是否真的有效？
 
-为了**视窗**下载 Wireshark：[HTTPS://呜呜呜.Wireshark.org/#download](https://www.wireshark.org/#download)
+为了**视窗**下载 Wireshark：<https://www.wireshark.org/#download>
 
 下载后，您可以使用该应用程序检查协议设置为 WireGuard VPN 使用的协议的数据包。当数据包流量`encrypted`，例如可以这样读：
 
 <p align="center">
  <img src="https://i.imgur.com/Tn4M47R.jpg">
 
-为了**安卓**你可以使用 PCAPdroid：[HTTPS://play.Google.com/store/apps/details?ID=com.Emanuele发.remote_capture&后来=恩&公里=US](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
+为了**android**你可以使用 PCAPdroid：[HTTPS://play.Google.com/store/apps/details?ID=com.Emanuele发.remote_capture&后来=恩&公里=US](https://play.google.com/store/apps/details?id=com.emanuelef.remote_capture&hl=en&gl=US)
 
 您应该看到所有连接`closed`和状态显示所有应用程序中的所有 DNS 而不是任何 TLS 连接。 （打开并使用 PCAPdroid 的应用程序进行扫描）
 
@@ -536,7 +536,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
     0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
 
-Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.guru/](https://crontab.guru/)并设置自己的时间表。
+Pi 现在将在每周三凌晨 3 点更新。或者你可以去<https://crontab.guru/>并设置自己的时间表。
 
 调整 Pi 的日期/时区在终端中输入：
 
@@ -600,7 +600,7 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 * * *
 
-<b>任何使这些项目更好的问题、修复或提示请贡献🤖</b>
+<b>使这些项目更好的任何问题、修复或提示请贡献🤖</b>
 
 * * *
 
