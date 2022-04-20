@@ -34,9 +34,8 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Nuageux</b></a>_: Meilleures performances et sécurité lors de la navigation sur les sites Web (DoT & DoH)
 
-# 
-
-<i>Tous les logiciels sont gratuits, open-source et auto-hébergé </i></br><a href="https://git.io/About"><b>Sur</b></a>                              
+<p align="right">
+<i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 * * *
 
@@ -106,7 +105,6 @@ Résolveurs DNS publics Cloudflare/Quad9/Google :
 -   [Éteignez les LED Pi](#turn-off-pi-led-lights)
 -   [Sécurisez votre Raspberry Pi](#secure-your-raspberry-pi)
 -   [Ressources du référentiel](#repository-resources)
--   [FAQ](#faq)
 
 # 
 
@@ -125,13 +123,13 @@ Ce tutoriel est basé sur Raspberry Pi, mais vous pouvez utiliser n'importe quel
 
 # <i>Installer le système d'exploitation Raspberry Pi</b></i>
 
-Raspberry Pi OS est disponible en versions de bureau et lite (utilisez lite pour<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>sans tête</b></a>mode). Vous pouvez accéder à un Raspberry Pi avec un moniteur/clavier/souris ou vous connecter via<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>SSH</b></a>depuis une borne.
+Raspberry Pi OS est disponible en versions de bureau et lite (utilisez lite pour<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>sans tête</b></a>mode). Vous pouvez accéder à un Raspberry Pi avec un moniteur/clavier/souris ou vous connecter via<a href="https://www.google.com/search?q=linux+ssh+&client=firefox-b-d&sxsrf=APq-WBve72uwEMMqUAe77nZoaygcx-ROMg%3A1650123667623&ei=k-NaYtbfJbmvwbkPpf6nqAQ&ved=0ahUKEwiW9azY9Zj3AhW5VzABHSX_CUUQ4dUDCA0&uact=5&oq=linux+ssh+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsANKBAhBGABKBAhGGABQuAFY0AJg1AZoAXABeACAAXaIAeIBkgEDMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"><b>chut</b></a>depuis une borne.
 
 Installez balenEtcher et téléchargez l'image Pi pour écrire sur la carte microSD.
 
 -   Téléchargez le système d'exploitation Raspberry Pi :<https://www.raspberrypi.org/software/operating-systems/>
 
--   Télécharger balenaEtcher :<https://www.balena.io/etcher/>
+-   Télécharger balenaEtcher :<https://www.balena.io/etcher/>
 
 Après avoir`Etcher`installé et`Raspberry Pi OS`fichier téléchargé, vous pouvez maintenant insérer la carte SD avec lecteur de carte USB microSD dans votre ordinateur.
 
@@ -160,7 +158,7 @@ Tapez la commande suivante :
 
 <i>Vous pouvez utiliser le bouton droit de la souris pour coller du texte dans Windows PowerShell</i>.
 
-Tapez "oui" pour la question sur les empreintes digitales et tapez "framboise" pour le mot de passe par défaut (les mots de passe seront invisibles dans la ligne de commande). Vous pouvez taper**_`sudo passwd pi`_**pour changer le mot de passe.
+Tapez "oui" pour la question sur les empreintes digitales et tapez "framboise" pour le mot de passe par défaut (les mots de passe seront invisibles dans la ligne de commande). Vous pouvez taper**_`sudo passwd pi`_**pour changer le mot de passe après.
 
 <p align="center">
  <img src="https://i.imgur.com/Wf30jxG.jpg">
@@ -207,7 +205,7 @@ Exécutez la commande suivante dans votre terminal :
 
     -   <i>Ипвч</i>
 
-        Allez dans les paramètres réseau / modifiez les options de l'adaptateur et faites un clic droit dans les propriétés puis sélectionnez "Internet Protocol Version 4(TCP/IPv4)". Entrez l'adresse IP de Pi dans`Preferred DNS`serveur.
+        Allez dans les paramètres réseau / modifier les options de l'adaptateur et faites un clic droit dans les propriétés puis sélectionnez "Internet Protocol Version 4(TCP/IPv4)". Entrez l'adresse IP de Pi dans`Preferred DNS`serveur.
 
     -   <i>IPv6 (nécessaire pour`DoH`&`DoT`pour travailler plus tard dans le guide si vous utilisez IPv6 sur votre routeur)</i>
 
@@ -227,7 +225,7 @@ Dans la page d'accueil d'AdGuard sous les filtres, sélectionnez la section List
 <p align="center">
  <img src="https://i.imgur.com/shrtJLD.png">
 
-Vous pouvez rechercher sur Google une liste de blocage différente. Voici ma liste de blocage personnalisée[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/My-Blocklist.txt"><b>Cliquez ici</b></a>]avec mes URL ou créez les vôtres à partir de ces sources[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>Cliquez ici</b></a>].
+Vous pouvez rechercher sur Google une liste de blocage différente. Voici ma liste de blocage personnalisée par exemple[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Cliquez ici</b></a>]. Construisez le vôtre à partir d'une liste des principales sources de listes de blocage que j'ai collectées[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/%F0%9F%A7%B1Blocklist-Sources%E2%84%B9%EF%B8%8F"><b>Cliquez ici</b></a>]. Ou consultez :</br><a href="https://github.com/T145/black-mirror"><b>Miroir noir</b></a>-_**_Listes noires d'hôtes malveillants et listes blanches de faux positifs gérées automatiquement_**_</br>👊GRAND MERCI👊à<a href="https://github.com/T145"><b>T 145</b></a>
 
 `IMPORTANT:`Certaines listes de blocage peuvent bloquer certains contenus ou sites Web importants. Pour débloquer, allez dans la section "Query Log" et vous verrez_Débloquer_option lorsque le curseur est survolé sur une requête, en plaçant les sites Web non bloqués dans l'exemple "Règles de filtrage personnalisées":`@@||bitly.com^$important`. Recherchez l'adresse IP et l'heure du client.
 
@@ -407,7 +405,7 @@ Exécuter dans le terminal
 
 -   Le script va vous demander Public IPv4/hostname pour le VPN._Si_vous avez une adresse IP statique, puis continuez ou tapez le domaine DNS dynamique que vous avez créé à partir du<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>des instructions</b></a>. Par exemple : trinibvpn.freeddns.org
 
--   Pour l'option de port`press enter`pour le 51820 par défaut. Pour le nom du client, mettez simplement le nom de votre choix et pour le DNS, utilisez l'option 3 (`1.1.1.1`) for now. You will configure `AdGuard/Unbound/Cloudflare`avec le VPN après son installation terminée.
+-   Pour l'option de port`press enter`pour le 51820 par défaut. Pour le nom du client, mettez simplement le nom de votre choix et pour le DNS, utilisez l'option 3 (`1.1.1.1`) pour le moment. vous configurerez`AdGuard/Unbound/Cloudflare`avec le VPN après son installation terminée.
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -470,7 +468,7 @@ Avec WireGuard, vous perdrez environ 50 % de la vitesse Internet en raison du p
 
 Supprimer dans les adresses IP autorisées l'option "0.0.0.0/0, ::/0" car elle achemine tout le trafic vers votre réseau domestique qui sera lent. Vous devez envoyer du trafic via vos adresses uniquement.
 
--   Vous devez d'abord le remplacer par votre passerelle réseau, mais en définissant le dernier chiffre sur zéro et<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>longueur du préfixe</b></a>à 24. Par exemple :`192.168.1.1/24`pour`192.168.1.0/24`ou comme mon routeur FAI`192.168.100.1/24`pour`192.168.100.0/24`.~~**Maintenant je ne perds que 25% de vitesse**😁 (PS. en utilisant le réseau 5g)~~
+-   Vous devez d'abord le remplacer par votre passerelle réseau, mais en définissant le dernier numéro sur zéro et<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>longueur du préfixe</b></a>à 24. Par exemple :`192.168.1.1/24`pour`192.168.1.0/24`ou comme mon routeur FAI`192.168.100.1/24`pour`192.168.100.0/24`.~~**Maintenant je ne perds que 25% de vitesse**😁 (PS. en utilisant le réseau 5g)~~
 
 `UPDATE:`Après une mise à jour de WireGuard, je n'obtiens pas une vitesse plus rapide en faisant cela😞 .. mais cela a toujours du sens_ne pas_utiliser`"0.0.0.0/0, ::/0`avec Wi-Fi. Si quelqu'un connaît des ajustements pour obtenir un coup de pouce, faites le moi savoir.
 
@@ -646,8 +644,6 @@ Redémarrez Pi.
 
 <https://github.com/azlux/log2ram>
 
+<https://github.com/T145/black-mirror>
+
 * * *
-
-## _FAQ_
-
-Poser fréquemment des questions[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>Cliquez ici</b></a>]
