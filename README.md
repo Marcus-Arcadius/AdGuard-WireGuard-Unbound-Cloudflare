@@ -29,7 +29,6 @@
 #### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Unbound</i></b></a> with [<i>Stubby</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/) : A validating, recursive, caching DNS resolver
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_ : Better performance & security when browsing websites(DoT & DoH)
  
-<p align="right">
 <i>All software are free, open-source and&nbsp;self-hosted&nbsp;</i></br><a href="https://git.io/About"><b>About</b></a> | <a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>F.A.Q</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ***
@@ -299,7 +298,8 @@ Remove and re-create stubby.yaml file:
 cd /etc/stubby/ && sudo rm stubby.yml && sudo nano stubby.yml
 ```
 And copy and paste all the text from this stubby config file[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>click here</b></a>] and save. (`cd` to return to home folder when finish).
-* Restart unbound & stubby and check status:
+
+Restart unbound & stubby and check status:
 ```
 sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 ```
