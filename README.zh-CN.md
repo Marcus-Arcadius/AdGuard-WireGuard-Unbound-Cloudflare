@@ -34,9 +34,9 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Cloudflare</b></a>_: 浏览网站时更好的性能和安全性(DoT & DoH)
 
-<i>所有软件都是免费、开源和 自托管 </i></br><a href="https://git.io/About"><b>关于</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>常问问题</b></a>                              
+<i>所有软件都是免费、开源和 自托管 </i></br><a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/wiki/About"><b>关于</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>常问问题</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki"><b>维基</b></a>                         
 
-* * *
+# 
 
 ### DNS查询速度与<a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND的挖掘工具</b></a>🧪
 
@@ -60,7 +60,7 @@ AdGuard 默认 DNS<b><i>对比</i></b>这个设置⭐：
 </p>
 </details>
 
-* * *
+# 
 
 ### 最后检查⏰：2022 年 4 月 17 日</h2>
 
@@ -99,10 +99,6 @@ AdGuard 默认 DNS<b><i>对比</i></b>这个设置⭐：
     -   [Ипвш](#ipv6)
     -   [禁用所有 IPv6](#disable-all-ipv6)
 -   [测试VPN](#test-vpn)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
--   [自动更新 Pi](#auto-update-pi)
--   [安装 Log2ram](#install-log2ram)
--   [关闭 Pi LED](#turn-off-pi-led-lights)
--   [保护您的树莓派](#secure-your-raspberry-pi)
 -   [存储库资源](#repository-resources)
 
 # 
@@ -124,7 +120,7 @@ AdGuard 默认 DNS<b><i>对比</i></b>这个设置⭐：
 
 Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>无头</b></a>模式）。您可以使用显示器/键盘/鼠标访问 Raspberry Pi 或通过以下方式连接<a href="https://www.google.com/search?q=What+is+SSH+in+Linux%3F&client=firefox-b-d&sxsrf=APq-WBsiHvek7g0OrBHWDbEy-x7m-B6O3Q%3A1650481751310&ei=V1pgYoHNEs-uwbkPtI25mAI&ved=0ahUKEwjB1PrTq6P3AhVPVzABHbRGDiMQ4dUDCA0&uact=5&oq=What+is+SSH+in+Linux%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCCMQsAMQJzoHCAAQRxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYAToPCC4Q1AIQyAMQsAMQQxgCSgQIQRgASgQIRhgBUM8IWM8IYJAMaAFwAXgAgAFxiAFxkgEDMC4xmAEAoAECoAEByAERwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz"><b>SSH</b></a>从一个终端。
 
-安装 balenEtcher 并下载 Pi 映像以写入 microSD 卡。
+安装balenEtcher并下载Pi镜像写入microSD卡。
 
 -   下载树莓派操作系统：[HTTPS://呜呜呜.raspberry皮.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/)
 
@@ -191,7 +187,7 @@ __完成后重启__
 
 -   设置用户名和密码并登录到管理面板
 
--   `IMPORTANT:`在常规设置中，将“查询日志保留”设置为`24 hours`. （我读到对于某些人来说，日志已满，这会减慢 Pi 并需要重新启动）
+-   `IMPORTANT:`在常规设置中，将“查询日志保留”设置为`24 hours`. （我读到有些人的日志会填满，这会减慢 Pi 并需要重新启动）
 
 ## 设置您的设备以使用 AdGuard
 
@@ -226,7 +222,7 @@ __完成后重启__
 
 例如我的黑名单[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>点击这里</b></a>]
 
-**_终极黑名单来源_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+**_终极黑名单来源_**:</br><a href="https://github.com/T145/black-mirror"><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=220px height=60px></a>  
 <a href="https://github.com/T145/black-mirror"><b>黑镜子</b></a>-_自动维护恶意主机黑名单和误报白名单_</br>👊非常感谢👊<a href="https://github.com/T145"><b>145</b></a>
 
 `IMPORTANT:`一些阻止列表可以阻止一些重要的内容或网站。要取消阻止，请转到“查询日志”部分，然后会看到_解除封锁_当光标悬停在查询上时的选项，将未阻止的网站放在“自定义过滤规则”示例中：`@@||bitly.com^$important`.查找客户端 IP 和时间。
@@ -285,7 +281,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 ## Cloudflared 的设置`(DoH)`
 
-[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>点击这里</b></a>]</h4>
+[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-Cloudflared-service-with-DNS-over-HTTPS-proxy"><b>点击这里</b></a>]</h4>
 
 ## 配置 Cloudflare`(DoT)`在未绑定
 
@@ -336,7 +332,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
  
 <b>Click apply and test upstreams</b>(might get a error in the first testing only).
 
-#### `IMPORTANT:`Windows 系统和 Android 浏览器需要一些调整`stabilize`DNS 解析器..Linux 工作正常<i>（在薄荷上测试）</i>
+#### `IMPORTANT:`Windows 系统和 Android 浏览器需要一些调整`stabilize`DNS解析器..Linux工作正常<i>（在薄荷上测试）</i>
 
 ### 视窗
 
@@ -368,7 +364,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 #### 其他检查安全的网站
 
-<https://browserleaks.com/dns>- 应该显示所有连接到“Cloudflare”
+[HTTPS://browser leaks.com/DNS](https://browserleaks.com/dns)- 应该显示所有连接到“Cloudflare”
 
 [HTTPS://呜呜呜.cloud flare.com/收视率/encrypted-是你/](https://www.cloudflare.com/ssl/encrypted-sni/)- “安全 DNS / DNSSEC / TLS 1.3”应该都是绿色的勾
 
@@ -380,9 +376,9 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 # <i>安装 WireGuard</b></i>
 
-**安装 WireGuard 之前**, 如果你没有<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>静态IP</b></a>你需要得到一个免费的`Dynamic DNS Subdomain`否则您的外部 IP 地址会从您的 ISP 动态更改，因此您需要设置动态 DNS 服务[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>点击这里</b></a>**].否则跳过这一步。
+**安装 WireGuard 之前**, 如果你没有<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>静态IP</b></a>你需要得到一个免费的`Dynamic DNS Subdomain`否则您的外部 IP 地址会从您的 ISP 动态更改，因此您需要设置动态 DNS 服务[**<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>点击这里</b></a>**].否则跳过这一步。
 
-您还需要设置<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>转发端口</b></a>在您的路由器上，这样您就可以在我们的网络之外访问 WireGuard，例如在咖啡店热点或您的移动数据中。
+您还需要设置<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>转发端口</b></a>在您的路由器上，这样您就可以在咖啡店热点等任何地方访问 WireGuard 网络，甚至可以通过移动数据共享。
 类型 |价值  
 ------------ \| -------------
 设备 | Raspberry Pi 的主机名或 IP
@@ -404,7 +400,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
     wget https://git.io/wireguard -O wireguard-install.sh && sudo bash wireguard-install.sh
 
--   该脚本将要求您提供 VPN 的公共 IPv4/主机名。_如果_您有静态 IP 然后继续，否则键入您从<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>指示</b></a>.例如：trinibvpn.freeddns.org
+-   该脚本将要求您提供 VPN 的公共 IPv4/主机名。_如果_您有静态 IP 然后继续，否则键入您从<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>指示</b></a>.例如：trinibvpn.freeddns.org
 
 -   对于端口选项`press enter`默认为 51820。对于客户端名称，只需输入您想要的任何名称，对于 DNS 使用选项 3 (`1.1.1.1`） 目前。您将配置`AdGuard/Unbound/Cloudflare`安装完成后使用VPN。
 
@@ -418,7 +414,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 `IMPORTANT:`您需要为使用 VPN 的每台设备添加一个新用户/客户端。要添加新用户，只需重新运行脚本并创建具有不同客户端名称的用户。
 
-<b>采用_开放式VPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>点击这里</b></a>]
+<b>采用_开放式VPN_</b>[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-OpenVPN"><b>点击这里</b></a>]
 
 # 
 
@@ -441,7 +437,7 @@ WireGuard（应用商店）：[HTTPS://apps.apple.com/US/app/wire guard/ID144119
 
 用于窗户的 WireGuard：[HTTPS://download.wire guard.com/Windows-client/wire guard-installer.exe](https://download.wireguard.com/windows-client/wireguard-installer.exe)
 
--   创建一个`new text document`使用 PV 上的任何名称复制粘贴 WireGuard 客户端配置文件中的文本。
+-   创建一个`new text document`使用 PV 上的任何名称复制粘贴来自 WireGuard 客户端配置文件的文本。
 
 -   要查看客户端配置文件中的文本，请输入终端：
 
@@ -497,7 +493,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 ## 禁用所有 IPv6
 
-#### 如果您没有或不想要它，请禁用 IPv6[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>点击这里</b></a>].结果，如果您的互联网较弱，禁用 IPv6 可以加快 dns 请求，但安全性较低。
+#### 如果您没有或不想要它，请禁用 IPv6[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Disable-all-IPv6"><b>点击这里</b></a>].结果，如果您的互联网较弱，禁用 IPv6 可以加快 dns 请求，但安全性较低。
 
 # 
 
@@ -520,89 +516,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 * * *
 
-# 
-
-# <i>自动更新 Pi</b></i>
-
-打开名为更新和复制粘贴脚本的新 sh 文件[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>点击这里</b></a>]
-
-    sudo nano update.sh
-
-设置权限
-
-    sudo chmod 700 update.sh
-
-通过在命令行中输入打开 cron 文件`crontab -e`，在cron文件底部复制粘贴作业命令行并保存。
-
-    0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
-
-Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.guru/](https://crontab.guru/)并设置自己的时间表。
-
-调整 Pi 的日期/时区在终端中输入：
-
-    sudo dpkg-reconfigure tzdata
-
-或手动设置
-
-    sudo date -s "25 DEC 2012 11:14:00"
-
-# 
-
-# <i>安装 Log2Ram</b></i>
-
-卸载 RAM 的最显着优势之一是它可以改善您的**SD 卡的潜在使用寿命**.
-日志文件是您安装的各种软件写入最多的内容之一。
-通过将文件推送到 RAM，您可以控制将它们写入 SD 卡的频率。您仍然可以访问 RAM 上的这些文件，就像它们位于您的 SD 卡上一样。
-
-将此行复制并粘贴到终端中：
-
-手动
-
-    wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
-
-或者
-
-添加 repo 源（自动更新）
-
-    echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian/ bullseye main" | sudo tee /etc/apt/sources.list.d/azlux.list
-    sudo wget -O /usr/share/keyrings/azlux-archive-keyring.gpg  https://azlux.fr/repo.gpg
-    sudo apt update
-    sudo apt install log2ram
-
-# 
-
-# <i>关闭 Pi LED 灯</b></i>
-
-我猜 LED 的电源会影响不必要的电力和热量🤷😅。如果只是将其用作网络服务器，则无论如何都不需要它。通过在命令行中输入打开 cron 文件`crontab -e`，在cron文件底部复制粘贴作业命令行并保存。
-
-绿
-
-    @reboot echo none | sudo tee /sys/class/leds/led0/trigger
-
-红色的
-
-    @reboot echo none | sudo tee /sys/class/leds/led1/trigger
-
-重启 Pi。
-
-# 
-
-# <i>保护您的树莓派</b></i>
-
-<p align="center">
-<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
-
-[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>点击这里</b></a>]
-
-<i>（我只是使用 Fail2Ban 并更改 SSH 端口）</i>
-
-**[⬆ 返回内容⬆](#table-of-contents)**
-
-* * *
-
-<b>使这些项目更好的任何问题、修复或提示请贡献🤖</b>
-
-* * *
+<b>任何使这些项目更好的问题、修复或提示请贡献🤖</b>
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"
@@ -643,8 +557,4 @@ Pi 现在将在每周三凌晨 3 点更新。或者你可以去[HTTPS://crontab.
 
 [HTTPS://GitHub.com/NYR/wire guard-install](https://github.com/Nyr/wireguard-install)
 
-[HTTPS://GitHub.com/阿正陆续/log2RAM](https://github.com/azlux/log2ram)
-
 [HTTPS://GitHub.com/T145/black-mirror](https://github.com/T145/black-mirror)
-
-* * *
