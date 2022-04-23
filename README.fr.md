@@ -34,9 +34,9 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Nuageux</b></a>_: Meilleures performances et sécurité lors de la navigation sur les sites Web (DoT & DoH)
 
-<i>Tous les logiciels sont gratuits, open-source et auto-hébergé </i></br><a href="https://git.io/About"><b>Sur</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>FAQ</b></a>                              
+<i>Tous les logiciels sont gratuits, open-source et auto-hébergé </i></br><a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/wiki/About"><b>Sur</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>FAQ</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki"><b>wiki</b></a>                         
 
-* * *
+# 
 
 ### Vitesse de requête DNS avec<a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S creuser Outil</b></a>🧪
 
@@ -60,7 +60,7 @@ Résolveurs DNS publics Cloudflare/Quad9/Google :
 </p>
 </details>
 
-* * *
+# 
 
 ### Dernière vérification⏰ : 17 avril 2022</h2>
 
@@ -99,10 +99,6 @@ Résolveurs DNS publics Cloudflare/Quad9/Google :
     -   [Ипвш](#ipv6)
     -   [Désactiver tout IPv6](#disable-all-ipv6)
 -   [Tester le VPN](#test-vpn)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
--   [Mise à jour automatique Pi](#auto-update-pi)
--   [Installer Log2ram](#install-log2ram)
--   [Éteignez les LED Pi](#turn-off-pi-led-lights)
--   [Sécurisez votre Raspberry Pi](#secure-your-raspberry-pi)
 -   [Ressources du référentiel](#repository-resources)
 
 # 
@@ -128,7 +124,7 @@ Installez balenEtcher et téléchargez l'image Pi pour écrire sur la carte micr
 
 -   Téléchargez le système d'exploitation Raspberry Pi :<https://www.raspberrypi.org/software/operating-systems/>
 
--   Télécharger balenaEtcher :<https://www.balena.io/etcher/>
+-   Télécharger balenaEtcher :<https://www.balena.io/etcher/>
 
 Après avoir`Etcher`installé et`Raspberry Pi OS`fichier téléchargé, vous pouvez maintenant insérer la carte SD avec lecteur de carte USB microSD dans votre ordinateur.
 
@@ -226,7 +222,7 @@ Dans la page d'accueil d'AdGuard sous les filtres, sélectionnez la section List
 
 Ma liste de blocage par exemple[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Cliquez ici</b></a>]
 
-**_Sources de listes de blocage ultimes_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+**_Sources de listes de blocage ultimes_**:</br><a href="https://github.com/T145/black-mirror"><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=220px height=60px></a>  
 <a href="https://github.com/T145/black-mirror"><b>miroir noir</b></a>-_Listes noires d'hôtes malveillants et listes blanches de faux positifs gérées automatiquement_</br>👊GRAND MERCI👊 à<a href="https://github.com/T145"><b>T 145</b></a>
 
 `IMPORTANT:`Certaines listes de blocage peuvent bloquer certains contenus ou sites Web importants. Pour débloquer, allez dans la section "Query Log" et vous verrez_Débloquer_option lorsque le curseur est survolé sur une requête, en plaçant les sites Web non bloqués dans l'exemple "Règles de filtrage personnalisées":`@@||bitly.com^$important`. Recherchez l'adresse IP et l'heure du client.
@@ -285,7 +281,7 @@ _Si vous utilisez**DiètePi**vous devez installer resolvconf et redémarrer unbo
 
 ## Configuration pour Cloudflared`(DoH)`
 
-[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>Cliquez ici</b></a>]</h4>
+[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-Cloudflared-service-with-DNS-over-HTTPS-proxy"><b>Cliquez ici</b></a>]</h4>
 
 ## Configurer Cloudflare`(DoT)`sur Non lié
 
@@ -380,9 +376,9 @@ Redémarrez unbound & stubby et vérifiez l'état :
 
 # <i>Installer WireGuard</b></i>
 
-**Avant d'installer WireGuard**, si vous n'avez pas de<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>I.P statique</b></a>vous devez obtenir un`Dynamic DNS Subdomain`ou bien votre adresse IP externe change dynamiquement à partir de votre FAI, vous devrez donc configurer un service DNS dynamique[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>Cliquez ici</b></a>**]. Ou bien sauter l'étape.
+**Avant d'installer WireGuard**, si vous n'avez pas de<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>I.P statique</b></a>vous devez obtenir un`Dynamic DNS Subdomain`ou bien votre adresse IP externe change dynamiquement à partir de votre FAI, vous devrez donc configurer un service DNS dynamique[**<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>Cliquez ici</b></a>**]. Ou bien sauter l'étape.
 
-Vous devez également configurer<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>transfert de port</b></a>sur votre routeur afin que vous puissiez accéder à WireGuard en dehors de notre réseau, comme dans un hotspot de café ou vos données mobiles.
+Vous devez également configurer<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>transfert de port</b></a>sur votre routeur afin que vous puissiez accéder au réseau WireGuard n'importe où, comme un hotspot de café et même à partir d'un partage de données mobile.
 TYPE | VALEUR  
 ------------ \| --------------
 Appareil | Nom d'hôte ou IP de Raspberry Pi
@@ -404,7 +400,7 @@ Exécuter dans le terminal
 
     wget https://git.io/wireguard -O wireguard-install.sh && sudo bash wireguard-install.sh
 
--   Le script va vous demander Public IPv4/hostname pour le VPN._Si_vous avez une adresse IP statique, puis continuez ou tapez le domaine DNS dynamique que vous avez créé à partir du<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>des instructions</b></a>. Par exemple : trinibvpn.freeddns.org
+-   Le script va vous demander Public IPv4/hostname pour le VPN._Si_vous avez une adresse IP statique, puis continuez ou tapez le domaine DNS dynamique que vous avez créé à partir du<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>des instructions</b></a>. Par exemple : trinibvpn.freeddns.org
 
 -   Pour l'option de port`press enter`pour le 51820 par défaut. Pour le nom du client, mettez simplement le nom de votre choix et pour le DNS, utilisez l'option 3 (`1.1.1.1`) pour le moment. vous configurerez`AdGuard/Unbound/Cloudflare`avec le VPN après son installation terminée.
 
@@ -418,7 +414,7 @@ Exécuter dans le terminal
 
 `IMPORTANT:`Vous devrez ajouter un nouvel utilisateur/client pour chaque appareil que vous utilisez avec le VPN. Pour ajouter un nouvel utilisateur, relancez simplement le script et créez un utilisateur avec un nom de client différent.
 
-<b>Utiliser_OpenVPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>Cliquez ici</b></a>]
+<b>Utiliser_OpenVPN_</b>[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-OpenVPN"><b>Cliquez ici</b></a>]
 
 # 
 
@@ -469,7 +465,7 @@ Avec WireGuard, vous perdrez environ 50 % de la vitesse Internet en raison du p
 
 Supprimer dans les adresses IP autorisées l'option "0.0.0.0/0, ::/0" car elle achemine tout le trafic vers votre réseau domestique qui sera lent. Vous devez envoyer du trafic via vos adresses uniquement.
 
--   Vous devez d'abord le remplacer par votre passerelle réseau, mais en définissant le dernier numéro sur zéro et<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>longueur du préfixe</b></a>à 24. Par exemple :`192.168.1.1/24`pour`192.168.1.0/24`ou comme mon routeur FAI`192.168.100.1/24`pour`192.168.100.0/24`.~~**Maintenant je ne perds que 25% de vitesse**😁 (PS. en utilisant le réseau 5g)~~
+-   Vous devez d'abord le remplacer par votre passerelle réseau, mais en définissant le dernier chiffre sur zéro et<a href="https://www.google.com/search?q=prefix+length+explained&client=firefox-b-d&sxsrf=ALeKk036Jc9vJl73zVXf0yyZs5UlKRlNRQ%3A1621083125589&ei=9cOfYI66I5-qwbkPkdWxkAk&oq=prefix+length+explained&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCCMQsAMQJzoHCAAQRxCwA1CUJ1iUJ2CiKmgBcAJ4AIABsAGIAdQCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjOiOie3cvwAhUfVTABHZFqDJIQ4dUDCA0&uact=5"><b>longueur du préfixe</b></a>à 24. Par exemple :`192.168.1.1/24`pour`192.168.1.0/24`ou comme mon routeur FAI`192.168.100.1/24`pour`192.168.100.0/24`.~~**Maintenant je ne perds que 25% de vitesse**😁 (PS. en utilisant le réseau 5g)~~
 
 `UPDATE:`Après une mise à jour de WireGuard, je n'obtiens pas une vitesse plus rapide en faisant cela😞 .. mais cela a toujours du sens_ne pas_utiliser`"0.0.0.0/0, ::/0`avec Wi-Fi. Si quelqu'un connaît des ajustements pour obtenir un coup de pouce, faites le moi savoir.
 
@@ -478,7 +474,7 @@ Supprimer dans les adresses IP autorisées l'option "0.0.0.0/0, ::/0" car elle a
 
 ### LISEZ S'IL VOUS PLAÎT !! , ÊTRE CONSCIENT !!
 
-`IMPORTANT`:_Si votre réseau possède des adresses IP pour les appareils qui se terminent par un nombre à 3 chiffres (plus de 24), par exemple : 192.168.100.`254`, vous ne pourrez pas router correctement depuis le réseau extérieur car l'application de 24 n'autorise que les numéros 1 à 24. Vous devez à la place mettre`0`pour router hors de la plage 24, par exemple :`192.168.100.0/0`_.
+`IMPORTANT`:_Si votre réseau possède des adresses IP pour les appareils qui se terminent par un numéro à 3 chiffres (plus de 24), par exemple : 192.168.100.`254`, vous ne pourrez pas router correctement depuis le réseau extérieur car l'application de 24 n'autorise que les numéros 1 à 24. Vous devez à la place mettre`0`pour router hors de la plage 24, par exemple :`192.168.100.0/0`_.
 
 Ou vous pouvez changer la plage IP sur votre routeur (d'après mon expérience, vous pourriez obtenir des vitesses un peu meilleures car il n'acheminera pas les adresses IP autorisées inutiles sur la plage 24).
 
@@ -497,7 +493,7 @@ Ensuite aller à<https://ipv6leak.com/>et tu devrais voir "_Votre IPv6 ne fuit p
 
 ## Désactiver tout IPv6
 
-#### Désactivez IPv6 si vous ne l'avez pas ou si vous ne le voulez pas[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>Cliquez ici</b></a>]. En conséquence, si vous avez une connexion Internet faible, la désactivation d'IPv6 peut accélérer la demande DNS mais avoir moins de sécurité.
+#### Désactivez IPv6 si vous ne l'avez pas ou si vous ne le voulez pas[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Disable-all-IPv6"><b>Cliquez ici</b></a>]. En conséquence, si vous avez une connexion Internet faible, la désactivation d'IPv6 peut accélérer la demande DNS mais avoir moins de sécurité.
 
 # 
 
@@ -520,89 +516,7 @@ Vous devriez voir toutes les connexions`closed`et l'état indiquant toutes les c
 
 * * *
 
-# 
-
-# <i>Mise à jour automatique Pi</b></i>
-
-Ouvrez un nouveau fichier sh appelé mise à jour et copiez-collez le script[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>Cliquez ici</b></a>]
-
-    sudo nano update.sh
-
-Définir l'autorisation
-
-    sudo chmod 700 update.sh
-
-Ouvrez le fichier cron en entrant dans la ligne de commande`crontab -e`, copiez-collez la ligne de commande du travail ci-dessous au bas du fichier cron et enregistrez.
-
-    0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
-
-Pi sera désormais mis à jour tous les mercredis à 3h du matin. Ou vous pouvez aller à<https://crontab.guru/>et établissez votre propre emploi du temps.
-
-Ajustez la date/le fuseau horaire de Pi dans le terminal :
-
-    sudo dpkg-reconfigure tzdata
-
-ou régler manuellement
-
-    sudo date -s "25 DEC 2012 11:14:00"
-
-# 
-
-# <i>Installer Log2Ram</b></i>
-
-L'un des avantages les plus importants du déchargement de votre RAM est qu'il améliore votre**Durée de vie potentielle de la carte SD**.
-Les fichiers journaux sont l'une des choses les plus écrites par les différents logiciels que vous installez.
-En poussant les fichiers sur votre RAM, vous pouvez contrôler la fréquence à laquelle ils sont écrits sur la carte SD. Vous pourrez toujours accéder à ces fichiers sur la RAM comme s'ils se trouvaient sur votre carte SD.
-
-Copiez et collez cette ligne dans le terminal :
-
-Manuellement
-
-    wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
-
-ou alors
-
-Ajouter une source de dépôt (mise à jour automatique)
-
-    echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian/ bullseye main" | sudo tee /etc/apt/sources.list.d/azlux.list
-    sudo wget -O /usr/share/keyrings/azlux-archive-keyring.gpg  https://azlux.fr/repo.gpg
-    sudo apt update
-    sudo apt install log2ram
-
-# 
-
-# <i>Éteignez les lumières LED Pi</b></i>
-
-Je suppose que l'alimentation des LED aura un impact sur l'électricité et la chaleur inutiles 🤷😅. Pas besoin de toute façon si vous l'utilisez simplement comme serveur réseau. Ouvrez le fichier cron en entrant dans la ligne de commande`crontab -e`, copiez-collez la ligne de commande du travail ci-dessous au bas du fichier cron et enregistrez.
-
-Vert
-
-    @reboot echo none | sudo tee /sys/class/leds/led0/trigger
-
-Rouge
-
-    @reboot echo none | sudo tee /sys/class/leds/led1/trigger
-
-Redémarrez Pi.
-
-# 
-
-# <i>Sécurisez votre Raspberry Pi</b></i>
-
-<p align="center">
-<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
-
-[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>Cliquez ici</b></a>]
-
-<i>(Je viens d'utiliser Fail2Ban et de changer le port SSH)</i>
-
-**[⬆ Retour au sommaire ⬆](#table-of-contents)**
-
-* * *
-
 <b>TOUT PROBLÈME, CORRECTIF OU CONSEIL POUR AMÉLIORER CES PROJETS, VEUILLEZ CONTRIBUER🤖</b>
-
-* * *
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"
@@ -643,8 +557,4 @@ Redémarrez Pi.
 
 <https://github.com/Nyr/wireguard-install>
 
-<https://github.com/azlux/log2ram>
-
 <https://github.com/T145/black-mirror>
-
-* * *
