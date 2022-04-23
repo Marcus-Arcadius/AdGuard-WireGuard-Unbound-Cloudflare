@@ -34,9 +34,9 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Wolkenflare</b></a>_: Bessere Leistung und Sicherheit beim Surfen auf Websites (DoT & DoH)
 
-<i>Alle Software ist kostenlos, Open Source und selbst gehostet </i></br><a href="https://git.io/About"><b>Über</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>FAQ</b></a>                              
+<i>Alle Software ist kostenlos, Open Source und selbst gehostet </i></br><a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/wiki/About"><b>Über</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>FAQ</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki"><b>Wiki</b></a>                         
 
-* * *
+# 
 
 ### DNS-Abfragegeschwindigkeit mit<a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>BIND'S dig Tool</b></a>🧪
 
@@ -60,7 +60,7 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
 </p>
 </details>
 
-* * *
+# 
 
 ### Zuletzt geprüft⏰: 17. April 2022</h2>
 
@@ -79,11 +79,11 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
 # Inhaltsverzeichnis
 
 -   [Anforderungen](#requirements)
--   [Installieren Sie das Raspberry-Pi-Betriebssystem](#install-raspberry-pi-os)<img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
+-   [Installieren Sie das Raspberry Pi-Betriebssystem](#install-raspberry-pi-os)<img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" width=20px height=20px>
     -   [Greifen Sie mit SSH auf Pi OS zu](#access-pi-os-with-ssh)
 -   [Installieren Sie AdGuard Home](#install-adguard-home)<img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
     -   [Richten Sie Ihre Geräte so ein, dass sie mit Adguard funktionieren](#set-up-your-devices-to-work-with-adguard)
-    -   [Einrichtung der AdGuard-Sperrliste](#setting-up-adguard-blocklist)
+    -   [Einrichten der AdGuard-Sperrliste](#setting-up-adguard-blocklist)
         -   [Mehrere URLs hinzufügen/entfernen](#addremove-multiple-urls)
 -   [Ungebunden installieren](#install-unbound)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [Installieren Sie Cloudflare](#install-cloudflare)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
@@ -99,10 +99,6 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
     -   [Ипвш](#ipv6)
     -   [Deaktivieren Sie alle IPv6](#disable-all-ipv6)
 -   [VPN testen](#test-vpn)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
--   [Pi automatisch aktualisieren](#auto-update-pi)
--   [Installieren Sie Log2ram](#install-log2ram)
--   [Schalten Sie die Pi-LEDs aus](#turn-off-pi-led-lights)
--   [Sichern Sie Ihren Raspberry Pi](#secure-your-raspberry-pi)
 -   [Repository-Ressourcen](#repository-resources)
 
 # 
@@ -120,7 +116,7 @@ Dieses Tutorial basiert auf Raspberry Pi, aber Sie können jedes Linux verwenden
 
 # 
 
-# <i>Installieren Sie das Raspberry-Pi-Betriebssystem</b></i>
+# <i>Installieren Sie das Raspberry Pi-Betriebssystem</b></i>
 
 Raspberry Pi OS gibt es in Desktop- und Lite-Versionen (verwenden Sie Lite für<a href="https://www.google.com/search?q=What+is+a+headless+operating+system%3F&client=firefox-b-d&sxsrf=APq-WBvlqMZasn_klYxS5HZmhKQlduKYuQ%3A1650123816301&ei=KORaYtz7EYOdwbkP74G16AE&ved=0ahUKEwjcr5-f9pj3AhWDTjABHe9ADR0Q4dUDCA0&uact=5&oq=What+is+a+headless+operating+system%3F&gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADSgQIQRgASgQIRhgAUMEBWMEBYNAEaAFwAXgAgAFqiAFqkgEDMC4xmAEAoAECoAEByAEIwAEB&sclient=gws-wiz"><b>kopflos</b></a>Modus). Sie können mit einem Monitor/einer Tastatur/Maus auf einen Raspberry Pi zugreifen oder eine Verbindung herstellen<a href="https://www.google.com/search?q=What+is+SSH+in+Linux%3F&client=firefox-b-d&sxsrf=APq-WBsiHvek7g0OrBHWDbEy-x7m-B6O3Q%3A1650481751310&ei=V1pgYoHNEs-uwbkPtI25mAI&ved=0ahUKEwjB1PrTq6P3AhVPVzABHbRGDiMQ4dUDCA0&uact=5&oq=What+is+SSH+in+Linux%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCCMQsAMQJzoHCAAQRxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYAToPCC4Q1AIQyAMQsAMQQxgCSgQIQRgASgQIRhgBUM8IWM8IYJAMaAFwAXgAgAFxiAFxkgEDMC4xmAEAoAECoAEByAERwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz"><b>sch</b></a>von einem Endgerät.
 
@@ -191,7 +187,7 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
 -   Richten Sie Benutzername und Passwort ein und melden Sie sich im Admin-Bereich an
 
--   `IMPORTANT:`Stellen Sie in den allgemeinen Einstellungen "Aufbewahrung von Abfrageprotokollen" auf ein`24 hours`. (Ich habe gelesen, dass sich bei einigen Leuten die Protokolle füllen, was Pi verlangsamt und einen Neustart benötigt.)
+-   `IMPORTANT:`Stellen Sie in den allgemeinen Einstellungen „Aufbewahrung von Abfrageprotokollen“ auf ein`24 hours`. (Ich habe gelesen, dass sich bei einigen Leuten die Protokolle füllen, was Pi verlangsamt und einen Neustart benötigt.)
 
 ## Richten Sie Ihre Geräte so ein, dass sie mit AdGuard funktionieren
 
@@ -210,14 +206,14 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
         Gehen Sie zu "Internetprotokoll Version 6 (TCP/IPv6)" und geben Sie es ein`::1`
 
-`OPTIONAL:`<i>Sie können in den alternativen Feldern ein Backup-DNS hinzufügen</i>
+`OPTIONAL:`<i>Sie können in den alternativen Feldern einen Backup-DNS hinzufügen</i>
 
 `BE AWARE:`<i>In Android unterbricht das Hinzufügen eines öffentlichen DNS im zweiten Feld die AdGuard-Werbeblockierung</i>
 
 <p align="center">
  <img src="https://i.imgur.com/8gsDk3z.jpg">
 
-## Einrichtung der AdGuard-Sperrliste
+## Einrichten der AdGuard-Sperrliste
 
 Wählen Sie auf der AdGuard-Startseite unter Filtern den Abschnitt DNS-Sperrliste zum Hinzufügen von URLs aus.
 
@@ -226,7 +222,7 @@ Wählen Sie auf der AdGuard-Startseite unter Filtern den Abschnitt DNS-Sperrlist
 
 Meine Blocklist zum Beispiel[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>Klicke hier</b></a>]
 
-**_Ultimative Sperrlistenquellen_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+**_Ultimative Sperrlistenquellen_**:</br><a href="https://github.com/T145/black-mirror"><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=220px height=60px></a>  
 <a href="https://github.com/T145/black-mirror"><b>schwarzer Spiegel</b></a>-_Automatisch geführte Blacklists und Whitelists für bösartige Hosts_</br>👊HERZLICHEN DANK👊 an<a href="https://github.com/T145"><b>T145</b></a>
 
 `IMPORTANT:`Einige Sperrlisten können einige wichtige Inhalte oder Websites blockieren. Um die Blockierung aufzuheben, gehen Sie zum Abschnitt "Abfrageprotokoll" und sehen Sie_entsperren_Option, wenn der Mauszeiger über eine Abfrage bewegt wird, um nicht blockierte Websites in das Beispiel "Benutzerdefinierte Filterregeln" zu setzen:`@@||bitly.com^$important`. Suchen Sie nach Client-IP und Uhrzeit.
@@ -241,7 +237,7 @@ Sie können mit AdGuard derzeit nur eine URL nach der anderen zur DNS-Blocklist 
 
 Kopieren Sie dann die Skriptkonfigurationen und fügen Sie sie ein[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/bulkurls.py"><b>Klicke hier</b></a>]. Satz`your AdGuard credentials`und speichern (Strg+x dann y dann enter).
 
-_Bei Verwendung**DiätPi**Installieren`sudo apt-get install python3-pip -y && pip install requests`für seine nicht standardmäßig installieren._
+_Bei Verwendung**DiätPi**Installieren`sudo apt-get install python3-pip -y && pip install requests`weil es nicht standardmäßig installiert ist._
 
 Laufen :`sudo python3 bulkurls.py`
 
@@ -285,7 +281,7 @@ _Bei Verwendung**DiätPi**Sie müssen resolvconf installieren und unbound-resolv
 
 ## Einrichtung für Cloudflared`(DoH)`
 
-[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>Klicke hier</b></a>]</h4>
+[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-Cloudflared-service-with-DNS-over-HTTPS-proxy"><b>Klicke hier</b></a>]</h4>
 
 ## Konfigurieren Sie Cloudflare`(DoT)`auf Ungebunden
 
@@ -354,7 +350,7 @@ Starten Sie Unbound & Stubby neu und prüfen Sie den Status:
 
 ### Android
 
--   Wenden Sie sich in jedem Browser, den Sie verwenden, an**aus**`Use Secure DNS`Möglichkeit.
+-   Wenden Sie sich in welchem ​​Browser auch immer Sie verwenden**aus**`Use Secure DNS`Möglichkeit.
 -   Beachten Sie, dass Konflikte mit benutzerdefinierten gerooteten Roms und Kernels mit build.prop-DNS-Optimierungen oder Apps/Magisk-Modulen auftreten können.
 
 #### _Das ist es_. Gehen Sie jetzt zu<https://1.1.1.1/help>im Browser und Sie sollten sehen, dass diese Optionen "Ja" ausgeben.
@@ -380,9 +376,9 @@ Starten Sie Unbound & Stubby neu und prüfen Sie den Status:
 
 # <i>Installieren Sie WireGuard</b></i>
 
-**Vor der Installation von WireGuard**, wenn Sie keine haben<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>Statische IP</b></a>Sie müssen eine kostenlose bekommen`Dynamic DNS Subdomain`Andernfalls ändert sich Ihre externe IP-Adresse dynamisch von Ihrem ISP, sodass Sie einen dynamischen DNS-Dienst einrichten müssen[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>Klicke hier</b></a>**]. Oder überspringen Sie den Schritt.
+**Vor der Installation von WireGuard**, wenn Sie keine haben<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>Statische IP</b></a>Sie müssen eine kostenlose bekommen`Dynamic DNS Subdomain`Andernfalls ändert sich Ihre externe IP-Adresse dynamisch von Ihrem ISP, sodass Sie einen dynamischen DNS-Dienst einrichten müssen[**<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>Klicke hier</b></a>**]. Oder überspringen Sie den Schritt.
 
-Sie müssen auch einrichten<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>Port-Weiterleitung</b></a>auf Ihrem Router, damit Sie außerhalb unseres Netzwerks auf WireGuard zugreifen können, z. B. in einem Café-Hotspot oder auf Ihre mobilen Daten.
+Sie müssen auch einrichten<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>Port-Weiterleitung</b></a>auf Ihrem Router, sodass Sie überall auf das WireGuard-Netzwerk zugreifen können, z. B. von einem Café-Hotspot und sogar über mobiles Daten-Tethering.
 TYP | WERT  
 ------------ \| -------------
 Gerät | Hostname oder IP des Raspberry Pi
@@ -404,9 +400,9 @@ Im Terminal ausführen
 
     wget https://git.io/wireguard -O wireguard-install.sh && sudo bash wireguard-install.sh
 
--   Das Skript fragt Sie nach der öffentlichen IPv4/dem Hostnamen für das VPN._Ob_Sie haben eine statische IP-Adresse, fahren Sie fort oder geben Sie die dynamische DNS-Domäne ein, die Sie aus der erstellt haben<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>Anweisungen</b></a>. Zum Beispiel:trinibvpn.freeddns.org
+-   Das Skript fragt Sie nach der öffentlichen IPv4/dem Hostnamen für das VPN._Ob_Sie haben eine statische IP-Adresse, fahren Sie fort oder geben Sie die dynamische DNS-Domäne ein, die Sie aus der erstellt haben<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>Anweisungen</b></a>. Zum Beispiel:trinibvpn.freeddns.org
 
--   Für Port-Option`press enter`für Standard 51820. Geben Sie als Client-Namen einfach einen beliebigen Namen ein und verwenden Sie für DNS Option 3 (`1.1.1.1`) zur Zeit. Sie werden konfigurieren`AdGuard/Unbound/Cloudflare`mit dem VPN, nachdem es fertig installiert ist.
+-   Für Port-Option`press enter`für Standard 51820. Geben Sie für den Client-Namen einfach einen beliebigen Namen ein und verwenden Sie für DNS Option 3 (`1.1.1.1`) zur Zeit. Sie werden konfigurieren`AdGuard/Unbound/Cloudflare`mit dem VPN, nachdem es fertig installiert ist.
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -418,7 +414,7 @@ Im Terminal ausführen
 
 `IMPORTANT:`Sie müssen für jedes Gerät, das Sie mit dem VPN verwenden, einen neuen Benutzer/Client hinzufügen. Um einen neuen Benutzer hinzuzufügen, führen Sie einfach das Skript erneut aus und erstellen Sie einen Benutzer mit einem anderen Clientnamen.
 
-<b>Benutzen_OpenVPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>Klicke hier</b></a>]
+<b>Benutzen_OpenVPN_</b>[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-OpenVPN"><b>Klicke hier</b></a>]
 
 # 
 
@@ -497,7 +493,7 @@ Dann geh zu<https://ipv6leak.com/>und du solltest sehen "_Ihr IPv6 ist nicht und
 
 ## Deaktivieren Sie alle IPv6
 
-#### Deaktivieren Sie IPv6, wenn Sie es nicht haben oder nicht wollen[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>Klicke hier</b></a>]. Wenn Sie ein schwaches Internet haben, kann das Deaktivieren von IPv6 die DNS-Anfrage beschleunigen, aber weniger Sicherheit bieten.
+#### Deaktivieren Sie IPv6, wenn Sie es nicht haben oder nicht wollen[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Disable-all-IPv6"><b>Klicke hier</b></a>]. Wenn Sie ein schwaches Internet haben, kann das Deaktivieren von IPv6 die DNS-Anfrage beschleunigen, aber weniger Sicherheit bieten.
 
 # 
 
@@ -520,89 +516,7 @@ Sie sollten alle Verbindungen sehen`closed`und Status, der alle DNS- und keine T
 
 * * *
 
-# 
-
-# <i>Pi automatisch aktualisieren</b></i>
-
-Öffnen Sie eine neue sh-Datei namens update und kopieren Sie das Skript zum Einfügen[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>Klicke hier</b></a>]
-
-    sudo nano update.sh
-
-Berechtigung festlegen
-
-    sudo chmod 700 update.sh
-
-Öffnen Sie die Cron-Datei, indem Sie sie in die Befehlszeile eingeben`crontab -e`, kopieren Sie die Auftragsbefehlszeile unten am Ende der Cron-Datei und speichern Sie sie.
-
-    0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
-
-Pi wird jetzt jeden Mittwoch um 3 Uhr morgens aktualisiert. Oder Sie können zu gehen<https://crontab.guru/>und legen Sie Ihren eigenen Zeitplan fest.
-
-Passen Sie das Datum/die Zeitzone von Pi an, geben Sie im Terminal ein:
-
-    sudo dpkg-reconfigure tzdata
-
-oder manuell einstellen
-
-    sudo date -s "25 DEC 2012 11:14:00"
-
-# 
-
-# <i>Installieren Sie Log2Ram</b></i>
-
-Einer der bedeutendsten Vorteile des Offloading Ihres RAMs ist, dass es Ihren verbessert**Potenzielle Lebensdauer der SD-Karte**.
-Protokolldateien gehören zu den Dingen, die von den verschiedenen Softwarekomponenten, die Sie installieren, am häufigsten geschrieben werden.
-Indem Sie die Dateien in Ihren Arbeitsspeicher verschieben, können Sie steuern, wie oft sie auf die SD-Karte geschrieben werden. Sie können weiterhin auf diese Dateien im RAM zugreifen, als ob sie sich auf Ihrer SD-Karte befinden würden.
-
-Kopieren Sie diese Zeile und fügen Sie sie im Terminal ein:
-
-Manuell
-
-    wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
-
-oder
-
-Repo-Quelle hinzufügen (automatische Aktualisierung)
-
-    echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian/ bullseye main" | sudo tee /etc/apt/sources.list.d/azlux.list
-    sudo wget -O /usr/share/keyrings/azlux-archive-keyring.gpg  https://azlux.fr/repo.gpg
-    sudo apt update
-    sudo apt install log2ram
-
-# 
-
-# <i>Schalten Sie die Pi-LED-Leuchten aus</b></i>
-
-Ich denke, die Stromversorgung von LEDs wirkt sich auf unnötigen Strom und Wärme aus 🤷😅. Es ist sowieso nicht erforderlich, wenn Sie es nur als Netzwerkserver verwenden. Öffnen Sie die Cron-Datei, indem Sie sie in die Befehlszeile eingeben`crontab -e`, kopieren Sie die Auftragsbefehlszeile unten am Ende der Cron-Datei und speichern Sie sie.
-
-Grün
-
-    @reboot echo none | sudo tee /sys/class/leds/led0/trigger
-
-Rot
-
-    @reboot echo none | sudo tee /sys/class/leds/led1/trigger
-
-Starten Sie Pi neu.
-
-# 
-
-# <i>Sichern Sie Ihren Raspberry Pi</b></i>
-
-<p align="center">
-<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
-
-[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>Klicke hier</b></a>]
-
-<i>(Ich benutze nur Fail2Ban und ändere den SSH-Port)</i>
-
-**[⬆ Zurück zum Inhalt ⬆](#table-of-contents)**
-
-* * *
-
 <b>IRGENDWELCHE PROBLEME, LÖSUNGEN ODER TIPPS, UM DIESE PROJEKTE BESSER ZU MACHEN, BEITRAGEN BITTE 🤖</b>
-
-* * *
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"
@@ -643,8 +557,4 @@ Starten Sie Pi neu.
 
 <https://github.com/Nyr/wireguard-install>
 
-<https://github.com/azlux/log2ram>
-
 <https://github.com/T145/black-mirror>
-
-* * *
