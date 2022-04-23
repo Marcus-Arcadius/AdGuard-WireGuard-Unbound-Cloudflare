@@ -32,11 +32,11 @@
 
 #### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Sin consolidar</i></b></a>con[<i>Achaparrado</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Un solucionador de DNS validador, recursivo y de almacenamiento en caché
 
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de la nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
 
-<i>Todo el software es gratuito, de código abierto y alojado en sí mismo </i></br><a href="https://git.io/About"><b>Acerca de</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>PREGUNTAS MÁS FRECUENTES</b></a>                              
+<i>Todo el software es gratuito, de código abierto y alojado en sí mismo </i></br><a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/wiki/About"><b>Acerca de</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>Preguntas más frecuentes</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki"><b>wiki</b></a>                         
 
-* * *
+# 
 
 ### Velocidad de consulta de DNS con<a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>Herramienta de excavación BIND</b></a>🧪
 
@@ -60,7 +60,7 @@ Solucionadores de DNS públicos de Cloudflare/Quad9/Google:
 </p>
 </details>
 
-* * *
+# 
 
 ### Última comprobación⏰: 17 de abril de 2022</h2>
 
@@ -70,7 +70,7 @@ Solucionadores de DNS públicos de Cloudflare/Quad9/Google:
 | :---------------------------------------------------------------: | :--------------------------------------------------------: |
 |                         Inicio de AdGuard                         |                              ✅                             |
 |                           Sin consolidar                          |                              ✅                             |
-|                        Llamarada de la nube                       |                              ✅                             |
+|                         Llamarada de nube                         |                              ✅                             |
 |                            Achaparrado                            |                              ✅                             |
 |                         Guardia de alambre                        |                              ✅                             |
 
@@ -99,10 +99,6 @@ Solucionadores de DNS públicos de Cloudflare/Quad9/Google:
     -   [Ипвш](#ipv6)
     -   [Deshabilitar todo IPv6](#disable-all-ipv6)
 -   [VPN de prueba](#test-vpn)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
--   [Actualización automática Pi](#auto-update-pi)
--   [Instalar Log2ram](#install-log2ram)
--   [Apague los LED Pi](#turn-off-pi-led-lights)
--   [Asegure su Raspberry Pi](#secure-your-raspberry-pi)
 -   [Recursos del repositorio](#repository-resources)
 
 # 
@@ -226,7 +222,7 @@ En la página de inicio de AdGuard en filtros, seleccione la sección de lista d
 
 Mi lista de bloqueo por ejemplo[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>haga clic aquí</b></a>]
 
-**_Últimas fuentes de listas de bloqueo_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+**_Últimas fuentes de listas de bloqueo_**:</br><a href="https://github.com/T145/black-mirror"><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=220px height=60px></a>  
 <a href="https://github.com/T145/black-mirror"><b>espejo negro</b></a>-_Listas negras de hosts maliciosos y listas blancas de falsos positivos mantenidas automáticamente_</br>👊MUCHAS GRACIAS👊 a<a href="https://github.com/T145"><b>T 145</b></a>
 
 `IMPORTANT:`Algunas listas de bloqueo pueden bloquear algunos contenidos o sitios web importantes. Para desbloquear vaya a la sección "Query Log" y verá_desatascar_opción cuando el cursor se desplaza sobre una consulta, colocando los sitios web desbloqueados en el ejemplo de "Reglas de filtrado personalizadas":`@@||bitly.com^$important`. Busque la IP y la hora del cliente.
@@ -285,7 +281,7 @@ _si usa**DietPi**debe instalar resolvconf y reiniciar unbound-resolvconf.service
 
 ## Configuración de Cloudflared`(DoH)`
 
-[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>haga clic aquí</b></a>]</h4>
+[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-Cloudflared-service-with-DNS-over-HTTPS-proxy"><b>haga clic aquí</b></a>]</h4>
 
 ## Configurar Cloudflare`(DoT)`en Sin consolidar
 
@@ -329,7 +325,7 @@ Reinicie sin vincular y rechoncho y verifique el estado:
 <p align="center">
  <img src="https://i.imgur.com/Ug4Euou.jpg" width=650px height=370px>
 
--   Luego, en la configuración de DNS, busque la sección de configuración de caché de DNS y establezca el tamaño de caché en`0`(el almacenamiento en caché ya lo maneja Unbound) y haga clic en aplicar.
+-   Luego, en la configuración de DNS, busque la sección de configuración de caché de DNS y establezca el tamaño de caché en`0`(el almacenamiento en caché ya lo maneja Unbound) y haga clic en Aplicar.
 
 <p align="center">
  <img src="https://i.imgur.com/8Q5Zb0M.jpg" width=650px height=370px>
@@ -380,9 +376,9 @@ Reinicie sin vincular y rechoncho y verifique el estado:
 
 # <i>Instalar WireGuard</b></i>
 
-**Antes de instalar WireGuard**, si no tienes<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>IP estática</b></a>necesitas obtener un gratis`Dynamic DNS Subdomain`o bien, su dirección IP externa cambia dinámicamente desde su ISP, por lo que deberá configurar un servicio de DNS dinámico[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>haga clic aquí</b></a>**]. O bien, omita el paso.
+**Antes de instalar WireGuard**, si no tienes<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>IP estática</b></a>necesitas obtener un gratis`Dynamic DNS Subdomain`o bien, su dirección IP externa cambia dinámicamente desde su ISP, por lo que deberá configurar un servicio de DNS dinámico[**<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>haga clic aquí</b></a>**]. O bien, omita el paso.
 
-También necesita configurar<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>reenvío de puertos</b></a>en su enrutador para que pueda acceder a WireGuard fuera de nuestra red, como en un punto de acceso de una cafetería o sus datos móviles.
+También necesita configurar<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>reenvío de puertos</b></a>en su enrutador para que pueda acceder a la red WireGuard en cualquier lugar, como un punto de acceso de una cafetería e incluso desde la conexión de datos móviles.
 TIPO | VALOR  
 ------------ \| -------------
 Dispositivo | Nombre de host o IP de Raspberry Pi
@@ -404,7 +400,7 @@ Ejecutar en la terminal
 
     wget https://git.io/wireguard -O wireguard-install.sh && sudo bash wireguard-install.sh
 
--   El script le pedirá IPv4/nombre de host público para la VPN._Si_tiene una IP estática, luego continúe o escriba el dominio DNS dinámico que creó a partir del<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>instrucciones</b></a>. Por ejemplo: trinibvpn.freeddns.org
+-   El script le pedirá IPv4/nombre de host público para la VPN._Si_tiene una IP estática, luego continúe o escriba el dominio DNS dinámico que creó a partir del<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>instrucciones</b></a>. Por ejemplo: trinibvpn.freeddns.org
 
 -   Para la opción de puerto`press enter`para el valor predeterminado 51820. Para el nombre del cliente, solo ingrese el nombre que desee, y para el uso de DNS, la opción 3 (`1.1.1.1`) por ahora. vas a configurar`AdGuard/Unbound/Cloudflare`con la VPN después de que haya terminado de instalarse.
 
@@ -418,7 +414,7 @@ Ejecutar en la terminal
 
 `IMPORTANT:`Deberá agregar un nuevo usuario/cliente para cada dispositivo que use con la VPN. Para agregar un nuevo usuario, simplemente vuelva a ejecutar el script y cree un usuario con un nombre de cliente diferente.
 
-<b>Usar_OpenVPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>haga clic aquí</b></a>]
+<b>Usar_OpenVPN_</b>[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-OpenVPN"><b>haga clic aquí</b></a>]
 
 # 
 
@@ -432,7 +428,7 @@ WireGuard (tienda de aplicaciones):<https://apps.apple.com/us/app/wireguard/id14
 
 Debe escanear el código QR que se muestra en el terminal con la aplicación WireGuard, seleccione el`+ button`y usa la opcion`Scan from QR code`para instalar la configuración.
 
-`IMPORTANT`: Permitir**back-end del módulo del núcleo**en la configuración de
+`IMPORTANT`: Permitir**back-end del módulo del kernel**en la configuración de
 
 <p align="left">
  <img src="https://i.imgur.com/R4qbiOQ.jpg" width=250px height=350px>
@@ -480,7 +476,7 @@ Elimine en las IP permitidas la opción "0.0.0.0/0, ::/0" porque enruta todo el 
 
 `IMPORTANT`:_Si su red tiene direcciones IP para dispositivos que terminan con un número de 3 dígitos (más de 24), por ejemplo: 192.168.100.`254`, no podrá enrutar correctamente desde una red externa porque aplicar 24 solo permite los números del 1 al 24. En su lugar, debe poner`0`para enrutar fuera del rango de 24, por ejemplo:`192.168.100.0/0`_.
 
-O puede cambiar el rango de IP en su enrutador (según mi experiencia, puede obtener velocidades un poco mejores porque no enrutará direcciones IP permitidas innecesarias en el rango de 24).
+O puede cambiar el rango de IP en su enrutador (en mi experiencia, puede obtener velocidades un poco mejores porque no enrutará direcciones IP permitidas innecesarias en el rango de 24).
 
 <p align="center">
  <img src="https://i.imgur.com/ZZ4aMUI.jpg" width=750px height=550px>
@@ -497,7 +493,7 @@ Luego ve a<https://ipv6leak.com/>y deberías ver"_Su IPv6 no tiene fugas_".
 
 ## Deshabilitar todo IPv6
 
-#### Deshabilite IPv6 si no lo tiene o no lo quiere[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>haga clic aquí</b></a>]. Como resultado, si tiene un Internet débil, deshabilitar IPv6 puede acelerar la solicitud de dns pero tiene menos seguridad.
+#### Deshabilite IPv6 si no lo tiene o no lo quiere[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Disable-all-IPv6"><b>haga clic aquí</b></a>]. Como resultado, si tiene un Internet débil, deshabilitar IPv6 puede acelerar la solicitud de dns pero tiene menos seguridad.
 
 # 
 
@@ -520,89 +516,7 @@ Deberías ver todas las conexiones.`closed`y el estado que muestra todas las con
 
 * * *
 
-# 
-
-# <i>Actualización automática Pi</b></i>
-
-Abra un nuevo archivo sh llamado actualización y copie y pegue el script[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>haga clic aquí</b></a>]
-
-    sudo nano update.sh
-
-Establecer permiso
-
-    sudo chmod 700 update.sh
-
-Abra el archivo cron ingresando en la línea de comando`crontab -e`, copie la línea de comando de trabajo de pegado a continuación en la parte inferior del archivo cron y guárdela.
-
-    0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
-
-Pi ahora se actualizará todos los miércoles a las 3 am. o puedes ir a<https://crontab.guru/>y establezca su propio horario.
-
-Ajuste la fecha/zona horaria de Pi en la terminal:
-
-    sudo dpkg-reconfigure tzdata
-
-o establecer manualmente
-
-    sudo date -s "25 DEC 2012 11:14:00"
-
-# 
-
-# <i>Instalar Log2Ram</b></i>
-
-Una de las ventajas más significativas de descargar su RAM es que mejora su**Vida útil potencial de la tarjeta SD**.
-Los archivos de registro son una de las cosas que más escriben las diversas piezas de software que instala.
-Al enviar los archivos a su RAM, puede controlar la frecuencia con la que se escriben en la tarjeta SD. Aún podrá acceder a estos archivos en la RAM como si estuvieran en su tarjeta SD.
-
-Copie y pegue esta línea en la terminal:
-
-A mano
-
-    wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
-
-o
-
-Agregar fuente de repositorio (actualización automática)
-
-    echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian/ bullseye main" | sudo tee /etc/apt/sources.list.d/azlux.list
-    sudo wget -O /usr/share/keyrings/azlux-archive-keyring.gpg  https://azlux.fr/repo.gpg
-    sudo apt update
-    sudo apt install log2ram
-
-# 
-
-# <i>Apague las luces LED Pi</b></i>
-
-Supongo que la alimentación de los LED afectará a la electricidad y el calor innecesarios 🤷😅. De todos modos, no es necesario si solo lo usa como servidor de red. Abra el archivo cron ingresando en la línea de comando`crontab -e`, copie la línea de comando de trabajo de pegado a continuación en la parte inferior del archivo cron y guárdela.
-
-Verde
-
-    @reboot echo none | sudo tee /sys/class/leds/led0/trigger
-
-Rojo
-
-    @reboot echo none | sudo tee /sys/class/leds/led1/trigger
-
-Reinicie Pi.
-
-# 
-
-# <i>Asegure su Raspberry Pi</b></i>
-
-<p align="center">
-<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
-
-[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>haga clic aquí</b></a>]
-
-<i>(Solo uso Fail2Ban y cambio el puerto SSH)</i>
-
-**[⬆ Volver a contenidos ⬆](#table-of-contents)**
-
-* * *
-
 <b>CUALQUIER PROBLEMA, ARREGLO O SUGERENCIA PARA MEJORAR ESTOS PROYECTOS POR FAVOR CONTRIBUYA 🤖</b>
-
-* * *
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"
@@ -643,8 +557,4 @@ Reinicie Pi.
 
 <https://github.com/Nyr/wireguard-install>
 
-<https://github.com/azlux/log2ram>
-
 <https://github.com/T145/black-mirror>
-
-* * *
