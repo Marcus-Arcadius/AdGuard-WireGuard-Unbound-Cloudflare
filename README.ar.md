@@ -34,9 +34,9 @@
 
 #### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>كلاود فلير</b></a>_: أداء وأمان أفضل عند تصفح مواقع الويب (DoT & DoH)
 
-<i>جميع البرامج مجانية ومفتوحة المصدر و الاستضافة الذاتية </i></br><a href="https://git.io/About"><b>عن</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>التعليمات</b></a>                              
+<i>جميع البرامج مجانية ومفتوحة المصدر و الاستضافة الذاتية </i></br><a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/wiki/About"><b>عن</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>التعليمات</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki"><b>ويكي</b></a>                         
 
-* * *
+# 
 
 ### سرعة استعلام DNS مع<a href="https://docs.oracle.com/en-us/iaas/Content/DNS/Tasks/testingdnsusingdig.htm"><b>أداة حفر BIND'S</b></a>🧪
 
@@ -53,14 +53,14 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
 
 [هتبص://أصرمجس.جذبسركنتنة.كوم/١٨٧٥٦٩٧٥/١٥٠٢٣٠٤٣٨-بحطحيضطف-٤ي١٨-٤٧٩١-بخفي-٠٨١٣٦١٥اعحاع.مب٤](https://user-images.githubusercontent.com/18756975/150230438-b767e86f-4e18-4791-b5fe-0813615a37a3.mp4)
 
-حلول Cloudflare / Quad9 / Google DNS العامة:
+أدوات حل Cloudflare / Quad9 / Google DNS العامة:
 
 [هتبص://أصرمجس.جذبسركنتنة.كوم/١٨٧٥٦٩٧٥/١٥٠٣١٩٠٤٩-٣دضاسدسص-٦٢٤ف-٤بط٠-٨يإ-بض٠٢٢٧٥٢٢٢٥٢.مب٤](https://user-images.githubusercontent.com/18756975/150319049-3d8acdc9-624f-4b60-8ee2-b80227522252.mp4)
 
 </p>
 </details>
 
-* * *
+# 
 
 ### آخر فحص: 17 أبريل 2022</h2>
 
@@ -99,17 +99,13 @@ AdGuard الافتراضي DNS<b><i>ضد</i></b>هذا الإعداد⭐:
     -   [Ипвш](#ipv6)
     -   [قم بتعطيل كل IPv6](#disable-all-ipv6)
 -   [اختبار Vpn](#test-vpn)<img src="https://i.imgur.com/6Yf8Zra.png" width=20px height=20px>
--   [التحديث التلقائي Pi](#auto-update-pi)
--   [قم بتثبيت Log2ram](#install-log2ram)
--   [قم بإيقاف تشغيل Pi LEDs](#turn-off-pi-led-lights)
--   [تأمين Raspberry Pi الخاص بك](#secure-your-raspberry-pi)
 -   [موارد المستودع](#repository-resources)
 
 # 
 
 # متطلبات
 
-يعتمد هذا البرنامج التعليمي على Raspberry Pi ، ولكن يمكنك استخدام أي نظام Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>نظام التشغيل</b></a><i>(قليل)</i>، أي جهاز أو ملف<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(يعتبر نظام Raspberry Pi OS أبسط ويوصى به لـ Pi أو لمستخدمي الخبرة ،<b>النظام الغذائي</b>يوصى أيضًا باستخدام نظام التشغيل)
+يعتمد هذا البرنامج التعليمي على Raspberry Pi ، ولكن يمكنك استخدام أي نظام Linux<a href="https://github.com/thibmaek/awesome-raspberry-pi#os-images"><b>نظام التشغيل</b></a><i>(قليل)</i>، أي جهاز أو ملف<a href="https://www.google.com/search?q=What+is+a+VPS+used+for%3F&client=firefox-b-d&biw=1280&bih=582&sxsrf=APq-WBu-yng0bW9IWwNKsQhD6h1ZmRGncw%3A1650151372793&ei=zE9bYpL1L_OOwbkPgZ6DGA&ved=0ahUKEwiSi5rz3Jn3AhVzRzABHQHPAAMQ4dUDCA0&uact=5&oq=What+is+a+VPS+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBggAEA0QHjIGCAAQFhAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgAEEcQsANKBAhBGABKBAhGGABQ8AFY8AFg_ANoAXABeACAAXCIAXCSAQMwLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz"><b>VPS</b></a>.</br>(يعد نظام Raspberry Pi OS أبسط ويوصى به لـ Pi أو لمزيد من المستخدمين ذوي الخبرة ،<b>النظام الغذائي</b>يوصى أيضًا باستخدام نظام التشغيل)
 
 -   نسخة Raspberry Pi 3 أو 4
 -   جهاز توجيه يدعم إعادة توجيه المنفذ (Most Can)
@@ -226,7 +222,7 @@ __إعادة التشغيل عند الانتهاء__
 
 قائمة الحظر الخاصة بي على سبيل المثال[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/My-Blocklist.txt"><b>انقر هنا</b></a>]
 
-**_مصادر قوائم الحظر النهائية_**:</br><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=30%>  
+**_مصادر قوائم الحظر النهائية_**:</br><a href="https://github.com/T145/black-mirror"><img src="https://raw.githubusercontent.com/T145/black-mirror/master/.github/images/logo.png" width=220px height=60px></a>  
 <a href="https://github.com/T145/black-mirror"><b>مرآة سوداء</b></a>-_يتم الاحتفاظ تلقائيًا بالقوائم السوداء للمضيف الخبيث والقوائم البيضاء الإيجابية الخاطئة_</br>"شكرًا جزيلاً"<a href="https://github.com/T145"><b>ت١٤٥</b></a>
 
 `IMPORTANT:`يمكن لبعض قوائم الحظر حظر بعض المحتويات المهمة أو مواقع الويب. لإلغاء الحظر ، انتقل إلى قسم "سجل الاستعلام" وسوف ترى_رفع الحظر_الخيار عند تمرير المؤشر فوق طلب بحث ، ووضعه في "قواعد التصفية المخصصة" على سبيل المثال:`@@||bitly.com^$important`. ابحث عن عنوان IP الخاص بالعميل والوقت.
@@ -285,7 +281,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 ## إعداد Cloudflared`(DoH)`
 
-[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Cloudflare-DoH-Setup.md"><b>انقر هنا</b></a>]</h4>
+[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-Cloudflared-service-with-DNS-over-HTTPS-proxy"><b>انقر هنا</b></a>]</h4>
 
 ## تكوين Cloudflare`(DoT)`على غير منضم
 
@@ -380,9 +376,9 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 # <i>قم بتثبيت WireGuard</b></i>
 
-**قبل تثبيت WireGuard**، إذا لم يكن لديك ملف<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>رقم تعريف حاسوب ثابت</b></a>تحتاج إلى الحصول على ملف`Dynamic DNS Subdomain`أو يتغير عنوان IP الخارجي بشكل ديناميكي من مزود خدمة الإنترنت الخاص بك ، لذا ستحتاج إلى إعداد خدمة DNS ديناميكية[**<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>انقر هنا</b></a>**]. أو تخطي الخطوة.
+**قبل تثبيت WireGuard**، إذا لم يكن لديك ملف<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>رقم تعريف حاسوب ثابت</b></a>تحتاج إلى الحصول على ملف`Dynamic DNS Subdomain`أو يتغير عنوان IP الخارجي بشكل ديناميكي من مزود خدمة الإنترنت الخاص بك ، لذا ستحتاج إلى إعداد خدمة DNS ديناميكية[**<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>انقر هنا</b></a>**]. أو تخطي الخطوة.
 
-تحتاج أيضًا إلى الإعداد<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>ميناء الشحن</b></a>على جهاز التوجيه الخاص بك حتى تتمكن من الوصول إلى WireGuard خارج شبكتنا كما هو الحال في نقطة اتصال المقهى أو بيانات هاتفك المحمول.
+تحتاج أيضًا إلى الإعداد<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>ميناء الشحن</b></a>على جهاز التوجيه الخاص بك حتى تتمكن من الوصول إلى شبكة WireGuard في أي مكان مثل نقطة اتصال المقهى وحتى من ربط بيانات الجوال.
 النوع | القيمة  
 ------------ \| -------------
 الجهاز | اسم مضيف Raspberry Pi أو IP
@@ -404,9 +400,9 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
     wget https://git.io/wireguard -O wireguard-install.sh && sudo bash wireguard-install.sh
 
--   سيطلب منك البرنامج النصي اسم IPv4 / hostname العام لشبكة VPN._لو_لديك IP ثابت ثم تابع أو اكتب مجال DNS الديناميكي الذي قمت بإنشائه من<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/Dns-Service-Guide.md"><b>تعليمات</b></a>. على سبيل المثال: trinibvpn.freeddns.org
+-   سيطلب منك البرنامج النصي اسم IPv4 / hostname العام لشبكة VPN._لو_لديك IP ثابت ثم تابع أو اكتب مجال DNS الديناميكي الذي قمت بإنشائه من<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>تعليمات</b></a>. على سبيل المثال: trinibvpn.freeddns.org
 
--   لخيار المنفذ`press enter`للافتراضي 51820. بالنسبة لاسم العميل ، فقط ضع أي اسم تريده ، وبالنسبة لـ DNS استخدم الخيار 3 (`1.1.1.1`) في الوقت الراهن. سوف تقوم بتكوين`AdGuard/Unbound/Cloudflare`مع VPN بعد الانتهاء من تثبيته.
+-   لخيار المنفذ`press enter`للاسم الافتراضي 51820. بالنسبة لاسم العميل ، ما عليك سوى إدخال أي اسم تريده ، وبالنسبة إلى DNS ، استخدم الخيار 3 (`1.1.1.1`) في الوقت الراهن. سوف تقوم بتكوين`AdGuard/Unbound/Cloudflare`مع VPN بعد الانتهاء من تثبيته.
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -418,7 +414,7 @@ _في حالة استخدام**النظام الغذائي**تحتاج إلى ت
 
 `IMPORTANT:`ستحتاج إلى إضافة مستخدم / عميل جديد لكل جهاز تستخدمه مع VPN. لإضافة مستخدم جديد ، ما عليك سوى إعادة تشغيل البرنامج النصي وإنشاء مستخدم باسم عميل مختلف.
 
-<b>يستخدم_OpenVPN_</b>[<a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md"><b>انقر هنا</b></a>]
+<b>يستخدم_OpenVPN_</b>[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Install-OpenVPN"><b>انقر هنا</b></a>]
 
 # 
 
@@ -497,7 +493,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 ## قم بتعطيل كل IPv6
 
-#### قم بتعطيل IPv6 إذا لم يكن لديك أو لا تريده[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/blob/main/Disable-All-IPv6.md"><b>انقر هنا</b></a>]. نتيجة لذلك ، إذا كان لديك إنترنت ضعيف ، فإن تعطيل IPv6 يمكن أن يؤدي إلى تسريع طلب نظام أسماء النطاقات ولكن يتمتع بأمان أقل.
+#### قم بتعطيل IPv6 إذا لم يكن لديك أو لا تريده[<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Disable-all-IPv6"><b>انقر هنا</b></a>]. نتيجة لذلك ، إذا كان لديك إنترنت ضعيف ، فإن تعطيل IPv6 يمكن أن يؤدي إلى تسريع طلب نظام أسماء النطاقات ولكن يتمتع بأمان أقل.
 
 # 
 
@@ -520,89 +516,7 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 * * *
 
-# 
-
-# <i>التحديث التلقائي Pi</b></i>
-
-فتح ملف sh جديد يسمى التحديث ونسخ اللصق النصي[<a href="https://raw.githubusercontent.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/main/update.sh"><b>انقر هنا</b></a>]
-
-    sudo nano update.sh
-
-تعيين الإذن
-
-    sudo chmod 700 update.sh
-
-افتح ملف cron عن طريق إدخال سطر الأوامر`crontab -e`، قم بنسخ ولصق سطر أوامر الوظيفة أدناه في الجزء السفلي من ملف cron وحفظه.
-
-    0 3 * * WED sudo ./update.sh 2>&1 >/home/pi/updatelog
-
-سيتم تحديث Pi الآن كل أربعاء الساعة 3 صباحًا. أو يمكنك الذهاب إلى[هتبص://كرونتب.جور/](https://crontab.guru/)وتعيين الجدول الزمني الخاص بك.
-
-اضبط التاريخ / المنطقة الزمنية في Pi ، أدخل في المحطة:
-
-    sudo dpkg-reconfigure tzdata
-
-أو تعيين يدويًا
-
-    sudo date -s "25 DEC 2012 11:14:00"
-
-# 
-
-# <i>قم بتثبيت Log2Ram</b></i>
-
-تتمثل إحدى أهم مزايا تفريغ ذاكرة الوصول العشوائي في أنها تعمل على تحسين ملفات**العمر الافتراضي المحتمل لبطاقة SD**.
-تعد ملفات السجل من أكثر الأشياء التي يتم كتابتها بواسطة أجزاء البرامج المختلفة التي تقوم بتثبيتها.
-من خلال دفع الملفات إلى ذاكرة الوصول العشوائي الخاصة بك ، يمكنك التحكم في عدد مرات كتابتها على بطاقة SD. ستظل قادرًا على الوصول إلى هذه الملفات على ذاكرة الوصول العشوائي كما لو كانت موجودة على بطاقة SD الخاصة بك.
-
-انسخ والصق هذا السطر في المحطة:
-
-يدويا
-
-    wget https://git.io/log2ram -O Log2Ram-Script.sh && sudo chmod +x Log2Ram-Script.sh && sudo ./Log2Ram-Script.sh
-
-أو
-
-إضافة مصدر الريبو (التحديث التلقائي)
-
-    echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian/ bullseye main" | sudo tee /etc/apt/sources.list.d/azlux.list
-    sudo wget -O /usr/share/keyrings/azlux-archive-keyring.gpg  https://azlux.fr/repo.gpg
-    sudo apt update
-    sudo apt install log2ram
-
-# 
-
-# <i>قم بإيقاف تشغيل أضواء Pi LED</b></i>
-
-أعتقد أن قوة مصابيح LED ستؤثر على الكهرباء والحرارة غير الضرورية 🤷😅. لا داعي لذلك على أي حال إذا كنت تستخدمه كخادم شبكة فقط. افتح ملف cron عن طريق إدخال سطر الأوامر`crontab -e`، قم بنسخ ولصق سطر أوامر الوظيفة أدناه في الجزء السفلي من ملف cron وحفظه.
-
-أخضر
-
-    @reboot echo none | sudo tee /sys/class/leds/led0/trigger
-
-أحمر
-
-    @reboot echo none | sudo tee /sys/class/leds/led1/trigger
-
-إعادة تشغيل Pi.
-
-# 
-
-# <i>تأمين Raspberry Pi الخاص بك</b></i>
-
-<p align="center">
-<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><img src="https://i.imgur.com/a9JQVls.png" width=80px height=90px></a>
-
-[<a href="https://gist.github.com/boseji/c9e91ff3bd0b3cfb62a5e260fe505374"><b>انقر هنا</b></a>]
-
-<i>(أنا فقط استخدم Fail2Ban وقمت بتغيير منفذ SSH)</i>
-
-**[العودة إلى المحتويات ⬆](#table-of-contents)**
-
-* * *
-
 <b>أي مشاكل أو إصلاحات أو نصائح لجعل هذه المشاريع أفضل يرجى المساهمة🤖</b>
-
-* * *
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"
@@ -643,8 +557,4 @@ _تذكر أن هذا مخصص عندما تكون متصلاً بـ WireGuard V
 
 [هتبص://جذب.كوم/نير/ويرجردنستل](https://github.com/Nyr/wireguard-install)
 
-[هتبص://جذب.كوم/أزلكس/لوجارم](https://github.com/azlux/log2ram)
-
 [هتبص://جذب.كوم/ت١٤٥/بلكمرر](https://github.com/T145/black-mirror)
-
-* * *
