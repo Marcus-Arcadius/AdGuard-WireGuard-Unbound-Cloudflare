@@ -130,7 +130,7 @@ Raspberry Pi OS 有桌面版和精简版（使用精简版<a href="https://www.g
 
 -   启动 Etcher 并选择您下载的 Raspberry Pi OS 映像，选择您的 microSD 卡并单击`Flash`.
 
-刷机完成后，在“This PC”中查找磁盘名称“boot or USB drive”（如果没有看到，请重新插入 USB 读卡器）。转到该磁盘，创建一个名为的新文本文件**_`ssh without 'txt' extension`_**.如果看不到，请在文件资源管理器选项中禁用“隐藏已知文件类型的扩展名”。
+刷机完成后，在“这台电脑”中查找磁盘名称“boot or USB drive”（如果没有看到，请重新插入 USB 读卡器）。转到该磁盘，创建一个名为的新文本文件**_`ssh without 'txt' extension`_**.如果看不到，请在文件资源管理器选项中禁用“隐藏已知文件类型的扩展名”。
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -172,7 +172,7 @@ __完成后重启__
 
 # <i>安装 AdGuard 主页</b></i>
 
-这个安装脚本来自<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard 主页</b></a>主要项目。关注以保持更新。
+此安装脚本来自<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard 主页</b></a>主要项目。关注以保持更新。
 
 在终端中运行以下命令：
 
@@ -332,7 +332,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
  
 <b>Click apply and test upstreams</b>(might get a error in the first testing only).
 
-#### `IMPORTANT:`Windows 系统和 Android 浏览器需要一些调整`stabilize`DNS解析器..Linux工作正常<i>（在薄荷上测试）</i>
+#### `IMPORTANT:`Windows 系统和 Android 浏览器需要一些调整`stabilize`DNS 解析器..Linux 工作正常<i>（在薄荷上测试）</i>
 
 ### 视窗
 
@@ -422,7 +422,7 @@ _如果使用**饮食派**您需要安装 resolvconf 并重新启动 unbound-res
 
 从 Google Play 或 App Store 安装 WireGuard 应用程序：
 
-WireGuard（谷歌播放）：[HTTPS://play.Google.com/store/apps/details?ID=com.wire guard.Android](https://play.google.com/store/apps/details?id=com.wireguard.android)
+WireGuard（谷歌播放）：<https://play.google.com/store/apps/details?id=com.wireguard.android>
 
 WireGuard（应用商店）：[HTTPS://apps.apple.com/US/app/wire guard/ID1441195209](https://apps.apple.com/us/app/wireguard/id1441195209)
 
@@ -437,7 +437,7 @@ WireGuard（应用商店）：[HTTPS://apps.apple.com/US/app/wire guard/ID144119
 
 用于窗户的 WireGuard：[HTTPS://download.wire guard.com/Windows-client/wire guard-installer.exe](https://download.wireguard.com/windows-client/wireguard-installer.exe)
 
--   创建一个`new text document`使用 PV 上的任何名称复制粘贴来自 WireGuard 客户端配置文件的文本。
+-   创建一个`new text document`使用 PV 上的任何名称复制粘贴 WireGuard 客户端配置文件中的文本。
 
 -   要查看客户端配置文件中的文本，请输入终端：
 
@@ -483,7 +483,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 ## Ипвш
 
-如果您使用的是 IPv6，当连接到 WiFi 时，您需要输入 WireGuard 允许的 IP`fe80::1/0`也是。例如`192.168.100.0/0, fe80::1/0`
+如果您使用的是 IPv6，当连接到 WiFi 时，您需要输入 WireGuard 允许的 IP`fe80::1/0`以及。例如`192.168.100.0/0, fe80::1/0`
 
 在 windows PC 上连接以太网电缆时，您需要输入`::1`在“Internet 协议版本 6(TCP/IPv6)”首选 DNS 服务器中的 IPv6 地址中。
 
@@ -516,7 +516,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 * * *
 
-<b>任何使这些项目更好的问题、修复或提示请贡献🤖</b>
+<b>使这些项目更好的任何问题、修复或提示请贡献🤖</b>
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"
@@ -545,7 +545,7 @@ _请记住，这适用于当您在外部网络上或在家中 24/7 连接到 Wir
 
 [HTTPS://docs.皮-hole.net/guides/DNS/cloud flare的/](https://docs.pi-hole.net/guides/dns/cloudflared/)
 
-[HTTPS://docs.皮-hole.net/guides/DNS/unbound/](https://docs.pi-hole.net/guides/dns/unbound/)
+<https://docs.pi-hole.net/guides/dns/unbound/>
 
 [HTTPS://NL net labs.哪里/documentation/unbound/unbound.conf/](https://nlnetlabs.nl/documentation/unbound/unbound.conf/)
 
