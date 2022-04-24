@@ -180,7 +180,7 @@ __समाप्त होने पर रीबूट करें__
 
 -   जब इंस्टॉलेशन समाप्त हो जाता है, तो टर्मिनल में एक विंडो पॉप अप होगी जो दिखा रही है`links`अपने एडगार्ड होम पेज पर (आरंभ करें)
 
--   `IMPORTANT:`इंटरफ़ेस सुनें विकल्प में चुनें`Eth0`और अगला चुनें
+-   `IMPORTANT:`सुनो इंटरफेस में विकल्प चुनें`Eth0`और अगला चुनें
 
     <p align="center">
      <img src="https://i.imgur.com/Wa00lDp.jpg" width=580px height=690px>
@@ -376,7 +376,7 @@ stubby.yaml फ़ाइल को निकालें और फिर से
 
 # <i>वायरगार्ड स्थापित करें</b></i>
 
-**वायरगार्ड स्थापित करने से पहले**, यदि आपके पास a . नहीं है<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>स्थैतिक आईपी</b></a>आपको एक मुफ्त प्राप्त करने की आवश्यकता है`Dynamic DNS Subdomain`अन्यथा आपका बाहरी आईपी पता आपके आईएसपी से गतिशील रूप से बदलता है, इसलिए आपको एक गतिशील डीएनएस सेवा स्थापित करने की आवश्यकता होगी[**<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>यहाँ क्लिक करें</b></a>**]. या फिर स्टेप स्किप करें।
+**वायरगार्ड स्थापित करने से पहले**, यदि आपके पास a . नहीं है<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>स्थैतिक आईपी</b></a>आपको एक मुफ्त प्राप्त करने की आवश्यकता है`Dynamic DNS Subdomain`या फिर आपका बाहरी आईपी पता आपके आईएसपी से गतिशील रूप से बदलता है, इसलिए आपको एक गतिशील डीएनएस सेवा स्थापित करने की आवश्यकता होगी[**<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>यहाँ क्लिक करें</b></a>**]. या फिर स्टेप स्किप करें।
 
 आपको भी सेट अप करने की आवश्यकता है<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>अग्रेषण पोर्ट</b></a>अपने राउटर पर ताकि आप वायरगार्ड नेटवर्क को कॉफी शॉप हॉटस्पॉट की तरह कहीं भी एक्सेस कर सकें और यहां तक ​​कि मोबाइल डेटा टेदरिंग से भी।
 प्रकार | मूल्य  
@@ -400,7 +400,7 @@ stubby.yaml फ़ाइल को निकालें और फिर से
 
     wget https://git.io/wireguard -O wireguard-install.sh && sudo bash wireguard-install.sh
 
--   स्क्रिप्ट आपसे VPN के लिए Public IPv4/hostname पूछने जा रही है।_अगर_आपके पास स्थिर आईपी है तो जारी रखें या फिर उस गतिशील DNS डोमेन को टाइप करें जिसे आपने बनाया था<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>निर्देश</b></a>. उदाहरण के लिए: trinibvpn.freeddns.org
+-   स्क्रिप्ट आपसे वीपीएन के लिए पब्लिक आईपीवी4/होस्टनाम मांगेगी।_अगर_आपके पास स्थिर आईपी है तो जारी रखें या फिर उस गतिशील DNS डोमेन को टाइप करें जिसे आपने बनाया था<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>निर्देश</b></a>. उदाहरण के लिए: trinibvpn.freeddns.org
 
 -   पोर्ट विकल्प के लिए`press enter`डिफ़ॉल्ट रूप से 51820 के लिए। क्लाइंट नाम के लिए, बस आप जो भी नाम चाहते हैं, और DNS के लिए विकल्प 3 का उपयोग करें (`1.1.1.1`) अभी के लिए। आप कॉन्फ़िगर करेंगे`AdGuard/Unbound/Cloudflare`इसके स्थापित होने के बाद वीपीएन के साथ।
 
