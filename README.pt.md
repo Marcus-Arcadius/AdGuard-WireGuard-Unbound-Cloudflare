@@ -130,7 +130,7 @@ Depois que você tiver`Etcher`instalado e`Raspberry Pi OS`arquivo baixado, agora
 
 -   Inicie o Etcher e escolha a imagem do Raspberry Pi OS que você baixou, selecione seu cartão microSD e clique`Flash`.
 
-Depois que o flash for concluído, procure em "Este PC" por um nome de disco "boot ou unidade USB" (reconecte o leitor de cartão USB se não for visto). Vá para esse disco, crie um novo arquivo de texto chamado**_`ssh without 'txt' extension`_**. Desative “Ocultar extensões para tipos de arquivos conhecidos” nas opções do explorador de arquivos, caso não o veja.
+Depois que o flash for concluído, procure em "Este PC" por um nome de disco "boot ou unidade USB" (reconecte o leitor de cartão USB se não for visto). Vá para esse disco, crie um novo arquivo de texto chamado**_`ssh without 'txt' extension`_**. Desative “Ocultar extensões para tipos de arquivo conhecidos” nas opções do explorador de arquivos, caso não o veja.
 
 <p align="center">
  <img src="https://i.imgur.com/eV6uMbz.jpg">
@@ -185,7 +185,7 @@ Execute o seguinte comando no seu terminal:
     <p align="center">
      <img src="https://i.imgur.com/Wa00lDp.jpg" width=580px height=690px>
 
--   Configure o nome de usuário e senha e faça login no painel de administração
+-   Configure nome de usuário e senha e faça login no painel de administração
 
 -   `IMPORTANT:`Nas configurações gerais, defina "Retenção de logs de consulta" como`24 hours`. (Eu li que, para algumas pessoas, os logs são preenchidos, o que diminui a velocidade do Pi e precisa de uma reinicialização)
 
@@ -303,7 +303,7 @@ Remova e recrie o arquivo stubby.yaml:
 
 E copie e cole todo o texto deste arquivo de configuração atarracado[<a href="https://raw.githubusercontent.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/main/stubby.yml"><b>Clique aqui</b></a>]e salve. (`cd`para retornar à pasta inicial quando terminar).
 
-Reinicie o unbound & stubby e verifique o status:
+Reinicie unbound & stubby e verifique o status:
 
     sudo systemctl restart unbound stubby ; systemctl status unbound stubby -l
 
@@ -378,7 +378,7 @@ Reinicie o unbound & stubby e verifique o status:
 
 **Antes de instalar o WireGuard**, se você não tiver um<a href="https://www.google.com/search?client=firefox-b-d&q=static+IP"><b>I.P. estático</b></a>você precisa obter gratuitamente`Dynamic DNS Subdomain`ou então seu endereço IP externo muda dinamicamente do seu ISP, então você precisará configurar um serviço DNS dinâmico[**<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>Clique aqui</b></a>**]. Ou então pule a etapa.
 
-Você também precisa configurar<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>encaminhamento de porta</b></a>em seu roteador para que você possa acessar a rede WireGuard em qualquer lugar, como um hotspot de uma cafeteria e até mesmo de tethering de dados móveis.
+Você também precisa configurar<a href="https://www.google.com/search?q=What+is+port+forwarding+used+for%3F&client=firefox-b-d&sxsrf=APq-WBuwPqGlPJ6N9_l6qpQ3e5sYoUxZAQ%3A1650219365125&ei=ZVlcYo6sB6SGwbkP8tGOwA8&ved=0ahUKEwjO8ryY2pv3AhUkQzABHfKoA_gQ4dUDCA0&uact=5&oq=What+is+port+forwarding+used+for%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFDMAVjMAWCBBWgBcAF4AIABbIgBbJIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz"><b>encaminhamento de porta</b></a>no seu roteador para que você possa acessar a rede WireGuard em qualquer lugar, como um hotspot de uma cafeteria e até mesmo de tethering de dados móveis.
 TIPO | VALOR  
 ------------ \| -------------
 Dispositivo | Nome de host ou IP do Raspberry Pi
@@ -461,7 +461,7 @@ _Lembre-se que isso é para quando você estiver conectado ao WireGuard VPN em u
 
 ### Limitar o tráfego
 
-Com o WireGuard, você perderá cerca de 50% da velocidade da Internet, pois o processo de encapsulamento do Pi para o roteador para os dispositivos\*\*
+Com o WireGuard, você perderá cerca de 50% da velocidade da internet, pois o processo de encapsulamento do Pi para o roteador para os dispositivos\*\*
 
 Excluir nos IPs permitidos a opção "0.0.0.0/0, ::/0" porque ela roteia todo o tráfego para sua rede doméstica, o que será lento. Você precisa enviar tráfego apenas através de seus endereços.
 
