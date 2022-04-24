@@ -28,7 +28,7 @@
 
 #### _<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md"><b>AdGuard Accueil</b></a>_: Bloquer les publicités sur tous vos appareils(<a href="https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md#how-does-adguard-home-compare-to-pi-hole"><b>_par rapport à Pi-Hole_</b></a>)
 
-#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Serveur VPN à domicile accessible depuis n'importe quel réseau extérieur (IPv4 & IPv6)
+#### _<a href="https://www.wireguard.com/"><b>WireGuard</b></a>_: Serveur VPN à la maison accessible depuis n'importe quel réseau extérieur (IPv4 & IPv6)
 
 #### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Non lié</i></b></a>avec[<i>Trapu</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Un résolveur DNS de validation, récursif et de mise en cache
 
@@ -200,7 +200,7 @@ Exécutez la commande suivante dans votre terminal :
 
     -   <i>Ипвч</i>
 
-        Allez dans les paramètres réseau / modifier les options de l'adaptateur et faites un clic droit dans les propriétés puis sélectionnez "Internet Protocol Version 4(TCP/IPv4)". Entrez l'adresse IP de Pi dans`Preferred DNS`serveur.
+        Allez dans les paramètres réseau / modifiez les options de l'adaptateur et faites un clic droit dans les propriétés puis sélectionnez "Internet Protocol Version 4(TCP/IPv4)". Entrez l'adresse IP de Pi dans`Preferred DNS`serveur.
 
     -   <i>IPv6 (nécessaire pour`DoH`&`DoT`pour travailler plus tard dans le guide si vous utilisez IPv6 sur votre routeur)</i>
 
