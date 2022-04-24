@@ -32,7 +32,7 @@
 
 #### <a href="https://www.nlnetlabs.nl/projects/unbound/about/"><b><i>Sin consolidar</i></b></a>con[<i>Achaparrado</i>](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/about_stubby/): Un solucionador de DNS validador, recursivo y de almacenamiento en caché
 
-#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
+#### _<a href="https://www.cloudflare.com/learning/what-is-cloudflare/"><b>Llamarada de la nube</b></a>_: Mejor rendimiento y seguridad al navegar por sitios web (DoT y DoH)
 
 <i>Todo el software es gratuito, de código abierto y alojado en sí mismo </i></br><a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/wiki/About"><b>Acerca de</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/discussions/17"><b>Preguntas más frecuentes</b></a>\|<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki"><b>wiki</b></a>                         
 
@@ -70,7 +70,7 @@ Solucionadores de DNS públicos de Cloudflare/Quad9/Google:
 | :---------------------------------------------------------------: | :--------------------------------------------------------: |
 |                         Inicio de AdGuard                         |                              ✅                             |
 |                           Sin consolidar                          |                              ✅                             |
-|                         Llamarada de nube                         |                              ✅                             |
+|                        Llamarada de la nube                       |                              ✅                             |
 |                            Achaparrado                            |                              ✅                             |
 |                         Guardia de alambre                        |                              ✅                             |
 
@@ -368,7 +368,7 @@ Reinicie sin vincular y rechoncho y verifique el estado:
 
 <https://www.cloudflare.com/ssl/encrypted-sni/>- "Secure DNS / DNSSEC / TLS 1.3" debería ser una marca verde
 
-<https://dnssec.vs.uni-due.de/>- debe decir "Sí, su sistema de resolución de DNS valida las firmas de DNSSEC"
+<https://dnssec.vs.uni-due.de/> - should say "Yes, your DNS resolver validates DNSSEC signatures"
 
 **[⬆ Volver a contenidos ⬆](#table-of-contents)**
 
@@ -428,7 +428,7 @@ WireGuard (tienda de aplicaciones):<https://apps.apple.com/us/app/wireguard/id14
 
 Debe escanear el código QR que se muestra en el terminal con la aplicación WireGuard, seleccione el`+ button`y usa la opcion`Scan from QR code`para instalar la configuración.
 
-`IMPORTANT`: Permitir**back-end del módulo del kernel**en la configuración de
+`IMPORTANT`: Permitir**back-end del módulo del núcleo**en la configuración de
 
 <p align="left">
  <img src="https://i.imgur.com/R4qbiOQ.jpg" width=250px height=350px>
@@ -476,7 +476,7 @@ Elimine en las IP permitidas la opción "0.0.0.0/0, ::/0" porque enruta todo el 
 
 `IMPORTANT`:_Si su red tiene direcciones IP para dispositivos que terminan con un número de 3 dígitos (más de 24), por ejemplo: 192.168.100.`254`, no podrá enrutar correctamente desde una red externa porque aplicar 24 solo permite los números del 1 al 24. En su lugar, debe poner`0`para enrutar fuera del rango de 24, por ejemplo:`192.168.100.0/0`_.
 
-O puede cambiar el rango de IP en su enrutador (en mi experiencia, puede obtener velocidades un poco mejores porque no enrutará direcciones IP permitidas innecesarias en el rango de 24).
+O puede cambiar el rango de IP en su enrutador (según mi experiencia, puede obtener velocidades un poco mejores porque no enrutará direcciones IP permitidas innecesarias en el rango de 24).
 
 <p align="center">
  <img src="https://i.imgur.com/ZZ4aMUI.jpg" width=750px height=550px>
