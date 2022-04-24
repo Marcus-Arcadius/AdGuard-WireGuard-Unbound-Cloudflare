@@ -83,7 +83,7 @@ AdGuard-Standard-DNS<b><i>vs</i></b>dieses Setup⭐ :
     -   [Greifen Sie mit SSH auf Pi OS zu](#access-pi-os-with-ssh)
 -   [Installieren Sie AdGuard Home](#install-adguard-home)<img src="https://www.vectorlogo.zone/logos/adguard/adguard-icon.svg" width=20px height=20px>
     -   [Richten Sie Ihre Geräte so ein, dass sie mit Adguard funktionieren](#set-up-your-devices-to-work-with-adguard)
-    -   [Einrichten der AdGuard-Sperrliste](#setting-up-adguard-blocklist)
+    -   [Einrichtung der AdGuard-Sperrliste](#setting-up-adguard-blocklist)
         -   [Mehrere URLs hinzufügen/entfernen](#addremove-multiple-urls)
 -   [Ungebunden installieren](#install-unbound)<img src="https://www.privacytools.io/img/apps/unbound.svg" width=20px height=20px>
 -   [Installieren Sie Cloudflare](#install-cloudflare)<img src="https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg" width=20px height=20px>
@@ -143,7 +143,7 @@ Nachdem das Flashen abgeschlossen ist, suchen Sie in „Dieser PC“ nach einem 
 
 -   Öffnen Sie den Browser und melden Sie sich auf der Panel-Seite Ihres Routers an
 
--   Finden Sie eine Liste aller Geräte, die mit Ihrem Netzwerk verbunden sind, und kopieren Sie die IP-Adresse des Raspberry Pi (es wird höchstwahrscheinlich den Hostnamen`raspberrypi`)
+-   Finden Sie eine Liste aller mit Ihrem Netzwerk verbundenen Geräte und kopieren Sie die IP-Adresse des Raspberry Pi (es wird höchstwahrscheinlich den Hostnamen`raspberrypi`)
 
 -   Öffnen Sie das Terminal auf Ihrem Host-Rechner. Sie können PowerShell unter Windows oder RaspController für Android verwenden.
 
@@ -187,7 +187,7 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 
 -   Richten Sie Benutzername und Passwort ein und melden Sie sich im Admin-Bereich an
 
--   `IMPORTANT:`Stellen Sie in den allgemeinen Einstellungen „Aufbewahrung von Abfrageprotokollen“ auf ein`24 hours`. (Ich habe gelesen, dass sich bei einigen Leuten die Protokolle füllen, was Pi verlangsamt und einen Neustart benötigt.)
+-   `IMPORTANT:`Stellen Sie in den allgemeinen Einstellungen "Aufbewahrung von Abfrageprotokollen" auf ein`24 hours`. (Ich habe gelesen, dass sich bei einigen Leuten die Protokolle füllen, was Pi verlangsamt und einen Neustart benötigt.)
 
 ## Richten Sie Ihre Geräte so ein, dass sie mit AdGuard funktionieren
 
@@ -213,7 +213,7 @@ Führen Sie den folgenden Befehl in Ihrem Terminal aus:
 <p align="center">
  <img src="https://i.imgur.com/8gsDk3z.jpg">
 
-## Einrichten der AdGuard-Sperrliste
+## Einrichtung der AdGuard-Sperrliste
 
 Wählen Sie auf der AdGuard-Startseite unter Filtern den Abschnitt DNS-Sperrliste zum Hinzufügen von URLs aus.
 
@@ -332,9 +332,9 @@ Starten Sie Unbound & Stubby neu und prüfen Sie den Status:
  
 <b>Click apply and test upstreams</b>(might get a error in the first testing only).
 
-#### `IMPORTANT:`Windows-System- und Android-Browser müssen etwas angepasst werden`stabilize`DNS-Resolver..Linux funktioniert gut<i>(getestet auf Minze)</i>
+#### `IMPORTANT:`Windows-System- und Android-Browser müssen etwas angepasst werden`stabilize`DNS-Auflöser. Linux funktioniert gut<i>(getestet auf Minze)</i>
 
-### Windows
+### Fenster
 
 -   Acryl-DNS-Proxy installieren:<https://mayakron.altervista.org/support/acrylic/Home.htm>
 
@@ -402,7 +402,7 @@ Im Terminal ausführen
 
 -   Das Skript fragt Sie nach der öffentlichen IPv4/dem Hostnamen für das VPN._Ob_Sie haben eine statische IP-Adresse, fahren Sie fort oder geben Sie die dynamische DNS-Domäne ein, die Sie aus der erstellt haben<a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-Cloudflare/wiki/Create-a-Dynamic-DNS-Hostname-Service"><b>Anweisungen</b></a>. Zum Beispiel:trinibvpn.freeddns.org
 
--   Für Port-Option`press enter`für Standard 51820. Geben Sie für den Client-Namen einfach einen beliebigen Namen ein und verwenden Sie für DNS Option 3 (`1.1.1.1`) zur Zeit. Sie werden konfigurieren`AdGuard/Unbound/Cloudflare`mit dem VPN, nachdem es fertig installiert ist.
+-   Für Port-Option`press enter`für Standard 51820. Geben Sie als Client-Namen einfach einen beliebigen Namen ein und verwenden Sie für DNS Option 3 (`1.1.1.1`) zur Zeit. Sie werden konfigurieren`AdGuard/Unbound/Cloudflare`mit dem VPN, nachdem es fertig installiert ist.
 
 <p align="center">
  <img src="https://i.imgur.com/WUNZIK4.jpg">
@@ -483,7 +483,7 @@ Oder Sie können den IP-Bereich auf Ihrem Router ändern (meiner Erfahrung nach 
 
 ## Ипвш
 
-Wenn Sie IPv6 verwenden, müssen Sie bei einer WLAN-Verbindung die von WireGuard zugelassenen IPs eingeben`fe80::1/0`auch. Zum Beispiel`192.168.100.0/0, fe80::1/0`
+Wenn Sie IPv6 verwenden, müssen Sie bei einer WLAN-Verbindung in WireGuard zugelassene IPs eingeben`fe80::1/0`auch. Zum Beispiel`192.168.100.0/0, fe80::1/0`
 
 Wenn Sie auf einem Windows-PC mit einem Ethernet-Kabel verbunden sind, müssen Sie eingeben`::1`in IPv6-Adresse in "Internet Protocol Version 6(TCP/IPv6)" bevorzugter DNS-Server.
 
