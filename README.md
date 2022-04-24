@@ -82,8 +82,7 @@ https://user-images.githubusercontent.com/18756975/150319049-3d8acdc9-624f-4b60-
   - [Configure Cloudflare (DoT) on Unbound](#configure-cloudflare-dot-on-unbound)
     - [Configure Stubby for Unbound](#configure-stubby-for-unbound)
     - [Configure AdGuard with Cloudflare (DoH&DoT)](#configure-adguard-with-cloudflaredohdot)
-- [Install WireGuard](#install-wireguard) <img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px>
-   or <a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN(slower)</a> <img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
+- [Install WireGuard](#install-wireguard) <img src="https://www.vectorlogo.zone/logos/wireguard/wireguard-icon.svg" width=20px height=20px> or <a href="https://github.com/trinib/Adguard-Wireguard-Unbound-Cloudflare/blob/main/OpenVPN-Setup.md">OpenVPN(slower)</a> <img src="https://i.imgur.com/Agstbe5.png" width=20px height=20px>
 - [Connecting VPN to Android/IOS Phone](#connecting-vpn-to-androidios-phone)
 - [Connecting VPN to Windows](#connecting-vpn-to-windows)
 - [Configure Wireguard with AdGuard/Unbound/Cloudflare](#configure-wireguard-with-adguardunboundcloudflare)
